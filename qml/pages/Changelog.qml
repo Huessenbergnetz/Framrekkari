@@ -20,6 +20,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "parts"
 
 
 Page {
@@ -28,15 +29,22 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
-        contentHeight: column.height
+        contentHeight: column.height + Theme.paddingLarge
+        VerticalScrollDecorator {}
 
         Column {
             id: column
-
             width: changelogPage.width
-            spacing: Theme.paddingLarge
-            PageHeader {
-                title: qsTr("Changelog")
+            PageHeader { title: qsTr("Changelog") }
+            move: Transition { NumberAnimation { properties: "y"; easing.type: Easing.InOutQuad } }
+            add: Transition { AddAnimation {} }
+
+            CLItem {
+                version: "0.1.0"
+                time: 1398792734000
+                text: "<ul>
+                        <li>Initial release</li>
+                       </ul>"
             }
         }
     }

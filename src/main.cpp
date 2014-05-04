@@ -23,10 +23,33 @@
 #endif
 
 #include <sailfishapp.h>
+#include "globals.h"
 
 
 int main(int argc, char *argv[])
 {
-    return SailfishApp::main(argc, argv);
+    QGuiApplication* app = SailfishApp::application(argc, argv);
+
+        app->setOrganizationName("harbour-framrekkari");
+        app->setOrganizationDomain("buschmann23.de");
+        app->setApplicationName("harbour-framrekkari");
+        app->setApplicationVersion(VERSION_STRING);
+
+//        QDir().mkpath(QDir::homePath().append(DATA_DIR));
+
+
+        QString locale = QLocale::system().name();
+        QTranslator *translator = new QTranslator;
+        if ((translator->load("framrekkari"+locale, "/usr/share/harbour-framrekkari/translations")))
+            app->installTranslator(translator);
+
+        QQuickView* view = SailfishApp::createView();
+
+        view->rootContext()->setContextProperty("versionString", VERSION_STRING);
+
+        view->setSource(QUrl::fromLocalFile("/usr/share/harbour-framrekkari/qml/harbour-framrekkari.qml"));
+        view->show();
+
+        return app->exec();
 }
 
