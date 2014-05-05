@@ -24,6 +24,11 @@ import "pages"
 
 ApplicationWindow
 {
+    id: framrekkari
+
+    property string accountName
+    property int accountIndex
+
     initialPage: Component { MainPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 }

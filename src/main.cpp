@@ -23,33 +23,53 @@
 #endif
 
 #include <sailfishapp.h>
+#include <QtQml>
+#include <QGuiApplication>
+#include <QQuickView>
+//#include <QScopedPointer>
+#include <QLocale>
+#include <QTranslator>
+
 #include "globals.h"
+#include "configuration.h"
+#include "models/accountsmodel.h"
+#include "models/projectsmodel.h"
+#include "api/projectsapi.h"
 
 
 int main(int argc, char *argv[])
 {
     QGuiApplication* app = SailfishApp::application(argc, argv);
 
-        app->setOrganizationName("harbour-framrekkari");
-        app->setOrganizationDomain("buschmann23.de");
-        app->setApplicationName("harbour-framrekkari");
-        app->setApplicationVersion(VERSION_STRING);
+    app->setOrganizationName("harbour-framrekkari");
+    app->setOrganizationDomain("buschmann23.de");
+    app->setApplicationName("harbour-framrekkari");
+    app->setApplicationVersion(VERSION_STRING);
 
 //        QDir().mkpath(QDir::homePath().append(DATA_DIR));
 
 
-        QString locale = QLocale::system().name();
-        QTranslator *translator = new QTranslator;
-        if ((translator->load("framrekkari"+locale, "/usr/share/harbour-framrekkari/translations")))
-            app->installTranslator(translator);
+    QString locale = QLocale::system().name();
+    QTranslator *translator = new QTranslator;
+    if ((translator->load("framrekkari"+locale, "/usr/share/harbour-framrekkari/translations")))
+        app->installTranslator(translator);
 
-        QQuickView* view = SailfishApp::createView();
+    QQuickView* view = SailfishApp::createView();
 
-        view->rootContext()->setContextProperty("versionString", VERSION_STRING);
+    Configuration *configuration = new Configuration;
+    AccountsModel *accountsModel = new AccountsModel;
+    ProjectsModel *projectsModel = new ProjectsModel;
+    ProjectsAPI *projectsAPI = new ProjectsAPI;
 
-        view->setSource(QUrl::fromLocalFile("/usr/share/harbour-framrekkari/qml/harbour-framrekkari.qml"));
-        view->show();
+    view->rootContext()->setContextProperty("versionString", VERSION_STRING);
+    view->rootContext()->setContextProperty("config", configuration);
+    view->rootContext()->setContextProperty("accountsModel", accountsModel);
+    view->rootContext()->setContextProperty("projectsModel", projectsModel);
+    view->rootContext()->setContextProperty("projectsAPI", projectsAPI);
 
-        return app->exec();
+    view->setSource(QUrl::fromLocalFile("/usr/share/harbour-framrekkari/qml/harbour-framrekkari.qml"));
+    view->show();
+
+    return app->exec();
 }
 

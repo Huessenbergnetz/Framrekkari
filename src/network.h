@@ -18,14 +18,38 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-import QtQuick 2.0
-import Sailfish.Silica 1.0
+#ifndef NETWORK_H
+#define NETWORK_H
 
-CoverBackground {
-    CoverPlaceholder {
-                text: "Framrekkari"
-                icon.source: "/usr/share/icons/hicolor/86x86/apps/harbour-framrekkari.png"
-            }
-}
+#include <QNetworkAccessManager>
+#include <QAuthenticator>
+#include <QNetworkReply>
+#include <QSslError>
+#include "configuration.h"
 
+class Network : public QNetworkAccessManager
+{
+    Q_OBJECT
+public:
+    explicit Network(QObject *parent = 0);
 
+    enum ApiCall {GetProjects, GetProject};
+
+    Q_INVOKABLE void setAccountIndex(int idx);
+
+signals:
+
+public slots:
+
+private slots:
+    void slotAuthenticationRequired(QNetworkReply*,QAuthenticator *);
+    void sslErrorHandler(QNetworkReply *rep,const QList<QSslError> &errors);
+
+private:
+    int accountIndex;
+
+    Configuration config;
+
+};
+
+#endif // NETWORK_H

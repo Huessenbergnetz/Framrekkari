@@ -21,12 +21,17 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
+import "../delegates"
+
 
 Page {
-    id: page
+    id: mainPage
 
-    SilicaFlickable {
+    SilicaListView {
+        id: accountsListView
         anchors.fill: parent
+
+        header: PageHeader { title: "Framrekkari" }
 
         PullDownMenu {
             MenuItem {
@@ -37,18 +42,18 @@ Page {
                 text: qsTr("Settings")
                 onClicked: pageStack.push(Qt.resolvedUrl("Settings.qml"))
             }
+            MenuItem {
+                text: qsTr("Add account")
+                onClicked: pageStack.push(Qt.resolvedUrl("../dialogs/AccountDialog.qml"))
+            }
         }
 
-        contentHeight: column.height
+        model: accountsModel
+        delegate: AccountsDelegate {}
 
-        Column {
-            id: column
-
-            width: page.width
-            spacing: Theme.paddingLarge
-            PageHeader {
-                title: "Framrekkari"
-            }
+        ViewPlaceholder {
+            enabled: accountsListView.count == 0
+            text: qsTr("Please add at least one account for a Transifex instance.")
         }
     }
 }

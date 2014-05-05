@@ -18,14 +18,35 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-import QtQuick 2.0
-import Sailfish.Silica 1.0
+#ifndef APIHELPER_H
+#define APIHELPER_H
 
-CoverBackground {
-    CoverPlaceholder {
-                text: "Framrekkari"
-                icon.source: "/usr/share/icons/hicolor/86x86/apps/harbour-framrekkari.png"
-            }
-}
+#include <QObject>
+#include <QVariantMap>
+#include <QVariantList>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QUrl>
+#include "../configuration.h"
 
+class APIHelper : public QObject
+{
+    Q_OBJECT
+public:
+    explicit APIHelper(QObject *parent = 0);
 
+    QUrl buildUrl(const QString &apipart, int accountIdx);
+    QVariantMap jsonToVariantMap(const QByteArray &json);
+    QVariantList jsonToVariantList(const QByteArray &json);
+
+signals:
+
+public slots:
+
+private:
+    Configuration config;
+
+};
+
+#endif // APIHELPER_H

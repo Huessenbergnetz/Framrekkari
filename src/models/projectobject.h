@@ -18,14 +18,22 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-import QtQuick 2.0
-import Sailfish.Silica 1.0
+#ifndef PROJECTOBJECT_H
+#define PROJECTOBJECT_H
 
-CoverBackground {
-    CoverPlaceholder {
-                text: "Framrekkari"
-                icon.source: "/usr/share/icons/hicolor/86x86/apps/harbour-framrekkari.png"
-            }
-}
+#include<QString>
 
+class ProjectObject {
+public:
+  ProjectObject(const QString &slugString, const QString &nameString, const QString &descString, const QString &slcString):
+    slug(slugString),
+    name(nameString),
+    description(descString),
+    sourceLanguageCode(slcString){}
+  QString slug;
+  QString name;
+  QString description;
+  QString sourceLanguageCode;
+};
 
+#endif // PROJECTOBJECT_H
