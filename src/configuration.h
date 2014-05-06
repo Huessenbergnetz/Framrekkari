@@ -42,6 +42,10 @@ public:
     Q_INVOKABLE QVariantMap getAccount(int idx);
     Q_INVOKABLE void removeAccount(int idx);
 
+    // favorite projects
+    Q_INVOKABLE void favorProject(const QString &name, const QString &slug, const QString &description, const QString &srcLang, int accountIdx);
+    Q_INVOKABLE void unfavorProject(int idx, int accountIdx);
+
     struct Account {
         QString name;
         QString server;
@@ -50,15 +54,26 @@ public:
         bool ignoreSSLErrors;
     };
 
+    struct Project {
+        QString name;
+        QString slug;
+        QString description;
+        QString srcLang;
+        int accountIdx;
+    };
+
     QList<Account> loadAccounts();
+    QList<Project> loadFavoredProjects(int accountIdx);
 
 signals:
     void savedAccout();
+    void savedFavoredProject();
 
 public slots:
 
 private:
     void writeAccounts(const QList<Account> &accounts);
+    void writeFavoredProjects(const QList<Project> &projects, int accountIdx);
 
 };
 

@@ -7,12 +7,17 @@ CONFIG += sailfishapp
 
 QT += core
 QT += network
+QT += sql
 
 #PKGCONFIG += mlite5
 
 translations.path = /usr/share/harbour-framrekkari/translations
 translations.files = l10n/*.qm
 INSTALLS += translations
+
+icons.path = /usr/share/harbour-framrekkari/icons
+icons.files = icons/*.png
+INSTALLS += icons
 
 SOURCES += \
     src/main.cpp \
@@ -23,7 +28,8 @@ SOURCES += \
     src/api/projectsapi.cpp \
     src/api/apihelper.cpp \
     src/models/projectsmodel.cpp \
-    src/models/projectmodel.cpp
+    src/dbmanager.cpp \
+    src/models/favoredprojectsmodel.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -56,7 +62,9 @@ HEADERS += \
     src/api/apihelper.h \
     src/models/projectsmodel.h \
     src/models/projectobject.h \
-    src/models/projectmodel.h
+    src/dbmanager.h \
+    src/models/favoredprojectsmodel.h \
+    src/models/favoredprojectobject.h
 
 
 

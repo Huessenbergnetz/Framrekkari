@@ -33,9 +33,7 @@ ListItem {
     ListView.onRemove: RemoveAnimation { target: projectsListItem }
 
     onClicked: {
-//        framrekkari.accountName = model.name
-//        framrekkari.accountIndex = model.index
-//        pageStack.push(Qt.resolvedUrl("../pages/AccountPage.qml"))
+        pageStack.push(Qt.resolvedUrl("../pages/ProjectPage.qml"), {projectName: model.name, projectSlug: model.slug})
     }
 
 

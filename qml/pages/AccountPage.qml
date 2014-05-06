@@ -20,12 +20,15 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../delegates"
 
 Page {
     id: accountPage
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
+
+    Component.onCompleted: favoredProjectsModel.init(accountIndex)
 
 
     Connections {
@@ -36,11 +39,14 @@ Page {
             errorLabel.visible = true
         }
         onGotProject: {
-            searchBusy.visible = false
-            nameLabel.text = project["name"]
-            sourceLangAndSlug.text = qsTr("Source lang:") + " " + project["source_language_code"] + " " + qsTr("Slug:") + " " + project["slug"]
-            description.text = project["description"]
-            projectItem.visible = true
+            if (status === PageStatus.Active) {
+                searchBusy.visible = false
+                nameLabel.text = project["name"]
+                projectItem.source_lang_code = project["source_language_code"]
+                projectItem.slug = project["slug"]
+                description.text = project["description"]
+                projectItem.visible = true
+            }
         }
     }
 
@@ -97,12 +103,15 @@ Page {
                 id: projectItem
                 visible: false
 
+                property string source_lang_code
+                property string slug
+
                 contentHeight: projectItemCol.height + Theme.paddingMedium
                 width: parent.width
                 height: contentHeight
 
                 onClicked: {
-            //        pageStack.push(Qt.resolvedUrl("../pages/AccountPage.qml"))
+                    pageStack.push(Qt.resolvedUrl("ProjectPage.qml"), {projectName: nameLabel.text, projectSlug: projectItem.slug})
                 }
 
 
@@ -122,6 +131,7 @@ Page {
 
                     Text {
                         id: sourceLangAndSlug
+                        text: qsTr("Source lang:") + " " + projectItem.source_lang_code + " " + qsTr("Slug:") + " " + projectItem.slug
                         font.pixelSize: Theme.fontSizeExtraSmall
                         color: projectItem.highlighted ? Theme.highlightColor : Theme.primaryColor
                         width: parent.width
@@ -137,6 +147,17 @@ Page {
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                     }
                 }
+            }
+
+            SectionHeader { text: qsTr("Favorites"); visible: favoritesList.count > 0}
+
+            ListView {
+                id: favoritesList
+                width: parent.width
+                height: childrenRect.height
+                model: favoredProjectsModel
+                delegate: ProjectsDelegate {}
+                interactive: false
             }
         }
     }

@@ -92,7 +92,6 @@ Page {
         ViewPlaceholder {
             id: errorDisplay
             enabled: false
-            text: qsTr("Please add at least one account for a Transifex instance.")
         }
     }
 }

@@ -47,8 +47,10 @@ private slots:
 
 private:
     int accountIndex;
+    QVariantMap account;
 
     Configuration config;
+
 
 };
 

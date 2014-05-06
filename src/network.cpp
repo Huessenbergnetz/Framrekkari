@@ -33,9 +33,12 @@ Network::Network(QObject *parent) :
 
 void Network::setAccountIndex(int idx)
 {
-    accountIndex = idx;
+    if (accountIndex != idx) {
+        clearAccessCache();
+        accountIndex = idx;
+        account = config.getAccount(accountIndex);
+    }
 }
-
 
 
 /*!
@@ -50,7 +53,7 @@ void Network::setAccountIndex(int idx)
 
 void Network::slotAuthenticationRequired(QNetworkReply* rep, QAuthenticator *authenticator)
 {
-    QVariantMap account = config.getAccount(accountIndex);
+//    QVariantMap account = config.getAccount(accountIndex);
 
 #ifdef QT_DEBUG
         qDebug() << "Account: " << account;
@@ -58,26 +61,21 @@ void Network::slotAuthenticationRequired(QNetworkReply* rep, QAuthenticator *aut
         qDebug() << "Current password: " << authenticator->password();
 #endif
 
-    if (account["state"].toInt() == 0)
+    if (authenticator->user().isEmpty() && authenticator->password().isEmpty())
     {
-        if (authenticator->user().isEmpty() && authenticator->password().isEmpty())
+        authenticator->setUser(account["user"].toString());
+        authenticator->setPassword(account["password"].toString());
+    } else {
+        if ((authenticator->user() != account["user"].toString()) || (authenticator->password() !=  account["password"].toString() ))
         {
             authenticator->setUser(account["user"].toString());
             authenticator->setPassword(account["password"].toString());
         } else {
-            if ((authenticator->user() != account["user"].toString()) || (authenticator->password() !=  account["password"].toString() ))
-            {
-                authenticator->setUser(account["user"].toString());
-                authenticator->setPassword(account["password"].toString());
-            } else {
-                rep->abort();
-                #ifdef QT_DEBUG
-                qDebug() << "Abort authentication!";
-                #endif
-            }
+            rep->abort();
+#ifdef QT_DEBUG
+            qDebug() << "Abort authentication!";
+#endif
         }
-    } else {
-        rep->abort();
     }
 }
 

@@ -32,8 +32,10 @@
 
 #include "globals.h"
 #include "configuration.h"
+//#include "dbmanager.h"
 #include "models/accountsmodel.h"
 #include "models/projectsmodel.h"
+#include "models/favoredprojectsmodel.h"
 #include "api/projectsapi.h"
 
 
@@ -46,25 +48,30 @@ int main(int argc, char *argv[])
     app->setApplicationName("harbour-framrekkari");
     app->setApplicationVersion(VERSION_STRING);
 
-//        QDir().mkpath(QDir::homePath().append(DATA_DIR));
-
+//    QDir().mkpath(QDir::homePath().append(DATA_DIR));
 
     QString locale = QLocale::system().name();
     QTranslator *translator = new QTranslator;
     if ((translator->load("framrekkari"+locale, "/usr/share/harbour-framrekkari/translations")))
         app->installTranslator(translator);
 
+//    DbManager dbMan;
+//    dbMan.openDB();
+//    dbMan.createTables();
+
     QQuickView* view = SailfishApp::createView();
 
     Configuration *configuration = new Configuration;
     AccountsModel *accountsModel = new AccountsModel;
     ProjectsModel *projectsModel = new ProjectsModel;
+    FavoredProjectsModel *favoredProjectsModel = new FavoredProjectsModel;
     ProjectsAPI *projectsAPI = new ProjectsAPI;
 
     view->rootContext()->setContextProperty("versionString", VERSION_STRING);
     view->rootContext()->setContextProperty("config", configuration);
     view->rootContext()->setContextProperty("accountsModel", accountsModel);
     view->rootContext()->setContextProperty("projectsModel", projectsModel);
+    view->rootContext()->setContextProperty("favoredProjectsModel", favoredProjectsModel);
     view->rootContext()->setContextProperty("projectsAPI", projectsAPI);
 
     view->setSource(QUrl::fromLocalFile("/usr/share/harbour-framrekkari/qml/harbour-framrekkari.qml"));

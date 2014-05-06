@@ -68,7 +68,7 @@ void ProjectsAPI::getProjectsFinished()
 #ifdef QT_DEBUG
         qDebug() << "HTTP-Error:" << getProjectsReply->errorString();
 #endif
-        switch (getProjectReply->error()) {
+        switch (getProjectsReply->error()) {
         case QNetworkReply::ContentNotFoundError:
             emit gotProjectsError(tr("Not found"));
             break;
@@ -76,10 +76,12 @@ void ProjectsAPI::getProjectsFinished()
             emit gotProjectsError(tr("Operation canceled. Wrong username and/or password or SSL handshake failed."));
             break;
         default:
-            emit gotProjectsError(getProjectReply->errorString());
+            emit gotProjectsError(getProjectsReply->errorString());
             break;
         }
     }
+
+    getProjectsReply->deleteLater();
 }
 
 
@@ -88,7 +90,7 @@ void ProjectsAPI::getProject(int accountIdx, const QString &slug, bool details)
 {
     nm.setAccountIndex(accountIdx);
 
-    QUrl url = helper.buildUrl("/project/" + slug.toLower().replace(" ", "-") + "/", accountIdx);
+    QUrl url = helper.buildUrl("/project/" + slug + "/", accountIdx);
 
     if (details)
     {
@@ -137,4 +139,6 @@ void ProjectsAPI::getProjectFinished()
             break;
         }
     }
+
+    getProjectReply->deleteLater();
 }

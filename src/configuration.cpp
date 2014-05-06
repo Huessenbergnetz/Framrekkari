@@ -75,10 +75,107 @@ bool Configuration::getBool(const QString &key, const QVariant &def) const
 }
 
 
+/*!
+ * \fn QList<Configuration::Project> Configuration::loadFavoredProjects(int accountIdx)
+ * \brief Function to load favored projects
+ *
+ * Loads the favored projects fromo the configuration system into the internal structure.
+ *
+ * \param accountIdx int that specifies the account to use, if lower than zero all projects are retrieved
+ * \return QList<Configuration::Project> List of project structs
+ */
+QList<Configuration::Project> Configuration::loadFavoredProjects(int accountIdx)
+{
+    QList<Project> projects;
+    int size = beginReadArray("favoredProjectsAccount" + QString::number(accountIdx));
+    for (int i = 0; i < size; ++i)
+    {
+        setArrayIndex(i);
+        Project prj;
+        prj.name = value("name").toString();
+        prj.slug = value("slug").toString();
+        prj.description = value("description").toString();
+        prj.srcLang = value("srcLang").toString();
+        prj.accountIdx = value("accountIdx").toInt();
+        projects.append(prj);
+    }
+    endArray();
+
+    return projects;
+}
+
+
+/*!
+ * \fn Configuration::writeFavoredProjects(const QList<Project> &projects)
+ * \brief Internal function to write favored projects to config
+ *
+ * Writes the projects in the parameter accounts into the configuration system.
+ *
+ * \param projects QList<Project> list of projects to write to configuration system
+ * \param accountIdx the account the project belongs to
+ */
+void Configuration::writeFavoredProjects(const QList<Project> &projects, int accountIdx)
+{
+    beginWriteArray("favoredProjectsAccount" + QString::number(accountIdx));
+    for (int i = 0; i < projects.length(); ++i)
+    {
+        setArrayIndex(i);
+        setValue("name", projects.at(i).name);
+        setValue("slug", projects.at(i).slug);
+        setValue("description", projects.at(i).description);
+        setValue("srcLang", projects.at(i).srcLang);
+        setValue("accountIdx", projects.at(i).accountIdx);
+    }
+    endArray();
+
+    emit savedFavoredProject();
+}
+
+
+/*!
+ * \fn void Configuration::favorProject(const QString &name, const QString &slug, const QString &description, const QString &srcLang, int accountIdx)
+ * \brief Saves a favored project to the configuration system
+ *
+ * Saves a new favored project into the configuration system
+ *
+ * \param name QString project name
+ * \param slug QString project slug
+ * \param description QString project description
+ * \param srcLang QString project source language
+ * \param accountIdx int account index this project belongs to
+ */
+void Configuration::favorProject(const QString &name, const QString &slug, const QString &description, const QString &srcLang, int accountIdx)
+{
+    QList<Project> projects = loadFavoredProjects(accountIdx);
+
+    Project prj;
+    prj.name = name;
+    prj.slug = slug;
+    prj.description = description;
+    prj.srcLang = srcLang;
+    prj.accountIdx = accountIdx;
+
+    projects.append(prj);
+
+    writeFavoredProjects(projects, accountIdx);
+}
+
+
+
+void Configuration::unfavorProject(int idx, int accountIdx)
+{
+    QList<Project> projects = loadFavoredProjects(accountIdx);
+
+    projects.removeAt(idx);
+
+    writeFavoredProjects(projects, accountIdx);
+}
+
+
 
 /*!
  * \fn QList<Configuration::Account> Configuration::loadAccounts()
- * \brief Internal function to load accounts from config
+ * \brief Function to load accounts from config
  *
  * Loads the accounts from the configuration system into the internal structure.
  *
