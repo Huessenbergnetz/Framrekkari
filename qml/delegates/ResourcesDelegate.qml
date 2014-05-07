@@ -60,18 +60,43 @@ ListItem {
                 truncationMode: TruncationMode.Fade
                 elide: Text.ElideRight
                 textFormat: Text.PlainText
+                width: parent.width - untranslatedRow.width
             }
 
-            Text {
-                id: untranslated
-                width: parent.width - nameLabel.width - parent.spacing
-                text: qsTr("%n string(s) to translate", "", model.untranslated)
-                font.pixelSize: Theme.fontSizeExtraSmall
-                color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                maximumLineCount: 1
-                elide: Text.ElideRight
-                horizontalAlignment: Text.AlignRight
-                anchors.baseline: nameLabel.baseline
+//            Text {
+//                id: untranslated
+//                width: parent.width - nameLabel.width - parent.spacing
+//                text: qsTr("%n string(s) to translate", "", model.untranslated)
+//                font.pixelSize: Theme.fontSizeExtraSmall
+//                color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+//                maximumLineCount: 1
+//                elide: Text.ElideRight
+//                horizontalAlignment: Text.AlignRight
+//                anchors.baseline: nameLabel.baseline
+//            }
+
+            Row {
+                id: untranslatedRow
+                width: parent.width/3
+                anchors.verticalCenter: parent.verticalCenter
+                spacing: 5
+
+                Image {
+                    id: untranslatedIcon
+                    source: "/usr/share/harbour-framrekkari/icons/icon-s-untranslated-strings.png"
+                    width: reviewed.font.pixelSize; height: width;
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
+                Label {
+                    id: untranslated
+                    width: parent.width - untranslatedIcon.width - parent.spacing
+                    text: qsTr("%n string(s)", "", model.untranslated)
+                    maximumLineCount: 1
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    truncationMode: TruncationMode.Fade
+                }
             }
         }
 

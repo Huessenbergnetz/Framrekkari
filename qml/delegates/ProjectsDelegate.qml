@@ -27,8 +27,6 @@ ListItem {
     contentHeight: column.height + Theme.paddingMedium
     width: parent.width
 
-//    menu: accountMenu
-
     ListView.onAdd: AddAnimation { target: projectsListItem }
     ListView.onRemove: RemoveAnimation { target: projectsListItem }
 
@@ -71,28 +69,4 @@ ListItem {
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
     }
-
-//    Component {
-//        id: accountMenu
-//        ContextMenu {
-//            MenuItem {
-//                text: qsTr("Edit")
-//                onClicked: {
-//                    var dialog = pageStack.push("../dialogs/AccountDialog.qml", {name: nameLabel.text, server: serverText.text, user: userText.text, password: model.password, create: false, ignoreSSLErrors: model.ignoreSSLErrors})
-//                }
-//            }
-//            MenuItem {
-//                text: qsTr("Delete")
-//                onClicked: removeAccount(model.index, nameLabel.text)
-//            }
-//        }
-//    }
-
-//    function removeAccount(index, accName) {
-//        remorse.execute(projectsListItem, qsTr("Deleting account %1").arg(accName), function() { accountsModel.remove(index) } );
-//    }
-
-//    RemorseItem {
-//        id: remorse
-//    }
 }

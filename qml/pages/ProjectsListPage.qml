@@ -37,6 +37,7 @@ Page {
     onEndValChanged: { errorDisplay.enabled = false; projectsModel.refresh(accountIndex, startVal, endVal) }
 
     Component.onCompleted: projectsModel.refresh(accountIndex)
+    Component.onDestruction: projectsModel.clear()
 
     Connections {
         target: projectsModel

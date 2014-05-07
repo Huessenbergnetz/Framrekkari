@@ -78,7 +78,7 @@ ListItem {
             anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
 
             Row {
-                width: parent.width/4
+                width: parent.width/3
                 spacing: 5
                 height: finished.height
 
@@ -98,7 +98,7 @@ ListItem {
             }
 
             Row {
-                width: parent.width/4
+                width: parent.width/3
                 spacing: 5
                 height: reviewed.height
 
@@ -117,18 +117,27 @@ ListItem {
                 }
             }
 
-            Text {
-                id: untranslated
-                width: parent.width/2
-                text: qsTr("%n string(s) to translate", "", model.untranslated)
-                font.pixelSize: Theme.fontSizeExtraSmall
-                color: projectLangItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                maximumLineCount: 1
-                elide: Text.ElideRight
-                anchors.verticalCenter: parent.verticalCenter
-                horizontalAlignment: Text.AlignRight
-            }
+            Row {
+                width: parent.width/3
+                spacing: 5
 
+                Image {
+                    id: untranslatedIcon
+                    source: "/usr/share/harbour-framrekkari/icons/icon-s-untranslated-strings.png"
+                    width: reviewed.font.pixelSize; height: width;
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
+                Label {
+                    id: untranslated
+                    width: parent.width - untranslatedIcon.width - parent.spacing
+                    text: qsTr("%n string(s)", "", model.untranslated)
+                    maximumLineCount: 1
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: projectLangItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    truncationMode: TruncationMode.Fade
+                }
+            }
         }
 
         ProgressBar {
@@ -136,42 +145,6 @@ ListItem {
             minimumValue: 0
             maximumValue: overall
             value: model.translated
-//            label: qsTr("Finished:") + " " + Number(Number((model.translated/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%" + " - " + qsTr("Reviewed:") + " " + Number(Number((model.reviewed/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
         }
-
-
-
-//        Text {
-//            id: description
-//            text: model.description
-//            font.pixelSize: Theme.fontSizeTiny
-//            color: projectLangItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-//            width: parent.width
-//            wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-//        }
     }
-
-//    Component {
-//        id: accountMenu
-//        ContextMenu {
-//            MenuItem {
-//                text: qsTr("Edit")
-//                onClicked: {
-//                    var dialog = pageStack.push("../dialogs/AccountDialog.qml", {name: nameLabel.text, server: serverText.text, user: userText.text, password: model.password, create: false, ignoreSSLErrors: model.ignoreSSLErrors})
-//                }
-//            }
-//            MenuItem {
-//                text: qsTr("Delete")
-//                onClicked: removeAccount(model.index, nameLabel.text)
-//            }
-//        }
-//    }
-
-//    function removeAccount(index, accName) {
-//        remorse.execute(projectLangItem, qsTr("Deleting account %1").arg(accName), function() { accountsModel.remove(index) } );
-//    }
-
-//    RemorseItem {
-//        id: remorse
-//    }
 }

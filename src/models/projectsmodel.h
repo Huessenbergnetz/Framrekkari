@@ -25,6 +25,7 @@ signals:
 
 public slots:
     void refresh(int accountIdx, int start = 0, int end = 0);
+    void clear();
 
 private slots:
     void populate(QVariantList data);
@@ -38,9 +39,6 @@ private:
     static const int SourceLanguageCodedRole;
 
     ProjectsAPI pAPI;
-
-    void clear();
-
 };
 
 #endif // PROJECTSMODEL_H
