@@ -35,7 +35,7 @@ public:
 
     enum ApiCall {GetProjects, GetProject};
 
-    Q_INVOKABLE void setAccountIndex(int idx);
+    void setAccountIndex(int idx);
 
 signals:
 
@@ -47,6 +47,7 @@ private slots:
 
 private:
     int accountIndex;
+
     QVariantMap account;
 
     Configuration config;

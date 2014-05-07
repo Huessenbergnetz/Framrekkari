@@ -26,7 +26,6 @@
 #include <QNetworkReply>
 #include <QUrl>
 #include <QUrlQuery>
-#include <QJsonParseError>
 #include "apihelper.h"
 #include "../network.h"
 

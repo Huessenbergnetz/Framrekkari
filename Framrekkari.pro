@@ -23,13 +23,17 @@ SOURCES += \
     src/main.cpp \
     src/configuration.cpp \
     src/models/accountsmodel.cpp \
-    src/projectapi.cpp \
     src/network.cpp \
     src/api/projectsapi.cpp \
     src/api/apihelper.cpp \
     src/models/projectsmodel.cpp \
     src/dbmanager.cpp \
-    src/models/favoredprojectsmodel.cpp
+    src/models/favoredprojectsmodel.cpp \
+    src/api/statisticsapi.cpp \
+    src/models/projectlangstatsmodel.cpp \
+    src/models/projectresourcesmodel.cpp \
+    src/api/translationstringsapi.cpp \
+    src/models/projecttranslationsmodel.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -49,14 +53,18 @@ OTHER_FILES += \
     qml/pages/ProjectsListPage.qml \
     qml/delegates/ProjectsDelegate.qml \
     qml/common/FancyScroller.qml \
-    qml/pages/ProjectPage.qml
+    qml/pages/ProjectPage.qml \
+    qml/delegates/ProjectLangDelegate.qml \
+    qml/pages/ResourcesPage.qml \
+    qml/delegates/ResourcesDelegate.qml \
+    qml/pages/TranslationStringsPage.qml \
+    qml/delegates/TranslationsDelegate.qml
 
 HEADERS += \
     src/globals.h \
     src/configuration.h \
     src/models/accountsmodel.h \
     src/models/accountobject.h \
-    src/projectapi.h \
     src/network.h \
     src/api/projectsapi.h \
     src/api/apihelper.h \
@@ -64,7 +72,17 @@ HEADERS += \
     src/models/projectobject.h \
     src/dbmanager.h \
     src/models/favoredprojectsmodel.h \
-    src/models/favoredprojectobject.h
+    src/models/favoredprojectobject.h \
+    src/api/statisticsapi.h \
+    src/models/langstatobject.h \
+    src/models/projectlangstatsmodel.h \
+    src/models/projectresourceobject.h \
+    src/models/projectresourcesmodel.h \
+    src/api/translationstringsapi.h \
+    src/models/projecttranslationsmodel.h \
+    src/models/translationsobject.h
+
+RESOURCES +=
 
 
 

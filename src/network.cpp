@@ -33,7 +33,11 @@ Network::Network(QObject *parent) :
 
 void Network::setAccountIndex(int idx)
 {
+
+    qDebug() << "INDEX: " << idx;
+    qDebug() << "OLDINDEX: " << accountIndex;
     if (accountIndex != idx) {
+        qDebug() << "Setting new index";
         clearAccessCache();
         accountIndex = idx;
         account = config.getAccount(accountIndex);
@@ -53,7 +57,7 @@ void Network::setAccountIndex(int idx)
 
 void Network::slotAuthenticationRequired(QNetworkReply* rep, QAuthenticator *authenticator)
 {
-//    QVariantMap account = config.getAccount(accountIndex);
+    QVariantMap account = config.getAccount(accountIndex);
 
 #ifdef QT_DEBUG
         qDebug() << "Account: " << account;

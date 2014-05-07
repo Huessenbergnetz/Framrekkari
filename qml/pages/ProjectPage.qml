@@ -20,6 +20,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../delegates"
 
 Page {
     id: projectPage
@@ -34,6 +35,7 @@ Page {
     property string projectTransInstractions
     property string projectDescription
     property string projectSrcLang
+    property var projectResources: []
 
     property bool favored: favoredProjectsModel.isFavored(projectSlug, accountIndex)
 
@@ -65,7 +67,16 @@ Page {
             for (var i = 0; i < maintainersLength; i++)
                 newMaintainersArray.push(maintainersArray[i]["username"]);
 
+            var resourcesArray = project["resources"]
+            var resourcesArrayLength = resourcesArray.length
+            for (var i = 0; i < resourcesArrayLength; i++)
+                projectResources.push(resourcesArray[i]["slug"]);
+
+
+
             maintainers.text = newMaintainersArray.join(", ")
+
+            projectLangstatsModel.refresh(projectSlug, projectResources, accountIndex)
 
             inOperation = false
         }
@@ -83,7 +94,7 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
-        contentHeight: column.height
+        contentHeight: column.height + Theme.paddingLarge
 
         PullDownMenu {
             MenuItem {
@@ -207,6 +218,30 @@ Page {
                     wrapMode: Text.WordWrap
                     width: parent.width - maintainerIcon.width - parent.spacing
                 }
+            }
+
+            BusyIndicator {
+                anchors.horizontalCenter: parent.horizontalCenter
+                running: visible
+                visible: languageList.count === 0
+                size: BusyIndicatorSize.Large
+            }
+
+            SectionHeader { text: qsTr("Languages"); visible: languageList.count !== 0 }
+
+            ListView {
+                id: languageList
+                width: parent.width
+                height: childrenRect.height
+                model: projectLangstatsModel
+                delegate: ProjectLangDelegate {
+                    onClicked: {
+                        pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: model.name})
+                    }
+                    srcLang: projectSrcLang
+                }
+                interactive: false
+                spacing: 10
             }
         }
     }

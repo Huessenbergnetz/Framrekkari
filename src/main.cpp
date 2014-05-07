@@ -36,8 +36,10 @@
 #include "models/accountsmodel.h"
 #include "models/projectsmodel.h"
 #include "models/favoredprojectsmodel.h"
+#include "models/projectlangstatsmodel.h"
+#include "models/projectresourcesmodel.h"
+#include "models/projecttranslationsmodel.h"
 #include "api/projectsapi.h"
-
 
 int main(int argc, char *argv[])
 {
@@ -66,6 +68,9 @@ int main(int argc, char *argv[])
     ProjectsModel *projectsModel = new ProjectsModel;
     FavoredProjectsModel *favoredProjectsModel = new FavoredProjectsModel;
     ProjectsAPI *projectsAPI = new ProjectsAPI;
+    ProjectLangstatsModel *projectLangstatsModel = new ProjectLangstatsModel;
+    ProjectResourcesModel *projectResourceModel = new ProjectResourcesModel;
+    ProjectTranslationsModel *projectTranslationsModel = new ProjectTranslationsModel;
 
     view->rootContext()->setContextProperty("versionString", VERSION_STRING);
     view->rootContext()->setContextProperty("config", configuration);
@@ -73,6 +78,9 @@ int main(int argc, char *argv[])
     view->rootContext()->setContextProperty("projectsModel", projectsModel);
     view->rootContext()->setContextProperty("favoredProjectsModel", favoredProjectsModel);
     view->rootContext()->setContextProperty("projectsAPI", projectsAPI);
+    view->rootContext()->setContextProperty("projectLangstatsModel", projectLangstatsModel);
+    view->rootContext()->setContextProperty("projectResourceModel", projectResourceModel);
+    view->rootContext()->setContextProperty("projectTranslationsModel", projectTranslationsModel);
 
     view->setSource(QUrl::fromLocalFile("/usr/share/harbour-framrekkari/qml/harbour-framrekkari.qml"));
     view->show();
