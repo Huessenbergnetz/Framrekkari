@@ -18,6 +18,7 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
+#include <QDebug>
 #include "accountsmodel.h"
 #include "accountobject.h"
 
@@ -127,9 +128,43 @@ void AccountsModel::edit(const QString &name, const QString &server, const QStri
     acc->password = password;
     acc->ignoreSSLErrors = ignoreSSLErrors;
 
-    m_accounts.replace(idx, acc);
+    m_accounts[idx] = acc;
 
     emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+}
+
+
+bool AccountsModel::setData(const QModelIndex &index, const QVariant &value, int role)
+{
+    if (!index.isValid())
+        return false;
+
+
+    if (index.row() > (m_accounts.size()-1))
+        return false;
+
+    switch(role) {
+    case NameRole:
+        m_accounts.at(index.row())->name = value.toString();
+        return true;
+    case ServerRole:
+        m_accounts.at(index.row())->server = value.toString();
+        return true;
+    case UserRole:
+        m_accounts.at(index.row())->user = value.toString();
+        return true;
+    case PasswordRole:
+        m_accounts.at(index.row())->password = value.toString();
+        return true;
+    case IgnoreSSLErrorsRole:
+        m_accounts.at(index.row())->ignoreSSLErrors = value.toBool();
+        return true;
+    default:
+        return false;
+    }
+
+    emit dataChanged(index, index);
+
 }
 
 
@@ -139,4 +174,15 @@ QModelIndex AccountsModel::index(int row, int column, const QModelIndex &parent)
              return QModelIndex();
 
     return createIndex(row, column);
+}
+
+
+Qt::ItemFlags AccountsModel::flags(const QModelIndex &index) const
+{
+    Qt::ItemFlags flags = QAbstractItemModel::flags(index);
+    flags |= (Qt::ItemIsEditable
+            |Qt::ItemIsSelectable
+            |Qt::ItemIsEnabled);
+   return flags;
+
 }

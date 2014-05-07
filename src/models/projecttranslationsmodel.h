@@ -23,6 +23,8 @@ signals:
 
 public slots:
     void refresh(const QString &project, const QString &resource, const QString &lang, int accountIdx);
+    void saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx);
+    void clear();
 
 private slots:
     void populate(const QVariantList &data);
@@ -38,8 +40,6 @@ private:
     static const int TranslationRole;
     static const int ReviewedRole;
     static const int PluralizedRole;
-
-    void clear();
 
     TranslationStringsAPI tAPI;
 

@@ -124,6 +124,11 @@ Page {
                     favored = !favored
                 }
             }
+            MenuItem {
+                text: qsTr("Refresh")
+                enabled: !inOperation
+                onClicked: projectsAPI.getProject(accountIndex, projectSlug, true)
+            }
         }
 
         ViewPlaceholder {
@@ -236,7 +241,7 @@ Page {
                 model: projectLangstatsModel
                 delegate: ProjectLangDelegate {
                     onClicked: {
-                        pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: model.name})
+                        pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: model.name, projectSrcLang: projectSrcLang})
                     }
                     srcLang: projectSrcLang
                 }

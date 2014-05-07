@@ -50,14 +50,25 @@ ListItem {
             textFormat: Text.PlainText
         }
 
-        Text {
-            id: sourceLangAndSlug
-            text: qsTr("Source lang:") + " " + model.sourceLanguageCode + " " + qsTr("Slug:") + " " + model.slug
-            font.pixelSize: Theme.fontSizeExtraSmall
-            color: projectsListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
+        Row {
             width: parent.width
-            maximumLineCount: 1
-            elide: Text.ElideRight
+            spacing : 5
+
+            Text {
+                id: sourceLang
+                text: qsTr("Source lang: %1").arg(langHelper.getLanguageName(model.sourceLanguageCode))
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: projectsListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
+                width: Math.min(parent.width - parent.spacing - projectSlug.width, implicitWidth)
+                elide: Text.ElideRight
+            }
+
+            Text {
+                id: projectSlug
+                text: qsTr("Slug: %1").arg(model.slug)
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: projectsListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
+            }
         }
 
         Text {

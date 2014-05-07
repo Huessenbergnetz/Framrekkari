@@ -32,6 +32,7 @@ Page {
 
     property string projectName
     property string projectSlug
+    property string projectSrcLang
     property string lang
     property string langName
     property var resources: []
@@ -50,12 +51,21 @@ Page {
         id: resourcesListView
         anchors.fill: parent
 
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Refresh")
+                onClicked: projectResourceModel.refresh(projectSlug, lang, resources, accountIndex)
+            }
+        }
+
+        VerticalScrollDecorator {}
+
         header: PageHeader { title: projectName + ": " + langName }
 
         model: projectResourceModel
         delegate: ResourcesDelegate {
             onClicked: {
-                pageStack.push(Qt.resolvedUrl("TranslationStringsPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: lang, resource: model.slug, langName: langName})
+                pageStack.push(Qt.resolvedUrl("TranslationStringsPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: lang, resource: model.slug, langName: langName, projectSrcLang: projectSrcLang})
             }
         }
     }

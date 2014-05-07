@@ -23,6 +23,7 @@ signals:
 
 public slots:
     void refresh(const QString &projectSlug, const QString &lang, const QVariantList &resources, int accountIdx);
+    void clear();
 
 private slots:
     void populate(const QVariantList &data);
@@ -39,7 +40,7 @@ private:
 
     StatisticsAPI sAPI;
 
-    void clear();
+
 
 };
 

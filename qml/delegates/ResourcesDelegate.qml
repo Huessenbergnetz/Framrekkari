@@ -63,18 +63,6 @@ ListItem {
                 width: parent.width - untranslatedRow.width
             }
 
-//            Text {
-//                id: untranslated
-//                width: parent.width - nameLabel.width - parent.spacing
-//                text: qsTr("%n string(s) to translate", "", model.untranslated)
-//                font.pixelSize: Theme.fontSizeExtraSmall
-//                color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-//                maximumLineCount: 1
-//                elide: Text.ElideRight
-//                horizontalAlignment: Text.AlignRight
-//                anchors.baseline: nameLabel.baseline
-//            }
-
             Row {
                 id: untranslatedRow
                 width: parent.width/3

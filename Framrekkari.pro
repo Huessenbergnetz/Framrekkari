@@ -33,7 +33,9 @@ SOURCES += \
     src/models/projectlangstatsmodel.cpp \
     src/models/projectresourcesmodel.cpp \
     src/api/translationstringsapi.cpp \
-    src/models/projecttranslationsmodel.cpp
+    src/models/projecttranslationsmodel.cpp \
+    src/md5generator.cpp \
+    src/languagenamehelper.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -58,7 +60,11 @@ OTHER_FILES += \
     qml/pages/ResourcesPage.qml \
     qml/delegates/ResourcesDelegate.qml \
     qml/pages/TranslationStringsPage.qml \
-    qml/delegates/TranslationsDelegate.qml
+    qml/delegates/TranslationsDelegate.qml \
+    qml/pages/StringPage.qml \
+    qml/delegates/PluralDelegate.qml \
+    qml/js/helper.js \
+    qml/common/OpenSlugField.qml
 
 HEADERS += \
     src/globals.h \
@@ -80,7 +86,9 @@ HEADERS += \
     src/models/projectresourcesmodel.h \
     src/api/translationstringsapi.h \
     src/models/projecttranslationsmodel.h \
-    src/models/translationsobject.h
+    src/models/translationsobject.h \
+    src/md5generator.h \
+    src/languagenamehelper.h
 
 RESOURCES +=
 

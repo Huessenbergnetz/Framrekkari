@@ -40,6 +40,8 @@
 #include "models/projectresourcesmodel.h"
 #include "models/projecttranslationsmodel.h"
 #include "api/projectsapi.h"
+#include "md5generator.h"
+#include "languagenamehelper.h"
 
 int main(int argc, char *argv[])
 {
@@ -71,6 +73,8 @@ int main(int argc, char *argv[])
     ProjectLangstatsModel *projectLangstatsModel = new ProjectLangstatsModel;
     ProjectResourcesModel *projectResourceModel = new ProjectResourcesModel;
     ProjectTranslationsModel *projectTranslationsModel = new ProjectTranslationsModel;
+    MD5generator *md5Generator = new MD5generator;
+    LanguageNameHelper *langHelper = new LanguageNameHelper;
 
     view->rootContext()->setContextProperty("versionString", VERSION_STRING);
     view->rootContext()->setContextProperty("config", configuration);
@@ -81,6 +85,8 @@ int main(int argc, char *argv[])
     view->rootContext()->setContextProperty("projectLangstatsModel", projectLangstatsModel);
     view->rootContext()->setContextProperty("projectResourceModel", projectResourceModel);
     view->rootContext()->setContextProperty("projectTranslationsModel", projectTranslationsModel);
+    view->rootContext()->setContextProperty("md5Generator", md5Generator);
+    view->rootContext()->setContextProperty("langHelper", langHelper);
 
     view->setSource(QUrl::fromLocalFile("/usr/share/harbour-framrekkari/qml/harbour-framrekkari.qml"));
     view->show();

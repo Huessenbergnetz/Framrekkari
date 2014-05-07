@@ -21,6 +21,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../delegates"
+import "../common"
 
 Page {
     id: accountPage
@@ -74,12 +75,12 @@ Page {
             spacing: Theme.paddingLarge
             PageHeader { title: accountName }
 
-            SearchField {
+            OpenSlugField {
                 id: searchField
                 width: parent.width
-                placeholderText: qsTr("Search project slug")
+                placeholderText: qsTr("Project slug")
                 EnterKey.onClicked: { projectItem.visible = false; errorLabel.visible = false; searchBusy.visible = true; searchField.focus = false; projectsAPI.getProject(accountIndex, text, false) }
-                EnterKey.iconSource: "image://theme/icon-m-search"
+                EnterKey.iconSource: "image://theme/icon-m-home"
                 onTextChanged: if (text === "") errorLabel.visible = false
             }
 

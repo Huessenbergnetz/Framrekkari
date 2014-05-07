@@ -29,19 +29,14 @@ ListItem {
 
     menu: accountMenu
 
-//    property string name: model.name
-//    property string server: model.server
-//    property string user: model.user
-
     ListView.onAdd: AddAnimation { target: accountListItem }
-    ListView.onRemove: RemoveAnimation { target: accountListItem }
+    ListView.onRemove: animateRemoval(accountListItem)
 
     onClicked: {
         framrekkari.accountName = model.name
         framrekkari.accountIndex = model.index
         pageStack.push(Qt.resolvedUrl("../pages/AccountPage.qml"))
     }
-
 
     Column {
         id: column
@@ -115,18 +110,18 @@ ListItem {
             MenuItem {
                 text: qsTr("Edit")
                 onClicked: {
-                    var dialog = pageStack.push("../dialogs/AccountDialog.qml", {name: nameLabel.text, server: serverText.text, user: userText.text, password: model.password, create: false, ignoreSSLErrors: model.ignoreSSLErrors})
+                    var dialog = pageStack.push("../dialogs/AccountDialog.qml", {name: nameLabel.text, server: serverText.text, user: userText.text, password: model.password, create: false, ignoreSSLErrors: model.ignoreSSLErrors, index: model.index})
                 }
             }
             MenuItem {
-                text: qsTr("Delete")
+                text: qsTr("Remove")
                 onClicked: removeAccount(model.index, nameLabel.text)
             }
         }
     }
 
     function removeAccount(index, accName) {
-        remorse.execute(accountListItem, qsTr("Deleting account %1").arg(accName), function() { accountsModel.remove(index) } );
+        remorse.execute(accountListItem, qsTr("Removing account %1").arg(accName), function() { ListView.view.model.remove(index) } );
     }
 
     RemorseItem {

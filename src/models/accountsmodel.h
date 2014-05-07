@@ -38,6 +38,8 @@ public:
     int columnCount(const QModelIndex& = QModelIndex()) const;
     QHash<int, QByteArray> roleNames() const;
     QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const;
+    Qt::ItemFlags flags(const QModelIndex &index) const;
+    bool setData(const QModelIndex &index, const QVariant &value, int role);
 
 signals:
 

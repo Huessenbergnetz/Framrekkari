@@ -143,3 +143,9 @@ void ProjectTranslationsModel::errorHandler(const QString &errorString)
 {
     emit gotError(errorString);
 }
+
+
+void ProjectTranslationsModel::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx)
+{
+    tAPI.saveString(project, resource, lang, translation, hash, modelIdx, accountIdx);
+}

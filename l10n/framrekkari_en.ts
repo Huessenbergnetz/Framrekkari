@@ -108,18 +108,18 @@
 <context>
     <name>AccountsDelegate</name>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="116"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="120"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="122"/>
-        <source>Delete</source>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="126"/>
+        <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="129"/>
-        <source>Deleting account %1</source>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="133"/>
+        <source>Removing account %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -163,6 +163,19 @@
     </message>
 </context>
 <context>
+    <name>PluralDelegate</name>
+    <message>
+        <location filename="../qml/delegates/PluralDelegate.qml" line="40"/>
+        <source>Singular</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/delegates/PluralDelegate.qml" line="40"/>
+        <source>Plural</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ProjectLangDelegate</name>
     <message>
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="69"/>
@@ -170,8 +183,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/delegates/ProjectLangDelegate.qml" line="123"/>
-        <source>%n string(s) to translate</source>
+        <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
+        <source>%n string(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -211,7 +224,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="230"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="128"/>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ProjectPage.qml" line="235"/>
         <source>Languages</source>
         <translation type="unfinished"></translation>
     </message>
@@ -240,12 +258,12 @@
 <context>
     <name>ProjectsDelegate</name>
     <message>
-        <location filename="../qml/delegates/ProjectsDelegate.qml" line="57"/>
+        <location filename="../qml/delegates/ProjectsDelegate.qml" line="55"/>
         <source>Source lang:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/ProjectsDelegate.qml" line="57"/>
+        <location filename="../qml/delegates/ProjectsDelegate.qml" line="55"/>
         <source>Slug:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -253,22 +271,22 @@
 <context>
     <name>ProjectsListPage</name>
     <message>
-        <location filename="../qml/pages/ProjectsListPage.qml" line="45"/>
+        <location filename="../qml/pages/ProjectsListPage.qml" line="46"/>
         <source>Ooops, the following error occured:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectsListPage.qml" line="61"/>
+        <location filename="../qml/pages/ProjectsListPage.qml" line="62"/>
         <source>Projects:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectsListPage.qml" line="69"/>
+        <location filename="../qml/pages/ProjectsListPage.qml" line="70"/>
         <source>Previous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectsListPage.qml" line="83"/>
+        <location filename="../qml/pages/ProjectsListPage.qml" line="84"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
@@ -276,16 +294,24 @@
 <context>
     <name>ResourcesDelegate</name>
     <message numerus="yes">
-        <location filename="../qml/delegates/ResourcesDelegate.qml" line="68"/>
-        <source>%n string(s) to translate</source>
+        <location filename="../qml/delegates/ResourcesDelegate.qml" line="82"/>
+        <source>%n string(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../qml/delegates/ResourcesDelegate.qml" line="139"/>
+        <location filename="../qml/delegates/ResourcesDelegate.qml" line="152"/>
         <source>dd.MM.yy hh:mmAP</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ResourcesPage</name>
+    <message>
+        <location filename="../qml/pages/ResourcesPage.qml" line="56"/>
+        <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -327,6 +353,14 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="51"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TranslationStringsPage</name>
+    <message>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="55"/>
+        <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

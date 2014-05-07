@@ -23,7 +23,6 @@ import Sailfish.Silica 1.0
 
 import "../delegates"
 
-
 Page {
     id: translationStringsPage
 
@@ -32,11 +31,13 @@ Page {
 
     property string projectName
     property string projectSlug
+    property string projectSrcLang
     property string lang
     property string langName
     property string resource
 
     Component.onCompleted: projectTranslationsModel.refresh(projectSlug, resource, lang, accountIndex)
+    Component.onDestruction: projectTranslationsModel.clear()
 
     BusyIndicator {
         id: busyIndicator
@@ -50,12 +51,23 @@ Page {
         id: translationStringsList
         anchors.fill: parent
 
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Refresh")
+                onClicked: projectTranslationsModel.refresh(projectSlug, resource, lang, accountIndex)
+            }
+        }
+
         VerticalScrollDecorator {}
 
-        header: PageHeader { title: projectName + ": " + langName + ": " + resource }
+        header: PageHeader { title: langName + ": " + resource }
 
         model: projectTranslationsModel
-        delegate: TranslationsDelegate {}
+        delegate: TranslationsDelegate {
+            onClicked: {
+                pageStack.push(Qt.resolvedUrl("StringPage.qml"), {projectSlug: projectSlug, resourceSlug: resource, langCode: lang, projectSrcLang: projectSrcLang, key: model.key, context: model.context, comment: model.comment, source: model.source, translation: model.translation, reviewed: model.reviewed, pluralized: model.pluralized, modelIdx: model.index, modelCount: translationStringsList.count})
+            }
+        }
     }
 }
 

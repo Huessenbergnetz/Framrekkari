@@ -58,3 +58,75 @@ void TranslationStringsAPI::getStringsFinished(QNetworkReply *rep)
 
     rep->deleteLater();
 }
+
+
+void TranslationStringsAPI::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx)
+{
+    nm.setAccountIndex(accountIdx);
+
+    transToSave.clear();
+    transToSave["modelIdx"] = QVariant::fromValue(modelIdx);
+    transToSave["translation"] = translation;
+
+    QVariantMap data;
+    if (translation.count() > 1) {
+        data["translation"] = translation;
+    } else {
+        data["translation"] = translation["1"].toString();
+    }
+
+    QJsonDocument jsonDoc = QJsonDocument::fromVariant(data);
+
+    QUrl url = helper.buildUrl("/project/" + project + "/resource/" + resource + "/translation/" + lang + "/string/" + hash + "/", accountIdx);
+
+#ifdef QT_DEBUG
+    qDebug() << transToSave;
+    qDebug() << url.toString();
+    qDebug() << jsonDoc.object().toVariantMap();
+#endif
+
+    QByteArray parameters = jsonDoc.toBinaryData();
+    QNetworkRequest request(url);
+
+    request.setRawHeader("Content-Type", "application/json; charset=utf-8");
+    request.setRawHeader("Content-Length", QByteArray::number(parameters.size()));
+
+    saveStringReply = nm.put(request, QString(parameters).toUtf8());
+
+    connect(saveStringReply, SIGNAL(finished()), this, SLOT(saveStringFinished()));
+
+}
+
+
+
+void TranslationStringsAPI::saveStringFinished()
+{
+    if (saveStringReply->error() == QNetworkReply::NoError)
+    {
+
+#ifdef QT_DEBUG
+        qDebug() << "SAVED";
+#endif
+        savedString(transToSave);
+
+
+
+    } else {
+#ifdef QT_DEBUG
+        qDebug() << "HTTP-Error:" << saveStringReply->errorString();
+#endif
+        switch (saveStringReply->error()) {
+        case QNetworkReply::ContentNotFoundError:
+            emit savedStringError(tr("Not found"));
+            break;
+        case QNetworkReply::OperationCanceledError:
+            emit savedStringError(tr("Operation canceled. Wrong username and/or password or SSL handshake failed."));
+            break;
+        default:
+            emit savedStringError(saveStringReply->errorString());
+            break;
+        }
+    }
+
+    saveStringReply->deleteLater();
+}
