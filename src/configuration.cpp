@@ -194,6 +194,7 @@ QList<Configuration::Account> Configuration::loadAccounts()
         acc.user = value("user").toString();
         acc.password = value("password").toString();
         acc.ignoreSSLErrors = value("ignoreSSLErrors").toBool();
+        acc.type = value("type", 0).toInt();
         accounts.append(acc);
     }
     endArray();
@@ -222,6 +223,7 @@ void Configuration::writeAccounts(const QList<Account> &accounts)
         setValue("user", accounts.at(i).user);
         setValue("password", accounts.at(i).password);
         setValue("ignoreSSLErrors", accounts.at(i).ignoreSSLErrors);
+        setValue("type", accounts.at(i).type);
     }
     endArray();
 
@@ -240,8 +242,10 @@ void Configuration::writeAccounts(const QList<Account> &accounts)
  * \param server QString name of the server
  * \param user QString username
  * \param password QString password
+ * \param ignoreSSLErrors bool if SSL should be ignored
+ * \param type int that determines the account type. 0: Transifex
  */
-void Configuration::saveAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors)
+void Configuration::saveAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type)
 {
     QList<Account> accounts = loadAccounts();
 
@@ -251,6 +255,7 @@ void Configuration::saveAccount(const QString &name, const QString &server, cons
     acc.user = user;
     acc.password = password;
     acc.ignoreSSLErrors = ignoreSSLErrors;
+    acc.type = type;
 
     accounts.append(acc);
 
@@ -258,7 +263,22 @@ void Configuration::saveAccount(const QString &name, const QString &server, cons
 }
 
 
-void Configuration::editAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int idx)
+
+/*!
+ * \fn void Configuration::editAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type, int idx)
+ * \brief Edit an account in the configuration system
+ *
+ * Edits an existing account in the configuration system
+ *
+ * \param name QString display name
+ * \param server QString name of the server
+ * \param user QString username
+ * \param password QString password
+ * \param ignoreSSLErrors bool if SSL should be ignored
+ * \param type int that determines the account type. 0: Transifex
+ * \param idx int index number of the account to edit
+ */
+void Configuration::editAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type, int idx)
 {
     QList<Account> accounts = loadAccounts();
 
@@ -268,6 +288,7 @@ void Configuration::editAccount(const QString &name, const QString &server, cons
     acc.user = user;
     acc.password = password;
     acc.ignoreSSLErrors = ignoreSSLErrors;
+    acc.type = type;
 
     accounts.replace(idx, acc);
 
@@ -312,6 +333,7 @@ QVariantMap Configuration::getAccount(int idx)
     account["user"] = accounts.at(idx).user;
     account["password"] = accounts.at(idx).password;
     account["ignoreSSLErrors"] = accounts.at(idx).ignoreSSLErrors;
+    account["type"] = accounts.at(idx).type;
 
     return account;
 }

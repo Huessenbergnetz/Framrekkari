@@ -27,6 +27,7 @@ const int AccountsModel::ServerRole = Qt::UserRole + 2;
 const int AccountsModel::UserRole = Qt::UserRole + 3;
 const int AccountsModel::PasswordRole = Qt::UserRole + 4;
 const int AccountsModel::IgnoreSSLErrorsRole = Qt::UserRole + 5;
+const int AccountsModel::TypeRole = Qt::UserRole + 6;
 
 AccountsModel::AccountsModel(QObject *parent) :
     QAbstractTableModel(parent)
@@ -41,6 +42,7 @@ QHash<int, QByteArray> AccountsModel::roleNames() const {
     roles.insert(UserRole, QByteArray("user"));
     roles.insert(PasswordRole, QByteArray("password"));
     roles.insert(IgnoreSSLErrorsRole, QByteArray("ignoreSSLErrors"));
+    roles.insert(TypeRole, QByteArray("type"));
     return roles;
 }
 
@@ -51,7 +53,7 @@ int AccountsModel::rowCount(const QModelIndex &) const
 
 int AccountsModel::columnCount(const QModelIndex&) const
 {
-    return 5;
+    return 6;
 }
 
 
@@ -76,6 +78,8 @@ QVariant AccountsModel::data(const QModelIndex &index, int role) const
         return QVariant::fromValue(aobj->password);
     case IgnoreSSLErrorsRole:
         return QVariant::fromValue(aobj->ignoreSSLErrors);
+    case TypeRole:
+        return QVariant::fromValue(aobj->type);
     default:
         return QVariant();
     }
@@ -88,18 +92,18 @@ void AccountsModel::init()
 
     for (int i = 0; i < accounts.length(); ++i)
     {
-        AccountObject *acc = new AccountObject(accounts.at(i).name, accounts.at(i).server, accounts.at(i).user, accounts.at(i).password, accounts.at(i).ignoreSSLErrors);
+        AccountObject *acc = new AccountObject(accounts.at(i).name, accounts.at(i).server, accounts.at(i).user, accounts.at(i).password, accounts.at(i).ignoreSSLErrors, accounts.at(i).type);
         m_accounts.append(acc);
     }
 }
 
 
-void AccountsModel::append(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors)
+void AccountsModel::append(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type)
 {
     beginInsertRows(QModelIndex(), rowCount(), rowCount());
 
-    config.saveAccount(name, server, user, password, ignoreSSLErrors);
-    AccountObject *acc = new AccountObject(name,server, user, password, ignoreSSLErrors);
+    config.saveAccount(name, server, user, password, ignoreSSLErrors, type);
+    AccountObject *acc = new AccountObject(name,server, user, password, ignoreSSLErrors, type);
     m_accounts.append(acc);
 
     endInsertRows();
@@ -117,9 +121,9 @@ void AccountsModel::remove(int idx)
 }
 
 
-void AccountsModel::edit(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int idx)
+void AccountsModel::edit(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type, int idx)
 {
-    config.editAccount(name, server, user, password, ignoreSSLErrors, idx);
+    config.editAccount(name, server, user, password, ignoreSSLErrors, type, idx);
     AccountObject *acc = m_accounts.at(idx);
 
     acc->name = name;
@@ -127,6 +131,7 @@ void AccountsModel::edit(const QString &name, const QString &server, const QStri
     acc->user = user;
     acc->password = password;
     acc->ignoreSSLErrors = ignoreSSLErrors;
+    acc->type = type;
 
     m_accounts[idx] = acc;
 

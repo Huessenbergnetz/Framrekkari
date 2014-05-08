@@ -25,17 +25,19 @@
 
 class AccountObject {
 public:
-  AccountObject(const QString &nameString, const QString &serverString, const QString &userString, const QString &passwordString, bool ignoreSSLErrorsBoolean):
+  AccountObject(const QString &nameString, const QString &serverString, const QString &userString, const QString &passwordString, bool ignoreSSLErrorsBoolean, int typeInt):
     name(nameString),
     server(serverString),
     user(userString),
     password(passwordString),
-    ignoreSSLErrors(ignoreSSLErrorsBoolean){}
+    ignoreSSLErrors(ignoreSSLErrorsBoolean),
+    type(typeInt){}
   QString name;
   QString server;
   QString user;
   QString password;
   bool ignoreSSLErrors;
+  int type;
 };
 
 #endif // ACCOUNTOBJECT_H

@@ -14,20 +14,20 @@ void TranslationStringsAPI::getStrings(const QString &project, const QString &re
 
     QUrl url = helper.buildUrl("/project/" + project + "/resource/" + resource + "/translation/" + lang + "/strings/", accountIdx);
 
-    connect(&nm, SIGNAL(finished(QNetworkReply*)), this, SLOT(getStringsFinished(QNetworkReply*)));
+    getStringReply = nm.get(QNetworkRequest(url));
 
-    nm.get(QNetworkRequest(url));
+    connect(getStringReply, SIGNAL(finished()), this, SLOT(getStringsFinished()));
 }
 
 
 
 
-void TranslationStringsAPI::getStringsFinished(QNetworkReply *rep)
+void TranslationStringsAPI::getStringsFinished()
 {
-    if (rep->error() == QNetworkReply::NoError)
+    if (getStringReply->error() == QNetworkReply::NoError)
     {
 
-        QVariantList results = helper.jsonToVariantList(rep->readAll());
+        QVariantList results = helper.jsonToVariantList(getStringReply->readAll());
 
 #ifdef QT_DEBUG
         qDebug() << results;
@@ -41,9 +41,9 @@ void TranslationStringsAPI::getStringsFinished(QNetworkReply *rep)
 
     } else {
 #ifdef QT_DEBUG
-        qDebug() << "HTTP-Error:" << rep->errorString();
+        qDebug() << "HTTP-Error:" << getStringReply->errorString();
 #endif
-        switch (rep->error()) {
+        switch (getStringReply->error()) {
         case QNetworkReply::ContentNotFoundError:
             emit gotStringsError(tr("Not found"));
             break;
@@ -51,12 +51,12 @@ void TranslationStringsAPI::getStringsFinished(QNetworkReply *rep)
             emit gotStringsError(tr("Operation canceled. Wrong username and/or password or SSL handshake failed."));
             break;
         default:
-            emit gotStringsError(rep->errorString());
+            emit gotStringsError(getStringReply->errorString());
             break;
         }
     }
 
-    rep->deleteLater();
+    getStringReply->deleteLater();
 }
 
 

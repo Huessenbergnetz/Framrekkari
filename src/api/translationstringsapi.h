@@ -25,7 +25,7 @@ signals:
 public slots:
 
 private slots:
-    void getStringsFinished(QNetworkReply *rep);
+    void getStringsFinished();
     void saveStringFinished();
 
 private:
@@ -33,7 +33,7 @@ private:
     APIHelper helper;
 
     QVariantMap transToSave;
-    QNetworkReply *saveStringReply;
+    QNetworkReply *saveStringReply, *getStringReply;
 
 
 };

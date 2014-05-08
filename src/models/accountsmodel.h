@@ -44,9 +44,9 @@ public:
 signals:
 
 public slots:
-    void append(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors);
+    void append(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type);
     void remove(int idx);
-    void edit(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int idx);
+    void edit(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type, int idx);
 
 private:
     QList<AccountObject*> m_accounts;
@@ -55,6 +55,7 @@ private:
     static const int UserRole;
     static const int PasswordRole;
     static const int IgnoreSSLErrorsRole;
+    static const int TypeRole;
 
     void init();
 

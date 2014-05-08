@@ -110,7 +110,7 @@ ListItem {
             MenuItem {
                 text: qsTr("Edit")
                 onClicked: {
-                    var dialog = pageStack.push("../dialogs/AccountDialog.qml", {name: nameLabel.text, server: serverText.text, user: userText.text, password: model.password, create: false, ignoreSSLErrors: model.ignoreSSLErrors, index: model.index})
+                    var dialog = pageStack.push("../dialogs/AccountDialog.qml", {name: nameLabel.text, server: serverText.text, user: userText.text, password: model.password, create: false, ignoreSSLErrors: model.ignoreSSLErrors, index: model.index, type: model.type})
                 }
             }
             MenuItem {

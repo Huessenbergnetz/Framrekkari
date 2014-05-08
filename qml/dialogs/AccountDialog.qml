@@ -30,6 +30,7 @@ Dialog {
     property string password
     property bool ignoreSSLErrors: false
     property int index
+    property int type: 0
 
     property bool create: true
     property bool allSet: nameString.text !== "" && serverString.text !== "" && userString.text !== "" && passwordString.text !== ""
@@ -92,6 +93,6 @@ Dialog {
         }
     }
 
-    onAccepted: create ? accountsModel.append(nameString.text, serverString.text, userString.text, passwordString.text, ignoreSSLErrorsSwitch.checked) : accountsModel.edit(nameString.text, serverString.text, userString.text, passwordString.text, ignoreSSLErrorsSwitch.checked, index)
+    onAccepted: create ? accountsModel.append(nameString.text, serverString.text, userString.text, passwordString.text, ignoreSSLErrorsSwitch.checked, type) : accountsModel.edit(nameString.text, serverString.text, userString.text, passwordString.text, ignoreSSLErrorsSwitch.checked, type, index)
 
 }

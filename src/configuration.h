@@ -37,8 +37,8 @@ public:
     Q_INVOKABLE void set(const QString &key, const QVariant &val);
 
     // account management
-    Q_INVOKABLE void saveAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors);
-    Q_INVOKABLE void editAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int idx);
+    Q_INVOKABLE void saveAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type);
+    Q_INVOKABLE void editAccount(const QString &name, const QString &server, const QString &user, const QString &password, bool ignoreSSLErrors, int type, int idx);
     Q_INVOKABLE QVariantMap getAccount(int idx);
     Q_INVOKABLE void removeAccount(int idx);
 
@@ -52,6 +52,7 @@ public:
         QString user;
         QString password;
         bool ignoreSSLErrors;
+        int type;
     };
 
     struct Project {

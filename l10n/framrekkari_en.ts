@@ -2,16 +2,25 @@
 <!DOCTYPE TS>
 <TS version="2.0" language="en_US">
 <context>
+    <name></name>
+    <message id="components-ph-search">
+        <location filename="../qml/common/OpenSlugField.qml" line="58"/>
+        <source>Search</source>
+        <extracomment>Placeholder text of SearchField</extracomment>
+        <translation>Search</translation>
+    </message>
+</context>
+<context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="36"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="46"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="73"/>
@@ -37,42 +46,42 @@
 <context>
     <name>AccountDialog</name>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="44"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="45"/>
         <source>Create account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="44"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="45"/>
         <source>Edit account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="50"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="51"/>
         <source>Display name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="60"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="61"/>
         <source>Server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="70"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="71"/>
         <source>User name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="79"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="80"/>
         <source>Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="88"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="89"/>
         <source>Ignore SSL errors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="90"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="91"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -80,45 +89,45 @@
 <context>
     <name>AccountPage</name>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="134"/>
+        <location filename="../qml/pages/AccountPage.qml" line="81"/>
+        <source>Project slug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AccountPage.qml" line="135"/>
         <source>Source lang:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="134"/>
+        <location filename="../qml/pages/AccountPage.qml" line="135"/>
         <source>Slug:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="152"/>
+        <location filename="../qml/pages/AccountPage.qml" line="153"/>
         <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="62"/>
+        <location filename="../qml/pages/AccountPage.qml" line="63"/>
         <source>Show all projects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AccountPage.qml" line="80"/>
-        <source>Search project slug</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>AccountsDelegate</name>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="120"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="111"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="126"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="117"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="133"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="124"/>
         <source>Removing account %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -136,7 +145,7 @@
     <message>
         <location filename="../qml/pages/Changelog.qml" line="38"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Changelog</translation>
     </message>
 </context>
 <context>
@@ -144,7 +153,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="38"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">About</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="42"/>
@@ -163,19 +172,6 @@
     </message>
 </context>
 <context>
-    <name>PluralDelegate</name>
-    <message>
-        <location filename="../qml/delegates/PluralDelegate.qml" line="40"/>
-        <source>Singular</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/delegates/PluralDelegate.qml" line="40"/>
-        <source>Plural</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>ProjectLangDelegate</name>
     <message>
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="69"/>
@@ -185,9 +181,9 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
         <source>%n string(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n string</numerusform>
+            <numerusform>%n string</numerusform>
         </translation>
     </message>
 </context>
@@ -258,13 +254,13 @@
 <context>
     <name>ProjectsDelegate</name>
     <message>
-        <location filename="../qml/delegates/ProjectsDelegate.qml" line="55"/>
-        <source>Source lang:</source>
+        <location filename="../qml/delegates/ProjectsDelegate.qml" line="59"/>
+        <source>Source lang: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/ProjectsDelegate.qml" line="55"/>
-        <source>Slug:</source>
+        <location filename="../qml/delegates/ProjectsDelegate.qml" line="68"/>
+        <source>Slug: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -296,9 +292,9 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="82"/>
         <source>%n string(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n string</numerusform>
+            <numerusform>%n strings</numerusform>
         </translation>
     </message>
     <message>
@@ -339,6 +335,14 @@
     </message>
 </context>
 <context>
+    <name>StringPage</name>
+    <message>
+        <location filename="../qml/pages/StringPage.qml" line="116"/>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>TranslationStringsAPI</name>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="37"/>
@@ -347,11 +351,13 @@
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="48"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="120"/>
         <source>Not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="51"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="123"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -359,7 +365,7 @@
 <context>
     <name>TranslationStringsPage</name>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="55"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
@@ -369,6 +375,39 @@
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="63"/>
         <source>Not translated</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>helper</name>
+    <message>
+        <location filename="../qml/js/helper.js" line="48"/>
+        <source>Zero</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/js/helper.js" line="51"/>
+        <source>Singular</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/js/helper.js" line="54"/>
+        <source>Two</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/js/helper.js" line="57"/>
+        <source>Few</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/js/helper.js" line="60"/>
+        <source>Many</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/js/helper.js" line="63"/>
+        <source>Plural</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

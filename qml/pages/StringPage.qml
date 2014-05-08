@@ -128,7 +128,7 @@ Page {
         Column {
             id: column
             anchors { left: parent.left; right: parent.right }
-            PageHeader { title: hash }
+            PageHeader { title: key }
 
             Text {
                 id: sourceText

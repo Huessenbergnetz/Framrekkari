@@ -29,29 +29,4 @@ QString MD5generator::genMd5(const QString &entity, const QVariantList &context)
 #endif
 
     return QString(md5.result().toHex());
-
-
-
-//    QStringList keys(entity);
-
-//    if (context.isEmpty())
-//    {
-//        keys << "";
-//    } else {
-//        for (int i = 0; i < context.length(); ++i)
-//        {
-//            keys << context.at(i).toString();
-//        }
-//    }
-
-//    QString keyString = keys.join("");
-
-
-//#ifdef QT_DEBUG
-//    qDebug() << keys;
-//    qDebug() << keyString;
-//    qDebug() << QString(QCryptographicHash::hash(keyString.toUtf8(), QCryptographicHash::Md5).toHex());
-//#endif
-
-//    return QString(QCryptographicHash::hash(keyString.toUtf8(), QCryptographicHash::Md5).toHex());
 }
