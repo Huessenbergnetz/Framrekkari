@@ -64,7 +64,8 @@ OTHER_FILES += \
     qml/pages/StringPage.qml \
     qml/delegates/PluralDelegate.qml \
     qml/js/helper.js \
-    qml/common/OpenSlugField.qml
+    qml/common/OpenSlugField.qml \
+    qml/common/MessageContainer.qml
 
 HEADERS += \
     src/globals.h \

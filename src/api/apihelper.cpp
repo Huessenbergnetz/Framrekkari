@@ -121,7 +121,4 @@ QVariantList APIHelper::jsonToVariantList(const QByteArray &json)
         qDebug() << err.errorString();
 
     return jsonDoc.array().toVariantList();
-
-
-//    return QJsonDocument::fromJson(json).array().toVariantList();
 }

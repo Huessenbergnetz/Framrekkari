@@ -113,14 +113,18 @@ void TranslationStringsAPI::saveStringFinished()
 
     } else {
 #ifdef QT_DEBUG
+        qDebug() << "HTTP-Error-Code:"  << saveStringReply->error();
         qDebug() << "HTTP-Error:" << saveStringReply->errorString();
 #endif
         switch (saveStringReply->error()) {
         case QNetworkReply::ContentNotFoundError:
-            emit savedStringError(tr("Not found"));
+            emit savedStringError(tr("Not found. Code %1.").arg(saveStringReply->error()));
             break;
         case QNetworkReply::OperationCanceledError:
-            emit savedStringError(tr("Operation canceled. Wrong username and/or password or SSL handshake failed."));
+            emit savedStringError(tr("Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.").arg(saveStringReply->error()));
+            break;
+        case QNetworkReply::UnknownContentError:
+            emit savedStringError(tr("Could not save content on server. Maybe wrong entitiy hash. Code %1.").arg(saveStringReply->error()));
             break;
         default:
             emit savedStringError(saveStringReply->errorString());

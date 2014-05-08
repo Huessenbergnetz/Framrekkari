@@ -14,6 +14,7 @@ ProjectTranslationsModel::ProjectTranslationsModel(QObject *parent) :
 {
     connect(&tAPI, SIGNAL(gotStrings(QVariantList)), this, SLOT(populate(QVariantList)));
     connect(&tAPI, SIGNAL(gotStringsError(QString)), this, SLOT(errorHandler(QString)));
+    connect(&tAPI, SIGNAL(savedStringError(QString)), this, SLOT(errorHandler(QString)));
 }
 
 
@@ -40,6 +41,24 @@ int ProjectTranslationsModel::columnCount(const QModelIndex&) const
     return 7;
 }
 
+QVariantMap ProjectTranslationsModel::get(int modelIdx)
+{
+    if (modelIdx > m_translations.size()-1)
+        return QVariantMap();
+
+    TranslationsObject *tobj = m_translations.at(modelIdx);
+    QVariantMap result;
+
+    result["key"] = tobj->key;
+    result["context"] = tobj->context;
+    result["comment"] = tobj->comment;
+    result["source"] = tobj->source;
+    result["translation"] = tobj->translation;
+    result["reviewed"] = tobj->reviewed;
+    result["pluralized"] = tobj->pluralized;
+
+    return result;
+}
 
 
 QVariant ProjectTranslationsModel::data(const QModelIndex &index, int role) const

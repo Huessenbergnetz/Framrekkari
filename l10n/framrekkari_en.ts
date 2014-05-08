@@ -7,7 +7,7 @@
         <location filename="../qml/common/OpenSlugField.qml" line="58"/>
         <source>Search</source>
         <extracomment>Placeholder text of SearchField</extracomment>
-        <translation>Search</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -15,12 +15,12 @@
     <message>
         <location filename="../qml/pages/About.qml" line="36"/>
         <source>Changelog</source>
-        <translation>Changelog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="46"/>
         <source>About</source>
-        <translation>About</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="73"/>
@@ -89,6 +89,11 @@
 <context>
     <name>AccountPage</name>
     <message>
+        <location filename="../qml/pages/AccountPage.qml" line="63"/>
+        <source>Show all projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/AccountPage.qml" line="81"/>
         <source>Project slug</source>
         <translation type="unfinished"></translation>
@@ -106,11 +111,6 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="153"/>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AccountPage.qml" line="63"/>
-        <source>Show all projects</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -145,7 +145,7 @@
     <message>
         <location filename="../qml/pages/Changelog.qml" line="38"/>
         <source>Changelog</source>
-        <translation type="unfinished">Changelog</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="38"/>
         <source>About</source>
-        <translation type="unfinished">About</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="42"/>
@@ -181,9 +181,9 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
         <source>%n string(s)</source>
-        <translation>
-            <numerusform>%n string</numerusform>
-            <numerusform>%n string</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -292,9 +292,9 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="82"/>
         <source>%n string(s)</source>
-        <translation>
-            <numerusform>%n string</numerusform>
-            <numerusform>%n strings</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -337,8 +337,13 @@
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="116"/>
-        <source>Save</source>
+        <location filename="../qml/pages/StringPage.qml" line="183"/>
+        <source>Previous</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringPage.qml" line="191"/>
+        <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -351,14 +356,27 @@
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="48"/>
-        <location filename="../src/api/translationstringsapi.cpp" line="120"/>
         <source>Not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="51"/>
-        <location filename="../src/api/translationstringsapi.cpp" line="123"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/api/translationstringsapi.cpp" line="121"/>
+        <source>Not found. Code %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/api/translationstringsapi.cpp" line="124"/>
+        <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/api/translationstringsapi.cpp" line="127"/>
+        <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

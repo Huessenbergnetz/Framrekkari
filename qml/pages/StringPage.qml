@@ -21,6 +21,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../delegates"
+import "../common"
 
 Page {
     id: projectPage
@@ -36,7 +37,8 @@ Page {
     property int modelIdx
     property int modelCount
 
-    property bool canSave
+//    property bool canSave
+    property int nextPreviousDirection
 
     property string key
     property var context: []
@@ -50,18 +52,29 @@ Page {
     property int pluralIndex: 0
 
     Component.onCompleted: {
+        populateModels()
+    }
 
-            for (var propS in source)
-                sourcesModel.append({"plural": propS, "string": source[propS]})
+    function populateModels()
+    {
+        sourcesModel.clear()
 
-            sourceText.text = sourcesModel.get(0).string
+        for (var propS in source)
+            sourcesModel.append({"plural": propS, "string": source[propS]})
 
-            for (var propT in translation)
-                translationsModel.append({"plural": propT, "string": translation[propT]})
+        sourceText.text = sourcesModel.get(0).string
 
-            translationField.text = translationsModel.get(0).string
+        translationsModel.clear()
+        oldTranslationsModel.clear()
 
-            canSave = checkCanSave()
+        for (var propT in translation) {
+            translationsModel.append({"plural": propT, "string": translation[propT]})
+            oldTranslationsModel.append({"plural": propT, "string": translation[propT]})
+        }
+
+        translationField.text = translationsModel.get(0).string
+
+//        canSave = checkCanSave()
     }
 
     function changePlural(idx)
@@ -84,17 +97,57 @@ Page {
 
     function checkCanSave()
     {
-        var length = translationsModel.cout
-        var ret = true;
+        var length = translationsModel.count
 
-        for (var i = 0; i < length; ++i)
+        for (var i = 0; i < length; i++)
         {
-            console.log(translationsModel.get(i).string)
             if (translationsModel.get(i).string === "")
-                ret = false
+                return false
         }
 
-        return ret
+        for (var ii = 0; ii < length; ii++)
+        {
+            if(translationsModel.get(ii).string !== oldTranslationsModel.get(ii).string)
+                return true
+        }
+
+        return false
+    }
+
+    function nextPrevious(direction)
+    {
+        nextPreviousDirection = direction
+
+        if (checkCanSave()) {
+            pullDown.busy = true
+            save()
+        } else {
+            getPreviousNext()
+        }
+    }
+
+    function getPreviousNext()
+    {
+        switch(nextPreviousDirection)
+        {
+        case 0:
+            modelIdx -= 1;
+            break;
+        case 1:
+            modelIdx += 1;
+        }
+
+        var item = projectTranslationsModel.get(modelIdx)
+        key = item["key"]
+        context = item["context"]
+        comment = item["comment"]
+        source = item["source"]
+        translation = item["translation"]
+        reviewed = item["reviewed"]
+        pluralized = item["pluralized"]
+        pluralIndex = 0;
+
+        populateModels()
     }
 
     ListModel {
@@ -105,6 +158,19 @@ Page {
         id: translationsModel
     }
 
+    ListModel {
+        id: oldTranslationsModel
+    }
+
+    Connections {
+        target: projectTranslationsModel
+        onGotError: {
+            pullDown.busy = false
+            messageContainer.message = projectTranslationsModelErrorString
+            messageContainer.messagetype = "error"
+            messageContainer.show()
+        }
+    }
 
     SilicaFlickable {
         anchors.fill: parent
@@ -112,23 +178,30 @@ Page {
         contentHeight: column.height + pluralList.height + translationField.height + Theme.paddingLarge
 
         PullDownMenu {
+            id: pullDown
             MenuItem {
-                text: qsTr("Save")
-                enabled: canSave
-                onClicked: save()
+                text: qsTr("Previous")
+                enabled: modelIdx > 0
+                onClicked: nextPrevious(0)
             }
         }
 
-
-        ViewPlaceholder {
-            id: errorDisplay
-            enabled: false
+        PushUpMenu {
+            MenuItem {
+                text: qsTr("Next")
+                enabled: modelIdx < modelCount-1
+                onClicked: nextPrevious(1)
+            }
         }
 
         Column {
             id: column
             anchors { left: parent.left; right: parent.right }
             PageHeader { title: key }
+
+            MessageContainer {
+                id: messageContainer
+            }
 
             Text {
                 id: sourceText
