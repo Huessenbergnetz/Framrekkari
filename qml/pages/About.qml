@@ -28,13 +28,38 @@ Page {
     property string _RICHTEXT_STYLESHEET_PREAMBLE: "<html><style>a { text-decoration: none; color: '" + Theme.secondaryHighlightColor + "' }</style><body>";
     property string _RICHTEXT_STYLESHEET_APPENDIX: "</body></html>";
 
+    property int transifexAccountId: config.getTransifexAccount()
+
+    function openFramrakkatiProject()
+    {
+        if (transifexAccountId > -1)
+        {
+            framrekkari.accountIndex = transifexAccountId
+            pageStack.push(Qt.resolvedUrl("ProjectPage.qml"), {projectName: "Framrekkari", projectSlug: "framrekkari"})
+        } else {
+            Qt.openUrlExternally("https://www.transifex.com/projects/p/framrekkari/")
+        }
+    }
+
     SilicaFlickable {
         anchors.fill: parent
 
         PullDownMenu {
             MenuItem {
+                text: qsTr("Website")
+                onClicked: Qt.openUrlExternally("http://www.buschmann23.de/entwicklung/anwendungen/framrekkari")
+            }
+            MenuItem {
+                text: qsTr("Privacy Policy")
+                onClicked: pageStack.push(Qt.resolvedUrl("PrivacyPolicy.qml"))
+            }
+            MenuItem {
                 text: qsTr("Changelog")
                 onClicked: pageStack.push(Qt.resolvedUrl("Changelog.qml"))
+            }
+            MenuItem {
+                text: qsTr("Contributors")
+                onClicked: pageStack.push(Qt.resolvedUrl("Contributors.qml"))
             }
         }
 
@@ -45,14 +70,14 @@ Page {
             anchors { left: parent.left; right: parent.right }
             PageHeader { title: qsTr("About") }
 
-//            Image {
-//                visible: true
-//                width: parent.width
-//                smooth: true
-//                sourceSize.width: 540
-//                sourceSize.height: 270
-//                source: "/usr/share/harbour-markat/images/Store-Cover.png"
-//            }
+            Image {
+                visible: true
+                width: parent.width
+                smooth: true
+                sourceSize.width: 540
+                sourceSize.height: 270
+                source: "/usr/share/harbour-framrekkari/images/store-cover.jpg"
+            }
         }
 
         Column {
@@ -96,6 +121,24 @@ Page {
                 wrapMode: Text.WordWrap
                 color: Theme.primaryColor
                 onLinkActivated: { Qt.openUrlExternally(link) }
+            }
+
+            SectionHeader { text: qsTr("Contribute") }
+
+            Row {
+                width: parent.width - Theme.paddingLarge
+
+                Button {
+                    width: parent.width/2
+                    text: qsTr("Translate")
+                    onClicked: openFramrakkatiProject()
+                }
+
+                Button {
+                    width: parent.width/2
+                    text: qsTr("Report bugs")
+                    onClicked: Qt.openUrlExternally("https://github.com/Buschtrommel/Framrekkari/issues")
+                }
             }
 
             SectionHeader { text: qsTr("Contact") }

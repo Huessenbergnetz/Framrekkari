@@ -37,7 +37,6 @@ Page {
     property int modelIdx
     property int modelCount
 
-//    property bool canSave
     property int nextPreviousDirection
 
     property string key
@@ -73,8 +72,6 @@ Page {
         }
 
         translationField.text = translationsModel.get(0).string
-
-//        canSave = checkCanSave()
     }
 
     function changePlural(idx)

@@ -29,6 +29,7 @@ public slots:
 
 private slots:
     void populate(const QVariantList &data);
+    void savedString(const QVariantMap &data);
     void errorHandler(const QString &errorString);
 
 private:

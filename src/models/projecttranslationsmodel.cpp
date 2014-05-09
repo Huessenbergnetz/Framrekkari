@@ -15,6 +15,7 @@ ProjectTranslationsModel::ProjectTranslationsModel(QObject *parent) :
     connect(&tAPI, SIGNAL(gotStrings(QVariantList)), this, SLOT(populate(QVariantList)));
     connect(&tAPI, SIGNAL(gotStringsError(QString)), this, SLOT(errorHandler(QString)));
     connect(&tAPI, SIGNAL(savedStringError(QString)), this, SLOT(errorHandler(QString)));
+    connect(&tAPI, SIGNAL(savedString(QVariantMap)), this, SLOT(savedString(QVariantMap)));
 }
 
 
@@ -167,4 +168,26 @@ void ProjectTranslationsModel::errorHandler(const QString &errorString)
 void ProjectTranslationsModel::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx)
 {
     tAPI.saveString(project, resource, lang, translation, hash, modelIdx, accountIdx);
+}
+
+
+void ProjectTranslationsModel::savedString(const QVariantMap &data)
+{
+    int idx = data["modelIdx"].toInt();
+
+
+    TranslationsObject *tobj = m_translations.at(idx);
+
+    QVariant trData = data["translation"];
+
+    if (trData.type() == QVariant::Map) {
+        tobj->translation = trData.toMap();
+    } else {
+        QVariantMap strMap;
+        strMap["1"] = trData.toString();
+        tobj->translation = strMap;
+    }
+
+
+    emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
 }

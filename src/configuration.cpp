@@ -337,3 +337,27 @@ QVariantMap Configuration::getAccount(int idx)
 
     return account;
 }
+
+
+/*!
+ * \fn int Configuration::getTransifexAccount()
+ * \brief Checks if a transifex.com account is set and returns it's index
+ *
+ * Returns the account index if the user has configured an account for transifex.com
+ *
+ * \return int account index
+ */
+int Configuration::getTransifexAccount()
+{
+    QList<Account> accounts = loadAccounts();
+
+    for (int i = 0; i < accounts.length(); ++i)
+    {
+        if (accounts.at(i).server.contains("transifex.com", Qt::CaseInsensitive))
+        {
+            return i;
+        }
+    }
+
+    return -1;
+}

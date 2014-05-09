@@ -19,6 +19,14 @@ icons.path = /usr/share/harbour-framrekkari/icons
 icons.files = icons/*.png
 INSTALLS += icons
 
+images.path = /usr/share/harbour-framrekkari/images
+images.files = icons/*.jpg
+INSTALLS += images
+
+contributors.path = /usr/share/harbour-framrekkari/images/contributors
+contributors.files = icons/contributors/*.png
+INSTALLS += contributors
+
 SOURCES += \
     src/main.cpp \
     src/configuration.cpp \
@@ -65,7 +73,11 @@ OTHER_FILES += \
     qml/delegates/PluralDelegate.qml \
     qml/js/helper.js \
     qml/common/OpenSlugField.qml \
-    qml/common/MessageContainer.qml
+    qml/common/MessageContainer.qml \
+    qml/pages/PrivacyPolicy.qml \
+    qml/pages/Contributors.qml \
+    qml/pages/parts/ContributorItem.qml \
+    qml/common/ImageButton.qml
 
 HEADERS += \
     src/globals.h \

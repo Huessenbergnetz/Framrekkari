@@ -46,6 +46,10 @@ public:
     Q_INVOKABLE void favorProject(const QString &name, const QString &slug, const QString &description, const QString &srcLang, int accountIdx);
     Q_INVOKABLE void unfavorProject(int idx, int accountIdx);
 
+
+    // check if transifex account available
+    Q_INVOKABLE int getTransifexAccount();
+
     struct Account {
         QString name;
         QString server;
