@@ -25,6 +25,11 @@ import Sailfish.Silica 1.0
 Page {
     id: settingsPage
 
+    Component.onDestruction: {
+        config.set("display/sourceFontSize", sourceFontSize.value)
+        config.set("display/translationFontSize", translationFontSize.value)
+    }
+
     SilicaFlickable {
         anchors.fill: parent
 
@@ -37,6 +42,30 @@ Page {
             spacing: Theme.paddingLarge
             PageHeader {
                 title: qsTr("Settings")
+            }
+
+            SectionHeader { text: qsTr("Font sizes") }
+
+            Slider {
+                id: sourceFontSize
+                anchors { left: parent.left; right: parent.right }
+                minimumValue: Theme.fontSizeTiny
+                maximumValue: Theme.fontSizeHuge
+                valueText: value + "px"
+                stepSize: 1
+                label: qsTr("Source text font size")
+                value: config.get("display/sourceFontSize", Theme.fontSizeExtraSmall)
+            }
+
+            Slider {
+                id: translationFontSize
+                anchors { left: parent.left; right: parent.right }
+                minimumValue: Theme.fontSizeTiny
+                maximumValue: Theme.fontSizeHuge
+                valueText: value + "px"
+                stepSize: 1
+                label: qsTr("Translation text font size")
+                value: config.get("display/translationFontSize", Theme.fontSizeMedium)
             }
         }
     }

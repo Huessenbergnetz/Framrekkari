@@ -20,6 +20,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../common"
 
 
 Page {
@@ -139,6 +140,15 @@ Page {
                     text: qsTr("Report bugs")
                     onClicked: Qt.openUrlExternally("https://github.com/Buschtrommel/Framrekkari/issues")
                 }
+            }
+
+            PaypalChooser {
+                id: donation
+                anchors { left: parent.left; leftMargin: -Theme.paddingLarge; right: parent.right }
+                organization: "Buschtrommel"
+                item: "Framrekkari"
+                email: "kontakt@buschmann23.de"
+                message: qsTr("Message to Buschtrommel:")
             }
 
             SectionHeader { text: qsTr("Contact") }

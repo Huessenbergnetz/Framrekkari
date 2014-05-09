@@ -13,32 +13,67 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="36"/>
+        <location filename="../qml/pages/About.qml" line="50"/>
+        <source>Website</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="54"/>
+        <source>Privacy Policy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="58"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="46"/>
+        <location filename="../qml/pages/About.qml" line="62"/>
+        <source>Contributors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="72"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="73"/>
+        <location filename="../qml/pages/About.qml" line="99"/>
         <source>Transifex client for Sailfish OS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="89"/>
+        <location filename="../qml/pages/About.qml" line="115"/>
         <source>Licenses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="93"/>
+        <location filename="../qml/pages/About.qml" line="119"/>
         <source>Source code is licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="101"/>
+        <location filename="../qml/pages/About.qml" line="127"/>
+        <source>Contribute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="134"/>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="140"/>
+        <source>Report bugs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="151"/>
+        <source>Message to Buschtrommel:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="154"/>
         <source>Contact</source>
         <translation type="unfinished"></translation>
     </message>
@@ -57,31 +92,36 @@
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="51"/>
+        <source>Account type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="62"/>
         <source>Display name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="61"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="72"/>
         <source>Server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="71"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="82"/>
         <source>User name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="80"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="91"/>
         <source>Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="89"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="100"/>
         <source>Ignore SSL errors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="91"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="102"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -149,6 +189,44 @@
     </message>
 </context>
 <context>
+    <name>Contributors</name>
+    <message>
+        <location filename="../qml/pages/Contributors.qml" line="41"/>
+        <source>Contributors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Contributors.qml" line="43"/>
+        <source>Author</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Contributors.qml" line="47"/>
+        <source>Main developer, Framrekkari creator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Contributors.qml" line="54"/>
+        <source>Thanks to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Contributors.qml" line="58"/>
+        <source>Finish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Contributors.qml" line="62"/>
+        <source>Used third party elements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Contributors.qml" line="66"/>
+        <source>Martin Grimme&apos;s Tidings Elements</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MainPage</name>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="38"/>
@@ -168,6 +246,197 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="56"/>
         <source>Please add at least one account for a Transifex instance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PaypalChooser</name>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="125"/>
+        <source>Currency</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="126"/>
+        <source>Euro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="127"/>
+        <source>US Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="128"/>
+        <source>Australian Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="129"/>
+        <source>Brazilian Real</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="130"/>
+        <source>Pound Sterling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="131"/>
+        <source>Danish Krone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="132"/>
+        <source>Hong Kong Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="133"/>
+        <source>Israel New Shekel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="134"/>
+        <source>Japanese Yen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="135"/>
+        <source>Canadian Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="136"/>
+        <source>Mexican Peso</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="137"/>
+        <source>New Taiwan Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="138"/>
+        <source>New Zealand Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="139"/>
+        <source>Norwegian Krone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="140"/>
+        <source>Philippine Peso</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="141"/>
+        <source>Polish Zoty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="142"/>
+        <source>Russian Ruble</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="143"/>
+        <source>Swedish Krone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="144"/>
+        <source>Swiss Franc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="145"/>
+        <source>Singapore Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="146"/>
+        <source>Thai Baht</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="147"/>
+        <source>Czech Koruna</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="148"/>
+        <source>Hungarian Forint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/PaypalChooser.qml" line="155"/>
+        <source>Donate via PayPal</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPolicy</name>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="40"/>
+        <source>Privacy policy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="44"/>
+        <source>What information does Framrekkari collect?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="53"/>
+        <source>In order to login to your translation server Framrekkari needs your username and password as well as the server address. These information is not given to the author of Framrekkari or other third parties (except the server operator).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="63"/>
+        <source>What does Framrekkari use your information for?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="71"/>
+        <source>Framrekkari needs your login data to connect to your translation server. Your log in data is used to log in to your translation server to perform the tasks of downloading and uploading translations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="81"/>
+        <source>Does Framrekkari disclose any information to outside parties?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="89"/>
+        <source>Framrekkari only uses your data for the login process into the server that you configured. Framrekkari does not send these data to the author of Framrekkari or other third parties. For questions concerning the privacy on the server side, you have to contact your translation service provider.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="99"/>
+        <source>Third party links</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="107"/>
+        <source>Framrekkari is a client for collaborated translations services like Transifex. It has no preinstalled third party links other than the own application website links on the About page and on this page. Showing translation project details and opening the project webistes is in the user&apos;s responsibility. For questions concerning the privacy of this sites you have to contact the site operator.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="117"/>
+        <source>Your consent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="125"/>
+        <source>By using Framrekkari, you consent to this privacy policy.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
+        <source>Contact</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -314,8 +583,23 @@
 <context>
     <name>Settings</name>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="39"/>
+        <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="47"/>
+        <source>Font sizes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="56"/>
+        <source>Source text font size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="67"/>
+        <source>Translation text font size</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -337,12 +621,12 @@
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="183"/>
+        <location filename="../qml/pages/StringPage.qml" line="180"/>
         <source>Previous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="191"/>
+        <location filename="../qml/pages/StringPage.qml" line="188"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>

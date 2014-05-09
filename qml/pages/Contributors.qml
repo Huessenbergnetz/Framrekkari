@@ -29,7 +29,7 @@ Page {
     property string _RICHTEXT_STYLESHEET_APPENDIX: "</body></html>";
 
     SilicaFlickable {
-        id: singleItem
+        id: aboutFlick
         anchors.fill: parent
         contentHeight: contributorCol.height + Theme.paddingLarge
         VerticalScrollDecorator {}
@@ -44,7 +44,7 @@ Page {
 
             ContributorItem {
                 name: "Buschmann (Matthias Fehring)"
-                role: qsTr("Main developer, Markat creator")
+                role: qsTr("Main developer, Framrekkari creator")
                 image: "buschmann.png"
                 website: "http://www.buschmann23.de"
                 twitter: "buschmann23"
@@ -54,8 +54,19 @@ Page {
             SectionHeader { text: qsTr("Thanks to") }
 
             ContributorItem {
-                name: "Jiri Grönroos (artnay)"
+                name: "Jiri Grönroos"
                 role: qsTr("Finish translation")
+            }
+
+            SectionHeader {
+                text: qsTr("Used third party elements")
+            }
+
+            ContributorItem {
+                name: qsTr("Martin Grimme's Tidings Elements")
+                role: "FancyScroller"
+                website: "https://github.com/pycage/tidings"
+                github: "pycage"
             }
         }
     }

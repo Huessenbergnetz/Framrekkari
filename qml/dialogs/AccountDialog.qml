@@ -45,6 +45,17 @@ Dialog {
             acceptText: create ? qsTr("Create account") : qsTr("Edit account")
         }
 
+        ComboBox {
+            id: accType
+            width: parent.width
+            label: qsTr("Account type")
+            currentIndex: accountDialog.type
+
+            menu: ContextMenu {
+                MenuItem { text: "Transifex" }
+            }
+        }
+
         TextField {
             id: nameString
             anchors { left: parent.left; right: parent.right }

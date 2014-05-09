@@ -77,7 +77,9 @@ OTHER_FILES += \
     qml/pages/PrivacyPolicy.qml \
     qml/pages/Contributors.qml \
     qml/pages/parts/ContributorItem.qml \
-    qml/common/ImageButton.qml
+    qml/common/ImageButton.qml \
+    qml/common/ComboBoxList.qml \
+    qml/common/PaypalChooser.qml
 
 HEADERS += \
     src/globals.h \

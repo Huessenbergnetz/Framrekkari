@@ -71,10 +71,6 @@ Row {
             ImageButton {
                 id: browserIcon
                 source: "/usr/share/harbour-framrekkari/icons/icon-m-browser.png"
-                sourceSize.height: 64
-                sourceSize.width: 64
-                width: 64
-                height: 64
                 visible: website ? true : false
                 onClicked: Qt.openUrlExternally(website)
             }
@@ -82,10 +78,6 @@ Row {
             ImageButton {
                 id: twitterIcon
                 source: "/usr/share/harbour-framrekkari/icons/icon-m-twitter.png"
-                sourceSize.height: 64
-                sourceSize.width: 64
-                height: 64
-                width: 64
                 visible: twitter ? true : false
                 onClicked: Qt.openUrlExternally("https://twitter.com/" + twitter)
             }
@@ -93,10 +85,6 @@ Row {
             ImageButton {
                 id: githubIcon
                 source: "/usr/share/harbour-framrekkari/icons/icon-m-github.png"
-                sourceSize.height: 64
-                sourceSize.width: 64
-                height: 64
-                width: 64
                 visible: github ? true : false
                 onClicked: Qt.openUrlExternally("https://github.com/" + github)
             }
@@ -104,10 +92,6 @@ Row {
             ImageButton {
                 id: bitbucketIcon
                 source: "/usr/share/harbour-framrekkari/icons/icon-m-bitbucket.png"
-                sourceSize.height: 64
-                sourceSize.width: 64
-                height: 64
-                width: 64
                 visible: bitbucket ? true : false
                 onClicked: Qt.openUrlExternally("https://bitbucket.org/" + bitbucket)
             }
@@ -115,10 +99,6 @@ Row {
             ImageButton {
                 id: linkedinIcon
                 source: "/usr/share/harbour-framrekkari/icons/icon-m-linkedin.png"
-                sourceSize.height: 64
-                sourceSize.width: 64
-                height: 64
-                width: 64
                 visible: linkedin ? true : false
                 onClicked: Qt.openUrlExternally("http://www.linkedin.com/profile/view?id=" + linkedin)
             }
@@ -126,10 +106,6 @@ Row {
             ImageButton {
                 id: weiboIcon
                 source: "/usr/share/harbour-framrekkari/icons/icon-m-weibo.png"
-                sourceSize.height: 64
-                sourceSize.width: 64
-                height: 64
-                width: 64
                 visible: weibo ? true : false
                 onClicked: Qt.openUrlExternally("http://www.weibo.com/" + weibo)
             }
