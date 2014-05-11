@@ -1,22 +1,406 @@
+/*
+    Framrekkari - Transifex Client for SailfishOS
+    Copyright (C) 2014  Buschtrommel/Matthias Fehring
+    Contact: Matthias Fehring <kontakt@buschmann23.de>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+#include <QDebug>
 #include "languagenamehelper.h"
 
 LanguageNameHelper::LanguageNameHelper(QObject *parent) :
     QObject(parent)
 {
+    init();
 }
 
 
 QString LanguageNameHelper::getLanguageName(const QString &lang)
 {
-    QLocale locale(lang);
-    QString name;
-    if (locale.language() != QLocale::C) {
-        name = locale.nativeLanguageName();
-        name[0] = name[0].toUpper();
-    }
+    return languageCode[lang];
+}
 
-    if (name.isEmpty())
-        name = lang;
-
-    return name;
+void LanguageNameHelper::init()
+{
+    languageCode["ach"] = tr("Acoli");
+    languageCode["ady"] = tr("Adyghe");
+    languageCode["af"] = tr("Afrikaans");
+    languageCode["af_ZA"] = tr("Afrikaans (South Africa)");
+    languageCode["ak"] = tr("Akan");
+    languageCode["sq"] = tr("Albanian");
+    languageCode["sq_AL"] = tr("Albanian (Albania)");
+    languageCode["aln"] = tr("Albanian Gheg");
+    languageCode["am"] = tr("Amharic");
+    languageCode["am_ET"] = tr("Amharic (Ethiopia)");
+    languageCode["ar"] = tr("Arabic");
+    languageCode["ar_EG"] = tr("Arabic (Egypt)");
+    languageCode["ar_SA"] = tr("Arabic (Saudi Arabia)");
+    languageCode["ar_SD"] = tr("Arabic (Sudan)");
+    languageCode["ar_SY"] = tr("Arabic (Syria)");
+    languageCode["ar_AA"] = tr("Arabic (Unitag)");
+    languageCode["an"] = tr("Aragonese");
+    languageCode["hy"] = tr("Armenian");
+    languageCode["hy_AM"] = tr("Armenian (Armenia)");
+    languageCode["as"] = tr("Assamese");
+    languageCode["as_IN"] = tr("Assamese (India)");
+    languageCode["ast"] = tr("Asturian");
+    languageCode["ast_ES"] = tr("Asturian (Spain)");
+    languageCode["az"] = tr("Azerbaijani");
+    languageCode["az_AZ"] = tr("Azerbaijani (Azerbaijan)");
+    languageCode["az@latin"] = tr("Azerbaijani (Latin)");
+    languageCode["bal"] = tr("Balochi");
+    languageCode["ba"] = tr("Bashkir");
+    languageCode["eu"] = tr("Basque");
+    languageCode["eu_ES"] = tr("Basque (Spain)");
+    languageCode["be"] = tr("Belarusian");
+    languageCode["be_BY"] = tr("Belarusian (Belarus)");
+    languageCode["be@tarask"] = tr("Belarusian (Tarask)");
+    languageCode["bn"] = tr("Bengali");
+    languageCode["bn_BD"] = tr("Bengali (Bangladesh)");
+    languageCode["bn_IN"] = tr("Bengali (India)");
+    languageCode["brx"] = tr("Bodo");
+    languageCode["bs"] = tr("Bosnian");
+    languageCode["bs_BA"] = tr("Bosnian (Bosnia and Herzegovina)");
+    languageCode["br"] = tr("Breton");
+    languageCode["bg"] = tr("Bulgarian");
+    languageCode["bg_BG"] = tr("Bulgarian (Bulgaria)");
+    languageCode["my"] = tr("Burmese");
+    languageCode["my_MM"] = tr("Burmese (Myanmar)");
+    languageCode["ca"] = tr("Catalan");
+    languageCode["ca_ES"] = tr("Catalan (Spain)");
+    languageCode["ca@valencia"] = tr("Catalan (Valencian)");
+    languageCode["tzm"] = tr("Central Atlas Tamazight");
+    languageCode["hne"] = tr("Chhattisgarhi");
+    languageCode["cgg"] = tr("Chiga");
+    languageCode["zh"] = tr("Chinese");
+    languageCode["zh_CN"] = tr("Chinese (China)");
+    languageCode["zh_CN.GB2312"] = tr("Chinese (China) (GB2312)");
+    languageCode["gan"] = tr("Chinese (Gan)");
+    languageCode["hak"] = tr("Chinese (Hakka)");
+    languageCode["zh_HK"] = tr("Chinese (Hong Kong)");
+    languageCode["czh"] = tr("Chinese (Huizhou)");
+    languageCode["cjy"] = tr("Chinese (Jinyu)");
+    languageCode["lzh"] = tr("Chinese (Literary)");
+    languageCode["cmn"] = tr("Chinese (Mandarin)");
+    languageCode["mnp"] = tr("Chinese (Min Bei)");
+    languageCode["cdo"] = tr("Chinese (Min Dong)");
+    languageCode["nan"] = tr("Chinese (Min Nan)");
+    languageCode["czo"] = tr("Chinese (Min Zhong)");
+    languageCode["cpx"] = tr("Chinese (Pu-Xian)");
+    languageCode["zh_TW"] = tr("Chinese (Taiwan)");
+    languageCode["zh_TW.Big5"] = tr("Chinese (Taiwan) (Big5) ");
+    languageCode["wuu"] = tr("Chinese (Wu)");
+    languageCode["hsn"] = tr("Chinese (Xiang)");
+    languageCode["yue"] = tr("Chinese (Yue)");
+    languageCode["cv"] = tr("Chuvash");
+    languageCode["ksh"] = tr("Colognian");
+    languageCode["kw"] = tr("Cornish");
+    languageCode["co"] = tr("Corsican");
+    languageCode["crh"] = tr("Crimean Turkish");
+    languageCode["hr"] = tr("Croatian");
+    languageCode["hr_HR"] = tr("Croatian (Croatia)");
+    languageCode["cs"] = tr("Czech");
+    languageCode["cs_CZ"] = tr("Czech (Czech Republic)");
+    languageCode["da"] = tr("Danish");
+    languageCode["da_DK"] = tr("Danish (Denmark)");
+    languageCode["dv"] = tr("Divehi");
+    languageCode["nl"] = tr("Dutch");
+    languageCode["nl_BE"] = tr("Dutch (Belgium)");
+    languageCode["nl_NL"] = tr("Dutch (Netherlands)");
+    languageCode["dz"] = tr("Dzongkha");
+    languageCode["dz_BT"] = tr("Dzongkha (Bhutan)");
+    languageCode["en"] = tr("English");
+    languageCode["en_AU"] = tr("English (Australia)");
+    languageCode["en_CA"] = tr("English (Canada)");
+    languageCode["en_ee"] = tr("English (Estonia)");
+    languageCode["en_HK"] = tr("English (Hong Kong)");
+    languageCode["en_IE"] = tr("English (Ireland)");
+    languageCode["en_lv"] = tr("English (Latvia)");
+    languageCode["en_lt"] = tr("English (Lithuania)");
+    languageCode["en_NZ"] = tr("English (New Zealand)");
+    languageCode["en_ZA"] = tr("English (South Africa)");
+    languageCode["en_SE"] = tr("English (Sweden)");
+    languageCode["en_GB"] = tr("English (United Kingdom)");
+    languageCode["en_US"] = tr("English (United States)");
+    languageCode["myv"] = tr("Erzya");
+    languageCode["eo"] = tr("Esperanto");
+    languageCode["et"] = tr("Estonian");
+    languageCode["et_EE"] = tr("Estonian (Estonia)");
+    languageCode["fo"] = tr("Faroese");
+    languageCode["fo_FO"] = tr("Faroese (Faroe Islands)");
+    languageCode["fil"] = tr("Filipino");
+    languageCode["fi"] = tr("Finnish");
+    languageCode["fi_FI"] = tr("Finnish (Finland)");
+    languageCode["frp"] = tr("Franco-Proven?al (Arpitan)");
+    languageCode["fr"] = tr("French");
+    languageCode["fr_BE"] = tr("French (Belgium)");
+    languageCode["fr_CA"] = tr("French (Canada)");
+    languageCode["fr_FR"] = tr("French (France)");
+    languageCode["fr_CH"] = tr("French (Switzerland)");
+    languageCode["fur"] = tr("Friulian");
+    languageCode["ff"] = tr("Fulah");
+    languageCode["ff_SN"] = tr("Fulah (Senegal)");
+    languageCode["gd"] = tr("Gaelic, Scottish");
+    languageCode["gl"] = tr("Galician");
+    languageCode["gl_ES"] = tr("Galician (Spain)");
+    languageCode["lg"] = tr("Ganda");
+    languageCode["ka"] = tr("Georgian");
+    languageCode["ka_GE"] = tr("Georgian (Georgia)");
+    languageCode["de"] = tr("German");
+    languageCode["de_AT"] = tr("German (Austria)");
+    languageCode["de_DE"] = tr("German (Germany)");
+    languageCode["de_CH"] = tr("German (Switzerland)");
+    languageCode["el"] = tr("Greek");
+    languageCode["el_GR"] = tr("Greek (Greece)");
+    languageCode["kl"] = tr("Greenlandic");
+    languageCode["gu"] = tr("Gujarati");
+    languageCode["gu_IN"] = tr("Gujarati (India)");
+    languageCode["gun"] = tr("Gun");
+    languageCode["ht"] = tr("Haitian (Haitian Creole)");
+    languageCode["ht_HT"] = tr("Haitian (Haitian Creole) (Haiti)");
+    languageCode["ha"] = tr("Hausa");
+    languageCode["he"] = tr("Hebrew");
+    languageCode["he_IL"] = tr("Hebrew (Israel)");
+    languageCode["hi"] = tr("Hindi");
+    languageCode["hi_IN"] = tr("Hindi (India)");
+    languageCode["hu"] = tr("Hungarian");
+    languageCode["hu_HU"] = tr("Hungarian (Hungary)");
+    languageCode["is"] = tr("Icelandic");
+    languageCode["is_IS"] = tr("Icelandic (Iceland)");
+    languageCode["io"] = tr("Ido");
+    languageCode["ig"] = tr("Igbo");
+    languageCode["ilo"] = tr("Iloko");
+    languageCode["id"] = tr("Indonesian");
+    languageCode["id_ID"] = tr("Indonesian (Indonesia)");
+    languageCode["ia"] = tr("Interlingua");
+    languageCode["ga"] = tr("Irish");
+    languageCode["ga_IE"] = tr("Irish (Ireland)");
+    languageCode["it"] = tr("Italian");
+    languageCode["it_IT"] = tr("Italian (Italy)");
+    languageCode["ja"] = tr("Japanese");
+    languageCode["ja_JP"] = tr("Japanese (Japan)");
+    languageCode["jv"] = tr("Javanese");
+    languageCode["kab"] = tr("Kabyle");
+    languageCode["kn"] = tr("Kannada");
+    languageCode["kn_IN"] = tr("Kannada (India)");
+    languageCode["pam"] = tr("Kapampangan");
+    languageCode["ks"] = tr("Kashmiri");
+    languageCode["ks_IN"] = tr("Kashmiri (India)");
+    languageCode["csb"] = tr("Kashubian");
+    languageCode["kk"] = tr("Kazakh");
+    languageCode["kk@Arab"] = tr("Kazakh (Arabic)");
+    languageCode["kk@Cyrl"] = tr("Kazakh (Cyrillic)");
+    languageCode["kk_KZ"] = tr("Kazakh (Kazakhstan)");
+    languageCode["kk@latin"] = tr("Kazakh (Latin)");
+    languageCode["km"] = tr("Khmer");
+    languageCode["km_KH"] = tr("Khmer (Cambodia)");
+    languageCode["rw"] = tr("Kinyarwanda");
+    languageCode["ky"] = tr("Kirgyz");
+    languageCode["tlh"] = tr("Klingon");
+    languageCode["ko"] = tr("Korean");
+    languageCode["ko_KR"] = tr("Korean (Korea)");
+    languageCode["ku"] = tr("Kurdish");
+    languageCode["ku_IQ"] = tr("Kurdish (Iraq)");
+    languageCode["lad"] = tr("Ladino");
+    languageCode["lo"] = tr("Lao");
+    languageCode["lo_LA"] = tr("Lao (Laos)");
+    languageCode["ltg"] = tr("Latgalian");
+    languageCode["la"] = tr("Latin");
+    languageCode["lv"] = tr("Latvian");
+    languageCode["lv_LV"] = tr("Latvian (Latvia)");
+    languageCode["lez"] = tr("Lezghian");
+    languageCode["lij"] = tr("Ligurian");
+    languageCode["li"] = tr("Limburgian");
+    languageCode["ln"] = tr("Lingala");
+    languageCode["lt"] = tr("Lithuanian");
+    languageCode["lt_LT"] = tr("Lithuanian (Lithuania)");
+    languageCode["jbo"] = tr("Lojban");
+    languageCode["en@lolcat"] = tr("LOLCAT English");
+    languageCode["lmo"] = tr("Lombard");
+    languageCode["dsb"] = tr("Lower Sorbian");
+    languageCode["nds"] = tr("Low German");
+    languageCode["lb"] = tr("Luxembourgish");
+    languageCode["mk"] = tr("Macedonian");
+    languageCode["mk_MK"] = tr("Macedonian (Macedonia)");
+    languageCode["mai"] = tr("Maithili");
+    languageCode["mg"] = tr("Malagasy");
+    languageCode["ms"] = tr("Malay");
+    languageCode["ml"] = tr("Malayalam");
+    languageCode["ml_IN"] = tr("Malayalam (India)");
+    languageCode["ms_MY"] = tr("Malay (Malaysia)");
+    languageCode["mt"] = tr("Maltese");
+    languageCode["mt_MT"] = tr("Maltese (Malta)");
+    languageCode["mi"] = tr("Maori");
+    languageCode["arn"] = tr("Mapudungun");
+    languageCode["mr"] = tr("Marathi");
+    languageCode["mr_IN"] = tr("Marathi (India)");
+    languageCode["mw1"] = tr("Mirandese");
+    languageCode["mn"] = tr("Mongolian");
+    languageCode["mn_MN"] = tr("Mongolian (Mongolia)");
+    languageCode["nah"] = tr("Nahuatl");
+    languageCode["nv"] = tr("Navajo");
+    languageCode["nr"] = tr("Ndebele, South");
+    languageCode["nap"] = tr("Neapolitan");
+    languageCode["ne"] = tr("Nepali");
+    languageCode["ne_NP"] = tr("Nepali (Nepal)");
+    languageCode["nia"] = tr("Nias");
+    languageCode["nqo"] = tr("N'ko");
+    languageCode["se"] = tr("Northern Sami");
+    languageCode["nso"] = tr("Northern Sotho");
+    languageCode["no"] = tr("Norwegian");
+    languageCode["nb"] = tr("Norwegian Bokm?l");
+    languageCode["nb_NO"] = tr("Norwegian Bokm?l (Norway)");
+    languageCode["no_NO"] = tr("Norwegian (Norway)");
+    languageCode["nn"] = tr("Norwegian Nynorsk");
+    languageCode["nn_NO"] = tr("Norwegian Nynorsk (Norway)");
+    languageCode["ny"] = tr("Nyanja");
+    languageCode["oc"] = tr("Occitan (post 1500)");
+    languageCode["or"] = tr("Oriya");
+    languageCode["or_IN"] = tr("Oriya (India)");
+    languageCode["om"] = tr("Oromo");
+    languageCode["os"] = tr("Ossetic");
+    languageCode["pfl"] = tr("Palatinate German");
+    languageCode["pa"] = tr("Panjabi (Punjabi)");
+    languageCode["pa_IN"] = tr("Panjabi (Punjabi) (India)");
+    languageCode["pap"] = tr("Papiamento");
+    languageCode["fa"] = tr("Persian");
+    languageCode["fa_IR"] = tr("Persian (Iran)");
+    languageCode["pms"] = tr("Piemontese");
+    languageCode["en@pirate"] = tr("Pirate English");
+    languageCode["pl"] = tr("Polish");
+    languageCode["pl_PL"] = tr("Polish (Poland)");
+    languageCode["pt"] = tr("Portuguese");
+    languageCode["pt_BR"] = tr("Portuguese (Brazil)");
+    languageCode["pt_PT"] = tr("Portuguese (Portugal)");
+    languageCode["ps"] = tr("Pushto");
+    languageCode["ro"] = tr("Romanian");
+    languageCode["ro_RO"] = tr("Romanian (Romania)");
+    languageCode["rm"] = tr("Romansh");
+    languageCode["ru"] = tr("Russian");
+    languageCode["ru_ee"] = tr("Russian (Estonia)");
+    languageCode["ru_lv"] = tr("Russian (Latvia)");
+    languageCode["ru_lt"] = tr("Russian (Lithuania)");
+    languageCode["ru@petr1708"] = tr("Russian Petrine orthography");
+    languageCode["ru_RU"] = tr("Russian (Russia)");
+    languageCode["sah"] = tr("Sakha (Yakut)");
+    languageCode["sm"] = tr("Samoan");
+    languageCode["sc"] = tr("Sardinian");
+    languageCode["sco"] = tr("Scots");
+    languageCode["sr"] = tr("Serbian");
+    languageCode["sr@Ijekavian"] = tr("Serbian (Ijekavian)");
+    languageCode["sr@ijekavianlatin"] = tr("Serbian (Ijekavian Latin)");
+    languageCode["sr@latin"] = tr("Serbian (Latin)");
+    languageCode["sr_RS@latin"] = tr("Serbian (Latin) (Serbia)");
+    languageCode["sr_RS"] = tr("Serbian (Serbia)");
+    languageCode["sn"] = tr("Shona");
+    languageCode["scn"] = tr("Sicilian");
+    languageCode["szl"] = tr("Silesian");
+    languageCode["sd"] = tr("Sindhi");
+    languageCode["si"] = tr("Sinhala");
+    languageCode["si_LK"] = tr("Sinhala (Sri Lanka)");
+    languageCode["sk"] = tr("Slovak");
+    languageCode["sk_SK"] = tr("Slovak (Slovakia)");
+    languageCode["sl"] = tr("Slovenian");
+    languageCode["sl_SI"] = tr("Slovenian (Slovenia)");
+    languageCode["so"] = tr("Somali");
+    languageCode["son"] = tr("Songhay");
+    languageCode["st"] = tr("Sotho, Southern");
+    languageCode["st_ZA"] = tr("Sotho, Southern (South Africa)");
+    languageCode["sma"] = tr("Southern Sami");
+    languageCode["es"] = tr("Spanish");
+    languageCode["es_AR"] = tr("Spanish (Argentina)");
+    languageCode["es_BO"] = tr("Spanish (Bolivia)");
+    languageCode["es_CL"] = tr("Spanish (Chile)");
+    languageCode["es_CO"] = tr("Spanish (Colombia)");
+    languageCode["es_CR"] = tr("Spanish (Costa Rica)");
+    languageCode["es_DO"] = tr("Spanish (Dominican Republic)");
+    languageCode["es_EC"] = tr("Spanish (Ecuador)");
+    languageCode["es_SV"] = tr("Spanish (El Salvador)");
+    languageCode["es_419"] = tr("Spanish (Latin America)");
+    languageCode["es_MX"] = tr("Spanish (Mexico)");
+    languageCode["es_NI"] = tr("Spanish (Nicaragua)");
+    languageCode["es_PA"] = tr("Spanish (Panama)");
+    languageCode["es_PY"] = tr("Spanish (Paraguay)");
+    languageCode["es_PE"] = tr("Spanish (Peru)");
+    languageCode["es_PR"] = tr("Spanish (Puerto Rico)");
+    languageCode["es_ES"] = tr("Spanish (Spain)");
+    languageCode["es_US"] = tr("Spanish (United States)");
+    languageCode["es_UY"] = tr("Spanish (Uruguay)");
+    languageCode["es_VE"] = tr("Spanish (Venezuela)");
+    languageCode["su"] = tr("Sundanese");
+    languageCode["sw"] = tr("Swahili");
+    languageCode["sw_KE"] = tr("Swahili (Kenya)");
+    languageCode["ss"] = tr("Swati");
+    languageCode["sv"] = tr("Swedish");
+    languageCode["sv_FI"] = tr("Swedish (Finland)");
+    languageCode["sv_SE"] = tr("Swedish (Sweden)");
+    languageCode["tl"] = tr("Tagalog");
+    languageCode["tl_PH"] = tr("Tagalog (Philippines)");
+    languageCode["tg"] = tr("Tajik");
+    languageCode["tg_TJ"] = tr("Tajik (Tajikistan)");
+    languageCode["ta"] = tr("Tamil");
+    languageCode["ta_IN"] = tr("Tamil (India)");
+    languageCode["ta_LK"] = tr("Tamil (Sri-Lanka)");
+    languageCode["tt"] = tr("Tatar");
+    languageCode["te"] = tr("Telugu");
+    languageCode["te_IN"] = tr("Telugu (India)");
+    languageCode["tet"] = tr("Tetum (Tetun)");
+    languageCode["th"] = tr("Thai");
+    languageCode["th_TH"] = tr("Thai (Thailand)");
+    languageCode["bo"] = tr("Tibetan");
+    languageCode["bo_CN"] = tr("Tibetan (China)");
+    languageCode["ti"] = tr("Tigrinya");
+    languageCode["to"] = tr("Tongan");
+    languageCode["ts"] = tr("Tsonga");
+    languageCode["tn"] = tr("Tswana");
+    languageCode["tr"] = tr("Turkish");
+    languageCode["tr_TR"] = tr("Turkish (Turkey)");
+    languageCode["tk"] = tr("Turkmen");
+    languageCode["tk_TM"] = tr("Turkmen (Turkmenistan)");
+    languageCode["udm"] = tr("Udmurt");
+    languageCode["ug"] = tr("Uighur");
+    languageCode["ug@Arab"] = tr("Uighur (Arabic)");
+    languageCode["ug@Cyrl"] = tr("Uighur (Cyrillic)");
+    languageCode["ug@Latin"] = tr("Uighur (Latin)");
+    languageCode["uk"] = tr("Ukrainian");
+    languageCode["uk_UA"] = tr("Ukrainian (Ukraine)");
+    languageCode["vmf"] = tr("Upper Franconian");
+    languageCode["hsb"] = tr("Upper Sorbian");
+    languageCode["ur"] = tr("Urdu");
+    languageCode["ur_PK"] = tr("Urdu (Pakistan)");
+    languageCode["uz"] = tr("Uzbek");
+    languageCode["uz@Arab"] = tr("Uzbek (Arabic)");
+    languageCode["uz@Cyrl"] = tr("Uzbek (Cyrillic)");
+    languageCode["uz@Latn"] = tr("Uzbek (Latin)");
+    languageCode["ve"] = tr("Venda");
+    languageCode["vec"] = tr("Venetian");
+    languageCode["vi"] = tr("Vietnamese");
+    languageCode["vi_VN"] = tr("Vietnamese (Viet Nam)");
+    languageCode["vls"] = tr("Vlaams");
+    languageCode["wa"] = tr("Walloon");
+    languageCode["war"] = tr("W?ray-W?ray");
+    languageCode["cy"] = tr("Welsh");
+    languageCode["cy_GB"] = tr("Welsh (United Kingdom)");
+    languageCode["fy"] = tr("Western Frisian");
+    languageCode["fy_NL"] = tr("Western Frisian (Netherlands)");
+    languageCode["wo"] = tr("Wolof");
+    languageCode["wo_SN"] = tr("Wolof (Senegal)");
+    languageCode["xh"] = tr("Xhosa");
+    languageCode["yi"] = tr("Yiddish");
+    languageCode["yo"] = tr("Yoruba");
+    languageCode["zu"] = tr("Zulu");
+    languageCode["zu_ZA"] = tr("Zulu (South Africa)");
 }

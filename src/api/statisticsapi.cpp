@@ -11,7 +11,12 @@ StatisticsAPI::StatisticsAPI(QObject *parent) :
 
 void StatisticsAPI::getAllProjectLangStats(const QString &projectSlug, const QVariantList &resources, int accountIdx)
 {
-    nm.setAccountIndex(accountIdx);
+    if (resources.isEmpty()) {
+        emit gotAllProjectLangStatsError(tr("No resources set."));
+        return;
+    }
+
+    getAllProjectLangStatsNm.setAccountIndex(accountIdx);
     projectLangStats.clear();
     projectLangStatsCounter = resources.length();
 
@@ -20,9 +25,9 @@ void StatisticsAPI::getAllProjectLangStats(const QString &projectSlug, const QVa
     {
         QUrl url = helper.buildUrl("/project/" + projectSlug + "/resource/" + resources.at(i).toString() + "/stats/", accountIdx);
 
-        connect(&nm, SIGNAL(finished(QNetworkReply*)), this, SLOT(getAllProjectLangStatsFinished(QNetworkReply*)), Qt::UniqueConnection);
+        connect(&getAllProjectLangStatsNm, SIGNAL(finished(QNetworkReply*)), this, SLOT(getAllProjectLangStatsFinished(QNetworkReply*)), Qt::UniqueConnection);
 
-        nm.get(QNetworkRequest(url));
+        getAllProjectLangStatsNm.get(QNetworkRequest(url));
     }
 }
 
@@ -38,32 +43,24 @@ void StatisticsAPI::getAllProjectLangStatsFinished(QNetworkReply* rep)
         qDebug() << results;
 #endif
 
-        QMapIterator<QString, QVariant> i(results);
-        while(i.hasNext()) {
-            i.next();
+        if (!results.isEmpty()) {
+            QMapIterator<QString, QVariant> i(results);
+            while(i.hasNext()) {
+                i.next();
 
-            QMap<QString, QVariant> valueMap;
+                QMap<QString, QVariant> valueMap;
 
-            if (projectLangStats.contains(i.key()))
-                valueMap = projectLangStats[i.key()].toMap();
+                if (projectLangStats.contains(i.key()))
+                    valueMap = projectLangStats[i.key()].toMap();
 
-            QVariantMap map = i.value().toMap();
+                QVariantMap map = i.value().toMap();
 
-            if (valueMap["name"].toString().isEmpty()) {
-                QLocale locale(i.key());
-                if (locale.language() != QLocale::C) {
-                    QString name = locale.nativeLanguageName();
-                    name[0] = name[0].toUpper();
-                    valueMap["name"] = QVariant::fromValue(name);
-                }
+                valueMap["translated"] = QVariant::fromValue(valueMap["translated"].toDouble() + map.value("translated_entities").toDouble());
+                valueMap["untranslated"] = QVariant::fromValue(valueMap["untranslated"].toDouble() + map.value("untranslated_entities").toDouble());
+                valueMap["reviewed"] = QVariant::fromValue(valueMap["reviewed"].toDouble() + map.value("reviewed").toDouble());
+
+                projectLangStats[i.key()] = QVariant::fromValue(valueMap);
             }
-
-
-            valueMap["translated"] = QVariant::fromValue(valueMap["translated"].toDouble() + map.value("translated_entities").toDouble());
-            valueMap["untranslated"] = QVariant::fromValue(valueMap["untranslated"].toDouble() + map.value("untranslated_entities").toDouble());
-            valueMap["reviewed"] = QVariant::fromValue(valueMap["reviewed"].toDouble() + map.value("reviewed").toDouble());
-
-            projectLangStats[i.key()] = QVariant::fromValue(valueMap);
         }
 
         projectLangStatsCounter--;
@@ -73,15 +70,13 @@ void StatisticsAPI::getAllProjectLangStatsFinished(QNetworkReply* rep)
         qDebug() << projectLangStatsCounter;
 #endif
 
-//        if (getProjectResult.isEmpty())
-//        {
-//            emit gotProjectError(tr("Server reply was empty."));
-//        } else {
-//            emit gotProject(getProjectResult);
-//        }
-
-        if (projectLangStatsCounter == 0)
-            emit gotAllProjectLangStats(projectLangStats);
+        if (projectLangStatsCounter == 0) {
+            if (!projectLangStats.isEmpty()) {
+                emit gotAllProjectLangStats(projectLangStats);
+            } else {
+                emit gotAllProjectLangStatsError(tr("Server reply was empty."));
+            }
+        }
 
     } else {
 #ifdef QT_DEBUG
@@ -107,24 +102,30 @@ void StatisticsAPI::getAllProjectLangStatsFinished(QNetworkReply* rep)
 
 void StatisticsAPI::getLangResourcesStats(const QString &projectSlug, const QString &lang, const QVariantList &resources, int accountIdx)
 {
-    nm.setAccountIndex(accountIdx);
+    if (resources.isEmpty()) {
+        emit gotLangResourcesStatsError(tr("No resources set."));
+        return;
+    }
+
+    getResourcesStatsNm.setAccountIndex(accountIdx);
     langResourceStats.clear();
     langResourceStastsCounter = resources.length();
+    qDebug() << "RESOURCES: " << langResourceStastsCounter;
 
 
-    for (int i = 0; i < resources.length(); ++i)
+    for (int i = 0; i < langResourceStastsCounter; ++i)
     {
         QUrl url = helper.buildUrl("/project/" + projectSlug + "/resource/" + resources.at(i).toString() + "/stats/" + lang + "/", accountIdx);
         qDebug() << url.toString();
 
-        connect(&nm, SIGNAL(finished(QNetworkReply*)), this, SLOT(getLangResourcesStatsFinished(QNetworkReply*)), Qt::UniqueConnection);
+        connect(&getResourcesStatsNm, SIGNAL(finished(QNetworkReply*)), this, SLOT(getLangResourcesStatsFinished(QNetworkReply*)), Qt::UniqueConnection);
 
-        nm.get(QNetworkRequest(url));
+        getResourcesStatsNm.get(QNetworkRequest(url));
     }
 }
 
 
-void StatisticsAPI::getLangResourcesStatsFinished(QNetworkReply *rep)
+void StatisticsAPI::getLangResourcesStatsFinished(QNetworkReply* rep)
 {
     if (rep->error() == QNetworkReply::NoError)
     {
@@ -147,15 +148,13 @@ void StatisticsAPI::getLangResourcesStatsFinished(QNetworkReply *rep)
         qDebug() << langResourceStastsCounter;
 #endif
 
-//        if (getProjectResult.isEmpty())
-//        {
-//            emit gotProjectError(tr("Server reply was empty."));
-//        } else {
-//            emit gotProject(getProjectResult);
-//        }
-
-        if (langResourceStastsCounter == 0)
-            emit gotLangResourcesStats(langResourceStats);
+        if (langResourceStastsCounter == 0) {
+            if (!langResourceStats.isEmpty()) {
+                emit gotLangResourcesStats(langResourceStats);
+            } else {
+                emit gotLangResourcesStatsError(tr("Server reply was empty."));
+            }
+        }
 
     } else {
 #ifdef QT_DEBUG

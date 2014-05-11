@@ -109,7 +109,7 @@ Page {
                 width: parent.width
                 wrapMode: Text.WordWrap
                 textFormat: Text.PlainText
-                color: Theme.primaryColor
+                color: Theme.secondaryColor
             }
 
             SectionHeader  { text: qsTr("Licenses") }
@@ -120,7 +120,7 @@ Page {
                 width: parent.width - Theme.paddingLarge
                 textFormat: Text.RichText
                 wrapMode: Text.WordWrap
-                color: Theme.primaryColor
+                color: Theme.secondaryColor
                 onLinkActivated: { Qt.openUrlExternally(link) }
             }
 

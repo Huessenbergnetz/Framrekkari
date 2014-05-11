@@ -18,22 +18,32 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef LANGSTATOBJECT_H
-#define LANGSTATOBJECT_H
+import QtQuick 2.0
+import Sailfish.Silica 1.0
 
-#include<QString>
+Page {
+    id: listFilterDialog
 
-class LangstatObject {
-public:
-  LangstatObject(const QString &langCode, const double &trans, const double &untrans, const double &rev):
-    lang(langCode),
-    translated(trans),
-    untranslated(untrans),
-    reviewed(rev){}
-  QString lang;
-  double translated;
-  double untranslated;
-  double reviewed;
-};
+    property int filter
+    property string filterName
 
-#endif // LANGSTATOBJECT_H
+    signal accepted()
+
+    function accept(filter, name)
+    {
+        listFilterDialog.filter = filter;
+        listFilterDialog.filterName = name;
+        listFilterDialog.accepted();
+        pageStack.pop();
+    }
+
+    Column {
+        anchors.fill: parent
+        PageHeader { title: qsTr("List filter") }
+
+        OneClickDialogItem { text: qsTr("All"); intValue: 0; onClicked: accept(intValue, text)  }
+        OneClickDialogItem { text: qsTr("Untranslated"); intValue: 1; onClicked: accept(intValue, text)  }
+        OneClickDialogItem { text: qsTr("Not reviewed"); intValue: 2; onClicked: accept(intValue, text)  }
+        OneClickDialogItem { text: qsTr("Reviewed"); intValue: 3; onClicked: accept(intValue, text) }
+    }
+}

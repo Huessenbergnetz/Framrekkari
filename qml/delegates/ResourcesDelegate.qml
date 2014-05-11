@@ -29,18 +29,8 @@ ListItem {
     contentHeight: column.height + Theme.paddingMedium
     width: parent.width
 
-//    menu: accountMenu
-
     ListView.onAdd: AddAnimation { target: projectResourceItem }
     ListView.onRemove: RemoveAnimation { target: projectResourceItem }
-
-//    Image {
-//        width: parent.width; height: Math.min(sourceSize.height, parent.contentHeight)
-//        anchors { bottom: parent.bottom }
-//        sourceSize.width: 480; sourceSize.height: 260
-//        source: "image://theme/graphic-gradient-home-bottom"
-//        source: "image://theme/graphic-gradient-edge"
-//    }
 
 
     Column {
@@ -48,133 +38,262 @@ ListItem {
         width: parent.width
 
         Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
-            height: nameLabel.height
-            spacing: 5
+            anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
 
-            Label {
-                id: nameLabel
-                text: model.slug
-                color: projectResourceItem.highlighted ? Theme.highlightColor : Theme.primaryColor
-                maximumLineCount: 1
-                truncationMode: TruncationMode.Fade
-                elide: Text.ElideRight
-                textFormat: Text.PlainText
-                width: parent.width - untranslatedRow.width
-            }
-
-            Row {
-                id: untranslatedRow
-                width: parent.width/3
-                anchors.verticalCenter: parent.verticalCenter
-                spacing: 5
-
-                Image {
-                    id: untranslatedIcon
-                    source: "/usr/share/harbour-framrekkari/icons/icon-s-untranslated-strings.png"
-                    width: reviewed.font.pixelSize; height: width;
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+            Column {
+                width: parent.width * 0.6
 
                 Label {
-                    id: untranslated
-                    width: parent.width - untranslatedIcon.width - parent.spacing
-                    text: qsTr("%n string(s)", "", model.untranslated)
+                    id: nameLabel
+                    text: model.slug
+                    color: projectResourceItem.highlighted ? Theme.highlightColor : Theme.primaryColor
                     maximumLineCount: 1
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     truncationMode: TruncationMode.Fade
+                    elide: Text.ElideRight
+                    textFormat: Text.PlainText
+                    width: parent.width
+                }
+
+                Row {
+                    width: parent.width
+                    spacing: 5
+                    height: lastUpdate.height
+
+                    Image {
+                        id: timerIcon
+                        source: "image://theme/icon-s-date"
+                        width: lastUpdate.font.pixelSize; height: width;
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+
+                    Text {
+                        id: lastUpdate
+                        text: Qt.formatDateTime(model.lastUpdate, qsTr("dd.MM.yy hh:mmAP"))
+                        font.pixelSize: Theme.fontSizeExtraSmall
+                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    }
+                }
+
+                Row {
+                    width: parent.width
+                    spacing: 5
+                    height: commiter.height
+
+                    Image {
+                        id: commiterIcon
+                        source: "/usr/share/harbour-framrekkari/icons/icon-s-owner.png"
+                        width: commiter.font.pixelSize; height: width;
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+
+                    Text {
+                        id: commiter
+                        text: model.lastCommiter
+                        font.pixelSize: Theme.fontSizeExtraSmall
+                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    }
+                }
+            }
+
+            Column {
+                width: parent.width * 0.4
+                anchors.bottom: parent.bottom
+
+                Row {
+                    id: untranslatedRow
+                    width: parent.width
+                    spacing: 5
+
+                    Image {
+                        id: untranslatedIcon
+                        source: "/usr/share/harbour-framrekkari/icons/icon-s-untranslated-strings.png"
+                        width: untranslated.font.pixelSize; height: width;
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+
+                    Label {
+                        id: untranslated
+                        width: parent.width - untranslatedIcon.width - parent.spacing
+                        text: qsTr("%n string(s)", "", model.untranslated)
+                        maximumLineCount: 1
+                        font.pixelSize: Theme.fontSizeExtraSmall
+                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                        truncationMode: TruncationMode.Fade
+                    }
+                }
+
+                Row {
+                    width: parent.width
+                    spacing: 5
+                    height: finished.height
+
+                    Image {
+                        id: finishedIcon
+                        source: "image://theme/icon-s-edit"
+                        width: finished.font.pixelSize; height: width;
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+
+                    Text {
+                        id: finished
+                        text: Number(Number((model.translated/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
+                        font.pixelSize: Theme.fontSizeExtraSmall
+                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    }
+                }
+
+                Row {
+                    width: parent.width
+                    spacing: 5
+                    height: reviewed.height
+
+                    Image {
+                        id: reviewedIcon
+                        source: "/usr/share/harbour-framrekkari/icons/icon-s-watch.png"
+                        width: reviewed.font.pixelSize; height: width;
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+
+                    Text {
+                        id: reviewed
+                        text: Number(Number((model.reviewed/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
+                        font.pixelSize: Theme.fontSizeExtraSmall
+                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    }
                 }
             }
         }
 
-        Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+//        Row {
+//            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+//            height: nameLabel.height
+//            spacing: 5
 
-            Row {
-                width: parent.width/2
-                spacing: 5
-                height: finished.height
+//            Label {
+//                id: nameLabel
+//                text: model.slug
+//                color: projectResourceItem.highlighted ? Theme.highlightColor : Theme.primaryColor
+//                maximumLineCount: 1
+//                truncationMode: TruncationMode.Fade
+//                elide: Text.ElideRight
+//                textFormat: Text.PlainText
+//                width: parent.width * 0.6
+//            }
 
-                Image {
-                    id: finishedIcon
-                    source: "image://theme/icon-s-edit"
-                    width: finished.font.pixelSize; height: width;
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+//            Row {
+//                id: untranslatedRow
+//                width: parent.width * 0.4
+//                anchors.verticalCenter: parent.verticalCenter
+//                spacing: 5
 
-                Text {
-                    id: finished
-                    text: Number(Number((model.translated/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                }
-            }
+//                Image {
+//                    id: untranslatedIcon
+//                    source: "/usr/share/harbour-framrekkari/icons/icon-s-untranslated-strings.png"
+//                    width: untranslated.font.pixelSize; height: width;
+//                    anchors.verticalCenter: parent.verticalCenter
+//                }
 
-            Row {
-                width: parent.width/2
-                spacing: 5
-                height: reviewed.height
+//                Label {
+//                    id: untranslated
+//                    width: parent.width - untranslatedIcon.width - parent.spacing
+//                    text: qsTr("%n string(s)", "", model.untranslated)
+//                    maximumLineCount: 1
+//                    font.pixelSize: Theme.fontSizeExtraSmall
+//                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+//                    truncationMode: TruncationMode.Fade
+//                }
+//            }
+//        }
 
-                Image {
-                    id: reviewedIcon
-                    source: "/usr/share/harbour-framrekkari/icons/icon-s-watch.png"
-                    width: reviewed.font.pixelSize; height: width;
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+//        Row {
+//            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
 
-                Text {
-                    id: reviewed
-                    text: Number(Number((model.reviewed/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                }
-            }
-        }
+//            Row {
+//                width: parent.width * 0.6
+//                spacing: 5
+//                height: lastUpdate.height
 
-        Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+//                Image {
+//                    id: timerIcon
+//                    source: "image://theme/icon-s-date"
+//                    width: lastUpdate.font.pixelSize; height: width;
+//                    anchors.verticalCenter: parent.verticalCenter
+//                }
 
-            Row {
-                width: parent.width/2
-                spacing: 5
-                height: lastUpdate.height
+//                Text {
+//                    id: lastUpdate
+//                    text: Qt.formatDateTime(model.lastUpdate, qsTr("dd.MM.yy hh:mmAP"))
+//                    font.pixelSize: Theme.fontSizeExtraSmall
+//                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+//                }
+//            }
 
-                Image {
-                    id: timerIcon
-                    source: "image://theme/icon-s-date"
-                    width: lastUpdate.font.pixelSize; height: width;
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+//            Row {
+//                width: parent.width * 0.4
+//                spacing: 5
+//                height: finished.height
 
-                Text {
-                    id: lastUpdate
-                    text: Qt.formatDateTime(model.lastUpdate, qsTr("dd.MM.yy hh:mmAP"))
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                }
-            }
+//                Image {
+//                    id: finishedIcon
+//                    source: "image://theme/icon-s-edit"
+//                    width: finished.font.pixelSize; height: width;
+//                    anchors.verticalCenter: parent.verticalCenter
+//                }
 
-            Row {
-                width: parent.width/2
-                spacing: 5
-                height: commiter.height
+//                Text {
+//                    id: finished
+//                    text: Number(Number((model.translated/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
+//                    font.pixelSize: Theme.fontSizeExtraSmall
+//                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+//                }
+//            }
 
-                Image {
-                    id: commiterIcon
-                    source: "image://theme/icon-m-person"
-                    width: commiter.font.pixelSize; height: width;
-                    anchors.verticalCenter: parent.verticalCenter
-                }
 
-                Text {
-                    id: commiter
-                    text: model.lastCommiter
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                }
-            }
-        }
+//        }
+
+//        Row {
+//            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+
+//            Row {
+//                width: parent.width * 0.6
+//                spacing: 5
+//                height: commiter.height
+
+//                Image {
+//                    id: commiterIcon
+//                    source: "image://theme/icon-m-person"
+//                    width: commiter.font.pixelSize; height: width;
+//                    anchors.verticalCenter: parent.verticalCenter
+//                }
+
+//                Text {
+//                    id: commiter
+//                    text: model.lastCommiter
+//                    font.pixelSize: Theme.fontSizeExtraSmall
+//                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+//                }
+//            }
+
+//            Row {
+//                width: parent.width * 0.4
+//                spacing: 5
+//                height: reviewed.height
+
+//                Image {
+//                    id: reviewedIcon
+//                    source: "/usr/share/harbour-framrekkari/icons/icon-s-watch.png"
+//                    width: reviewed.font.pixelSize; height: width;
+//                    anchors.verticalCenter: parent.verticalCenter
+//                }
+
+//                Text {
+//                    id: reviewed
+//                    text: Number(Number((model.reviewed/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
+//                    font.pixelSize: Theme.fontSizeExtraSmall
+//                    color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+//                }
+//            }
+//        }
 
         ProgressBar {
             width: parent.width

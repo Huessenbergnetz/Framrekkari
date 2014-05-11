@@ -18,22 +18,21 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef LANGSTATOBJECT_H
-#define LANGSTATOBJECT_H
+import QtQuick 2.0
+import Sailfish.Silica 1.0
 
-#include<QString>
+BackgroundItem {
+    id: bgItem
+    width: parent.width
+    height: Theme.itemSizeSmall
 
-class LangstatObject {
-public:
-  LangstatObject(const QString &langCode, const double &trans, const double &untrans, const double &rev):
-    lang(langCode),
-    translated(trans),
-    untranslated(untrans),
-    reviewed(rev){}
-  QString lang;
-  double translated;
-  double untranslated;
-  double reviewed;
-};
+    property string text
+    property string textValue
+    property int intValue
 
-#endif // LANGSTATOBJECT_H
+    Label {
+        id: signLabel
+        anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
+        text: bgItem.text
+    }
+}

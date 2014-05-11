@@ -61,7 +61,11 @@ Page {
         for (var propS in source)
             sourcesModel.append({"plural": propS, "string": source[propS]})
 
-        sourceText.text = sourcesModel.get(0).string
+        if (sourcesModel.count > 0) {
+            sourceText.text = sourcesModel.get(0).string
+        } else {
+            sourceText.text = ""
+        }
 
         translationsModel.clear()
         oldTranslationsModel.clear()
@@ -71,7 +75,11 @@ Page {
             oldTranslationsModel.append({"plural": propT, "string": translation[propT]})
         }
 
-        translationField.text = translationsModel.get(0).string
+        if (translationsModel.count > 0) {
+            translationField.text = translationsModel.get(0).string
+        } else {
+            translationField.text = ""
+        }
     }
 
     function changePlural(idx)
@@ -166,6 +174,10 @@ Page {
             messageContainer.message = projectTranslationsModelErrorString
             messageContainer.messagetype = "error"
             messageContainer.show()
+        }
+        onSavedStringSuccess: {
+            pullDown.busy = false
+            getPreviousNext()
         }
     }
 

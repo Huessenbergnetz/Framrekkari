@@ -54,13 +54,13 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("Refresh")
-                onClicked: projectResourceModel.refresh(projectSlug, lang, resources, accountIndex)
+                onClicked: projectResourceModel.refresh(resourcesPages.projectSlug, resourcesPages.lang, resourcesPages.resources, resourcesPages.accountIndex)
             }
         }
 
         VerticalScrollDecorator {}
 
-        header: PageHeader { title: projectName + ": " + langName }
+        header: PageHeader { title:qsTr("Resources:") + " " + langName }
 
         model: projectResourceModel
         delegate: ResourcesDelegate {

@@ -42,6 +42,7 @@ Page {
     property bool inOperation: true
 
     Component.onCompleted: projectsAPI.getProject(accountIndex, projectSlug, true)
+    Component.onDestruction: projectLangstatsModel.clear()
 
 
     Connections {
@@ -69,14 +70,16 @@ Page {
 
             var resourcesArray = project["resources"]
             var resourcesArrayLength = resourcesArray.length
-            for (var i = 0; i < resourcesArrayLength; i++)
-                projectResources.push(resourcesArray[i]["slug"]);
-
-
+            for (var j = 0; j < resourcesArrayLength; j++)
+                projectResources.push(resourcesArray[j]["slug"]);
 
             maintainers.text = newMaintainersArray.join(", ")
 
-            projectLangstatsModel.refresh(projectSlug, projectResources, accountIndex)
+            if (projectResources.length > 0) {
+                projectLangstatsModel.refresh(projectSlug, projectResources, accountIndex)
+            } else {
+                noResources.visible = true
+            }
 
             inOperation = false
         }
@@ -91,10 +94,124 @@ Page {
         size: BusyIndicatorSize.Large
     }
 
-    SilicaFlickable {
-        anchors.fill: parent
+    Column {
+        id: columnHeader
+        visible: !inOperation && !errorDisplay.enabled
 
-        contentHeight: column.height + Theme.paddingLarge
+        move: Transition { NumberAnimation { properties: "y"; easing.type: Easing.InOutQuad } }
+        add: Transition { FadeAnimation {} }
+
+        width: projectPage.width
+        spacing: Theme.paddingLarge
+        PageHeader { title: projectName }
+
+        Text {
+            id: description
+            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            font.pixelSize: Theme.fontSizeSmall
+            color: Theme.primaryColor
+            wrapMode: Text.WordWrap
+        }
+
+        Row {
+            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            height: tags.height
+            visible: tags.text !== ""
+            spacing: 5
+
+            Image {
+                id: tagIcon
+                source: "/usr/share/harbour-framrekkari/icons/icon-s-tag.png"
+                sourceSize.width: 32; sourceSize.height: 32
+                anchors { top: parent.top; topMargin: 7 }
+                width: tags.font.pixelSize; height: width
+            }
+
+            Text {
+                id: tags
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                wrapMode: Text.WordWrap
+                width: parent.width - tagIcon.width - parent.spacing
+            }
+        }
+
+        Row {
+            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            height: owner.height
+            visible: owner.text !== ""
+            spacing: 5
+
+            Image {
+                id: ownerIcon
+                source: "image://theme/icon-s-task"
+                sourceSize.width: 32; sourceSize.height: 32
+                anchors { top: parent.top; topMargin: 7 }
+                width: tags.font.pixelSize; height: width
+                smooth: true
+            }
+
+            Text {
+                id: owner
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                wrapMode: Text.WordWrap
+                width: parent.width - ownerIcon.width - parent.spacing
+            }
+        }
+
+        Row {
+            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            height: maintainers.height
+            visible: maintainers.text !== ""
+            spacing: 5
+
+            Image {
+                id: maintainerIcon
+                source: "/usr/share/harbour-framrekkari/icons/icon-s-owner.png"
+                sourceSize.width: 32; sourceSize.height: 32
+                anchors { top: parent.top; topMargin: 7 }
+                width: tags.font.pixelSize; height: width
+                smooth: true
+            }
+
+            Text {
+                id: maintainers
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                wrapMode: Text.WordWrap
+                width: parent.width - maintainerIcon.width - parent.spacing
+            }
+        }
+
+        SectionHeader { text: qsTr("Languages")/*; visible: languageList.count !== 0*/ }
+
+        BusyIndicator {
+            anchors.horizontalCenter: parent.horizontalCenter
+            running: visible
+            visible: languageList.count === 0 && !errorDisplay.enabled && !noResources.visible
+            size: BusyIndicatorSize.Large
+        }
+
+        Text {
+            id: noResources
+            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            font.pixelSize: Theme.fontSizeExtraSmall
+            color: Theme.secondaryColor
+            wrapMode: Text.WordWrap
+            visible: false
+            text: qsTr("This project has so far created ​​no resources.")
+        }
+    }
+
+
+
+    SilicaListView {
+        id: languageList
+        anchors.fill: parent
+        spacing: 10
+
+        VerticalScrollDecorator {}
 
         PullDownMenu {
             MenuItem {
@@ -127,127 +244,33 @@ Page {
             MenuItem {
                 text: qsTr("Refresh")
                 enabled: !inOperation
-                onClicked: projectsAPI.getProject(accountIndex, projectSlug, true)
+                onClicked: {
+                    inOperation = true
+                    errorDisplay.enabled = false
+                    noResources.visible = false
+                    projectLangstatsModel.refresh(projectSlug, projectResources, accountIndex)
+                }
             }
+        }
+
+        header: Item {
+            id: header
+            width: columnHeader.width
+            height: columnHeader.height
+            Component.onCompleted: columnHeader.parent = header
+        }
+
+        model: projectLangstatsModel
+        delegate: ProjectLangDelegate {
+            onClicked: {
+                pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: langHelper.getLanguageName(model.lang), projectSrcLang: projectSrcLang})
+            }
+            srcLang: projectSrcLang
         }
 
         ViewPlaceholder {
             id: errorDisplay
             enabled: false
-        }
-
-        Column {
-            id: column
-            visible: !inOperation && !errorDisplay.enabled
-
-            move: Transition { NumberAnimation { properties: "y"; easing.type: Easing.InOutQuad } }
-            add: Transition { FadeAnimation {} }
-
-            width: projectPage.width
-            spacing: Theme.paddingLarge
-            PageHeader { title: projectName }
-
-            Text {
-                id: description
-                anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.primaryColor
-                wrapMode: Text.WordWrap
-            }
-
-            Row {
-                anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
-                height: tags.height
-                visible: tags.text !== ""
-                spacing: 5
-
-                Image {
-                    id: tagIcon
-                    source: "/usr/share/harbour-framrekkari/icons/icon-s-tag.png"
-                    anchors { top: parent.top; topMargin: 7 }
-                    width: tags.font.pixelSize; height: width
-                }
-
-                Text {
-                    id: tags
-                    font.pixelSize: Theme.fontSizeSmall
-                    color: Theme.secondaryColor
-                    wrapMode: Text.WordWrap
-                    width: parent.width - tagIcon.width - parent.spacing
-                }
-            }
-
-            Row {
-                anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
-                height: owner.height
-                visible: owner.text !== ""
-                spacing: 5
-
-                Image {
-                    id: ownerIcon
-                    source: "image://theme/icon-s-task"
-                    sourceSize.width: 32; sourceSize.height: 32
-                    anchors { top: parent.top; topMargin: 7 }
-                    width: tags.font.pixelSize; height: width
-                    smooth: true
-                }
-
-                Text {
-                    id: owner
-                    font.pixelSize: Theme.fontSizeSmall
-                    color: Theme.secondaryColor
-                    wrapMode: Text.WordWrap
-                    width: parent.width - ownerIcon.width - parent.spacing
-                }
-            }
-
-            Row {
-                anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
-                height: maintainers.height
-                visible: maintainers.text !== ""
-                spacing: 5
-
-                Image {
-                    id: maintainerIcon
-                    source: "image://theme/icon-m-person"
-                    sourceSize.width: 64; sourceSize.height: 64
-                    anchors { top: parent.top; topMargin: 7 }
-                    width: tags.font.pixelSize; height: width
-                    smooth: true
-                }
-
-                Text {
-                    id: maintainers
-                    font.pixelSize: Theme.fontSizeSmall
-                    color: Theme.secondaryColor
-                    wrapMode: Text.WordWrap
-                    width: parent.width - maintainerIcon.width - parent.spacing
-                }
-            }
-
-            BusyIndicator {
-                anchors.horizontalCenter: parent.horizontalCenter
-                running: visible
-                visible: languageList.count === 0
-                size: BusyIndicatorSize.Large
-            }
-
-            SectionHeader { text: qsTr("Languages"); visible: languageList.count !== 0 }
-
-            ListView {
-                id: languageList
-                width: parent.width
-                height: childrenRect.height
-                model: projectLangstatsModel
-                delegate: ProjectLangDelegate {
-                    onClicked: {
-                        pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: model.name, projectSrcLang: projectSrcLang})
-                    }
-                    srcLang: projectSrcLang
-                }
-                interactive: false
-                spacing: 10
-            }
         }
     }
 }

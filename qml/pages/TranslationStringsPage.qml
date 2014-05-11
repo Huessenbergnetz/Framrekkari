@@ -36,7 +36,25 @@ Page {
     property string langName
     property string resource
 
-    Component.onCompleted: projectTranslationsModel.refresh(projectSlug, resource, lang, accountIndex)
+    property int filter: config.get("display/stringListFilter", 0)
+    property string filterName: getFilterName()
+
+    function getFilterName()
+    {
+        switch(filter) {
+        case 1:
+            return qsTr("Untranslated");
+        case 2:
+            return qsTr("Not reviewed")
+        case 3:
+            return qsTr("Reviewed")
+        case 0:
+        default:
+            return qsTr("All");
+        }
+    }
+
+    Component.onCompleted: projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
     Component.onDestruction: projectTranslationsModel.clear()
 
     BusyIndicator {
@@ -54,7 +72,20 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("Refresh")
-                onClicked: projectTranslationsModel.refresh(projectSlug, resource, lang, accountIndex)
+                onClicked: projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
+            }
+            MenuItem {
+                text: qsTr("Filter:") + " " + filterName
+                onClicked: {
+                    var dialog = pageStack.push("../dialogs/ListFilterDialog.qml")
+                    dialog.accepted.connect(function() {
+                        if (translationStringsPage.filter !== dialog.filter) {
+                            translationStringsPage.filter = dialog.filter
+                            translationStringsPage.filterName = dialog.filterName
+                            projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
+                        }
+                    })
+                }
             }
         }
 

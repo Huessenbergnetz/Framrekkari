@@ -81,47 +81,52 @@
 <context>
     <name>AccountDialog</name>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="45"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="50"/>
+        <source>Transifex is a collaborative online translation platform. In order to use it you need an account on &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
         <source>Create account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="45"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
         <source>Edit account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="51"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="64"/>
         <source>Account type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="62"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="100"/>
         <source>Display name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="72"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="110"/>
         <source>Server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="82"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="120"/>
         <source>User name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="91"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="130"/>
         <source>Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="100"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="140"/>
         <source>Ignore SSL errors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="102"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="142"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -157,17 +162,17 @@
 <context>
     <name>AccountsDelegate</name>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="111"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="124"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="117"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="130"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="124"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="137"/>
         <source>Removing account %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -621,12 +626,12 @@
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="180"/>
+        <location filename="../qml/pages/StringPage.qml" line="192"/>
         <source>Previous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="188"/>
+        <location filename="../qml/pages/StringPage.qml" line="200"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
@@ -649,17 +654,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="121"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="120"/>
         <source>Not found. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="124"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="123"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="127"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="126"/>
         <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -683,32 +688,32 @@
 <context>
     <name>helper</name>
     <message>
-        <location filename="../qml/js/helper.js" line="48"/>
+        <location filename="../qml/js/helper.js" line="5"/>
         <source>Zero</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/js/helper.js" line="51"/>
+        <location filename="../qml/js/helper.js" line="8"/>
         <source>Singular</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/js/helper.js" line="54"/>
+        <location filename="../qml/js/helper.js" line="11"/>
         <source>Two</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/js/helper.js" line="57"/>
+        <location filename="../qml/js/helper.js" line="14"/>
         <source>Few</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/js/helper.js" line="60"/>
+        <location filename="../qml/js/helper.js" line="17"/>
         <source>Many</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/js/helper.js" line="63"/>
+        <location filename="../qml/js/helper.js" line="20"/>
         <source>Plural</source>
         <translation type="unfinished"></translation>
     </message>

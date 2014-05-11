@@ -22,10 +22,18 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 CoverBackground {
+
+    Image {
+        source: "/usr/share/harbour-framrekkari/icons/cover-background.png"
+        x: 0; y: 0; z: -1
+        opacity: 0.1
+        width: parent.width
+    }
+
     CoverPlaceholder {
-                text: "Framrekkari"
-                icon.source: "/usr/share/icons/hicolor/86x86/apps/harbour-framrekkari.png"
-            }
+        text: "Framrekkari"
+        icon.source: "/usr/share/icons/hicolor/86x86/apps/harbour-framrekkari.png"
+    }
 }
 
 

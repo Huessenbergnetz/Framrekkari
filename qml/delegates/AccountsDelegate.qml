@@ -20,11 +20,12 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../js/helper.js" as HELPER
 
 ListItem {
     id: accountListItem
 
-    contentHeight: column.height + Theme.paddingSmall
+    contentHeight: row.height + Theme.paddingSmall
     width: parent.width
 
     menu: accountMenu
@@ -38,68 +39,82 @@ ListItem {
         pageStack.push(Qt.resolvedUrl("../pages/AccountPage.qml"))
     }
 
-    Column {
-        id: column
+    Row {
+        id: row
         anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
 
-        Label {
-            id: nameLabel
-            text: model.name
-            width: parent.width
-            color: accountListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
-            maximumLineCount: 1
-            truncationMode: TruncationMode.Fade
-            elide: Text.ElideRight
-            textFormat: Text.PlainText
+
+        Image {
+            id: icon
+            width: 96; height: 96
+            sourceSize.height: 96; sourceSize.width: 96
+            source: HELPER.getAccountIcon(model.type, "l")
+            smooth: true
         }
 
-        Row {
+        Column {
+            id: column
             width: parent.width
-            height: server.height
-            spacing: 5
 
-            Image {
-                id: serverIcon
-                source: "image://theme/icon-m-region"
-                sourceSize.width: 64; sourceSize.height: 64
-                width: serverText.font.pixelSize; height: width
-                smooth: true
-                anchors.verticalCenter: parent.verticalCenter
-            }
-
-            Text {
-                id: serverText
-                text: model.server
-                font.pixelSize: Theme.fontSizeExtraSmall
-                color: accountListItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                width: parent.width - parent.spacing - serverIcon.width
+            Label {
+                id: nameLabel
+                text: model.name
+                width: parent.width
+                color: accountListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
                 maximumLineCount: 1
+                truncationMode: TruncationMode.Fade
                 elide: Text.ElideRight
-            }
-        }
-
-        Row {
-            width: parent.width
-            height: server.height
-            spacing: 5
-
-            Image {
-                id: userIcon
-                source: "image://theme/icon-m-person"
-                sourceSize.width: 64; sourceSize.height: 64
-                width: userText.font.pixelSize; height: width
-                smooth: true
-                anchors.verticalCenter: parent.verticalCenter
+                textFormat: Text.PlainText
             }
 
-            Text {
-                id: userText
-                text: model.user
-                font.pixelSize: Theme.fontSizeExtraSmall
-                color: accountListItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                width: parent.width - parent.spacing - serverIcon.width
-                maximumLineCount: 1
-                elide: Text.ElideRight
+            Row {
+                width: parent.width
+                height: server.height
+                spacing: 5
+
+                Image {
+                    id: serverIcon
+                    source: "/usr/share/harbour-framrekkari/icons/icon-s-browser.png"
+                    sourceSize.width: 32; sourceSize.height: 32
+                    width: serverText.font.pixelSize; height: width
+                    smooth: true
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
+                Text {
+                    id: serverText
+                    text: model.server
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: accountListItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    width: parent.width - parent.spacing - serverIcon.width
+                    maximumLineCount: 1
+                    elide: Text.ElideRight
+                }
+            }
+
+            Row {
+                width: parent.width
+                height: server.height
+                spacing: 5
+
+                Image {
+                    id: userIcon
+                    source: "/usr/share/harbour-framrekkari/icons/icon-s-owner.png"
+                    sourceSize.width: 32; sourceSize.height: 32
+                    width: userText.font.pixelSize; height: width
+                    smooth: true
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
+                Text {
+                    id: userText
+                    text: model.user
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: accountListItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    width: parent.width - parent.spacing - serverIcon.width
+                    maximumLineCount: 1
+                    elide: Text.ElideRight
+                }
             }
         }
     }

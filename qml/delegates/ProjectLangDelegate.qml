@@ -47,7 +47,8 @@ ListItem {
 
             Label {
                 id: nameLabel
-                text: model.name !== "" ? model.name : model.lang
+//                text: model.name !== "" ? model.name : model.lang
+                text: langHelper.getLanguageName(model.lang)
                 color: projectLangItem.highlighted ? Theme.highlightColor : Theme.primaryColor
                 maximumLineCount: 1
                 truncationMode: TruncationMode.Fade
@@ -57,7 +58,8 @@ ListItem {
 
             Text {
                 id: langCode
-                text: model.name !== "" ? model.lang : ""
+//                text: model.name !== "" ? model.lang : ""
+                text: model.lang
                 visible: text !== ""
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: projectLangItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor

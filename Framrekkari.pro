@@ -27,6 +27,10 @@ contributors.path = /usr/share/harbour-framrekkari/images/contributors
 contributors.files = icons/contributors/*.png
 INSTALLS += contributors
 
+transifexlangs.path = /usr/share/harbour-framrekkari/data
+transifexlangs.files = data/transifex_langs.json
+INSTALLS += transifexlangs
+
 SOURCES += \
     src/main.cpp \
     src/configuration.cpp \
@@ -79,7 +83,9 @@ OTHER_FILES += \
     qml/pages/parts/ContributorItem.qml \
     qml/common/ImageButton.qml \
     qml/common/ComboBoxList.qml \
-    qml/common/PaypalChooser.qml
+    qml/common/PaypalChooser.qml \
+    qml/dialogs/ListFilterDialog.qml \
+    qml/dialogs/OneClickDialogItem.qml
 
 HEADERS += \
     src/globals.h \

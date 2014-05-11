@@ -8,9 +8,10 @@ TranslationStringsAPI::TranslationStringsAPI(QObject *parent) :
 
 
 
-void TranslationStringsAPI::getStrings(const QString &project, const QString &resource, const QString &lang, int accountIdx)
+void TranslationStringsAPI::getStrings(const QString &project, const QString &resource, const QString &lang, int filter, int accountIdx)
 {
     nm.setAccountIndex(accountIdx);
+    getStringFilter = filter;
 
     QUrl url = helper.buildUrl("/project/" + project + "/resource/" + resource + "/translation/" + lang + "/strings/", accountIdx);
 
@@ -26,8 +27,58 @@ void TranslationStringsAPI::getStringsFinished()
 {
     if (getStringReply->error() == QNetworkReply::NoError)
     {
+        QVariantList results;
 
-        QVariantList results = helper.jsonToVariantList(getStringReply->readAll());
+        QVariantList m_results = helper.jsonToVariantList(getStringReply->readAll());
+
+        for (int i = 0; i < m_results.length(); ++i)
+        {
+            QVariantMap map = m_results.at(i).toMap();
+
+            QVariantList context;
+            if(map["context"].type() == QVariant::List) {
+                context = map["context"].toList();
+            } else {
+                context << map["context"].toString();
+            }
+
+            map["context"] = context;
+
+            QVariantMap sources;
+            QVariantMap translations;
+            bool pluralized = map["pluralized"].toBool();
+            if (pluralized)
+            {
+                sources = map["source_string"].toMap();
+                translations = map["translation"].toMap();
+            } else {
+                sources["1"] = map["source_string"].toString();
+                translations["1"] = map["translation"].toString();
+            }
+
+            map["source_string"] = sources;
+            map["translation"] = translations;
+
+
+            if (getStringFilter == 0) {
+
+                results << map;
+
+            } else if (getStringFilter == 1) {
+
+                if (translations["1"].toString().isEmpty())
+                    results << map;
+
+            } else if (getStringFilter == 2) {
+
+                if (!map["reviewed"].toBool())
+                    results << map;
+
+            } else if (getStringFilter == 3) {
+                if (map["reviewed"].toBool())
+                    results << map;
+            }
+        }
 
 #ifdef QT_DEBUG
         qDebug() << results;
@@ -82,16 +133,15 @@ void TranslationStringsAPI::saveString(const QString &project, const QString &re
 #ifdef QT_DEBUG
     qDebug() << transToSave;
     qDebug() << url.toString();
-    qDebug() << jsonDoc.object().toVariantMap();
+    qDebug() << jsonDoc;
 #endif
 
-    QByteArray parameters = jsonDoc.toBinaryData();
+//    QByteArray parameters = jsonDoc.toJson(QJsonDocument::Compact);
     QNetworkRequest request(url);
 
-    request.setRawHeader("Content-Type", "application/json; charset=utf-8");
-    request.setRawHeader("Content-Length", QByteArray::number(parameters.size()));
+    request.setRawHeader("Content-Type", "application/json");
 
-    saveStringReply = nm.put(request, QString(parameters).toUtf8());
+    saveStringReply = nm.put(request, jsonDoc.toJson(QJsonDocument::Compact));
 
     connect(saveStringReply, SIGNAL(finished()), this, SLOT(saveStringFinished()));
 

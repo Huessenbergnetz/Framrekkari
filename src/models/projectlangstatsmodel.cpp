@@ -1,3 +1,23 @@
+/*
+    Framrekkari - Transifex Client for SailfishOS
+    Copyright (C) 2014  Buschtrommel/Matthias Fehring
+    Contact: Matthias Fehring <kontakt@buschmann23.de>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
 #include "projectlangstatsmodel.h"
 #include "langstatobject.h"
 
@@ -5,7 +25,6 @@ const int ProjectLangstatsModel::LangRole = Qt::UserRole + 1;
 const int ProjectLangstatsModel::TranslatedRole = Qt::UserRole + 2;
 const int ProjectLangstatsModel::UntranslatedRole = Qt::UserRole + 3;
 const int ProjectLangstatsModel::ReviewedRole = Qt::UserRole + 4;
-const int ProjectLangstatsModel::NameRole = Qt::UserRole + 5;
 
 ProjectLangstatsModel::ProjectLangstatsModel(QObject *parent) :
     QAbstractTableModel(parent)
@@ -20,7 +39,6 @@ QHash<int, QByteArray> ProjectLangstatsModel::roleNames() const {
     roles.insert(TranslatedRole, QByteArray("translated"));
     roles.insert(UntranslatedRole, QByteArray("untranslated"));
     roles.insert(ReviewedRole, QByteArray("reviewed"));
-    roles.insert(NameRole, QByteArray("name"));
     return roles;
 }
 
@@ -32,7 +50,7 @@ int ProjectLangstatsModel::rowCount(const QModelIndex &) const
 
 int ProjectLangstatsModel::columnCount(const QModelIndex&) const
 {
-    return 5;
+    return 4;
 }
 
 
@@ -55,8 +73,6 @@ QVariant ProjectLangstatsModel::data(const QModelIndex &index, int role) const
         return QVariant::fromValue(sobj->untranslated);
     case ReviewedRole:
         return QVariant::fromValue(sobj->reviewed);
-    case NameRole:
-        return QVariant::fromValue(sobj->name);
     default:
         return QVariant();
     }
@@ -93,7 +109,7 @@ void ProjectLangstatsModel::populate(const QVariantMap &data)
 
         QVariantMap map = i.value().toMap();
 
-        LangstatObject *sobj = new LangstatObject(i.key(), map.value("translated").toDouble(), map.value("untranslated").toDouble(), map.value("reviewed").toDouble(), map.value("name").toString());
+        LangstatObject *sobj = new LangstatObject(i.key(), map.value("translated").toDouble(), map.value("untranslated").toDouble(), map.value("reviewed").toDouble());
 
         m_stats.append(sobj);
     }

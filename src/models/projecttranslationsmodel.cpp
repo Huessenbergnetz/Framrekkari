@@ -1,3 +1,23 @@
+/*
+    Framrekkari - Transifex Client for SailfishOS
+    Copyright (C) 2014  Buschtrommel/Matthias Fehring
+    Contact: Matthias Fehring <kontakt@buschmann23.de>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
 #include "projecttranslationsmodel.h"
 #include "translationsobject.h"
 
@@ -94,11 +114,11 @@ QVariant ProjectTranslationsModel::data(const QModelIndex &index, int role) cons
 
 
 
-void ProjectTranslationsModel::refresh(const QString &project, const QString &resource, const QString &lang, int accountIdx)
+void ProjectTranslationsModel::refresh(const QString &project, const QString &resource, const QString &lang, int filter, int accountIdx)
 {
     clear();
 
-    tAPI.getStrings(project, resource, lang, accountIdx);
+    tAPI.getStrings(project, resource, lang, filter, accountIdx);
 }
 
 
@@ -122,26 +142,7 @@ void ProjectTranslationsModel::populate(const QVariantList &data)
     {
         QVariantMap map = data.at(i).toMap();
 
-        QVariantList context;
-        if(map["context"].type() == QVariant::List) {
-            context = map["context"].toList();
-        } else {
-            context << map["context"].toString();
-        }
-
-        QVariantMap sources;
-        QVariantMap translations;
-        bool pluralized = map["pluralized"].toBool();
-        if (pluralized)
-        {
-            sources = map["source_string"].toMap();
-            translations = map["translation"].toMap();
-        } else {
-            sources["1"] = map["source_string"].toString();
-            translations["1"] = map["translation"].toString();
-        }
-
-        TranslationsObject *tobj = new TranslationsObject(map["key"].toString(), context, map["comment"].toString(), sources, translations, map["reviewed"].toBool(), pluralized);
+        TranslationsObject *tobj = new TranslationsObject(map["key"].toString(), map["context"].toList(), map["comment"].toString(), map["source_string"].toMap(), map["translation"].toMap(), map["reviewed"].toBool(), map["pluralized"].toBool());
         m_translations.append(tobj);
     }
 
@@ -190,4 +191,5 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
 
 
     emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+    emit savedStringSuccess();
 }
