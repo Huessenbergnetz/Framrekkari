@@ -145,7 +145,7 @@
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="84"/>
-        <source>You need to enter the exact and correct projekt slug (project name used in the browser URL).</source>
+        <source>You need to enter the exact and correct project slug (project name used in the browser URL).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

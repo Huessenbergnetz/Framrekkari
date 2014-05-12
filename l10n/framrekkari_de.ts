@@ -143,7 +143,7 @@
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="84"/>
-        <source>You need to enter the exact and correct projekt slug (project name used in the browser URL).</source>
+        <source>You need to enter the exact and correct project slug (project name used in the browser URL).</source>
         <translation>Sie müssen den exakten und korrekten Projekt-Slug (Projekt-Name der in der Browser-Adresse genutzt wird) eingeben.</translation>
     </message>
     <message>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="42"/>
         <source>General</source>
-        <translation type="unfinished"/>
+        <translation>Allgemein</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="51"/>
@@ -364,12 +364,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="57"/>
         <source>Assamese</source>
-        <translation type="unfinished"/>
+        <translation>Assamesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="58"/>
         <source>Assamese (India)</source>
-        <translation type="unfinished"/>
+        <translation>Assamesisch (Inidien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="59"/>
@@ -394,17 +394,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="63"/>
         <source>Azerbaijani (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Aserbaidschanisch (Latein)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="64"/>
         <source>Balochi</source>
-        <translation type="unfinished"/>
+        <translation>Belutschisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="65"/>
         <source>Bashkir</source>
-        <translation type="unfinished"/>
+        <translation>Baschkirisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="66"/>
@@ -414,7 +414,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="67"/>
         <source>Basque (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Baskisch (Spanien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="68"/>
@@ -429,27 +429,27 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="70"/>
         <source>Belarusian (Tarask)</source>
-        <translation type="unfinished"/>
+        <translation>Weißrussisch (Tarask)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="71"/>
         <source>Bengali</source>
-        <translation type="unfinished"/>
+        <translation>Bengalisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="72"/>
         <source>Bengali (Bangladesh)</source>
-        <translation type="unfinished"/>
+        <translation>Bengalisch (Bangladesch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="73"/>
         <source>Bengali (India)</source>
-        <translation type="unfinished"/>
+        <translation>Bengalisch (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="74"/>
         <source>Bodo</source>
-        <translation type="unfinished"/>
+        <translation>Bodo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="75"/>
@@ -464,12 +464,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="77"/>
         <source>Breton</source>
-        <translation type="unfinished"/>
+        <translation>Bretonisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="78"/>
         <source>Bulgarian</source>
-        <translation type="unfinished"/>
+        <translation>Bulgarisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="79"/>
@@ -479,12 +479,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="80"/>
         <source>Burmese</source>
-        <translation type="unfinished"/>
+        <translation>Burmesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="81"/>
         <source>Burmese (Myanmar)</source>
-        <translation type="unfinished"/>
+        <translation>Burmesisch (Myanmar)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="82"/>
@@ -499,27 +499,27 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="84"/>
         <source>Catalan (Valencian)</source>
-        <translation type="unfinished"/>
+        <translation>Katalanisch (Valencianisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="85"/>
         <source>Central Atlas Tamazight</source>
-        <translation type="unfinished"/>
+        <translation>Tamazight</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="86"/>
         <source>Chhattisgarhi</source>
-        <translation type="unfinished"/>
+        <translation>Chhattisgarhi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="87"/>
         <source>Chiga</source>
-        <translation type="unfinished"/>
+        <translation>Bakiga</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="88"/>
         <source>Chinese</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="89"/>
@@ -534,12 +534,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="91"/>
         <source>Chinese (Gan)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Gan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="92"/>
         <source>Chinese (Hakka)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Hakka)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="93"/>
@@ -549,7 +549,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="94"/>
         <source>Chinese (Huizhou)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Huizhou)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="95"/>
@@ -559,7 +559,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="96"/>
         <source>Chinese (Literary)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Literarisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="97"/>
@@ -569,27 +569,27 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="98"/>
         <source>Chinese (Min Bei)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Min Bei)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="99"/>
         <source>Chinese (Min Dong)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Min Dong)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="100"/>
         <source>Chinese (Min Nan)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Min Nan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="101"/>
         <source>Chinese (Min Zhong)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Min Zhong)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="102"/>
         <source>Chinese (Pu-Xian)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Pu-Xian)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="103"/>
@@ -599,37 +599,37 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="104"/>
         <source>Chinese (Taiwan) (Big5) </source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Tainwan) (Big5)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="105"/>
         <source>Chinese (Wu)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Wu)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="106"/>
         <source>Chinese (Xiang)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Xiang)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="107"/>
         <source>Chinese (Yue)</source>
-        <translation type="unfinished"/>
+        <translation>Chinesisch (Yue)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="108"/>
         <source>Chuvash</source>
-        <translation type="unfinished"/>
+        <translation>Tschuwaschisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="109"/>
         <source>Colognian</source>
-        <translation type="unfinished"/>
+        <translation>Kölsch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="110"/>
         <source>Cornish</source>
-        <translation type="unfinished"/>
+        <translation>Kornisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="111"/>
@@ -659,7 +659,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="116"/>
         <source>Czech (Czech Republic)</source>
-        <translation type="unfinished"/>
+        <translation>Tschechisch (Tschechien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="117"/>
@@ -674,12 +674,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="119"/>
         <source>Divehi</source>
-        <translation type="unfinished"/>
+        <translation>Divehi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="120"/>
         <source>Dutch</source>
-        <translation type="unfinished"/>
+        <translation>Niederländisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="121"/>
@@ -689,17 +689,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="122"/>
         <source>Dutch (Netherlands)</source>
-        <translation type="unfinished"/>
+        <translation>Niederländisch (Niederlande)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="123"/>
         <source>Dzongkha</source>
-        <translation type="unfinished"/>
+        <translation>Dzongkha</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="124"/>
         <source>Dzongkha (Bhutan)</source>
-        <translation type="unfinished"/>
+        <translation>Dzongkha (Bhutan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="125"/>
@@ -709,7 +709,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="126"/>
         <source>English (Australia)</source>
-        <translation type="unfinished"/>
+        <translation>Englisch (Australien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="127"/>
@@ -759,17 +759,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="136"/>
         <source>English (United Kingdom)</source>
-        <translation type="unfinished"/>
+        <translation>Englisch (Vereinigtes Königreich)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="137"/>
         <source>English (United States)</source>
-        <translation type="unfinished"/>
+        <translation>Englisch (Vereinigte Staaten)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="138"/>
         <source>Erzya</source>
-        <translation type="unfinished"/>
+        <translation>Ersjanisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="139"/>
@@ -779,22 +779,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="140"/>
         <source>Estonian</source>
-        <translation type="unfinished"/>
+        <translation>Estnisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="141"/>
         <source>Estonian (Estonia)</source>
-        <translation type="unfinished"/>
+        <translation>Estnisch (Estland)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="142"/>
         <source>Faroese</source>
-        <translation type="unfinished"/>
+        <translation>Färöisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="143"/>
         <source>Faroese (Faroe Islands)</source>
-        <translation type="unfinished"/>
+        <translation>Färöisch (Färöer Inseln)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="144"/>
@@ -829,7 +829,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="151"/>
         <source>French (France)</source>
-        <translation type="unfinished"/>
+        <translation>Französisch (Frankreich)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="152"/>
@@ -839,22 +839,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="153"/>
         <source>Friulian</source>
-        <translation type="unfinished"/>
+        <translation>Furlanisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="154"/>
         <source>Fulah</source>
-        <translation type="unfinished"/>
+        <translation>Fulfulde</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="155"/>
         <source>Fulah (Senegal)</source>
-        <translation type="unfinished"/>
+        <translation>Fulfulde (Senegal)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="156"/>
         <source>Gaelic, Scottish</source>
-        <translation type="unfinished"/>
+        <translation>Gälisch, Schottisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="157"/>
@@ -869,7 +869,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="159"/>
         <source>Ganda</source>
-        <translation type="unfinished"/>
+        <translation>Luganda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="160"/>
@@ -904,7 +904,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="166"/>
         <source>Greek</source>
-        <translation type="unfinished"/>
+        <translation>Griechisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="167"/>
@@ -914,42 +914,42 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="168"/>
         <source>Greenlandic</source>
-        <translation type="unfinished"/>
+        <translation>Grönländisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="169"/>
         <source>Gujarati</source>
-        <translation type="unfinished"/>
+        <translation>Gujarati</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="170"/>
         <source>Gujarati (India)</source>
-        <translation type="unfinished"/>
+        <translation>Gujarati (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="171"/>
         <source>Gun</source>
-        <translation type="unfinished"/>
+        <translation>Gun</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="172"/>
         <source>Haitian (Haitian Creole)</source>
-        <translation type="unfinished"/>
+        <translation>Haitianisch (Haitianisch Kreol)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="173"/>
         <source>Haitian (Haitian Creole) (Haiti)</source>
-        <translation type="unfinished"/>
+        <translation>Haitianisch (Haitianisch Kreol) (Haiti)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="174"/>
         <source>Hausa</source>
-        <translation type="unfinished"/>
+        <translation>Hausa</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="175"/>
         <source>Hebrew</source>
-        <translation type="unfinished"/>
+        <translation>Hebräisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="176"/>
@@ -959,22 +959,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="177"/>
         <source>Hindi</source>
-        <translation type="unfinished"/>
+        <translation>Hindi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="178"/>
         <source>Hindi (India)</source>
-        <translation type="unfinished"/>
+        <translation>Hindi (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="179"/>
         <source>Hungarian</source>
-        <translation type="unfinished"/>
+        <translation>Ungarisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="180"/>
         <source>Hungarian (Hungary)</source>
-        <translation type="unfinished"/>
+        <translation>Ungarisch (Ungarn)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="181"/>
@@ -984,22 +984,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="182"/>
         <source>Icelandic (Iceland)</source>
-        <translation type="unfinished"/>
+        <translation>Isländisch (Island)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="183"/>
         <source>Ido</source>
-        <translation type="unfinished"/>
+        <translation>Ido</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="184"/>
         <source>Igbo</source>
-        <translation type="unfinished"/>
+        <translation>Igbo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="185"/>
         <source>Iloko</source>
-        <translation type="unfinished"/>
+        <translation>Ilokano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="186"/>
@@ -1014,7 +1014,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="188"/>
         <source>Interlingua</source>
-        <translation type="unfinished"/>
+        <translation>Interlingua</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="189"/>
@@ -1029,7 +1029,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="191"/>
         <source>Italian</source>
-        <translation type="unfinished"/>
+        <translation>Italienisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="192"/>
@@ -1044,47 +1044,47 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="194"/>
         <source>Japanese (Japan)</source>
-        <translation type="unfinished"/>
+        <translation>Japanisch (Japan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="195"/>
         <source>Javanese</source>
-        <translation type="unfinished"/>
+        <translation>Javanisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="196"/>
         <source>Kabyle</source>
-        <translation type="unfinished"/>
+        <translation>Kabylisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="197"/>
         <source>Kannada</source>
-        <translation type="unfinished"/>
+        <translation>Kannada</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="198"/>
         <source>Kannada (India)</source>
-        <translation type="unfinished"/>
+        <translation>Kannada (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="199"/>
         <source>Kapampangan</source>
-        <translation type="unfinished"/>
+        <translation>Kapampangan</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="200"/>
         <source>Kashmiri</source>
-        <translation type="unfinished"/>
+        <translation>Kashmiri</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="201"/>
         <source>Kashmiri (India)</source>
-        <translation type="unfinished"/>
+        <translation>Kashmiri (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="202"/>
         <source>Kashubian</source>
-        <translation type="unfinished"/>
+        <translation>Kaschubisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="203"/>
@@ -1094,12 +1094,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="204"/>
         <source>Kazakh (Arabic)</source>
-        <translation type="unfinished"/>
+        <translation>Kasachisch (Arabisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="205"/>
         <source>Kazakh (Cyrillic)</source>
-        <translation type="unfinished"/>
+        <translation>Kasachisch (Kyrillisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="206"/>
@@ -1114,17 +1114,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="208"/>
         <source>Khmer</source>
-        <translation type="unfinished"/>
+        <translation>Khmer</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="209"/>
         <source>Khmer (Cambodia)</source>
-        <translation type="unfinished"/>
+        <translation>Khmer (Kambodscha)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="210"/>
         <source>Kinyarwanda</source>
-        <translation type="unfinished"/>
+        <translation>Kinyarwanda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="211"/>
@@ -1134,7 +1134,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="212"/>
         <source>Klingon</source>
-        <translation type="unfinished"/>
+        <translation>Klingonisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="213"/>
@@ -1144,12 +1144,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="214"/>
         <source>Korean (Korea)</source>
-        <translation type="unfinished"/>
+        <translation>Koreanisch (Korea)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="215"/>
         <source>Kurdish</source>
-        <translation type="unfinished"/>
+        <translation>Kurdisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="216"/>
@@ -1159,22 +1159,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="217"/>
         <source>Ladino</source>
-        <translation type="unfinished"/>
+        <translation>Juden-Spanisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="218"/>
         <source>Lao</source>
-        <translation type="unfinished"/>
+        <translation>Laotisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="219"/>
         <source>Lao (Laos)</source>
-        <translation type="unfinished"/>
+        <translation>Laotisch (Laos)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="220"/>
         <source>Latgalian</source>
-        <translation type="unfinished"/>
+        <translation>Lettgallisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="221"/>
@@ -1184,32 +1184,32 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="222"/>
         <source>Latvian</source>
-        <translation type="unfinished"/>
+        <translation>Lettisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="223"/>
         <source>Latvian (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>Lettisch (Lettland)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="224"/>
         <source>Lezghian</source>
-        <translation type="unfinished"/>
+        <translation>Lesgisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="225"/>
         <source>Ligurian</source>
-        <translation type="unfinished"/>
+        <translation>Ligurisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="226"/>
         <source>Limburgian</source>
-        <translation type="unfinished"/>
+        <translation>Limburgisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="227"/>
         <source>Lingala</source>
-        <translation type="unfinished"/>
+        <translation>Lingala</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="228"/>
@@ -1219,17 +1219,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="229"/>
         <source>Lithuanian (Lithuania)</source>
-        <translation type="unfinished"/>
+        <translation>Litauisch (Litauen)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="230"/>
         <source>Lojban</source>
-        <translation type="unfinished"/>
+        <translation>Lojban</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="231"/>
         <source>LOLCAT English</source>
-        <translation type="unfinished"/>
+        <translation>LOLCAT Englisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="232"/>
@@ -1249,7 +1249,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="235"/>
         <source>Luxembourgish</source>
-        <translation type="unfinished"/>
+        <translation>Luxemburgisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="236"/>
@@ -1259,72 +1259,72 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="237"/>
         <source>Macedonian (Macedonia)</source>
-        <translation type="unfinished"/>
+        <translation>Mazedonisch (Mazedonien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="238"/>
         <source>Maithili</source>
-        <translation type="unfinished"/>
+        <translation>Maithili</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="239"/>
         <source>Malagasy</source>
-        <translation type="unfinished"/>
+        <translation>Malagasy</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="240"/>
         <source>Malay</source>
-        <translation type="unfinished"/>
+        <translation>Malaiisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="241"/>
         <source>Malayalam</source>
-        <translation type="unfinished"/>
+        <translation>Malayalam</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="242"/>
         <source>Malayalam (India)</source>
-        <translation type="unfinished"/>
+        <translation>Malayalam (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="243"/>
         <source>Malay (Malaysia)</source>
-        <translation type="unfinished"/>
+        <translation>Malaiisch (Malaysia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="244"/>
         <source>Maltese</source>
-        <translation type="unfinished"/>
+        <translation>Maltesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="245"/>
         <source>Maltese (Malta)</source>
-        <translation type="unfinished"/>
+        <translation>Maltesisch (Malta)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="246"/>
         <source>Maori</source>
-        <translation type="unfinished"/>
+        <translation>Maorisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="247"/>
         <source>Mapudungun</source>
-        <translation type="unfinished"/>
+        <translation>Mapudungun</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="248"/>
         <source>Marathi</source>
-        <translation type="unfinished"/>
+        <translation>Marathi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="249"/>
         <source>Marathi (India)</source>
-        <translation type="unfinished"/>
+        <translation>Marathi (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="250"/>
         <source>Mirandese</source>
-        <translation type="unfinished"/>
+        <translation>Mirandés</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="251"/>
@@ -1339,17 +1339,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="253"/>
         <source>Nahuatl</source>
-        <translation type="unfinished"/>
+        <translation>Nahuatl</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="254"/>
         <source>Navajo</source>
-        <translation type="unfinished"/>
+        <translation>Navajo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="255"/>
         <source>Ndebele, South</source>
-        <translation type="unfinished"/>
+        <translation>Süd-Ndebele</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="256"/>
@@ -1369,22 +1369,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="259"/>
         <source>Nias</source>
-        <translation type="unfinished"/>
+        <translation>Nias</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="260"/>
         <source>N&apos;ko</source>
-        <translation type="unfinished"/>
+        <translation>N&apos;ko</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="261"/>
         <source>Northern Sami</source>
-        <translation type="unfinished"/>
+        <translation>Nordsamisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="262"/>
         <source>Northern Sotho</source>
-        <translation type="unfinished"/>
+        <translation>Nord-Sotho</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="263"/>
@@ -1394,17 +1394,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="147"/>
         <source>Franco-Provençal (Arpitan)</source>
-        <translation type="unfinished"/>
+        <translation>Frankoprovenzalisch (Arpitanisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="264"/>
         <source>Norwegian Bokmål</source>
-        <translation type="unfinished"/>
+        <translation>Bokmål</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="265"/>
         <source>Norwegian Bokmål (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>Bokmål (Norwegen)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="266"/>
@@ -1414,37 +1414,37 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="267"/>
         <source>Norwegian Nynorsk</source>
-        <translation type="unfinished"/>
+        <translation>Nynorsk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="268"/>
         <source>Norwegian Nynorsk (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>Nynorsk (Norwegen)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="269"/>
         <source>Nyanja</source>
-        <translation type="unfinished"/>
+        <translation>ChiNyanja</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="270"/>
         <source>Occitan (post 1500)</source>
-        <translation type="unfinished"/>
+        <translation>Okzitanisch (nach 1500)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="271"/>
         <source>Oriya</source>
-        <translation type="unfinished"/>
+        <translation>Orija</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="272"/>
         <source>Oriya (India)</source>
-        <translation type="unfinished"/>
+        <translation>Orija (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="273"/>
         <source>Oromo</source>
-        <translation type="unfinished"/>
+        <translation>Oromo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="274"/>
@@ -1459,17 +1459,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="276"/>
         <source>Panjabi (Punjabi)</source>
-        <translation type="unfinished"/>
+        <translation>Panjabi (Punjabi)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="277"/>
         <source>Panjabi (Punjabi) (India)</source>
-        <translation type="unfinished"/>
+        <translation>Panjabi (Punjabi) (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="278"/>
         <source>Papiamento</source>
-        <translation type="unfinished"/>
+        <translation>Papiamentu</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="279"/>
@@ -1484,7 +1484,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="281"/>
         <source>Piemontese</source>
-        <translation type="unfinished"/>
+        <translation>Piemontesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="282"/>
@@ -1499,12 +1499,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="284"/>
         <source>Polish (Poland)</source>
-        <translation type="unfinished"/>
+        <translation>Polnisch (Polen)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="285"/>
         <source>Portuguese</source>
-        <translation type="unfinished"/>
+        <translation>Portugiesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="286"/>
@@ -1519,7 +1519,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="288"/>
         <source>Pushto</source>
-        <translation type="unfinished"/>
+        <translation>Paschtunisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="289"/>
@@ -1549,7 +1549,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="294"/>
         <source>Russian (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>Russisch (Lettland)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="295"/>
@@ -1559,22 +1559,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="296"/>
         <source>Russian Petrine orthography</source>
-        <translation type="unfinished"/>
+        <translation>Russisch Petrinische Orthographie</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="297"/>
         <source>Russian (Russia)</source>
-        <translation type="unfinished"/>
+        <translation>Russisch (Russland)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="298"/>
         <source>Sakha (Yakut)</source>
-        <translation type="unfinished"/>
+        <translation>Sakha (Jakutisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="299"/>
         <source>Samoan</source>
-        <translation type="unfinished"/>
+        <translation>Samoanisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="300"/>
@@ -1594,12 +1594,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="303"/>
         <source>Serbian (Ijekavian)</source>
-        <translation type="unfinished"/>
+        <translation>Serbisch (Ijekavisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="304"/>
         <source>Serbian (Ijekavian Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Serbisch (Ivekavisch Latein)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="305"/>
@@ -1609,7 +1609,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="306"/>
         <source>Serbian (Latin) (Serbia)</source>
-        <translation type="unfinished"/>
+        <translation>Serbisch (Latein) (Serbien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="307"/>
@@ -1619,7 +1619,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="308"/>
         <source>Shona</source>
-        <translation type="unfinished"/>
+        <translation>Shona</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="309"/>
@@ -1629,22 +1629,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="310"/>
         <source>Silesian</source>
-        <translation type="unfinished"/>
+        <translation>Schlesisch (polnischer Dialekt)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="311"/>
         <source>Sindhi</source>
-        <translation type="unfinished"/>
+        <translation>Sindhi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="312"/>
         <source>Sinhala</source>
-        <translation type="unfinished"/>
+        <translation>Singhalesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="313"/>
         <source>Sinhala (Sri Lanka)</source>
-        <translation type="unfinished"/>
+        <translation>Singhalesisch (Sri Lanka)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="314"/>
@@ -1659,7 +1659,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="316"/>
         <source>Slovenian</source>
-        <translation type="unfinished"/>
+        <translation>Slowenisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="317"/>
@@ -1669,27 +1669,27 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="318"/>
         <source>Somali</source>
-        <translation type="unfinished"/>
+        <translation>Somali</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="319"/>
         <source>Songhay</source>
-        <translation type="unfinished"/>
+        <translation>Songhai</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="320"/>
         <source>Sotho, Southern</source>
-        <translation type="unfinished"/>
+        <translation>Süd-Sotho</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="321"/>
         <source>Sotho, Southern (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>Süd-Sotho (Südafrika)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="322"/>
         <source>Southern Sami</source>
-        <translation type="unfinished"/>
+        <translation>Südsamisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="323"/>
@@ -1709,7 +1709,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="326"/>
         <source>Spanish (Chile)</source>
-        <translation type="unfinished"/>
+        <translation>Spanisch (Chile)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="327"/>
@@ -1774,7 +1774,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="339"/>
         <source>Spanish (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Spanisch (Spanien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="340"/>
@@ -1789,27 +1789,27 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="342"/>
         <source>Spanish (Venezuela)</source>
-        <translation type="unfinished"/>
+        <translation>Spanisch (Venezuela)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="343"/>
         <source>Sundanese</source>
-        <translation type="unfinished"/>
+        <translation>Sundanesisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="344"/>
         <source>Swahili</source>
-        <translation type="unfinished"/>
+        <translation>Swahili</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="345"/>
         <source>Swahili (Kenya)</source>
-        <translation type="unfinished"/>
+        <translation>Swahili (Kenia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="346"/>
         <source>Swati</source>
-        <translation type="unfinished"/>
+        <translation>Siswati</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="347"/>
@@ -1819,12 +1819,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="348"/>
         <source>Swedish (Finland)</source>
-        <translation type="unfinished"/>
+        <translation>Schwedisch (Finnland)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="349"/>
         <source>Swedish (Sweden)</source>
-        <translation type="unfinished"/>
+        <translation>Schwedisch (Schweden)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="350"/>
@@ -1834,12 +1834,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="351"/>
         <source>Tagalog (Philippines)</source>
-        <translation type="unfinished"/>
+        <translation>Tagalog (Phillipinen)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="352"/>
         <source>Tajik</source>
-        <translation type="unfinished"/>
+        <translation>Tadschikisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="353"/>
@@ -1854,32 +1854,32 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="355"/>
         <source>Tamil (India)</source>
-        <translation type="unfinished"/>
+        <translation>Tamil (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="356"/>
         <source>Tamil (Sri-Lanka)</source>
-        <translation type="unfinished"/>
+        <translation>Tamil (Sri Lanka)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="357"/>
         <source>Tatar</source>
-        <translation type="unfinished"/>
+        <translation>Tatarisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="358"/>
         <source>Telugu</source>
-        <translation type="unfinished"/>
+        <translation>Telugu</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="359"/>
         <source>Telugu (India)</source>
-        <translation type="unfinished"/>
+        <translation>Telugu (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="360"/>
         <source>Tetum (Tetun)</source>
-        <translation type="unfinished"/>
+        <translation>Tetum (Tetun)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="361"/>
@@ -1889,7 +1889,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="362"/>
         <source>Thai (Thailand)</source>
-        <translation type="unfinished"/>
+        <translation>Thailändisch (Thailand)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="363"/>
@@ -1904,27 +1904,27 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="365"/>
         <source>Tigrinya</source>
-        <translation type="unfinished"/>
+        <translation>Tigrinya</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="366"/>
         <source>Tongan</source>
-        <translation type="unfinished"/>
+        <translation>Tongaisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="367"/>
         <source>Tsonga</source>
-        <translation type="unfinished"/>
+        <translation>Xitsonga</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="368"/>
         <source>Tswana</source>
-        <translation type="unfinished"/>
+        <translation>Setswana</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="369"/>
         <source>Turkish</source>
-        <translation type="unfinished"/>
+        <translation>Türkisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="370"/>
@@ -1939,22 +1939,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="372"/>
         <source>Turkmen (Turkmenistan)</source>
-        <translation type="unfinished"/>
+        <translation>Turkmenisch (Turkmenistan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="373"/>
         <source>Udmurt</source>
-        <translation type="unfinished"/>
+        <translation>Udmurtisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="374"/>
         <source>Uighur</source>
-        <translation type="unfinished"/>
+        <translation>Uigurisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="375"/>
         <source>Uighur (Arabic)</source>
-        <translation type="unfinished"/>
+        <translation>Uigurisch (Arabisch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="376"/>
@@ -1979,12 +1979,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="380"/>
         <source>Upper Franconian</source>
-        <translation type="unfinished"/>
+        <translation>Oberfränkisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="381"/>
         <source>Upper Sorbian</source>
-        <translation type="unfinished"/>
+        <translation>Obersorbisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="382"/>
@@ -1999,7 +1999,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="384"/>
         <source>Uzbek</source>
-        <translation type="unfinished"/>
+        <translation>Usbekisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="385"/>
@@ -2019,12 +2019,12 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="388"/>
         <source>Venda</source>
-        <translation type="unfinished"/>
+        <translation>Tshivenda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="389"/>
         <source>Venetian</source>
-        <translation type="unfinished"/>
+        <translation>Venetisch</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="390"/>
@@ -2034,7 +2034,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="391"/>
         <source>Vietnamese (Viet Nam)</source>
-        <translation type="unfinished"/>
+        <translation>Vietnamesisch (Vietnam)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="392"/>
@@ -2049,7 +2049,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="394"/>
         <source>Waray-Waray</source>
-        <translation type="unfinished"/>
+        <translation>Wáray-Wáray</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="395"/>
@@ -2074,17 +2074,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="399"/>
         <source>Wolof</source>
-        <translation type="unfinished"/>
+        <translation>Wolof</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="400"/>
         <source>Wolof (Senegal)</source>
-        <translation type="unfinished"/>
+        <translation>Wolof (Senegal)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="401"/>
         <source>Xhosa</source>
-        <translation type="unfinished"/>
+        <translation>isiXhosa</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="402"/>
@@ -2094,7 +2094,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="403"/>
         <source>Yoruba</source>
-        <translation type="unfinished"/>
+        <translation>Yoruba</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="404"/>
@@ -2104,7 +2104,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     <message>
         <location filename="../src/languagenamehelper.cpp" line="405"/>
         <source>Zulu (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>IsiZulu (Südafrika)</translation>
     </message>
 </context>
 <context>

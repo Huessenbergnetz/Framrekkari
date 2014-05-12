@@ -139,11 +139,11 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="72"/>
         <source>Project slug</source>
-        <translation type="unfinished"/>
+        <translation>Projektin lyhytnimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="84"/>
-        <source>You need to enter the exact and correct projekt slug (project name used in the browser URL).</source>
+        <source>You need to enter the exact and correct project slug (project name used in the browser URL).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Slug:</source>
-        <translation type="unfinished"/>
+        <translation>Lyhytnimi:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="154"/>
@@ -2445,7 +2445,7 @@ Search or browse for a project to open it. The project page shows the available 
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="68"/>
         <source>Slug: %1</source>
-        <translation type="unfinished"/>
+        <translation>Lyhytnimi: %1</translation>
     </message>
 </context>
 <context>
