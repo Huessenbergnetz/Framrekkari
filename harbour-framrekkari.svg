@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="harbour-framrekkari.svg"
-   inkscape:export-filename="/home/buschmann/Dokumente/Entwicklung/Projekte/Framrekkari/harbour-framrekkari.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-filename="/home/buschmann/framrekkari.png"
+   inkscape:export-xdpi="523.2558"
+   inkscape:export-ydpi="523.2558">
   <defs
      id="defs4">
     <linearGradient
@@ -123,7 +123,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

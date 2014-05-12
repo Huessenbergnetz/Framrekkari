@@ -132,7 +132,7 @@
 <context>
     <name>AccountPage</name>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="154"/>
+        <location filename="../qml/pages/AccountPage.qml" line="164"/>
         <source>Show all projects</source>
         <translation>Alle Projekte anzeigen</translation>
     </message>
@@ -142,17 +142,22 @@
         <translation>Projekt-Slug</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="126"/>
+        <location filename="../qml/pages/AccountPage.qml" line="84"/>
+        <source>You need to enter the exact and correct projekt slug (project name used in the browser URL).</source>
+        <translation>Sie müssen den exakten und korrekten Projekt-Slug (Projekt-Name der in der Browser-Adresse genutzt wird) eingeben.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Source lang:</source>
         <translation>Quellsprache:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="126"/>
+        <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Slug:</source>
         <translation>Slug:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AccountPage.qml" line="144"/>
+        <location filename="../qml/pages/AccountPage.qml" line="154"/>
         <source>Favorites</source>
         <translation>Favoriten</translation>
     </message>

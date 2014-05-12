@@ -75,6 +75,16 @@ Page {
             onTextChanged: if (text === "") errorLabel.visible = false
         }
 
+        Text {
+            id: transifexHint
+            font.pixelSize: Theme.fontSizeTiny
+            color: projectItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+            text: qsTr("You need to enter the exact and correct projekt slug (project name used in the browser URL).")
+            visible: accountPage.accountType === 0
+        }
+
         BusyIndicator {
             id: searchBusy
             visible: false
