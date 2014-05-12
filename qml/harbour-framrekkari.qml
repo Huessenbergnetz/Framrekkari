@@ -28,6 +28,8 @@ ApplicationWindow
 
     property string accountName
     property int accountIndex
+    property string accountUser
+    property int accountType
 
     initialPage: Component { MainPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")

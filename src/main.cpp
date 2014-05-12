@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 
     QString locale = QLocale::system().name();
     QTranslator *translator = new QTranslator;
-    if ((translator->load("framrekkari"+locale, "/usr/share/harbour-framrekkari/translations")))
+    if ((translator->load("framrekkari_"+locale, "/usr/share/harbour-framrekkari/translations")))
         app->installTranslator(translator);
 
 //    DbManager dbMan;

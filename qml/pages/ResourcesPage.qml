@@ -37,6 +37,8 @@ Page {
     property string langName
     property var resources: []
 
+    property int projectLangIndex
+
     Component.onCompleted: projectResourceModel.refresh(projectSlug, lang, resources, accountIndex)
 
     BusyIndicator {
@@ -65,7 +67,7 @@ Page {
         model: projectResourceModel
         delegate: ResourcesDelegate {
             onClicked: {
-                pageStack.push(Qt.resolvedUrl("TranslationStringsPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: lang, resource: model.slug, langName: langName, projectSrcLang: projectSrcLang})
+                pageStack.push(Qt.resolvedUrl("TranslationStringsPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: lang, resource: model.slug, langName: langName, projectSrcLang: projectSrcLang, projectLangIndex: resourcesPages.projectLangIndex, projectResourceIndex: model.index})
             }
         }
     }

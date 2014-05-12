@@ -28,6 +28,7 @@ Page {
     Component.onDestruction: {
         config.set("display/sourceFontSize", sourceFontSize.value)
         config.set("display/translationFontSize", translationFontSize.value)
+        config.set("display/stringListFilter", listFilter.currentIndex)
     }
 
     SilicaFlickable {
@@ -42,6 +43,22 @@ Page {
             spacing: Theme.paddingLarge
             PageHeader {
                 title: qsTr("Settings")
+            }
+
+            SectionHeader { text: qsTr("Behavior") }
+
+            ComboBox {
+                id: listFilter
+                width: parent.width
+                label: qsTr("Default list filter")
+
+                menu: ContextMenu {
+                    MenuItem { text: qsTr("All") }
+                    MenuItem { text: qsTr("Untranslated") }
+                    MenuItem { text: qsTr("Not reviewed") }
+                    MenuItem { text: qsTr("Reviewed") }
+                }
+                currentIndex: config.get("display/stringListFilter", 0)
             }
 
             SectionHeader { text: qsTr("Font sizes") }

@@ -47,7 +47,8 @@ SOURCES += \
     src/api/translationstringsapi.cpp \
     src/models/projecttranslationsmodel.cpp \
     src/md5generator.cpp \
-    src/languagenamehelper.cpp
+    src/languagenamehelper.cpp \
+    src/notifications.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -85,7 +86,8 @@ OTHER_FILES += \
     qml/common/ComboBoxList.qml \
     qml/common/PaypalChooser.qml \
     qml/dialogs/ListFilterDialog.qml \
-    qml/dialogs/OneClickDialogItem.qml
+    qml/dialogs/OneClickDialogItem.qml \
+    qml/pages/Help.qml
 
 HEADERS += \
     src/globals.h \
@@ -109,7 +111,8 @@ HEADERS += \
     src/models/projecttranslationsmodel.h \
     src/models/translationsobject.h \
     src/md5generator.h \
-    src/languagenamehelper.h
+    src/languagenamehelper.h \
+    src/notifications.h
 
 RESOURCES +=
 

@@ -40,8 +40,8 @@ Page {
             add: Transition { AddAnimation {} }
 
             CLItem {
-                version: "0.1.0"
-                time: 1398792734000
+                version: "1.0.0"
+                time: 1399895644000
                 text: "<ul>
                         <li>Initial release</li>
                        </ul>"

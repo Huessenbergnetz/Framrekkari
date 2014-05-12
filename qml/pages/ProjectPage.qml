@@ -27,6 +27,7 @@ Page {
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
+    property int accountType: framrekkari.accountType
 
     property string projectName
     property string projectSlug
@@ -68,6 +69,7 @@ Page {
             for (var i = 0; i < maintainersLength; i++)
                 newMaintainersArray.push(maintainersArray[i]["username"]);
 
+            projectResources.length = 0
             var resourcesArray = project["resources"]
             var resourcesArrayLength = resourcesArray.length
             for (var j = 0; j < resourcesArrayLength; j++)
@@ -248,7 +250,8 @@ Page {
                     inOperation = true
                     errorDisplay.enabled = false
                     noResources.visible = false
-                    projectLangstatsModel.refresh(projectSlug, projectResources, accountIndex)
+//                    projectLangstatsModel.refresh(projectSlug, projectResources, accountIndex)
+                    projectsAPI.getProject(accountIndex, projectSlug, true)
                 }
             }
         }
@@ -263,7 +266,7 @@ Page {
         model: projectLangstatsModel
         delegate: ProjectLangDelegate {
             onClicked: {
-                pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: langHelper.getLanguageName(model.lang), projectSrcLang: projectSrcLang})
+                pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: langHelper.getLanguageName(model.lang), projectSrcLang: projectSrcLang, projectLangIndex: model.index})
             }
             srcLang: projectSrcLang
         }

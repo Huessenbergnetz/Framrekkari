@@ -130,6 +130,20 @@ void ProjectResourcesModel::populate(const QVariantList &data)
     endInsertRows();
 }
 
+void ProjectResourcesModel::updateTranslationCount(int idx, const QString &user)
+{
+    ProjectResourceObject *robj = m_resources.at(idx);
+
+    robj->lastUpdate = QDateTime::currentDateTime();
+    robj->translated = robj->translated + 1;
+    robj->untranslated = robj->untranslated -1;
+    robj->lastCommiter = user;
+
+    m_resources[idx] = robj;
+
+    emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+}
+
 
 void ProjectResourcesModel::clear()
 {

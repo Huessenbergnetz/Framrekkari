@@ -101,17 +101,17 @@ Dialog {
             inputMethodHints: Qt.ImhNoPredictiveText
             EnterKey.enabled: text || inputMethodComposing
             EnterKey.iconSource: "image://theme/icon-m-enter-next"
-            EnterKey.onClicked: serverString.focus = false
+            EnterKey.onClicked: serverString.focus = true
         }
 
         TextField {
             id: serverString
             anchors { left: parent.left; right: parent.right }
             label: qsTr("Server"); text: server
-            inputMethodHints: Qt.ImhUrlCharactersOnly
+            inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText
             EnterKey.enabled: text || inputMethodComposing
             EnterKey.iconSource: "image://theme/icon-m-enter-next"
-            EnterKey.onClicked: userString.focus = false
+            EnterKey.onClicked: userString.focus = true
         }
 
         TextField {

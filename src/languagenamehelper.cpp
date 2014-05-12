@@ -144,7 +144,7 @@ void LanguageNameHelper::init()
     languageCode["fil"] = tr("Filipino");
     languageCode["fi"] = tr("Finnish");
     languageCode["fi_FI"] = tr("Finnish (Finland)");
-    languageCode["frp"] = tr("Franco-Proven?al (Arpitan)");
+    languageCode["frp"] = tr("Franco-Provençal (Arpitan)");
     languageCode["fr"] = tr("French");
     languageCode["fr_BE"] = tr("French (Belgium)");
     languageCode["fr_CA"] = tr("French (Canada)");
@@ -261,8 +261,8 @@ void LanguageNameHelper::init()
     languageCode["se"] = tr("Northern Sami");
     languageCode["nso"] = tr("Northern Sotho");
     languageCode["no"] = tr("Norwegian");
-    languageCode["nb"] = tr("Norwegian Bokm?l");
-    languageCode["nb_NO"] = tr("Norwegian Bokm?l (Norway)");
+    languageCode["nb"] = tr("Norwegian Bokmål");
+    languageCode["nb_NO"] = tr("Norwegian Bokmål (Norway)");
     languageCode["no_NO"] = tr("Norwegian (Norway)");
     languageCode["nn"] = tr("Norwegian Nynorsk");
     languageCode["nn_NO"] = tr("Norwegian Nynorsk (Norway)");
@@ -391,7 +391,7 @@ void LanguageNameHelper::init()
     languageCode["vi_VN"] = tr("Vietnamese (Viet Nam)");
     languageCode["vls"] = tr("Vlaams");
     languageCode["wa"] = tr("Walloon");
-    languageCode["war"] = tr("W?ray-W?ray");
+    languageCode["war"] = tr("Waray-Waray");
     languageCode["cy"] = tr("Welsh");
     languageCode["cy_GB"] = tr("Welsh (United Kingdom)");
     languageCode["fy"] = tr("Western Frisian");

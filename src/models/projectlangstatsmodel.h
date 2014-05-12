@@ -40,9 +40,11 @@ public:
 
 signals:
     void gotError(const QString &projectsModelErrorString);
+    void gotData();
 
 public slots:
     void refresh(const QString &projectSlug, const QVariantList &resources, int accountIdx);
+    void updateTranslationCount(int idx);
     void clear();
 
 private slots:

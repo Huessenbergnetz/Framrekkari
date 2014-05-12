@@ -38,6 +38,8 @@ Page {
     property int modelCount
 
     property int nextPreviousDirection
+    property bool canGoPrevious: modelIdx > 0
+    property bool canGoNext: modelIdx < modelCount-1
 
     property string key
     property var context: []
@@ -53,6 +55,8 @@ Page {
     Component.onCompleted: {
         populateModels()
     }
+
+    Component.onDestruction: if (checkCanSave()) save()
 
     function populateModels()
     {
@@ -140,7 +144,10 @@ Page {
             break;
         case 1:
             modelIdx += 1;
+            break;
         }
+
+
 
         var item = projectTranslationsModel.get(modelIdx)
         key = item["key"]
@@ -190,7 +197,7 @@ Page {
             id: pullDown
             MenuItem {
                 text: qsTr("Previous")
-                enabled: modelIdx > 0
+                enabled: canGoPrevious
                 onClicked: nextPrevious(0)
             }
         }
@@ -198,7 +205,7 @@ Page {
         PushUpMenu {
             MenuItem {
                 text: qsTr("Next")
-                enabled: modelIdx < modelCount-1
+                enabled: canGoNext
                 onClicked: nextPrevious(1)
             }
         }
@@ -218,6 +225,7 @@ Page {
                 font.pixelSize: config.get("display/sourceFontSize", Theme.fontSizeExtraSmall)
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                textFormat: Text.PlainText
             }
         }
 

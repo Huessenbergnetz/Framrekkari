@@ -115,6 +115,21 @@ void ProjectLangstatsModel::populate(const QVariantMap &data)
     }
 
     endInsertRows();
+
+    emit gotData();
+}
+
+
+void ProjectLangstatsModel::updateTranslationCount(int idx)
+{
+    LangstatObject *sobj = m_stats.at(idx);
+
+    sobj->translated = sobj->translated + 1;
+    sobj->untranslated = sobj->untranslated -1;
+
+    m_stats[idx] = sobj;
+
+    emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
 }
 
 

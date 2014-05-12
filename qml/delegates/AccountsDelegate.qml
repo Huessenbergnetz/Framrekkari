@@ -36,6 +36,8 @@ ListItem {
     onClicked: {
         framrekkari.accountName = model.name
         framrekkari.accountIndex = model.index
+        framrekkari.accountUser = model.user
+        framrekkari.accountType = model.type
         pageStack.push(Qt.resolvedUrl("../pages/AccountPage.qml"))
     }
 

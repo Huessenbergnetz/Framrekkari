@@ -96,7 +96,7 @@ Page {
 
             Text {
                 id: description
-                text: qsTr("Transifex client for Sailfish OS")
+                text: qsTr("Online translation services client for Sailfish OS")
                 width: parent.width
                 wrapMode: Text.WordWrap
                 textFormat: Text.PlainText

@@ -28,6 +28,7 @@ Page {
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
+    property int accountType: framrekkari.accountType
 
     property string openProjectName
     property string openProjectSlug
@@ -45,14 +46,11 @@ Page {
         onGotProject: {
             if (status === PageStatus.Active) {
                 searchBusy.visible = false
-//                accountPage.openProjectName = project["name"]
-//                accountPage.openProjectSlug = project["slug"]
                 nameLabel.text = project["name"]
                 projectItem.source_lang_code = project["source_language_code"]
                 projectItem.slug = project["slug"]
                 description.text = project["description"]
                 projectItem.visible = true
-//                pageStack.push(Qt.resolvedUrl("ProjectPage.qml"), {projectName: accountPage.openProjectName, projectSlug: accountPage.openProjectSlug})
             }
         }
     }

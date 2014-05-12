@@ -28,6 +28,7 @@ Page {
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
+    property string accountUser: framrekkari.accountUser
 
     property string projectName
     property string projectSlug
@@ -35,6 +36,9 @@ Page {
     property string lang
     property string langName
     property string resource
+
+    property int projectLangIndex
+    property int projectResourceIndex
 
     property int filter: config.get("display/stringListFilter", 0)
     property string filterName: getFilterName()
@@ -56,6 +60,15 @@ Page {
 
     Component.onCompleted: projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
     Component.onDestruction: projectTranslationsModel.clear()
+
+    Connections {
+        target: projectTranslationsModel
+        onSavedStringSuccess: {
+            projectLangstatsModel.updateTranslationCount(translationStringsPage.projectLangIndex)
+            projectResourceModel.updateTranslationCount(translationStringsPage.projectResourceIndex, translationStringsPage.accountUser)
+        }
+
+    }
 
     BusyIndicator {
         id: busyIndicator
