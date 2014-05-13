@@ -44,7 +44,7 @@ signals:
 
 public slots:
     void refresh(const QString &projectSlug, const QVariantList &resources, int accountIdx);
-    void updateTranslationCount(int idx);
+    void updateTranslationCount(const int &idx, const QVariantMap &changed);
     void clear();
 
 private slots:
@@ -57,7 +57,6 @@ private:
     static const int TranslatedRole;
     static const int UntranslatedRole;
     static const int ReviewedRole;
-//    static const int NameRole;
 
     StatisticsAPI sAPI;
 

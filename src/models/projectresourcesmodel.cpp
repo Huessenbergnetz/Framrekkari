@@ -130,13 +130,18 @@ void ProjectResourcesModel::populate(const QVariantList &data)
     endInsertRows();
 }
 
-void ProjectResourcesModel::updateTranslationCount(int idx, const QString &user)
+void ProjectResourcesModel::updateTranslationCount(int idx, const QString &user, const QVariantMap &changed)
 {
     ProjectResourceObject *robj = m_resources.at(idx);
 
     robj->lastUpdate = QDateTime::currentDateTime();
-    robj->translated = robj->translated + 1;
-    robj->untranslated = robj->untranslated -1;
+    if (changed["newTrans"].toBool()) {
+        robj->translated = robj->translated + 1;
+        robj->untranslated = robj->untranslated -1;
+    }
+
+    robj->reviewed = robj->reviewed + changed["revCount"].toInt();
+
     robj->lastCommiter = user;
 
     m_resources[idx] = robj;

@@ -49,14 +49,16 @@ ListItem {
     ListView.onAdd: AddAnimation { target: translationItem }
     ListView.onRemove: RemoveAnimation { target: translationItem }
 
-    Image {
-        x: parent.width - Theme.paddingLarge - width
-        source: "/usr/share/harbour-framrekkari/icons/icon-m-watch.png"
-        height: 64; width: 64
-        opacity: 0.3
+    menu: transMenu
+
+    GlassItem {
+        width: Theme.itemSizeExtraSmall
+        height: width
+        x: -(width / 2)
+        y: 0
+        color: Theme.highlightColor
         visible: model.reviewed
     }
-
 
     Column {
         id: column
@@ -84,5 +86,15 @@ ListItem {
             textFormat: Text.PlainText
         }
 
+    }
+
+    Component {
+        id: transMenu
+        ContextMenu {
+            MenuItem {
+                text: model.reviewed ? qsTr("Mark as not reviewed") : qsTr("Mark as reviewed")
+                enabled: translation.translated
+            }
+        }
     }
 }

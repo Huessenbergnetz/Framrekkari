@@ -28,6 +28,11 @@ const int ProjectTranslationsModel::SourceRole = Qt::UserRole + 4;
 const int ProjectTranslationsModel::TranslationRole = Qt::UserRole + 5;
 const int ProjectTranslationsModel::ReviewedRole = Qt::UserRole + 6;
 const int ProjectTranslationsModel::PluralizedRole = Qt::UserRole + 7;
+const int ProjectTranslationsModel::LastUpdateRole = Qt::UserRole + 8;
+const int ProjectTranslationsModel::UserRole = Qt::UserRole + 9;
+const int ProjectTranslationsModel::OccurrencesRole = Qt::UserRole + 10;
+const int ProjectTranslationsModel::CharacterLimitRole = Qt::UserRole + 11;
+const int ProjectTranslationsModel::TagsRole = Qt::UserRole + 12;
 
 ProjectTranslationsModel::ProjectTranslationsModel(QObject *parent) :
     QAbstractTableModel(parent)
@@ -48,6 +53,11 @@ QHash<int, QByteArray> ProjectTranslationsModel::roleNames() const {
     roles.insert(TranslationRole, QByteArray("translation"));
     roles.insert(ReviewedRole, QByteArray("reviewed"));
     roles.insert(PluralizedRole, QByteArray("pluralized"));
+    roles.insert(LastUpdateRole, QByteArray("lastUpdate"));
+    roles.insert(UserRole, QByteArray("user"));
+    roles.insert(OccurrencesRole, QByteArray("occurrences"));
+    roles.insert(CharacterLimitRole, QByteArray("characterLimit"));
+    roles.insert(TagsRole, QByteArray("tags"));
     return roles;
 }
 
@@ -59,7 +69,7 @@ int ProjectTranslationsModel::rowCount(const QModelIndex &) const
 
 int ProjectTranslationsModel::columnCount(const QModelIndex&) const
 {
-    return 7;
+    return 12;
 }
 
 QVariantMap ProjectTranslationsModel::get(int modelIdx)
@@ -77,6 +87,11 @@ QVariantMap ProjectTranslationsModel::get(int modelIdx)
     result["translation"] = tobj->translation;
     result["reviewed"] = tobj->reviewed;
     result["pluralized"] = tobj->pluralized;
+    result["last_update"] = tobj->lastUpdate.toLocalTime().toString(Qt::DefaultLocaleLongDate);
+    result["user"] = tobj->user;
+    result["occurences"] = tobj->occurrences;
+    result["character_limit"] = tobj->characterLimit;
+    result["tags"] = tobj->tags;
 
     return result;
 }
@@ -92,7 +107,6 @@ QVariant ProjectTranslationsModel::data(const QModelIndex &index, int role) cons
 
     TranslationsObject *tobj = m_translations.at(index.row());
     switch (role) {
-    case Qt::DisplayRole: // The default display role now displays the first name as well
     case KeyRole:
         return QVariant::fromValue(tobj->key);
     case ContextRole:
@@ -107,6 +121,16 @@ QVariant ProjectTranslationsModel::data(const QModelIndex &index, int role) cons
         return QVariant::fromValue(tobj->reviewed);
     case PluralizedRole:
         return QVariant::fromValue(tobj->pluralized);
+    case LastUpdateRole:
+        return QVariant::fromValue(tobj->lastUpdate.toLocalTime().toString(Qt::DefaultLocaleLongDate));
+    case UserRole:
+        return QVariant::fromValue(tobj->user);
+    case OccurrencesRole:
+        return QVariant::fromValue(tobj->occurrences);
+    case CharacterLimitRole:
+        return QVariant::fromValue(tobj->characterLimit);
+    case TagsRole:
+        return QVariant::fromValue(tobj->tags);
     default:
         return QVariant();
     }
@@ -142,7 +166,20 @@ void ProjectTranslationsModel::populate(const QVariantList &data)
     {
         QVariantMap map = data.at(i).toMap();
 
-        TranslationsObject *tobj = new TranslationsObject(map["key"].toString(), map["context"].toList(), map["comment"].toString(), map["source_string"].toMap(), map["translation"].toMap(), map["reviewed"].toBool(), map["pluralized"].toBool());
+        TranslationsObject *tobj = new TranslationsObject(
+                                        map["key"].toString(),
+                                        map["context"].toList(),
+                                        map["comment"].toString(),
+                                        map["source_string"].toMap(),
+                                        map["translation"].toMap(),
+                                        map["reviewed"].toBool(),
+                                        map["pluralized"].toBool(),
+                                        QDateTime::fromString(map["last_update"].toString(), "yyyy-MM-ddThh:mm:ss.zzz"),
+                                        map["user"].toString(),
+                                        map["occurrences"].toString(),
+                                        map["character_limit"].toInt(),
+                                        map["tags"].toList());
+
         m_translations.append(tobj);
     }
 
@@ -168,20 +205,24 @@ void ProjectTranslationsModel::errorHandler(const QString &errorString)
 }
 
 
-void ProjectTranslationsModel::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx)
+void ProjectTranslationsModel::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed, int modelIdx, int accountIdx)
 {
-    tAPI.saveString(project, resource, lang, translation, hash, modelIdx, accountIdx);
+    tAPI.saveString(project, resource, lang, translation, hash, reviewed, modelIdx, accountIdx);
 }
 
 
 void ProjectTranslationsModel::savedString(const QVariantMap &data)
 {
-    int idx = data["modelIdx"].toInt();
+    QVariantMap changed;
 
+    int idx = data["modelIdx"].toInt();
 
     TranslationsObject *tobj = m_translations.at(idx);
 
     QVariant trData = data["translation"];
+
+    changed["newTrans"] = tobj->translation.value("1") == "";
+
 
     if (trData.type() == QVariant::Map) {
         tobj->translation = trData.toMap();
@@ -191,7 +232,20 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
         tobj->translation = strMap;
     }
 
+    int revCount = 0;
+    bool rev = data["reviewed"].toBool();
+    if (!tobj->reviewed && rev) {
+        revCount = 1;
+    } else if (tobj->reviewed && !rev) {
+        revCount = -1;
+    }
+
+    tobj->reviewed = rev;
+
+
+    changed["revCount"] = revCount;
+
 
     emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
-    emit savedStringSuccess();
+    emit savedStringSuccess(changed);
 }

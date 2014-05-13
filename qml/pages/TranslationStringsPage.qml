@@ -66,8 +66,8 @@ Page {
     Connections {
         target: projectTranslationsModel
         onSavedStringSuccess: {
-            projectLangstatsModel.updateTranslationCount(translationStringsPage.projectLangIndex)
-            projectResourceModel.updateTranslationCount(translationStringsPage.projectResourceIndex, translationStringsPage.accountUser)
+            projectLangstatsModel.updateTranslationCount(translationStringsPage.projectLangIndex, changedData)
+            projectResourceModel.updateTranslationCount(translationStringsPage.projectResourceIndex, translationStringsPage.accountUser, changedData)
         }
         onGotStrings: { translationStringsPage.inOperation = false }
         onGotError: {
@@ -121,7 +121,7 @@ Page {
         model: projectTranslationsModel
         delegate: TranslationsDelegate {
             onClicked: {
-                pageStack.push(Qt.resolvedUrl("StringPage.qml"), {projectSlug: projectSlug, resourceSlug: resource, langCode: lang, projectSrcLang: projectSrcLang, key: model.key, context: model.context, comment: model.comment, source: model.source, translation: model.translation, reviewed: model.reviewed, pluralized: model.pluralized, modelIdx: model.index, modelCount: translationStringsList.count})
+                pageStack.push(Qt.resolvedUrl("StringPage.qml"), {projectSlug: projectSlug, resourceSlug: resource, langCode: lang, projectSrcLang: projectSrcLang, key: model.key, context: model.context, comment: model.comment, source: model.source, translation: model.translation, reviewed: model.reviewed, pluralized: model.pluralized, modelIdx: model.index, modelCount: translationStringsList.count, lastUpdate: model.lastUpdate, lastCommiter: model.user, tags: model.tags.join(", "), occurrences: model.occurrences, characterLimit: model.characterLimit})
             }
         }
 

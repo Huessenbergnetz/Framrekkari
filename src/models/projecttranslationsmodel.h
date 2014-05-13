@@ -22,6 +22,7 @@
 #define PROJECTTRANSLATIONSMODEL_H
 
 #include <QAbstractTableModel>
+#include <QMapIterator>
 #include "../api/translationstringsapi.h"
 
 class TranslationsObject;
@@ -41,11 +42,11 @@ public:
 signals:
     void gotError(const QString &projectTranslationsModelErrorString);
     void gotStrings();
-    void savedStringSuccess();
+    void savedStringSuccess(const QVariantMap &changedData);
 
 public slots:
     void refresh(const QString &project, const QString &resource, const QString &lang, int filter, int accountIdx);
-    void saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx);
+    void saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed, int modelIdx, int accountIdx);
     void clear();
     QVariantMap get(int modelIdx);
 
@@ -64,6 +65,11 @@ private:
     static const int TranslationRole;
     static const int ReviewedRole;
     static const int PluralizedRole;
+    static const int LastUpdateRole;
+    static const int UserRole;
+    static const int OccurrencesRole;
+    static const int CharacterLimitRole;
+    static const int TagsRole;
 
     TranslationStringsAPI tAPI;
 

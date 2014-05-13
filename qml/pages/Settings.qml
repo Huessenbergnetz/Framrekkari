@@ -41,9 +41,7 @@ Page {
 
             width: settingsPage.width
             spacing: Theme.paddingLarge
-            PageHeader {
-                title: qsTr("Settings")
-            }
+            PageHeader { title: qsTr("Settings") }
 
             SectionHeader { text: qsTr("Behavior") }
 

@@ -24,6 +24,7 @@
 #include <QObject>
 #include <QJsonDocument>
 #include <QNetworkReply>
+#include <QUrlQuery>
 #include "../network.h"
 #include "apihelper.h"
 
@@ -34,7 +35,7 @@ public:
     explicit TranslationStringsAPI(QObject *parent = 0);
 
     void getStrings(const QString &project, const QString &resource, const QString &lang, int filter, int accountIdx);
-    void saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx);
+    void saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed, int modelIdx, int accountIdx);
 
 signals:
     void gotStrings(const QVariantList &translationStrings);

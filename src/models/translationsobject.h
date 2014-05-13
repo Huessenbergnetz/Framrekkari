@@ -23,17 +23,24 @@
 
 #include <QString>
 #include <QVariant>
+#include <QDateTime>
+#include <QVariantList>
 
 class TranslationsObject {
 public:
-  TranslationsObject(const QString &keyString, const QVariantList &contextList, const QString &commentString, const QVariantMap &sourceMap, const QVariantMap &transMap, const bool &revBool, const bool &plur):
+  TranslationsObject(const QString &keyString, const QVariantList &contextList, const QString &commentString, const QVariantMap &sourceMap, const QVariantMap &transMap, const bool &revBool, const bool &plur, const QDateTime &lUpdate, const QString &usr, const QString &occ, const int &charLim, const QVariantList &t):
     key(keyString),
     context(contextList),
     comment(commentString),
     source(sourceMap),
     translation(transMap),
     reviewed(revBool),
-    pluralized(plur){}
+    pluralized(plur),
+    lastUpdate(lUpdate),
+    user(usr),
+    occurrences(occ),
+    characterLimit(charLim),
+    tags(t){}
   QString key;
   QVariantList context;
   QString comment;
@@ -41,6 +48,11 @@ public:
   QVariantMap translation;
   bool reviewed;
   bool pluralized;
+  QDateTime lastUpdate;
+  QString user;
+  QString occurrences;
+  int characterLimit;
+  QVariantList tags;
 };
 
 #endif // TRANSLATIONSOBJECT_H

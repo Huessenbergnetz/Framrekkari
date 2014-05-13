@@ -120,12 +120,16 @@ void ProjectLangstatsModel::populate(const QVariantMap &data)
 }
 
 
-void ProjectLangstatsModel::updateTranslationCount(int idx)
+void ProjectLangstatsModel::updateTranslationCount(const int &idx, const QVariantMap &changed)
 {
     LangstatObject *sobj = m_stats.at(idx);
 
-    sobj->translated = sobj->translated + 1;
-    sobj->untranslated = sobj->untranslated -1;
+    if (changed["newTrans"].toBool()) {
+        sobj->translated = sobj->translated + 1;
+        sobj->untranslated = sobj->untranslated -1;
+    }
+
+    sobj->reviewed = sobj->reviewed + changed["revCount"].toInt();
 
     m_stats[idx] = sobj;
 

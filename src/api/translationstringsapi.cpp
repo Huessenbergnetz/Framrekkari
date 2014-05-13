@@ -15,6 +15,10 @@ void TranslationStringsAPI::getStrings(const QString &project, const QString &re
 
     QUrl url = helper.buildUrl("/project/" + project + "/resource/" + resource + "/translation/" + lang + "/strings/", accountIdx);
 
+    QUrlQuery uq;
+    uq.addQueryItem("details", QString());
+    url.setQuery(uq);
+
     getStringReply = nm.get(QNetworkRequest(url));
 
     connect(getStringReply, SIGNAL(finished()), this, SLOT(getStringsFinished()));
@@ -111,13 +115,14 @@ void TranslationStringsAPI::getStringsFinished()
 }
 
 
-void TranslationStringsAPI::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, int modelIdx, int accountIdx)
+void TranslationStringsAPI::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed,  int modelIdx, int accountIdx)
 {
     nm.setAccountIndex(accountIdx);
 
     transToSave.clear();
     transToSave["modelIdx"] = QVariant::fromValue(modelIdx);
     transToSave["translation"] = translation;
+    transToSave["reviewed"] = QVariant::fromValue(reviewed);
 
     QVariantMap data;
     if (translation.count() > 1) {
@@ -125,6 +130,7 @@ void TranslationStringsAPI::saveString(const QString &project, const QString &re
     } else {
         data["translation"] = translation["1"].toString();
     }
+    data["reviewed"] = reviewed;
 
     QJsonDocument jsonDoc = QJsonDocument::fromVariant(data);
 

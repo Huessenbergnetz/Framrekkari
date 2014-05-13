@@ -87,7 +87,8 @@ OTHER_FILES += \
     qml/common/PaypalChooser.qml \
     qml/dialogs/ListFilterDialog.qml \
     qml/dialogs/OneClickDialogItem.qml \
-    qml/pages/Help.qml
+    qml/pages/Help.qml \
+    qml/pages/StringMetaPage.qml
 
 HEADERS += \
     src/globals.h \

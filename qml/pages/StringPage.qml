@@ -49,12 +49,24 @@ Page {
     property bool reviewed
     property bool pluralized
     property string hash: md5Generator.genMd5(key, context)
+    property string lastUpdate
+    property string lastCommiter
+    property string tags
+    property string occurrences
+    property int characterLimit
 
     property int pluralIndex: 0
 
     Component.onCompleted: {
         populateModels()
     }
+
+    onStatusChanged: {
+            if (status == PageStatus.Active) {
+                pageStack.pushAttached(Qt.resolvedUrl("StringMetaPage.qml"), {hash: hash, comment: comment, lastUpdate: lastUpdate, lastCommiter: lastCommiter, tags: tags, occurrences: occurrences, characterLimit: characterLimit})
+
+            }
+        }
 
     Component.onDestruction: if (checkCanSave()) save()
 
@@ -101,7 +113,7 @@ Page {
             translation[translationsModel.get(i).plural] = translationsModel.get(i).string
         }
 
-        projectTranslationsModel.saveString(projectSlug, resourceSlug, langCode, translation, hash, modelIdx, accountIndex)
+        projectTranslationsModel.saveString(projectSlug, resourceSlug, langCode, translation, hash, reviewedSwitch.checked, modelIdx, accountIndex)
     }
 
     function checkCanSave()
@@ -114,13 +126,18 @@ Page {
                 return false
         }
 
+        var ret = false
+
         for (var ii = 0; ii < length; ii++)
         {
             if(translationsModel.get(ii).string !== oldTranslationsModel.get(ii).string)
-                return true
+                ret = true
         }
 
-        return false
+        if (reviewed !== reviewedSwitch.checked)
+            ret = true
+
+        return ret
     }
 
     function nextPrevious(direction)
@@ -137,6 +154,8 @@ Page {
 
     function getPreviousNext()
     {
+        pageStack.popAttached()
+
         switch(nextPreviousDirection)
         {
         case 0:
@@ -157,9 +176,16 @@ Page {
         translation = item["translation"]
         reviewed = item["reviewed"]
         pluralized = item["pluralized"]
+        lastUpdate = item["last_update"]
+        lastCommiter = item["user"]
+        occurrences = item["occurences"]
+        characterLimit = item["character_limit"]
+        tags = item["tags"].join(", ")
         pluralIndex = 0;
 
         populateModels()
+
+        pageStack.pushAttached(Qt.resolvedUrl("StringMetaPage.qml"), {hash: hash, comment: comment, lastUpdate: lastUpdate, lastCommiter: lastCommiter, tags: tags, occurrences: occurrences, characterLimit: characterLimit})
     }
 
     ListModel {
@@ -215,6 +241,12 @@ Page {
             anchors { left: parent.left; right: parent.right }
             PageHeader { title: key }
 
+            TextSwitch {
+                id: reviewedSwitch
+                text: qsTr("Reviewed")
+                checked: stringPage.reviewed
+            }
+
             MessageContainer {
                 id: messageContainer
             }
@@ -265,7 +297,7 @@ Page {
             wrapMode: TextEdit.Wrap
             font.pixelSize: config.get("display/translationFontSize", Theme.fontSizeMedium)
             anchors.top: pluralized ? pluralList.bottom : column.bottom
-            anchors.topMargin: pluralized ? 0 : 7
+//            anchors.topMargin: pluralized ? 0 : 7
             onTextChanged: {
                 translationsModel.get(pluralIndex).string = text
             }
