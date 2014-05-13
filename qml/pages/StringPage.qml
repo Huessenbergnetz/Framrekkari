@@ -24,7 +24,7 @@ import "../delegates"
 import "../common"
 
 Page {
-    id: projectPage
+    id: stringPage
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
@@ -219,13 +219,26 @@ Page {
                 id: messageContainer
             }
 
-            Text {
-                id: sourceText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
-                font.pixelSize: config.get("display/sourceFontSize", Theme.fontSizeExtraSmall)
-                color: Theme.primaryColor
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                textFormat: Text.PlainText
+            BackgroundItem {
+                id: bgItem
+                width: parent.width
+                height: menuOpen ? sourceText.height + contextMenu.height : sourceText.height
+                property Item contextMenu
+                property bool menuOpen: contextMenu != null && contextMenu.parent === bgItem
+
+                onPressAndHold: {
+                    if (!contextMenu) contextMenu = contextMenuComp.createObject(root)
+                    contextMenu.show(bgItem)
+                }
+
+                Text {
+                    id: sourceText
+                    anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                    font.pixelSize: config.get("display/sourceFontSize", Theme.fontSizeExtraSmall)
+                    color: Theme.primaryColor
+                    wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                    textFormat: Text.PlainText
+                }
             }
         }
 
@@ -255,6 +268,16 @@ Page {
             anchors.topMargin: pluralized ? 0 : 7
             onTextChanged: {
                 translationsModel.get(pluralIndex).string = text
+            }
+        }
+    }
+
+    Component {
+        id: contextMenuComp
+        ContextMenu {
+            MenuItem {
+                text: qsTr("Copy to clipboard")
+                onClicked: Clipboard.text = sourceText.text
             }
         }
     }
