@@ -120,6 +120,9 @@ Page {
 
         model: projectTranslationsModel
         delegate: TranslationsDelegate {
+            project: translationStringsPage.projectSlug
+            resource: translationStringsPage.resource
+            lang: translationStringsPage.lang
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("StringPage.qml"), {projectSlug: projectSlug, resourceSlug: resource, langCode: lang, projectSrcLang: projectSrcLang, key: model.key, context: model.context, comment: model.comment, source: model.source, translation: model.translation, reviewed: model.reviewed, pluralized: model.pluralized, modelIdx: model.index, modelCount: translationStringsList.count, lastUpdate: model.lastUpdate, lastCommiter: model.user, tags: model.tags.join(", "), occurrences: model.occurrences, characterLimit: model.characterLimit})
             }

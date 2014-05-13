@@ -43,6 +43,12 @@ import Sailfish.Silica 1.0
 ListItem {
     id: translationItem
 
+    property string project
+    property string resource
+    property string lang
+
+    property bool inOperation: false
+
     contentHeight: column.height + Theme.paddingMedium
     width: parent.width
 
@@ -51,6 +57,12 @@ ListItem {
 
     menu: transMenu
 
+    Connections {
+        target: projectTranslationsModel
+        onSavedStringSuccess: inOperation = false
+        onGotError: inOperation = false
+    }
+
     GlassItem {
         width: Theme.itemSizeExtraSmall
         height: width
@@ -58,6 +70,14 @@ ListItem {
         y: 0
         color: Theme.highlightColor
         visible: model.reviewed
+    }
+
+    BusyIndicator {
+        size: BusyIndicatorSize.Small
+        running: visible
+        visible: inOperation
+        x: -(width / 2)
+        y: 0
     }
 
     Column {
@@ -94,6 +114,7 @@ ListItem {
             MenuItem {
                 text: model.reviewed ? qsTr("Mark as not reviewed") : qsTr("Mark as reviewed")
                 enabled: translation.translated
+                onClicked: { inOperation = true; projectTranslationsModel.saveString(project, resource, lang, model.translation, md5Generator.genMd5(model.key, model.context), !model.reviewed, model.index, framrekkari.accountIndex) }
             }
         }
     }

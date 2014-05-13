@@ -244,6 +244,7 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
 
 
     changed["revCount"] = revCount;
+    changed["modelIdx"] = idx;
 
 
     emit dataChanged(index(idx, 0), index(idx, columnCount()-1));

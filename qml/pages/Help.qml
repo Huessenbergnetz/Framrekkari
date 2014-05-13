@@ -28,13 +28,12 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
-        contentHeight: column.height
+        contentHeight: column.height + Theme.paddingLarge
 
         Column {
             id: column
 
             width: helpPage.width
-            spacing: Theme.paddingLarge
             PageHeader {
                 title: qsTr("Help")
             }
