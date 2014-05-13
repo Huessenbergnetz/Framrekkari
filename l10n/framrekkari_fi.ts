@@ -237,28 +237,28 @@
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="39"/>
+        <location filename="../qml/pages/Help.qml" line="38"/>
         <source>Help</source>
         <translation>Ohje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="42"/>
+        <location filename="../qml/pages/Help.qml" line="41"/>
         <source>General</source>
         <translation>Yleistä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="51"/>
+        <location filename="../qml/pages/Help.qml" line="50"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;
 Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="54"/>
+        <location filename="../qml/pages/Help.qml" line="53"/>
         <source>Transifex API limitations</source>
         <translation>Transifexin API-rajoitukset</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="63"/>
+        <location filename="../qml/pages/Help.qml" line="62"/>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
         <translation type="unfinished"/>
     </message>
@@ -2487,12 +2487,17 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>ResourcesPage</name>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="58"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="46"/>
+        <source>Ooops, the following error occured:</source>
+        <translation>Hups, tapahtui virhe:</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ResourcesPage.qml" line="63"/>
         <source>Refresh</source>
         <translation>Päivitä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="65"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="73"/>
         <source>Resources:</source>
         <translation>Resurssit:</translation>
     </message>
@@ -2500,52 +2505,52 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>Settings</name>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="45"/>
+        <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Settings</source>
         <translation>Asetukset</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="48"/>
+        <location filename="../qml/pages/Settings.qml" line="46"/>
         <source>Behavior</source>
         <translation>Toiminta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="53"/>
+        <location filename="../qml/pages/Settings.qml" line="51"/>
         <source>Default list filter</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="56"/>
+        <location filename="../qml/pages/Settings.qml" line="54"/>
         <source>All</source>
         <translation>Kaikki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="57"/>
+        <location filename="../qml/pages/Settings.qml" line="55"/>
         <source>Untranslated</source>
         <translation>Kääntämättä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="58"/>
+        <location filename="../qml/pages/Settings.qml" line="56"/>
         <source>Not reviewed</source>
         <translation>Ei tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="59"/>
+        <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Reviewed</source>
         <translation>Tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="64"/>
+        <location filename="../qml/pages/Settings.qml" line="62"/>
         <source>Font sizes</source>
         <translation>Fonttikoot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="73"/>
+        <location filename="../qml/pages/Settings.qml" line="71"/>
         <source>Source text font size</source>
         <translation>Lähdetekstin fontin koko</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="84"/>
+        <location filename="../qml/pages/Settings.qml" line="82"/>
         <source>Translation text font size</source>
         <translation>Käännöstekstin fontin koko</translation>
     </message>
@@ -2578,47 +2583,100 @@ Search or browse for a project to open it. The project page shows the available 
     </message>
 </context>
 <context>
+    <name>StringMetaPage</name>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="47"/>
+        <source>Metadata</source>
+        <translation>Metatiedot</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="50"/>
+        <source>Tags</source>
+        <translation>Tunnisteet</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="61"/>
+        <source>Comment</source>
+        <translation>Kommentti</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="72"/>
+        <source>Occurences</source>
+        <translation>Ilmentymät</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="83"/>
+        <source>Character limit</source>
+        <translation>Merkkirajoitus</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="95"/>
+        <source>Last update</source>
+        <translation>Viimeisin päivitys</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="105"/>
+        <source>Last commiter</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringMetaPage.qml" line="115"/>
+        <source>Hash</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="199"/>
+        <location filename="../qml/pages/StringPage.qml" line="225"/>
         <source>Previous</source>
         <translation>Edellinen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="207"/>
+        <location filename="../qml/pages/StringPage.qml" line="233"/>
         <source>Next</source>
         <translation>Seuraava</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringPage.qml" line="246"/>
+        <source>Reviewed</source>
+        <translation>Tarkistettu</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StringPage.qml" line="311"/>
+        <source>Copy to clipboard</source>
+        <translation>Kopioi leikepöydälle</translation>
     </message>
 </context>
 <context>
     <name>TranslationStringsAPI</name>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="88"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="92"/>
         <source>Server reply was empty.</source>
         <translation>Palvelin palautti tyhjän vastauksen.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="99"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="103"/>
         <source>Not found</source>
         <translation>Ei löytynyt</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="102"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="106"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
         <translation>Toiminto peruttu. Väärä käyttäjätunnus tai salasana, tai SSL-kättely epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="171"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="176"/>
         <source>Not found. Code %1.</source>
         <translation>Ei löytynyt. Koodi %1.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="174"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="179"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
         <translation>Toiminto peruttiin. Väärä käyttäjätunnus tai salasana, tai SSL-kättely epäonnistui. Koodi %1.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="177"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="182"/>
         <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
         <translation type="unfinished"/>
     </message>
@@ -2626,42 +2684,62 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>TranslationStringsPage</name>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="50"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="52"/>
         <source>Untranslated</source>
         <translation>Kääntämättä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="52"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="54"/>
         <source>Not reviewed</source>
         <translation>Ei tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="54"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
         <source>Reviewed</source>
         <translation>Tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="57"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="59"/>
         <source>All</source>
         <translation>Kaikki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="87"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="75"/>
+        <source>Ooops, the following error occured:</source>
+        <translation>Hups, tapahtui virhe:</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="93"/>
         <source>Refresh</source>
         <translation>Päivitä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="91"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="101"/>
         <source>Filter:</source>
         <translation>Suodatin:</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="139"/>
+        <source>Ooops, you got no results. Check your filter.</source>
+        <translation>Hups, ei tuloksia. Tarkista suodatus.</translation>
     </message>
 </context>
 <context>
     <name>TranslationsDelegate</name>
     <message>
-        <location filename="../qml/delegates/TranslationsDelegate.qml" line="80"/>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="102"/>
         <source>Not translated</source>
         <translation>Ei käännetty</translation>
+    </message>
+    <message>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="115"/>
+        <source>Mark as not reviewed</source>
+        <translation>Merkitse tarkistamattomaksi</translation>
+    </message>
+    <message>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="115"/>
+        <source>Mark as reviewed</source>
+        <translation>Merkitse tarkastetuksi</translation>
     </message>
 </context>
 <context>
