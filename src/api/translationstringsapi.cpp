@@ -136,7 +136,6 @@ void TranslationStringsAPI::saveString(const QString &project, const QString &re
     qDebug() << jsonDoc;
 #endif
 
-//    QByteArray parameters = jsonDoc.toJson(QJsonDocument::Compact);
     QNetworkRequest request(url);
 
     request.setRawHeader("Content-Type", "application/json");

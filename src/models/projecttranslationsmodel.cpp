@@ -147,6 +147,8 @@ void ProjectTranslationsModel::populate(const QVariantList &data)
     }
 
     endInsertRows();
+
+    emit gotStrings();
 }
 
 

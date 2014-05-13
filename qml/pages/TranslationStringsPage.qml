@@ -43,6 +43,8 @@ Page {
     property int filter: config.get("display/stringListFilter", 0)
     property string filterName: getFilterName()
 
+    property bool inOperation: true
+
     function getFilterName()
     {
         switch(filter) {
@@ -67,14 +69,18 @@ Page {
             projectLangstatsModel.updateTranslationCount(translationStringsPage.projectLangIndex)
             projectResourceModel.updateTranslationCount(translationStringsPage.projectResourceIndex, translationStringsPage.accountUser)
         }
-
+        onGotStrings: { translationStringsPage.inOperation = false }
+        onGotError: {
+            translationStringsPage.inOperation = false
+            errorDisplay.text = qsTr("Ooops, the following error occured:") + " " + projectTranslationsModelErrorString
+        }
     }
 
     BusyIndicator {
         id: busyIndicator
         anchors.centerIn: parent
-        running: visible
-        visible: translationStringsList.count === 0;
+        running: translationStringsPage.inOperation
+        visible: true
         size: BusyIndicatorSize.Large
     }
 
@@ -85,7 +91,11 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("Refresh")
-                onClicked: projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
+                onClicked: {
+                    projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
+                    errorDisplay.enabled = false
+                    translationStringsPage.inOperation = true
+                }
             }
             MenuItem {
                 text: qsTr("Filter:") + " " + filterName
@@ -93,6 +103,8 @@ Page {
                     var dialog = pageStack.push("../dialogs/ListFilterDialog.qml")
                     dialog.accepted.connect(function() {
                         if (translationStringsPage.filter !== dialog.filter) {
+                            errorDisplay.enabled = false
+                            translationStringsPage.inOperation = true
                             translationStringsPage.filter = dialog.filter
                             translationStringsPage.filterName = dialog.filterName
                             projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
@@ -111,6 +123,17 @@ Page {
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("StringPage.qml"), {projectSlug: projectSlug, resourceSlug: resource, langCode: lang, projectSrcLang: projectSrcLang, key: model.key, context: model.context, comment: model.comment, source: model.source, translation: model.translation, reviewed: model.reviewed, pluralized: model.pluralized, modelIdx: model.index, modelCount: translationStringsList.count})
             }
+        }
+
+        ViewPlaceholder {
+            id: errorDisplay
+            enabled: false
+        }
+
+        ViewPlaceholder {
+            id: noContentDisplay
+            enabled: !translationStringsPage.inOperation && translationStringsList.count === 0
+            text: qsTr("Ooops, you got no results. Check your filter.")
         }
     }
 }

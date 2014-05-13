@@ -40,6 +40,7 @@ public:
 
 signals:
     void gotError(const QString &projectTranslationsModelErrorString);
+    void gotStrings();
     void savedStringSuccess();
 
 public slots:

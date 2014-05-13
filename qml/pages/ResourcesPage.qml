@@ -41,6 +41,11 @@ Page {
 
     Component.onCompleted: projectResourceModel.refresh(projectSlug, lang, resources, accountIndex)
 
+    Connections {
+        target: projectResourceModel
+        onGotError: { errorDisplay.text = qsTr("Ooops, the following error occured:") + " " + projectResourcesModelErrorString; errorDisplay.enabled = true }
+    }
+
     BusyIndicator {
         id: busyIndicator
         anchors.centerIn: parent
@@ -56,7 +61,10 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("Refresh")
-                onClicked: projectResourceModel.refresh(resourcesPages.projectSlug, resourcesPages.lang, resourcesPages.resources, resourcesPages.accountIndex)
+                onClicked: {
+                    errorDisplay.enabled = false
+                    projectResourceModel.refresh(resourcesPages.projectSlug, resourcesPages.lang, resourcesPages.resources, resourcesPages.accountIndex)
+                }
             }
         }
 
@@ -69,6 +77,11 @@ Page {
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("TranslationStringsPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: lang, resource: model.slug, langName: langName, projectSrcLang: projectSrcLang, projectLangIndex: resourcesPages.projectLangIndex, projectResourceIndex: model.index})
             }
+        }
+
+        ViewPlaceholder {
+            id: errorDisplay
+            enabled: false
         }
     }
 }
