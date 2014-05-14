@@ -20,7 +20,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../common"
+import "../BTComponents"
 
 
 Page {
@@ -56,11 +56,11 @@ Page {
             }
             MenuItem {
                 text: qsTr("Changelog")
-                onClicked: pageStack.push(Qt.resolvedUrl("Changelog.qml"))
+                onClicked: pageStack.push(Qt.resolvedUrl("../BTComponents/Changelog.qml"))
             }
             MenuItem {
                 text: qsTr("Contributors")
-                onClicked: pageStack.push(Qt.resolvedUrl("Contributors.qml"))
+                onClicked: pageStack.push(Qt.resolvedUrl("../BTComponents/Contributors.qml"), {avatarBasePath: "/usr/share/harbour-framrekkari/images/contributors"})
             }
         }
 
@@ -148,7 +148,7 @@ Page {
                 organization: "Buschtrommel"
                 item: "Framrekkari"
                 email: "kontakt@buschmann23.de"
-                message: qsTr("Message to Buschtrommel:")
+                message: qsTr("Leave a message (English or German):")
             }
 
             SectionHeader { text: qsTr("Contact") }

@@ -1,5 +1,5 @@
 /*
-    Framrekkari - Transifex Client for SailfishOS
+    BTComponents - QML components shared between various Buschtrommel projects
     Copyright (C) 2014  Buschtrommel/Matthias Fehring
     Contact: Matthias Fehring <kontakt@buschmann23.de>
 
@@ -18,15 +18,24 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef GLOBALS_H
-#define GLOBALS_H
+import QtQuick 2.0
 
-#define VERSION_STRING "1.1.0"
-#define VERSION 110
-#define VER_MAJ 1
-#define VER_MIN 1
-#define VER_PAT 0
+ListModel {
+    ListElement {
+        version: "1.1.0"
+        date: 1399895644000
+        text: "<ul>
+                <li>New: review operations on translation page and in string list context menu</li>
+                <li>New: metadata page attached to translation page</li>
+                <li>New: context menu on source string on translation page for clipboard operations</li>
+                <li>Improved: added hint to open transifex slug</li>
+                <li>Improved: better handling of empty string list results</li>
+               </ul>"
+    }
 
-#define DATA_DIR "/.local/share/harbour-framrekkari"
-
-#endif // GLOBALS_H
+    ListElement {
+        version: "1.0.0"
+        date: 1399895644000
+        text: "<ul><li>Initial release</li></ul>"
+    }
+}

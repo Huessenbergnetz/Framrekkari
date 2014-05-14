@@ -22,10 +22,25 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 import "../delegates"
+import "../common"
+import "../BTComponents"
 
 
 Page {
     id: mainPage
+
+    FirstStartInfo {
+        visible: config.get("system/version", 0) < versionInt
+        name: "Framrekkari"
+        version: versionString
+        helpPage: "../pages/Help.qml"
+        paypalOrganization: "Buschtrommel"
+        paypalItem: "Framrekkari"
+        paypalEmail: "kontakt@buschmann23.de"
+        paypalMessage: qsTr("Leave a message (English or German):")
+        description: qsTr("Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.")
+        onClicked: config.set("system/version", versionInt)
+    }
 
     SilicaListView {
         id: accountsListView

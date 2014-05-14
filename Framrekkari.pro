@@ -60,8 +60,6 @@ OTHER_FILES += \
     qml/pages/About.qml \
     qml/pages/MainPage.qml \
     qml/pages/Settings.qml \
-    qml/pages/Changelog.qml \
-    qml/pages/parts/CLItem.qml \
     qml/dialogs/AccountDialog.qml \
     qml/delegates/AccountsDelegate.qml \
     qml/pages/AccountPage.qml \
@@ -80,16 +78,19 @@ OTHER_FILES += \
     qml/common/OpenSlugField.qml \
     qml/common/MessageContainer.qml \
     qml/pages/PrivacyPolicy.qml \
-    qml/pages/Contributors.qml \
-    qml/pages/parts/ContributorItem.qml \
     qml/common/ImageButton.qml \
-    qml/common/ComboBoxList.qml \
-    qml/common/PaypalChooser.qml \
     qml/dialogs/ListFilterDialog.qml \
     qml/dialogs/OneClickDialogItem.qml \
     qml/pages/Help.qml \
     qml/pages/StringMetaPage.qml \
-    qml/models/ChangelogModel.qml
+    qml/BTComponents/ComboBoxList.qml \
+    qml/BTComponents/PaypalChooser.qml \
+    qml/BTComponents/Changelog.qml \
+    qml/BTComponents/ChangelogModel.qml \
+    qml/BTComponents/FirstStartInfo.qml \
+    qml/BTComponents/ContributorsModel.qml \
+    qml/BTComponents/ContributorsDelegate.qml \
+    qml/BTComponents/Contributors.qml
 
 HEADERS += \
     src/globals.h \

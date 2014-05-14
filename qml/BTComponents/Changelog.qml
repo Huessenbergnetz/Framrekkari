@@ -1,5 +1,5 @@
 /*
-    Framrekkari - Transifex Client for SailfishOS
+    BTComponents - QML components shared between various Buschtrommel projects
     Copyright (C) 2014  Buschtrommel/Matthias Fehring
     Contact: Matthias Fehring <kontakt@buschmann23.de>
 
@@ -20,11 +20,12 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../models"
-
 
 Page {
     id: changelogPage
+
+    property string _RICHTEXT_STYLESHEET_PREAMBLE: "<html><style>a { text-decoration: none; color: '" + Theme.secondaryHighlightColor + "' }</style><body>";
+    property string _RICHTEXT_STYLESHEET_APPENDIX: "</body></html>";
 
 
     SilicaListView {
@@ -67,7 +68,7 @@ Page {
                     wrapMode: Text.WordWrap
                     font.pixelSize: Theme.fontSizeSmall
                     onLinkActivated: { Qt.openUrlExternally(link) }
-                    text: model.text
+                    text: _RICHTEXT_STYLESHEET_PREAMBLE + model.text + _RICHTEXT_STYLESHEET_APPENDIX
                 }
             }
         }

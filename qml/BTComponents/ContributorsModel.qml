@@ -1,5 +1,5 @@
 /*
-    Framrekkari - Transifex Client for SailfishOS
+    BTComponents - QML components shared between various Buschtrommel projects
     Copyright (C) 2014  Buschtrommel/Matthias Fehring
     Contact: Matthias Fehring <kontakt@buschmann23.de>
 
@@ -18,15 +18,31 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef GLOBALS_H
-#define GLOBALS_H
+import QtQuick 2.0
 
-#define VERSION_STRING "1.1.0"
-#define VERSION 110
-#define VER_MAJ 1
-#define VER_MIN 1
-#define VER_PAT 0
+ListModel {
+    ListElement {
+        name: "Buschmann (Matthias Fehring)"
+        role: QT_TR_NOOP("Main developer, Framrekkari creator")
+        section: QT_TR_NOOP("Author")
+        image: "buschmann.png"
+        website: "http://www.buschmann23.de"
+        twitter: "buschmann23"
+        github: "buschmann23"
+    }
 
-#define DATA_DIR "/.local/share/harbour-framrekkari"
+    ListElement {
+        name: "Jiri Grönroos"
+        role: QT_TR_NOOP("Finish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
 
-#endif // GLOBALS_H
+    ListElement {
+        name: QT_TR_NOOP("Martin Grimme's Tidings Elements")
+        role: "FancyScroller"
+        section: QT_TR_NOOP("Used third party elements")
+        website: "https://github.com/pycage/tidings"
+        github: "pycage"
+    }
+
+}

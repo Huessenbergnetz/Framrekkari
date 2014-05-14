@@ -65,7 +65,6 @@ ListItem {
                 color: accountListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
                 maximumLineCount: 1
                 truncationMode: TruncationMode.Fade
-                elide: Text.ElideRight
                 textFormat: Text.PlainText
             }
 

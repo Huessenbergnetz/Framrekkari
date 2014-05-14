@@ -77,6 +77,7 @@ int main(int argc, char *argv[])
     LanguageNameHelper *langHelper = new LanguageNameHelper;
 
     view->rootContext()->setContextProperty("versionString", VERSION_STRING);
+    view->rootContext()->setContextProperty("versionInt", VERSION);
     view->rootContext()->setContextProperty("config", configuration);
     view->rootContext()->setContextProperty("accountsModel", accountsModel);
     view->rootContext()->setContextProperty("projectsModel", projectsModel);
