@@ -51,96 +51,102 @@ Dialog {
         }
     }
 
-    Column {
-        width: parent.width
+    SilicaFlickable {
+        anchors.fill: parent
+        contentHeight: column.height + Theme.paddingLarge
 
-        DialogHeader {
-            acceptText: create ? qsTr("Create account") : qsTr("Edit account")
-        }
-
-        ComboBox {
-            id: accType
+        Column {
+            id: column
             width: parent.width
-            label: qsTr("Account type")
-            currentIndex: accountDialog.type
-            onCurrentIndexChanged: {
-                accountDialog.type = currentIndex
-                typeInfo.text = getTypeInfo()
+
+            DialogHeader {
+                acceptText: create ? qsTr("Create account") : qsTr("Edit account")
             }
 
-            menu: ContextMenu {
-                MenuItem { text: "Transifex" }
-            }
-        }
+            ComboBox {
+                id: accType
+                width: parent.width
+                label: qsTr("Account type")
+                currentIndex: accountDialog.type
+                onCurrentIndexChanged: {
+                    accountDialog.type = currentIndex
+                    typeInfo.text = getTypeInfo()
+                }
 
-        Row {
-            anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
-
-            Text {
-                id: typeInfo
-                text: getTypeInfo()
-                width: parent.width - icon.width
-                font.pixelSize: Theme.fontSizeTiny
-                color: Theme.secondaryColor
-                wrapMode: Text.WordWrap
-                textFormat: Text.RichText
-                onLinkActivated: { Qt.openUrlExternally(link) }
+                menu: ContextMenu {
+                    MenuItem { text: "Transifex" }
+                }
             }
 
-            Image {
-                id: icon
-                width: 64; height: 64
-                source: HELPER.getAccountIcon(type, "m")
+            Row {
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+
+                Text {
+                    id: typeInfo
+                    text: getTypeInfo()
+                    width: parent.width - icon.width
+                    font.pixelSize: Theme.fontSizeTiny
+                    color: Theme.secondaryColor
+                    wrapMode: Text.WordWrap
+                    textFormat: Text.RichText
+                    onLinkActivated: { Qt.openUrlExternally(link) }
+                }
+
+                Image {
+                    id: icon
+                    width: 64; height: 64
+                    source: HELPER.getAccountIcon(type, "m")
+                }
             }
-        }
 
-        TextField {
-            id: nameString
-            anchors { left: parent.left; right: parent.right }
-            label: qsTr("Display name"); text: name
-            inputMethodHints: Qt.ImhNoPredictiveText
-            EnterKey.enabled: text || inputMethodComposing
-            EnterKey.iconSource: "image://theme/icon-m-enter-next"
-            EnterKey.onClicked: serverString.focus = true
-        }
+            TextField {
+                id: nameString
+                anchors { left: parent.left; right: parent.right }
+                label: qsTr("Display name"); text: name
+                inputMethodHints: Qt.ImhNoPredictiveText
+                EnterKey.enabled: text || inputMethodComposing
+                EnterKey.iconSource: "image://theme/icon-m-enter-next"
+                EnterKey.onClicked: serverString.focus = true
+            }
 
-        TextField {
-            id: serverString
-            anchors { left: parent.left; right: parent.right }
-            label: qsTr("Server"); text: server
-            inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText
-            EnterKey.enabled: text || inputMethodComposing
-            EnterKey.iconSource: "image://theme/icon-m-enter-next"
-            EnterKey.onClicked: userString.focus = true
-        }
+            TextField {
+                id: serverString
+                anchors { left: parent.left; right: parent.right }
+                label: qsTr("Server"); text: server
+                inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText
+                EnterKey.enabled: text || inputMethodComposing
+                EnterKey.iconSource: "image://theme/icon-m-enter-next"
+                EnterKey.onClicked: userString.focus = true
+            }
 
-        TextField {
-            id: userString
-            anchors { left: parent.left; right: parent.right }
-            label: qsTr("User name"); placeholderText: label; text: user
-            inputMethodHints: Qt.ImhNoPredictiveText
-            EnterKey.enabled: text || inputMethodComposing
-            EnterKey.iconSource: "image://theme/icon-m-enter-next"
-            EnterKey.onClicked: passwordString.focus = true
-        }
+            TextField {
+                id: userString
+                anchors { left: parent.left; right: parent.right }
+                label: qsTr("User name"); placeholderText: label; text: user
+                inputMethodHints: Qt.ImhNoPredictiveText
+                EnterKey.enabled: text || inputMethodComposing
+                EnterKey.iconSource: "image://theme/icon-m-enter-next"
+                EnterKey.onClicked: passwordString.focus = true
+            }
 
-        TextField {
-            id: passwordString
-            anchors { left: parent.left; right: parent.right }
-            label: qsTr("Password"); placeholderText: label; text: password
-            inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
-            echoMode: TextInput.Password
-            EnterKey.enabled: (text || inputMethodComposing) && canAccept
-            EnterKey.iconSource: "image://theme/icon-m-enter-accept"
-            EnterKey.onClicked: accountDialog.accept()
-        }
+            TextField {
+                id: passwordString
+                anchors { left: parent.left; right: parent.right }
+                label: qsTr("Password"); placeholderText: label; text: password
+                inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
+                echoMode: TextInput.Password
+                EnterKey.enabled: (text || inputMethodComposing) && canAccept
+                EnterKey.iconSource: "image://theme/icon-m-enter-accept"
+                EnterKey.onClicked: accountDialog.accept()
+            }
 
-        TextSwitch {
-            id: ignoreSSLErrorsSwitch
-            text: qsTr("Ignore SSL errors")
-            anchors { left: parent.left; right: parent.right }
-            description: qsTr("Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)")
-            checked: ignoreSSLErrors
+            TextSwitch {
+                id: ignoreSSLErrorsSwitch
+                text: qsTr("Ignore SSL errors")
+                anchors { left: parent.left; right: parent.right }
+                description: qsTr("Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)")
+                checked: ignoreSSLErrors
+            }
         }
     }
 
