@@ -69,7 +69,7 @@
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="151"/>
-        <source>Message to Buschtrommel:</source>
+        <source>Leave a message (English or German):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -167,72 +167,107 @@
 <context>
     <name>AccountsDelegate</name>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="128"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="127"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="134"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="133"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/AccountsDelegate.qml" line="141"/>
+        <location filename="../qml/delegates/AccountsDelegate.qml" line="140"/>
         <source>Removing account %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>CLItem</name>
-    <message>
-        <location filename="../qml/pages/parts/CLItem.qml" line="44"/>
-        <source>Version</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Changelog</name>
     <message>
-        <location filename="../qml/pages/Changelog.qml" line="38"/>
+        <location filename="../qml/BTComponents/Changelog.qml" line="34"/>
         <source>Changelog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/Changelog.qml" line="39"/>
+        <source>Version</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Contributors</name>
     <message>
-        <location filename="../qml/pages/Contributors.qml" line="41"/>
+        <location filename="../qml/BTComponents/Contributors.qml" line="33"/>
         <source>Contributors</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>ContributorsModel</name>
     <message>
-        <location filename="../qml/pages/Contributors.qml" line="43"/>
-        <source>Author</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Contributors.qml" line="47"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Contributors.qml" line="54"/>
-        <source>Thanks to</source>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="27"/>
+        <source>Author</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Contributors.qml" line="58"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
         <source>Finish translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Contributors.qml" line="62"/>
-        <source>Used third party elements</source>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
+        <source>Thanks to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Contributors.qml" line="66"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="41"/>
         <source>Martin Grimme&apos;s Tidings Elements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="43"/>
+        <source>Used third party elements</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FirstStartInfo</name>
+    <message>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="71"/>
+        <source>Welcome to %1 %2</source>
+        <comment>First is app name, second is version number</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="87"/>
+        <source>Last changes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="102"/>
+        <source>Donate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="111"/>
+        <source>If you like %1 and you want to support the development, consider a small donation.</source>
+        <comment>first is name of the application</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="131"/>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="137"/>
+        <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2139,27 +2174,37 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="38"/>
+        <location filename="../qml/pages/MainPage.qml" line="40"/>
+        <source>Leave a message (English or German):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="41"/>
+        <source>Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="53"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="42"/>
+        <location filename="../qml/pages/MainPage.qml" line="57"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="46"/>
+        <location filename="../qml/pages/MainPage.qml" line="61"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="50"/>
+        <location filename="../qml/pages/MainPage.qml" line="65"/>
         <source>Add account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="60"/>
+        <location filename="../qml/pages/MainPage.qml" line="75"/>
         <source>Please add at least one account for a Transifex instance.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2167,127 +2212,127 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>PaypalChooser</name>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="125"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="125"/>
         <source>Currency</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="126"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="126"/>
         <source>Euro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="127"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="127"/>
         <source>US Dollar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="128"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="128"/>
         <source>Australian Dollar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="129"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="129"/>
         <source>Brazilian Real</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="130"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="130"/>
         <source>Pound Sterling</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="131"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="131"/>
         <source>Danish Krone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="132"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="132"/>
         <source>Hong Kong Dollar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="133"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="133"/>
         <source>Israel New Shekel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="134"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="134"/>
         <source>Japanese Yen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="135"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="135"/>
         <source>Canadian Dollar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="136"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="136"/>
         <source>Mexican Peso</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="137"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="137"/>
         <source>New Taiwan Dollar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="138"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="138"/>
         <source>New Zealand Dollar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="139"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="139"/>
         <source>Norwegian Krone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="140"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="140"/>
         <source>Philippine Peso</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="141"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
         <source>Polish Zoty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="142"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="142"/>
         <source>Russian Ruble</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="143"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="143"/>
         <source>Swedish Krone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="144"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="144"/>
         <source>Swiss Franc</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="145"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="145"/>
         <source>Singapore Dollar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="146"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="146"/>
         <source>Thai Baht</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="147"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="147"/>
         <source>Czech Koruna</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="148"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="148"/>
         <source>Hungarian Forint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/PaypalChooser.qml" line="155"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="155"/>
         <source>Donate via PayPal</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2636,22 +2681,22 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="225"/>
+        <location filename="../qml/pages/StringPage.qml" line="226"/>
         <source>Previous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="233"/>
+        <location filename="../qml/pages/StringPage.qml" line="234"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="246"/>
+        <location filename="../qml/pages/StringPage.qml" line="247"/>
         <source>Reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="311"/>
+        <location filename="../qml/pages/StringPage.qml" line="312"/>
         <source>Copy to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2659,32 +2704,32 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>TranslationStringsAPI</name>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="92"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="93"/>
         <source>Server reply was empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="103"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="104"/>
         <source>Not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="106"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="107"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="176"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="178"/>
         <source>Not found. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="179"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="181"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="182"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="184"/>
         <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2692,42 +2737,57 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>TranslationStringsPage</name>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="52"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="55"/>
         <source>Untranslated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="54"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="57"/>
         <source>Not reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="59"/>
         <source>Reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="59"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="62"/>
         <source>All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="75"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="80"/>
         <source>Ooops, the following error occured:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="93"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="124"/>
+        <source>Search for</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
+        <source>Source string</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="127"/>
+        <source>Translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="143"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="101"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="151"/>
         <source>Filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="139"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="197"/>
         <source>Ooops, you got no results. Check your filter.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2735,17 +2795,17 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>TranslationsDelegate</name>
     <message>
-        <location filename="../qml/delegates/TranslationsDelegate.qml" line="102"/>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="105"/>
         <source>Not translated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/TranslationsDelegate.qml" line="115"/>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="118"/>
         <source>Mark as not reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/delegates/TranslationsDelegate.qml" line="115"/>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="118"/>
         <source>Mark as reviewed</source>
         <translation type="unfinished"></translation>
     </message>
