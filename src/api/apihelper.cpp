@@ -86,7 +86,9 @@ QVariantMap APIHelper::jsonToVariantMap(const QByteArray &json)
 
         QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonString.toUtf8(), &err);
 
+#ifdef QT_DEBUG
         qDebug() << err.errorString();
+#endif
 
     return jsonDoc.object().toVariantMap();
 }
@@ -118,7 +120,9 @@ QVariantList APIHelper::jsonToVariantList(const QByteArray &json)
 
         QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonString.toUtf8(), &err);
 
+#ifdef QT_DEBUG
         qDebug() << err.errorString();
+#endif
 
     return jsonDoc.array().toVariantList();
 }

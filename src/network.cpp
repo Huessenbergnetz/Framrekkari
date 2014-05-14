@@ -34,10 +34,7 @@ Network::Network(QObject *parent) :
 void Network::setAccountIndex(int idx)
 {
 
-    qDebug() << "INDEX: " << idx;
-    qDebug() << "OLDINDEX: " << accountIndex;
     if (accountIndex != idx) {
-        qDebug() << "Setting new index";
         clearAccessCache();
         accountIndex = idx;
         account = config.getAccount(accountIndex);

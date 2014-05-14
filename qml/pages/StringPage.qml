@@ -36,6 +36,7 @@ Page {
 
     property int modelIdx
     property int modelCount
+    property int dataIdx
 
     property int nextPreviousDirection
     property bool canGoPrevious: modelIdx > 0
@@ -113,7 +114,7 @@ Page {
             translation[translationsModel.get(i).plural] = translationsModel.get(i).string
         }
 
-        projectTranslationsModel.saveString(projectSlug, resourceSlug, langCode, translation, hash, reviewedSwitch.checked, modelIdx, accountIndex)
+        projectTranslationsModel.saveString(projectSlug, resourceSlug, langCode, translation, hash, reviewedSwitch.checked, modelIdx, dataIdx, accountIndex)
     }
 
     function checkCanSave()

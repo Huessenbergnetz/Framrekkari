@@ -40,6 +40,9 @@ Page {
     property int projectLangIndex
     property int projectResourceIndex
 
+    property string searchString
+    property int searchTarget: 0
+
     property int filter: config.get("display/stringListFilter", 0)
     property string filterName: getFilterName()
 
@@ -60,8 +63,10 @@ Page {
         }
     }
 
-    Component.onCompleted: projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
-    Component.onDestruction: projectTranslationsModel.clear()
+    Component.onCompleted: {
+        projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
+    }
+    Component.onDestruction: { projectTranslationsModel.clear(); projectTranslationsModel.modelData = [] }
 
     Connections {
         target: projectTranslationsModel
@@ -76,6 +81,14 @@ Page {
         }
     }
 
+    Binding {
+        target: projectTranslationsModel; property: "search"; value: searchString
+    }
+
+    Binding {
+        target: projectTranslationsModel; property: "searchTarget"; value: searchTarget
+    }
+
     BusyIndicator {
         id: busyIndicator
         anchors.centerIn: parent
@@ -84,9 +97,46 @@ Page {
         size: BusyIndicatorSize.Large
     }
 
+    Column {
+        id: headerContainer
+        width: translationStringsPage.width
+        add: Transition { FadeAnimation {} }
+
+        PageHeader { title: langName + ": " + resource }
+
+        SearchField {
+            id: searchField
+            width: parent.width
+            EnterKey.onClicked: searchField.focus = false
+            EnterKey.iconSource: "image://theme/icon-m-enter-close"
+            onTextChanged: searchTimer.restart()
+        }
+
+        Timer {
+            id: searchTimer
+            interval: 300
+            repeat: false
+            onTriggered: translationStringsPage.searchString = searchField.text
+        }
+
+        ComboBox {
+            id: searchTargetBox
+            label: qsTr("Search for")
+            menu: ContextMenu {
+                MenuItem { text: qsTr("Source string") }
+                MenuItem { text: qsTr("Translation") }
+            }
+        }
+
+        Binding {
+            target: translationStringsPage; property: "searchTarget"; value: searchTargetBox.currentIndex
+        }
+    }
+
     SilicaListView {
         id: translationStringsList
         anchors.fill: parent
+        currentIndex: -1
 
         PullDownMenu {
             MenuItem {
@@ -116,15 +166,23 @@ Page {
 
         VerticalScrollDecorator {}
 
-        header: PageHeader { title: langName + ": " + resource }
+        header: Item {
+            id: header
+            width: headerContainer.width
+            height: headerContainer.height
+            Component.onCompleted: headerContainer.parent = header
+        }
 
         model: projectTranslationsModel
         delegate: TranslationsDelegate {
+            id: translationsDelegate
+            searchString: translationStringsPage.searchString
+            searchTarget: translationStringsPage.searchTarget
             project: translationStringsPage.projectSlug
             resource: translationStringsPage.resource
             lang: translationStringsPage.lang
             onClicked: {
-                pageStack.push(Qt.resolvedUrl("StringPage.qml"), {projectSlug: projectSlug, resourceSlug: resource, langCode: lang, projectSrcLang: projectSrcLang, key: model.key, context: model.context, comment: model.comment, source: model.source, translation: model.translation, reviewed: model.reviewed, pluralized: model.pluralized, modelIdx: model.index, modelCount: translationStringsList.count, lastUpdate: model.lastUpdate, lastCommiter: model.user, tags: model.tags.join(", "), occurrences: model.occurrences, characterLimit: model.characterLimit})
+                pageStack.push(Qt.resolvedUrl("StringPage.qml"), {projectSlug: projectSlug, resourceSlug: resource, langCode: lang, projectSrcLang: projectSrcLang, key: model.key, context: model.context, comment: model.comment, source: model.source, translation: model.translation, reviewed: model.reviewed, pluralized: model.pluralized, modelIdx: model.index, modelCount: translationStringsList.count, lastUpdate: model.lastUpdate, lastCommiter: model.user, tags: model.tags.join(", "), occurrences: model.occurrences, characterLimit: model.characterLimit, dataIdx: model.dataIndex})
             }
         }
 

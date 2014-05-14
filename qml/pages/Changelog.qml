@@ -20,31 +20,55 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "parts"
+import "../models"
 
 
 Page {
     id: changelogPage
 
-    SilicaFlickable {
+
+    SilicaListView {
         anchors.fill: parent
+        model: ChangelogModel {}
+        header: PageHeader { title: qsTr("Changelog") }
 
-        contentHeight: column.height + Theme.paddingLarge
-        VerticalScrollDecorator {}
+        section {
+            property: 'version'
+            delegate: SectionHeader {
+                text: qsTr("Version") + " " + section
+                height: Theme.itemSizeExtraSmall
+            }
+        }
 
-        Column {
-            id: column
-            width: changelogPage.width
-            PageHeader { title: qsTr("Changelog") }
-            move: Transition { NumberAnimation { properties: "y"; easing.type: Easing.InOutQuad } }
-            add: Transition { AddAnimation {} }
+        delegate: Item {
+            width: parent.width
+            height: col.height
 
-            CLItem {
-                version: "1.0.0"
-                time: 1399895644000
-                text: "<ul>
-                        <li>Initial release</li>
-                       </ul>"
+            Column {
+                id: col
+                anchors { left: parent.left; right: parent.right; rightMargin: Theme.paddingLarge }
+
+                Text {
+                    id: date
+                    width: parent.width
+                    textFormat: Text.PlainText
+                    color: Theme.secondaryColor
+                    wrapMode: Text.WordWrap
+                    font.pixelSize: Theme.fontSizeSmall
+                    horizontalAlignment: Text.AlignRight
+                    text: Qt.formatDateTime(new Date(model.date), Qt.DefaultLocaleShortDate)
+                }
+
+                Text {
+                    id: text
+                    width: parent.width
+                    textFormat: Text.RichText
+                    color: Theme.primaryColor
+                    wrapMode: Text.WordWrap
+                    font.pixelSize: Theme.fontSizeSmall
+                    onLinkActivated: { Qt.openUrlExternally(link) }
+                    text: model.text
+                }
             }
         }
     }

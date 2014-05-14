@@ -88,7 +88,8 @@ OTHER_FILES += \
     qml/dialogs/ListFilterDialog.qml \
     qml/dialogs/OneClickDialogItem.qml \
     qml/pages/Help.qml \
-    qml/pages/StringMetaPage.qml
+    qml/pages/StringMetaPage.qml \
+    qml/models/ChangelogModel.qml
 
 HEADERS += \
     src/globals.h \

@@ -28,7 +28,7 @@
 
 class TranslationsObject {
 public:
-  TranslationsObject(const QString &keyString, const QVariantList &contextList, const QString &commentString, const QVariantMap &sourceMap, const QVariantMap &transMap, const bool &revBool, const bool &plur, const QDateTime &lUpdate, const QString &usr, const QString &occ, const int &charLim, const QVariantList &t):
+  TranslationsObject(const QString &keyString, const QVariantList &contextList, const QString &commentString, const QVariantMap &sourceMap, const QVariantMap &transMap, const bool &revBool, const bool &plur, const QDateTime &lUpdate, const QString &usr, const QString &occ, const int &charLim, const QVariantList &t, const int &dIdx):
     key(keyString),
     context(contextList),
     comment(commentString),
@@ -40,7 +40,8 @@ public:
     user(usr),
     occurrences(occ),
     characterLimit(charLim),
-    tags(t){}
+    tags(t),
+    dataIndex(dIdx){}
   QString key;
   QVariantList context;
   QString comment;
@@ -53,6 +54,7 @@ public:
   QString occurrences;
   int characterLimit;
   QVariantList tags;
+  int dataIndex;
 };
 
 #endif // TRANSLATIONSOBJECT_H

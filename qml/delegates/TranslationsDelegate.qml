@@ -47,6 +47,9 @@ ListItem {
     property string resource
     property string lang
 
+    property string searchString
+    property int searchTarget: 0
+
     property bool inOperation: false
 
     contentHeight: column.height + Theme.paddingMedium
@@ -87,11 +90,11 @@ ListItem {
         Text {
             id: source
             width: parent.width
-            text: model.source["1"]
+            text: translationItem.searchTarget === 0 ? Theme.highlightText(model.source["1"], translationItem.searchString, Theme.highlightColor) : model.source["1"]
             font.pixelSize: Theme.fontSizeSmall
             color: translationItem.highlighted ? Theme.highlightColor : Theme.primaryColor
             wrapMode: Text.WordWrap
-            textFormat: Text.PlainText
+            textFormat: Text.StyledText
         }
 
         Text {
@@ -99,11 +102,11 @@ ListItem {
             property bool translated: model.translation["1"] !== ""
             property color normalColor: translated ? Theme.secondaryColor : Theme.secondaryHighlightColor
             width: parent.width
-            text: translated ? model.translation["1"] : qsTr("Not translated")
+            text: translated ? translationItem.searchTarget === 1 ? Theme.highlightText(model.translation["1"], translationItem.searchString, Theme.highlightColor) : model.translation["1"] : qsTr("Not translated")
             font.pixelSize: Theme.fontSizeSmall
             color: translationItem.highlighted ? Theme.secondaryHighlightColor : normalColor
             wrapMode: Text.WordWrap
-            textFormat: Text.PlainText
+            textFormat: Text.StyledText
         }
 
     }
@@ -114,7 +117,7 @@ ListItem {
             MenuItem {
                 text: model.reviewed ? qsTr("Mark as not reviewed") : qsTr("Mark as reviewed")
                 enabled: translation.translated
-                onClicked: { inOperation = true; projectTranslationsModel.saveString(project, resource, lang, model.translation, md5Generator.genMd5(model.key, model.context), !model.reviewed, model.index, framrekkari.accountIndex) }
+                onClicked: { inOperation = true; projectTranslationsModel.saveString(project, resource, lang, model.translation, md5Generator.genMd5(model.key, model.context), !model.reviewed, model.index, model.dataIndex, framrekkari.accountIndex) }
             }
         }
     }

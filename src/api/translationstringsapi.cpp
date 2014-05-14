@@ -62,6 +62,7 @@ void TranslationStringsAPI::getStringsFinished()
 
             map["source_string"] = sources;
             map["translation"] = translations;
+            map["dataIndex"] = i;
 
 
             if (getStringFilter == 0) {
@@ -115,7 +116,7 @@ void TranslationStringsAPI::getStringsFinished()
 }
 
 
-void TranslationStringsAPI::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed,  int modelIdx, int accountIdx)
+void TranslationStringsAPI::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed, const int &modelIdx, const int &dataIndex, const int &accountIdx)
 {
     nm.setAccountIndex(accountIdx);
 
@@ -123,6 +124,7 @@ void TranslationStringsAPI::saveString(const QString &project, const QString &re
     transToSave["modelIdx"] = QVariant::fromValue(modelIdx);
     transToSave["translation"] = translation;
     transToSave["reviewed"] = QVariant::fromValue(reviewed);
+    transToSave["dataIndex"] = QVariant::fromValue(dataIndex);
 
     QVariantMap data;
     if (translation.count() > 1) {
