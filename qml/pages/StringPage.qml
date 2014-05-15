@@ -25,6 +25,7 @@ import "../common"
 
 Page {
     id: stringPage
+    objectName: "StringPage"
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
@@ -60,6 +61,7 @@ Page {
 
     Component.onCompleted: {
         populateModels()
+        updateCover()
     }
 
     onStatusChanged: {
@@ -70,6 +72,27 @@ Page {
         }
 
     Component.onDestruction: if (checkCanSave()) save()
+
+    function updateCover()
+    {
+        coverConnector.source = sourcesModel.get(0).string
+        coverConnector.reviewed = stringPage.reviewed
+        coverConnector.translated = isTranslated()
+        coverConnector.canGoNext = stringPage.canGoNext
+    }
+
+    function isTranslated()
+    {
+        var length = translationsModel.count
+
+        for (var i = 0; i < length; i++)
+        {
+            if (translationsModel.get(i).string === "")
+                return false
+        }
+
+        return true
+    }
 
     function populateModels()
     {
@@ -185,6 +208,7 @@ Page {
         pluralIndex = 0;
 
         populateModels()
+        updateCover()
 
         pageStack.pushAttached(Qt.resolvedUrl("StringMetaPage.qml"), {hash: hash, comment: comment, lastUpdate: lastUpdate, lastCommiter: lastCommiter, tags: tags, occurrences: occurrences, characterLimit: characterLimit})
     }
@@ -246,6 +270,7 @@ Page {
                 id: reviewedSwitch
                 text: qsTr("Reviewed")
                 checked: stringPage.reviewed
+                onClicked: coverConnector.reviewed = checked
             }
 
             MessageContainer {

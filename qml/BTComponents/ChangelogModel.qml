@@ -30,6 +30,7 @@ ListModel {
                 <li>New: context menu on source string on translation page for clipboard operations</li>
                 <li>Improved: added hint to open transifex slug</li>
                 <li>Improved: better handling of empty string list results</li>
+                <li>Fixed: forgot to put settings column into a flickable, fixing <a href='https://github.com/Buschtrommel/Framrekkari/issues/1'>issue #1</a></li>
                </ul>"
     }
 

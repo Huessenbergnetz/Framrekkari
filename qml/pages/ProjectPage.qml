@@ -24,6 +24,7 @@ import "../delegates"
 
 Page {
     id: projectPage
+    objectName: "ProjectView"
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
@@ -42,8 +43,8 @@ Page {
 
     property bool inOperation: true
 
-    Component.onCompleted: projectsAPI.getProject(accountIndex, projectSlug, true)
-    Component.onDestruction: projectLangstatsModel.clear()
+    Component.onCompleted: {framrekkari.currentProjectName = projectPage.projectName; projectsAPI.getProject(accountIndex, projectSlug, true) }
+    Component.onDestruction: {framrekkari.currentProjectName = ""; projectLangstatsModel.clear() }
 
 
     Connections {
@@ -62,6 +63,7 @@ Page {
             tags.text = project["tags"]
             projectTransInstractions = project["trans_instructions"]
             projectSrcLang = project["source_language_code"]
+            coverConnector.projectLangs = project["teams"].length
 
             var maintainersArray = project["maintainers"]
             var maintainersLength = maintainersArray.length
@@ -266,6 +268,9 @@ Page {
         model: projectLangstatsModel
         delegate: ProjectLangDelegate {
             onClicked: {
+                coverConnector.langTranslated = model.translated
+                coverConnector.langUntranslated = model.untranslated
+                coverConnector.langReviewed = model.reviewed
                 pageStack.push(Qt.resolvedUrl("ResourcesPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: model.lang, resources: projectResources, langName: langHelper.getLanguageName(model.lang), projectSrcLang: projectSrcLang, projectLangIndex: model.index})
             }
             srcLang: projectSrcLang

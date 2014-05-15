@@ -26,6 +26,7 @@ import "../delegates"
 
 Page {
     id: resourcesPages
+    objectName: "ResourceView"
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
@@ -39,7 +40,8 @@ Page {
 
     property int projectLangIndex
 
-    Component.onCompleted: projectResourceModel.refresh(projectSlug, lang, resources, accountIndex)
+    Component.onCompleted: { framrekkari.currentLangName = resourcesPages.langName; projectResourceModel.refresh(projectSlug, lang, resources, accountIndex) }
+    Component.onDestruction: { framrekkari.currentLangName = ""; projectResourceModel.clear() }
 
     Connections {
         target: projectResourceModel
@@ -75,6 +77,9 @@ Page {
         model: projectResourceModel
         delegate: ResourcesDelegate {
             onClicked: {
+                coverConnector.resourceTranslated = model.translated
+                coverConnector.resourceUntranslated = model.untranslated
+                coverConnector.resourceReviewed = model.reviewed
                 pageStack.push(Qt.resolvedUrl("TranslationStringsPage.qml"), {projectName: projectName, projectSlug: projectSlug, lang: lang, resource: model.slug, langName: langName, projectSrcLang: projectSrcLang, projectLangIndex: resourcesPages.projectLangIndex, projectResourceIndex: model.index})
             }
         }

@@ -30,9 +30,70 @@ ApplicationWindow
     property int accountIndex
     property string accountUser
     property int accountType
+    property string currentProjectName
+    property string currentResourceName
+    property string currentLangName
+
+    function getCoverMode()
+    {
+        switch(pageStack.currentPage.objectName) {
+            case "StringPage":
+                return "string";
+            case "ProjectView":
+                return "project";
+            case "ResourceView":
+                return "resources"
+            case "StringList":
+                return "stringList"
+            default:
+                return "overview"
+        }
+    }
 
     initialPage: Component { MainPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
+
+    QtObject {
+        id: coverConnector
+        property string project: framrekkari.currentProjectName
+        property string resource: framrekkari.currentResourceName
+        property string lang: framrekkari.currentLangName
+        property int projectLangs
+        property string source
+        property bool translated
+        property bool reviewed
+        property bool canGoNext
+        property int langTranslated
+        property int langUntranslated
+        property int langReviewed
+        property int resourceTranslated
+        property int resourceUntranslated
+        property int resourceReviewed
+        property string mode: "overview"
+    }
+
+    Connections {
+        target: pageStack
+        onCurrentPageChanged: coverConnector.mode = getCoverMode()
+    }
+
+    Connections {
+        target: projectResourceModel
+        onResourceStatsChanged: {
+            coverConnector.resourceTranslated = changedResourceStats["translated"]
+            coverConnector.resourceUntranslated = changedResourceStats["untranslated"]
+            coverConnector.resourceReviewed = changedResourceStats["reviewed"]
+        }
+    }
+
+    Connections {
+        target: projectLangstatsModel
+        onLangStatsChanged: {
+            coverConnector.langTranslated = changedLangStats["translated"]
+            coverConnector.langUntranslated = changedLangStats["untranslated"]
+            coverConnector.langReviewed = changedLangStats["reviewed"]
+        }
+    }
 }
 
 

@@ -131,9 +131,15 @@ void ProjectLangstatsModel::updateTranslationCount(const int &idx, const QVarian
 
     sobj->reviewed = sobj->reviewed + changed["revCount"].toInt();
 
+    QVariantMap changedStats;
+    changedStats["translated"] = sobj->translated;
+    changedStats["untranslated"] = sobj->untranslated;
+    changedStats["reviewed"] = sobj->reviewed;
+
     m_stats[idx] = sobj;
 
     emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+    emit langStatsChanged(changedStats);
 }
 
 

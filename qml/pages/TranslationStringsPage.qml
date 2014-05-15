@@ -25,6 +25,7 @@ import "../delegates"
 
 Page {
     id: translationStringsPage
+    objectName: "StringList"
 
     property string accountName: framrekkari.accountName
     property int accountIndex: framrekkari.accountIndex
@@ -64,9 +65,10 @@ Page {
     }
 
     Component.onCompleted: {
+        framrekkari.currentResourceName = translationStringsPage.resource
         projectTranslationsModel.refresh(projectSlug, resource, lang, filter, accountIndex)
     }
-    Component.onDestruction: { projectTranslationsModel.clear(); projectTranslationsModel.modelData = [] }
+    Component.onDestruction: { framrekkari.currentResourceName = ""; projectTranslationsModel.clear(); projectTranslationsModel.modelData = [] }
 
     Connections {
         target: projectTranslationsModel

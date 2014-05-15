@@ -40,6 +40,7 @@ public:
 
 signals:
     void gotError(const QString &projectResourcesModelErrorString);
+    void resourceStatsChanged(const QVariantMap &changedResourceStats);
 
 public slots:
     void refresh(const QString &projectSlug, const QString &lang, const QVariantList &resources, int accountIdx);

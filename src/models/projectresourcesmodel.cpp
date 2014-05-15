@@ -144,9 +144,15 @@ void ProjectResourcesModel::updateTranslationCount(int idx, const QString &user,
 
     robj->lastCommiter = user;
 
+    QVariantMap changedStats;
+    changedStats["translated"] = robj->translated;
+    changedStats["untranslated"] = robj->untranslated;
+    changedStats["reviewed"] = robj->reviewed;
+
     m_resources[idx] = robj;
 
     emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+    emit resourceStatsChanged(changedStats);
 }
 
 

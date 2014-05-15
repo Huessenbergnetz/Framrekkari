@@ -41,6 +41,7 @@ public:
 signals:
     void gotError(const QString &projectsModelErrorString);
     void gotData();
+    void langStatsChanged(const QVariantMap &changedLangStats);
 
 public slots:
     void refresh(const QString &projectSlug, const QVariantList &resources, int accountIdx);
