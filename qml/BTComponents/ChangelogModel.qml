@@ -22,6 +22,11 @@ import QtQuick 2.0
 
 ListModel {
     ListElement {
+        version: "1.1.1"
+        date: 1400160294000
+        text: "<ul><li>Fixed: crash on filtered lists, when using previous and next on string page</li></ul>"
+    }
+    ListElement {
         version: "1.1.0"
         date: 1400151149000
         text: "<ul>

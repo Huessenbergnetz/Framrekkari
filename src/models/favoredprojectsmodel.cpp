@@ -117,8 +117,8 @@ void FavoredProjectsModel::append(const QString &name, const QString &slug, cons
 
 void FavoredProjectsModel::remove(const QString &slug, int accountIdx)
 {
-    int modelIdx, i = 0;
-    int configIdx, j = 0;
+    int modelIdx = 0, i = 0;
+    int configIdx = 0, j = 0;
     bool modelFound = false;
     bool configFound = false;
 
