@@ -258,7 +258,6 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
 
     TranslationsObject *tobj = m_translations.at(idx);
     QVariantMap modelObject = m_modelData.at(dataIdx).toMap();
-    qDebug() << modelObject;
 
     QVariant trData = data["translation"];
 
@@ -274,6 +273,7 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
         tobj->translation = strMap;
         modelObject["translation"] = strMap;
     }
+
 
     int revCount = 0;
     bool rev = data["reviewed"].toBool();
@@ -291,7 +291,6 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
 
     changed["revCount"] = revCount;
     changed["modelIdx"] = idx;
-
 
     emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
     emit savedStringSuccess(changed);

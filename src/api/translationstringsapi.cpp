@@ -35,6 +35,7 @@ void TranslationStringsAPI::getStringsFinished()
 
         QVariantList m_results = helper.jsonToVariantList(getStringReply->readAll());
 
+        int dataIndex = 0;
         for (int i = 0; i < m_results.length(); ++i)
         {
             QVariantMap map = m_results.at(i).toMap();
@@ -62,26 +63,31 @@ void TranslationStringsAPI::getStringsFinished()
 
             map["source_string"] = sources;
             map["translation"] = translations;
-            map["dataIndex"] = i;
-
 
             if (getStringFilter == 0) {
 
+                map["dataIndex"] = dataIndex++;
                 results << map;
 
             } else if (getStringFilter == 1) {
 
-                if (translations["1"].toString().isEmpty())
+                if (translations["1"].toString().isEmpty()) {
+                    map["dataIndex"] = dataIndex++;
                     results << map;
+                }
 
             } else if (getStringFilter == 2) {
 
-                if (!map["reviewed"].toBool())
+                if (!map["reviewed"].toBool()) {
+                    map["dataIndex"] = dataIndex++;
                     results << map;
+                }
 
             } else if (getStringFilter == 3) {
-                if (map["reviewed"].toBool())
+                if (map["reviewed"].toBool()) {
+                    map["dataIndex"] = dataIndex++;
                     results << map;
+                }
             }
         }
 
@@ -164,7 +170,7 @@ void TranslationStringsAPI::saveStringFinished()
 #ifdef QT_DEBUG
         qDebug() << "SAVED";
 #endif
-        savedString(transToSave);
+        emit savedString(transToSave);
 
 
 
