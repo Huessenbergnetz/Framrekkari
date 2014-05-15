@@ -140,7 +140,7 @@ CoverBackground {
 
     Column {
         id: stringInfo
-        visible: coverConnector.mode === "string"
+        visible: coverConnector.mode === "string" || coverConnector.mode === "meta"
         anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge; top: parent.top; topMargin: Theme.paddingSmall }
 
         Row {

@@ -37,6 +37,8 @@ ApplicationWindow
     function getCoverMode()
     {
         switch(pageStack.currentPage.objectName) {
+            case "MetaDataPage":
+                return "meta";
             case "StringPage":
                 return "string";
             case "ProjectView":

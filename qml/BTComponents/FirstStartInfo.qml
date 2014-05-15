@@ -54,7 +54,7 @@ Item {
             SilicaFlickable {
                 id: infoFlick
                 anchors.fill: parent
-                contentHeight: infoCol.height
+                contentHeight: infoCol.height + Theme.paddingLarge
 
                 Column {
                     id: infoCol

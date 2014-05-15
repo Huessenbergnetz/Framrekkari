@@ -24,6 +24,7 @@ import Sailfish.Silica 1.0
 
 Page {
     id: stringMetaPage
+    objectName: "MetaDataPage"
 
     property alias hash: hashText.text
     property alias comment: commentText.text

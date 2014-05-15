@@ -23,8 +23,9 @@ import QtQuick 2.0
 ListModel {
     ListElement {
         version: "1.1.0"
-        date: 1399895644000
+        date: 1400151149000
         text: "<ul>
+                <li>New: information on cover and some cover actions (next string and copy to clipboard)</li>
                 <li>New: review operations on translation page and in string list context menu</li>
                 <li>New: metadata page attached to translation page</li>
                 <li>New: context menu on source string on translation page for clipboard operations</li>
