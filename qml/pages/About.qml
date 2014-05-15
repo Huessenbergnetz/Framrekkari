@@ -60,7 +60,7 @@ Page {
             }
             MenuItem {
                 text: qsTr("Contributors")
-                onClicked: pageStack.push(Qt.resolvedUrl("../BTComponents/Contributors.qml"), {avatarBasePath: "/usr/share/harbour-framrekkari/images/contributors"})
+                onClicked: pageStack.push(Qt.resolvedUrl("../BTComponents/Contributors.qml"), {avatarBasePath: "/usr/share/harbour-framrekkari/images/contributors", iconBasePath: "/usr/share/harbour-framrekkari/icons"})
             }
         }
 

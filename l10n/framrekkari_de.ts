@@ -84,47 +84,47 @@
         <translation>Transifex ist eine kollaborative Online-Übersetzungsplattform. Um Sie nutzen zu können benötigen Sie ein Benutzerkonto auf &lt;a href=&apos;https://www.transifex.com&apos;&gt;Transifex.com&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Create account</source>
         <translation>Konto erstellen</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Edit account</source>
         <translation>Konto bearbeiten</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="64"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="69"/>
         <source>Account type</source>
         <translation>Kontotyp</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="100"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
         <source>Display name</source>
         <translation>Azeigename</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="110"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
         <source>Server</source>
         <translation>Server</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="120"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="125"/>
         <source>User name</source>
         <translation>Benutzername</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="130"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="135"/>
         <source>Password</source>
         <translation>Passwort</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="140"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="145"/>
         <source>Ignore SSL errors</source>
         <translation>SSL-Fehler ignorieren</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="142"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
         <translation>Ignorieren Sie SSL-Fehler nur, wenn Sie wirklich wissen, was Sie tun. (Bisher gibt es noch keinen Systemdienst zur Verwaltung von SSL-Zertifikaten. Nutzt Ihr Server ein selbst signiertes Zertifikat, müssen Sie SSL-Fehler ignorieren.)</translation>
     </message>
@@ -196,7 +196,7 @@
 <context>
     <name>Contributors</name>
     <message>
-        <location filename="../qml/BTComponents/Contributors.qml" line="33"/>
+        <location filename="../qml/BTComponents/Contributors.qml" line="34"/>
         <source>Contributors</source>
         <translation>Mitwirkende</translation>
     </message>
@@ -232,6 +232,19 @@
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="43"/>
         <source>Used third party elements</source>
         <translation>Genutzte Drittelemente</translation>
+    </message>
+</context>
+<context>
+    <name>CoverPage</name>
+    <message numerus="yes">
+        <location filename="../qml/cover/CoverPage.qml" line="63"/>
+        <source>%n language(s)</source>
+        <translation><numerusform>%n Sprache</numerusform><numerusform>%n Sprachen</numerusform></translation>
+    </message>
+    <message>
+        <location filename="../qml/cover/CoverPage.qml" line="159"/>
+        <source>Source</source>
+        <translation>Quelle</translation>
     </message>
 </context>
 <context>
@@ -283,10 +296,8 @@
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
-        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;
-Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation>Nach dem Start von Framrekkari sehen Sie die Hauptseite, die Ihre Benutzerkonten auflistet. Nach dem ersten Start wird diese noch leer sein. Ziehen Sie das obere Menü herunter und wählen Sie &lt;i&gt;Konto hinzufügen&lt;/li&gt;. Nachdem Sie eins hinzugefügt haben wird es in der Liste angezeigt und ein Klick darauf öffnet es. Die Kontoansicht gibt Ihnen zugriff auf die Such- und Öffnenfunktionen des Dienstes und lässt Sie durch die Projekte stöbern.&lt;br&gt;&lt;br&gt;
-Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite zeigt Ihnen die verfügbaren Sprachen und allgemeine Informationen über das Projekt an. Ein Klick auf eine Sprache öffnet die Liste mit den Projektressourcen. Über die Projektressourcen gelangen Sie zur Liste mit den Quellzeichenketten. Klicken Sie auf einen Eintrag um ihn zu öffnen und mit der Übersetzung zu beginnen. Ihre Eingaben werden beim Verlassen der Übersetzungsansicht und beim Laden des nächsten oder vorherigen Eintrags automatisch gespeichert.</translation>
+        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
+        <translation>Nach dem Start von Framrekkari sehen Sie die Hauptseite, die Ihre Benutzerkonten auflistet. Nach dem ersten Start wird diese noch leer sein. Ziehen Sie das obere Menü herunter und wählen Sie &lt;i&gt;Konto hinzufügen&lt;/li&gt;. Nachdem Sie eins hinzugefügt haben wird es in der Liste angezeigt und ein Klick darauf öffnet es. Die Kontoansicht gibt Ihnen zugriff auf die Such- und Öffnenfunktionen des Dienstes und lässt Sie durch die Projekte stöbern.&lt;br&gt;&lt;br&gt; Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite zeigt Ihnen die verfügbaren Sprachen und allgemeine Informationen über das Projekt an. Ein Klick auf eine Sprache öffnet die Liste mit den Projektressourcen. Über die Projektressourcen gelangen Sie zur Liste mit den Quellzeichenketten. Klicken Sie auf einen Eintrag um ihn zu öffnen und mit der Übersetzung zu beginnen. Ihre Eingaben werden beim Verlassen der Übersetzungsansicht und beim Laden des nächsten oder vorherigen Eintrags automatisch gespeichert.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="53"/>
@@ -2292,7 +2303,7 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
-        <source>Polish Zoty</source>
+        <source>Polish Zloty</source>
         <translation>Polnischer Zloty</translation>
     </message>
     <message>
@@ -2415,47 +2426,47 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
 <context>
     <name>ProjectPage</name>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="52"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="53"/>
         <source>Ooops, the following error occured:</source>
         <translation>Upps, der folgende Fehler trat auf:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="205"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created no resources.</source>
         <translation>Dieses Projekt hat bisher keine Ressourcen erstellt.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="220"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="222"/>
         <source>Bugtracker</source>
         <translation>Bugtracker</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="225"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="227"/>
         <source>Translation instructions</source>
         <translation>Übersetzungsanweisungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="230"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="232"/>
         <source>Project website</source>
         <translation>Projektinternetseite</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="235"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Remove from favorites</source>
         <translation>Von Favoriten entfernen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="235"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Add to favorites</source>
         <translation>Zu Favoriten hinzufügen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="247"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="249"/>
         <source>Refresh</source>
         <translation>Aktualisieren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="189"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="191"/>
         <source>Languages</source>
         <translation>Sprachen</translation>
     </message>
@@ -2533,17 +2544,17 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
 <context>
     <name>ResourcesPage</name>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="46"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="48"/>
         <source>Ooops, the following error occured:</source>
         <translation>Upps, da trat ein Fehler auf:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="63"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="65"/>
         <source>Refresh</source>
         <translation>Aktualisieren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="73"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="75"/>
         <source>Resources:</source>
         <translation>Ressourcen:</translation>
     </message>
@@ -2674,22 +2685,22 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="226"/>
+        <location filename="../qml/pages/StringPage.qml" line="252"/>
         <source>Previous</source>
         <translation>Vorheriger</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="234"/>
+        <location filename="../qml/pages/StringPage.qml" line="260"/>
         <source>Next</source>
         <translation>Nächster</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="247"/>
+        <location filename="../qml/pages/StringPage.qml" line="273"/>
         <source>Reviewed</source>
         <translation>Geprüft</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="312"/>
+        <location filename="../qml/pages/StringPage.qml" line="339"/>
         <source>Copy to clipboard</source>
         <translation>In Zwischenablage kopieren</translation>
     </message>
@@ -2730,57 +2741,57 @@ Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite z
 <context>
     <name>TranslationStringsPage</name>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="55"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
         <source>Untranslated</source>
         <translation>Unübersetzt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="57"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="58"/>
         <source>Not reviewed</source>
         <translation>Ungeprüft</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="59"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="60"/>
         <source>Reviewed</source>
         <translation>Geprüft</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="62"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="63"/>
         <source>All</source>
         <translation>Alle</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="80"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
         <source>Ooops, the following error occured:</source>
         <translation>Upps, da trat ein Fehler auf:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="124"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
         <source>Search for</source>
         <translation>Suche nach</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="128"/>
         <source>Source string</source>
         <translation>Quelle</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="127"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="129"/>
         <source>Translation</source>
         <translation>Übersetzung</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="143"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="145"/>
         <source>Refresh</source>
         <translation>Aktualisieren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="151"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="153"/>
         <source>Filter:</source>
         <translation>Filter:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="197"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="199"/>
         <source>Ooops, you got no results. Check your filter.</source>
         <translation>Upps, keine Ergebnisse. Prüfen Sie den Filter.</translation>
     </message>

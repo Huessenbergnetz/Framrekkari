@@ -68,7 +68,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="151"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>Jätä viesti (englanniksi tai saksaksi):</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="154"/>
@@ -84,47 +84,47 @@
         <translation>Transifex on verkossa toimiva yhteisöllinen käännösalusta. Tarvitset sen käyttöön &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;-tilin.</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Create account</source>
         <translation>Luo tili</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Edit account</source>
         <translation>Muokkaa tiliä</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="64"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="69"/>
         <source>Account type</source>
         <translation>Tilin tyyppi</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="100"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
         <source>Display name</source>
         <translation>Näytettävä nimi</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="110"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
         <source>Server</source>
         <translation>Palvelin</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="120"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="125"/>
         <source>User name</source>
         <translation>Käyttäjätunnus</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="130"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="135"/>
         <source>Password</source>
         <translation>Salasana</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="140"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="145"/>
         <source>Ignore SSL errors</source>
         <translation>Jätä huomiotta SSL-virheet</translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="142"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
         <translation type="unfinished"/>
     </message>
@@ -190,13 +190,13 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="39"/>
         <source>Version</source>
-        <translation type="unfinished"/>
+        <translation>Versio</translation>
     </message>
 </context>
 <context>
     <name>Contributors</name>
     <message>
-        <location filename="../qml/BTComponents/Contributors.qml" line="33"/>
+        <location filename="../qml/BTComponents/Contributors.qml" line="34"/>
         <source>Contributors</source>
         <translation>Avustajat</translation>
     </message>
@@ -206,7 +206,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
-        <translation type="unfinished"/>
+        <translation>Ensisijainen kehittäjä, Framrekkarin tekijä</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="27"/>
@@ -221,7 +221,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
         <source>Thanks to</source>
-        <translation type="unfinished"/>
+        <translation>Kiitokset</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="41"/>
@@ -231,6 +231,19 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="43"/>
         <source>Used third party elements</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>CoverPage</name>
+    <message numerus="yes">
+        <location filename="../qml/cover/CoverPage.qml" line="63"/>
+        <source>%n language(s)</source>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+    </message>
+    <message>
+        <location filename="../qml/cover/CoverPage.qml" line="159"/>
+        <source>Source</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -245,12 +258,12 @@
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="87"/>
         <source>Last changes</source>
-        <translation type="unfinished"/>
+        <translation>Viimeisimmät muutokset</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="102"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Lahjoita</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="111"/>
@@ -261,12 +274,12 @@
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="131"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>Ohje</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="137"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Sulje</translation>
     </message>
 </context>
 <context>
@@ -283,8 +296,7 @@
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
-        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;
-Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
+        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2174,7 +2186,7 @@ Search or browse for a project to open it. The project page shows the available 
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>Jätä viesti (englanniksi tai saksaksi):</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="41"/>
@@ -2291,7 +2303,7 @@ Search or browse for a project to open it. The project page shows the available 
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
-        <source>Polish Zoty</source>
+        <source>Polish Zloty</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2414,47 +2426,47 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>ProjectPage</name>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="52"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="53"/>
         <source>Ooops, the following error occured:</source>
         <translation>Hups, tapahtui virhe:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="205"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created no resources.</source>
         <translation>Tämä projekti ei ole vielä luonut resursseja.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="220"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="222"/>
         <source>Bugtracker</source>
         <translation>Vianseuranta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="225"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="227"/>
         <source>Translation instructions</source>
         <translation>Käännösohjeet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="230"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="232"/>
         <source>Project website</source>
         <translation>Projektin verkkosivusto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="235"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Remove from favorites</source>
         <translation>Poista suosikeista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="235"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Add to favorites</source>
         <translation>Lisää suosikkeihin</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="247"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="249"/>
         <source>Refresh</source>
         <translation>Päivitä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="189"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="191"/>
         <source>Languages</source>
         <translation>Kielet</translation>
     </message>
@@ -2532,17 +2544,17 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>ResourcesPage</name>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="46"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="48"/>
         <source>Ooops, the following error occured:</source>
         <translation>Hups, tapahtui virhe:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="63"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="65"/>
         <source>Refresh</source>
         <translation>Päivitä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="73"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="75"/>
         <source>Resources:</source>
         <translation>Resurssit:</translation>
     </message>
@@ -2673,22 +2685,22 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="226"/>
+        <location filename="../qml/pages/StringPage.qml" line="252"/>
         <source>Previous</source>
         <translation>Edellinen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="234"/>
+        <location filename="../qml/pages/StringPage.qml" line="260"/>
         <source>Next</source>
         <translation>Seuraava</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="247"/>
+        <location filename="../qml/pages/StringPage.qml" line="273"/>
         <source>Reviewed</source>
         <translation>Tarkistettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="312"/>
+        <location filename="../qml/pages/StringPage.qml" line="339"/>
         <source>Copy to clipboard</source>
         <translation>Kopioi leikepöydälle</translation>
     </message>
@@ -2729,57 +2741,57 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>TranslationStringsPage</name>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="55"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
         <source>Untranslated</source>
         <translation>Kääntämättä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="57"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="58"/>
         <source>Not reviewed</source>
         <translation>Ei tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="59"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="60"/>
         <source>Reviewed</source>
         <translation>Tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="62"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="63"/>
         <source>All</source>
         <translation>Kaikki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="80"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
         <source>Ooops, the following error occured:</source>
         <translation>Hups, tapahtui virhe:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="124"/>
-        <source>Search for</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
+        <source>Search for</source>
+        <translation>Etsi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="128"/>
         <source>Source string</source>
-        <translation type="unfinished"/>
+        <translation>Lähdemerkkijono</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="127"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="129"/>
         <source>Translation</source>
-        <translation type="unfinished"/>
+        <translation>Käännös</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="143"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="145"/>
         <source>Refresh</source>
         <translation>Päivitä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="151"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="153"/>
         <source>Filter:</source>
         <translation>Suodatin:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="197"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="199"/>
         <source>Ooops, you got no results. Check your filter.</source>
         <translation>Hups, ei tuloksia. Tarkista suodatus.</translation>
     </message>

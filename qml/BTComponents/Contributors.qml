@@ -25,6 +25,7 @@ Page {
     id: contributorsPage
 
     property string avatarBasePath
+    property string iconBasePath
 
 
     SilicaListView {
@@ -40,7 +41,7 @@ Page {
             }
         }
 
-        delegate: ContributorsDelegate { avatarPath: contributorsPage.avatarBasePath }
+        delegate: ContributorsDelegate { avatarPath: contributorsPage.avatarBasePath; iconPath: contributorsPage.iconBasePath }
     }
 }
 

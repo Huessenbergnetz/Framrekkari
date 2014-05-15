@@ -138,7 +138,7 @@ Item {
             donationModel.get(13).name = qsTr("New Zealand Dollar")
             donationModel.get(14).name = qsTr("Norwegian Krone")
             donationModel.get(15).name = qsTr("Philippine Peso")
-            donationModel.get(16).name = qsTr("Polish Złoty")
+            donationModel.get(16).name = qsTr("Polish Zloty")
             donationModel.get(17).name = qsTr("Russian Ruble")
             donationModel.get(18).name = qsTr("Swedish Krone")
             donationModel.get(19).name = qsTr("Swiss Franc")

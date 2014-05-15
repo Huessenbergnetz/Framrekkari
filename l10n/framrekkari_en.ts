@@ -86,47 +86,47 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Create account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="58"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Edit account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="64"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="69"/>
         <source>Account type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="100"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
         <source>Display name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="110"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
         <source>Server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="120"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="125"/>
         <source>User name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="130"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="135"/>
         <source>Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="140"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="145"/>
         <source>Ignore SSL errors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/dialogs/AccountDialog.qml" line="142"/>
+        <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -198,7 +198,7 @@
 <context>
     <name>Contributors</name>
     <message>
-        <location filename="../qml/BTComponents/Contributors.qml" line="33"/>
+        <location filename="../qml/BTComponents/Contributors.qml" line="34"/>
         <source>Contributors</source>
         <translation type="unfinished"></translation>
     </message>
@@ -233,6 +233,22 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="43"/>
         <source>Used third party elements</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CoverPage</name>
+    <message numerus="yes">
+        <location filename="../qml/cover/CoverPage.qml" line="63"/>
+        <source>%n language(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../qml/cover/CoverPage.qml" line="159"/>
+        <source>Source</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -285,8 +301,7 @@
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
-        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;
-Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
+        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2293,7 +2308,7 @@ Search or browse for a project to open it. The project page shows the available 
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
-        <source>Polish Zoty</source>
+        <source>Polish Zloty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2419,47 +2434,47 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>ProjectPage</name>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="52"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="53"/>
         <source>Ooops, the following error occured:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="205"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created no resources.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="220"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="222"/>
         <source>Bugtracker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="225"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="227"/>
         <source>Translation instructions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="230"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="232"/>
         <source>Project website</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="235"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Remove from favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="235"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Add to favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="247"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="249"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectPage.qml" line="189"/>
+        <location filename="../qml/pages/ProjectPage.qml" line="191"/>
         <source>Languages</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2540,17 +2555,17 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>ResourcesPage</name>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="46"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="48"/>
         <source>Ooops, the following error occured:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="63"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="65"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ResourcesPage.qml" line="73"/>
+        <location filename="../qml/pages/ResourcesPage.qml" line="75"/>
         <source>Resources:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2681,22 +2696,22 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="226"/>
+        <location filename="../qml/pages/StringPage.qml" line="252"/>
         <source>Previous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="234"/>
+        <location filename="../qml/pages/StringPage.qml" line="260"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="247"/>
+        <location filename="../qml/pages/StringPage.qml" line="273"/>
         <source>Reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="312"/>
+        <location filename="../qml/pages/StringPage.qml" line="339"/>
         <source>Copy to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2737,57 +2752,57 @@ Search or browse for a project to open it. The project page shows the available 
 <context>
     <name>TranslationStringsPage</name>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="55"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
         <source>Untranslated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="57"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="58"/>
         <source>Not reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="59"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="60"/>
         <source>Reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="62"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="63"/>
         <source>All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="80"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
         <source>Ooops, the following error occured:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="124"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
         <source>Search for</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="128"/>
         <source>Source string</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="127"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="129"/>
         <source>Translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="143"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="145"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="151"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="153"/>
         <source>Filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TranslationStringsPage.qml" line="197"/>
+        <location filename="../qml/pages/TranslationStringsPage.qml" line="199"/>
         <source>Ooops, you got no results. Check your filter.</source>
         <translation type="unfinished"></translation>
     </message>

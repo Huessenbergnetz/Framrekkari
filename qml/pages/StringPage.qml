@@ -199,12 +199,14 @@ Page {
         source = item["source"]
         translation = item["translation"]
         reviewed = item["reviewed"]
+        reviewedSwitch.checked = reviewed
         pluralized = item["pluralized"]
         lastUpdate = item["last_update"]
         lastCommiter = item["user"]
         occurrences = item["occurences"]
         characterLimit = item["character_limit"]
         tags = item["tags"].join(", ")
+        dataIdx = item["dataIndex"]
         pluralIndex = 0;
 
         populateModels()

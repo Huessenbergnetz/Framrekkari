@@ -26,6 +26,7 @@ Row {
     anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
 
     property string avatarPath
+    property string iconPath
 
     Image {
         id:contribImage
@@ -41,14 +42,14 @@ Row {
         width: parent.width - contribImage.width
 
         Label {
-            text: model.name
+            text: qsTranslate("ContributorsModel", model.name)
             font.pixelSize: Theme.fontSizeSmall
             width: parent.width
             wrapMode: Text.WordWrap
         }
 
         Label {
-            text: model.role
+            text: qsTranslate("ContributorsModel", model.role)
             font.pixelSize: Theme.fontSizeExtraSmall
             width: parent.width
             wrapMode: Text.WordWrap
@@ -59,42 +60,42 @@ Row {
             spacing: 10
 
             IconButton {
-                icon.source: "/usr/share/harbour-framrekkari/icons/icon-m-browser.png"
+                icon.source: iconPath + "/icon-m-browser.png"
                 visible: model.website ? true : false
                 width: icon.width; height: icon.height
                 onClicked: Qt.openUrlExternally(model.website)
             }
 
             IconButton {
-                icon.source: "/usr/share/harbour-framrekkari/icons/icon-m-twitter.png"
+                icon.source: iconPath + "/icon-m-twitter.png"
                 visible: model.twitter ? true : false
                 width: icon.width; height: icon.height
                 onClicked: Qt.openUrlExternally("https://twitter.com/" + model.twitter)
             }
 
             IconButton {
-                icon.source: "/usr/share/harbour-framrekkari/icons/icon-m-github.png"
+                icon.source: iconPath + "/icon-m-github.png"
                 visible: model.github ? true : false
                 width: icon.width; height: icon.height
                 onClicked: Qt.openUrlExternally("https://github.com/" + model.github)
             }
 
             IconButton {
-                icon.source: "/usr/share/harbour-framrekkari/icons/icon-m-bitbucket.png"
+                icon.source: iconPath + "/icon-m-bitbucket.png"
                 visible: model.bitbucket ? true : false
                 width: icon.width; height: icon.height
                 onClicked: Qt.openUrlExternally("https://bitbucket.org/" + model.bitbucket)
             }
 
             IconButton {
-                icon.source: "/usr/share/harbour-framrekkari/icons/icon-m-linkedin.png"
+                icon.source: iconPath + "/icon-m-linkedin.png"
                 visible: model.linkedin ? true : false
                 width: icon.width; height: icon.height
                 onClicked: Qt.openUrlExternally("http://www.linkedin.com/profile/view?id=" + model.linkedin)
             }
 
             IconButton {
-                icon.source: "/usr/share/harbour-framrekkari/icons/icon-m-weibo.png"
+                icon.source: iconPath + "/icon-m-weibo.png"
                 visible: model.weibo ? true : false
                 width: icon.width; height: icon.height
                 onClicked: Qt.openUrlExternally("http://www.weibo.com/" + model.weibo)
