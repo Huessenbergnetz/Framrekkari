@@ -21,13 +21,13 @@
 #ifndef PROJECTTRANSLATIONSMODEL_H
 #define PROJECTTRANSLATIONSMODEL_H
 
-#include <QAbstractTableModel>
+#include <QAbstractListModel>
 #include <QMapIterator>
 #include "../api/translationstringsapi.h"
 
 class TranslationsObject;
 
-class ProjectTranslationsModel : public QAbstractTableModel
+class ProjectTranslationsModel : public QAbstractListModel
 {
     Q_OBJECT
     Q_PROPERTY(QString search READ search WRITE setSearch NOTIFY searchChanged)
@@ -38,9 +38,8 @@ public:
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
-    int columnCount(const QModelIndex& = QModelIndex()) const;
     QHash<int, QByteArray> roleNames() const;
-    QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const;
+    QModelIndex index(int row, int column = 0, const QModelIndex &parent = QModelIndex()) const;
 
     QString search() const;
     QVariantList modelData() const;

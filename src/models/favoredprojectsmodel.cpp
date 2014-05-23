@@ -28,7 +28,7 @@ const int FavoredProjectsModel::SrcLangRole = Qt::UserRole + 4;
 const int FavoredProjectsModel::AccountIdxRole = Qt::UserRole + 5;
 
 FavoredProjectsModel::FavoredProjectsModel(QObject *parent) :
-    QAbstractTableModel(parent)
+    QAbstractListModel(parent)
 {
 }
 
@@ -49,11 +49,6 @@ int FavoredProjectsModel::rowCount(const QModelIndex &) const
     return m_projects.size();
 }
 
-int FavoredProjectsModel::columnCount(const QModelIndex&) const
-{
-    return 5;
-}
-
 
 QVariant FavoredProjectsModel::data(const QModelIndex &index, int role) const
 {
@@ -65,7 +60,6 @@ QVariant FavoredProjectsModel::data(const QModelIndex &index, int role) const
 
     FavoredProjectObject *fpobj = m_projects.at(index.row());
     switch (role) {
-    case Qt::DisplayRole: // The default display role now displays the first name as well
     case NameRole:
         return QVariant::fromValue(fpobj->name);
     case SlugRole:

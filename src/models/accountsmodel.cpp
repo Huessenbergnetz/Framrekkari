@@ -30,7 +30,7 @@ const int AccountsModel::IgnoreSSLErrorsRole = Qt::UserRole + 5;
 const int AccountsModel::TypeRole = Qt::UserRole + 6;
 
 AccountsModel::AccountsModel(QObject *parent) :
-    QAbstractTableModel(parent)
+    QAbstractListModel(parent)
 {
     init();
 }
@@ -51,11 +51,6 @@ int AccountsModel::rowCount(const QModelIndex &) const
     return m_accounts.size();
 }
 
-int AccountsModel::columnCount(const QModelIndex&) const
-{
-    return 6;
-}
-
 
 QVariant AccountsModel::data(const QModelIndex &index, int role) const
 {
@@ -67,7 +62,6 @@ QVariant AccountsModel::data(const QModelIndex &index, int role) const
 
     AccountObject *aobj = m_accounts.at(index.row());
     switch (role) {
-    case Qt::DisplayRole: // The default display role now displays the first name as well
     case NameRole:
         return QVariant::fromValue(aobj->name);
     case ServerRole:
@@ -135,7 +129,7 @@ void AccountsModel::edit(const QString &name, const QString &server, const QStri
 
     m_accounts[idx] = acc;
 
-    emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+    emit dataChanged(index(idx, 0), index(idx));
 }
 
 

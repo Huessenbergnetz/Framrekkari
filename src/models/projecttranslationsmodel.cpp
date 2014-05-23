@@ -37,7 +37,7 @@ const int ProjectTranslationsModel::TagsRole = Qt::UserRole + 12;
 const int ProjectTranslationsModel::DataIndexRole = Qt::UserRole + 13;
 
 ProjectTranslationsModel::ProjectTranslationsModel(QObject *parent) :
-    QAbstractTableModel(parent)
+    QAbstractListModel(parent)
 {
     m_search = "";
     m_searchTarget = 0;
@@ -75,10 +75,6 @@ int ProjectTranslationsModel::rowCount(const QModelIndex &) const
     return m_translations.size();
 }
 
-int ProjectTranslationsModel::columnCount(const QModelIndex&) const
-{
-    return 13;
-}
 
 QVariantMap ProjectTranslationsModel::get(int modelIdx)
 {
@@ -292,7 +288,7 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
     changed["revCount"] = revCount;
     changed["modelIdx"] = idx;
 
-    emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+    emit dataChanged(index(idx, 0), index(idx));
     emit savedStringSuccess(changed);
 }
 

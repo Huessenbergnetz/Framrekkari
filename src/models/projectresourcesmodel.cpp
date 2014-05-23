@@ -29,7 +29,7 @@ const int ProjectResourcesModel::LastUpdateRole = Qt::UserRole + 5;
 const int ProjectResourcesModel::LastCommiterRole = Qt::UserRole + 6;
 
 ProjectResourcesModel::ProjectResourcesModel(QObject *parent) :
-    QAbstractTableModel(parent)
+    QAbstractListModel(parent)
 {
     connect(&sAPI, SIGNAL(gotLangResourcesStats(QVariantList)), this, SLOT(populate(QVariantList)));
     connect(&sAPI, SIGNAL(gotLangResourcesStatsError(QString)), this, SLOT(errorHandler(QString)));
@@ -51,11 +51,6 @@ QHash<int, QByteArray> ProjectResourcesModel::roleNames() const {
 int ProjectResourcesModel::rowCount(const QModelIndex &) const
 {
     return m_resources.size();
-}
-
-int ProjectResourcesModel::columnCount(const QModelIndex&) const
-{
-    return 6;
 }
 
 
@@ -151,7 +146,7 @@ void ProjectResourcesModel::updateTranslationCount(int idx, const QString &user,
 
     m_resources[idx] = robj;
 
-    emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+    emit dataChanged(index(idx, 0), index(idx));
     emit resourceStatsChanged(changedStats);
 }
 

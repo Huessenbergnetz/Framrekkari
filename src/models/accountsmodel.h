@@ -21,13 +21,13 @@
 #ifndef ACCOUNTSMODEL_H
 #define ACCOUNTSMODEL_H
 
-#include <QAbstractTableModel>
+#include <QAbstractListModel>
 
 #include "../configuration.h"
 
 class AccountObject;
 
-class AccountsModel : public QAbstractTableModel
+class AccountsModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
@@ -35,9 +35,8 @@ public:
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
-    int columnCount(const QModelIndex& = QModelIndex()) const;
     QHash<int, QByteArray> roleNames() const;
-    QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const;
+    QModelIndex index(int row, int column = 0, const QModelIndex &parent = QModelIndex()) const;
     Qt::ItemFlags flags(const QModelIndex &index) const;
     bool setData(const QModelIndex &index, const QVariant &value, int role);
 
@@ -58,8 +57,6 @@ private:
     static const int TypeRole;
 
     void init();
-
-//    bool setData(QModelIndex &index, QVariant &value, int role);
 
     Configuration config;
 

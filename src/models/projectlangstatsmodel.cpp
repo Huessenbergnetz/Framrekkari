@@ -27,7 +27,7 @@ const int ProjectLangstatsModel::UntranslatedRole = Qt::UserRole + 3;
 const int ProjectLangstatsModel::ReviewedRole = Qt::UserRole + 4;
 
 ProjectLangstatsModel::ProjectLangstatsModel(QObject *parent) :
-    QAbstractTableModel(parent)
+    QAbstractListModel(parent)
 {
     connect(&sAPI, SIGNAL(gotAllProjectLangStats(QVariantMap)), this, SLOT(populate(QVariantMap)));
     connect(&sAPI, SIGNAL(gotAllProjectLangStatsError(QString)), this, SLOT(errorHandler(QString)));
@@ -46,11 +46,6 @@ QHash<int, QByteArray> ProjectLangstatsModel::roleNames() const {
 int ProjectLangstatsModel::rowCount(const QModelIndex &) const
 {
     return m_stats.size();
-}
-
-int ProjectLangstatsModel::columnCount(const QModelIndex&) const
-{
-    return 4;
 }
 
 
@@ -138,7 +133,7 @@ void ProjectLangstatsModel::updateTranslationCount(const int &idx, const QVarian
 
     m_stats[idx] = sobj;
 
-    emit dataChanged(index(idx, 0), index(idx, columnCount()-1));
+    emit dataChanged(index(idx, 0), index(idx));
     emit langStatsChanged(changedStats);
 }
 

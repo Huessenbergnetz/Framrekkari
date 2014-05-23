@@ -21,12 +21,12 @@
 #ifndef PROJECRESOURCESMODEL_H
 #define PROJECRESOURCESMODEL_H
 
-#include <QAbstractTableModel>
+#include <QAbstractListModel>
 #include "../api/statisticsapi.h"
 
 class ProjectResourceObject;
 
-class ProjectResourcesModel : public QAbstractTableModel
+class ProjectResourcesModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
@@ -34,9 +34,8 @@ public:
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
-    int columnCount(const QModelIndex& = QModelIndex()) const;
     QHash<int, QByteArray> roleNames() const;
-    QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const;
+    QModelIndex index(int row, int column = 0, const QModelIndex &parent = QModelIndex()) const;
 
 signals:
     void gotError(const QString &projectResourcesModelErrorString);

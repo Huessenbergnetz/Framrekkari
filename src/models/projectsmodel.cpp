@@ -27,7 +27,7 @@ const int ProjectsModel::DescriptionRole = Qt::UserRole + 3;
 const int ProjectsModel::SourceLanguageCodedRole = Qt::UserRole + 4;
 
 ProjectsModel::ProjectsModel(QObject *parent) :
-    QAbstractTableModel(parent)
+    QAbstractListModel(parent)
 {
     connect(&pAPI, SIGNAL(gotProjects(QVariantList)), this, SLOT(populate(QVariantList)));
     connect(&pAPI, SIGNAL(gotProjectsError(QString)), this, SLOT(errorHandler(QString)));
@@ -48,10 +48,10 @@ int ProjectsModel::rowCount(const QModelIndex &) const
     return m_projects.size();
 }
 
-int ProjectsModel::columnCount(const QModelIndex&) const
-{
-    return 4;
-}
+//int ProjectsModel::columnCount(const QModelIndex&) const
+//{
+//    return 4;
+//}
 
 
 QVariant ProjectsModel::data(const QModelIndex &index, int role) const
