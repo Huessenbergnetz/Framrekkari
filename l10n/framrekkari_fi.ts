@@ -211,7 +211,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="27"/>
         <source>Author</source>
-        <translation type="unfinished"/>
+        <translation>Tekijä</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
@@ -239,12 +239,12 @@
     <message numerus="yes">
         <location filename="../qml/cover/CoverPage.qml" line="63"/>
         <source>%n language(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n kieli</numerusform><numerusform>%n kieltä</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="159"/>
         <source>Source</source>
-        <translation type="unfinished"/>
+        <translation>Lähde</translation>
     </message>
 </context>
 <context>
@@ -253,7 +253,7 @@
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="71"/>
         <source>Welcome to %1 %2</source>
         <comment>First is app name, second is version number</comment>
-        <translation type="unfinished"/>
+        <translation>Tervetuloa, tämä on %1 %2</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="87"/>
@@ -269,7 +269,7 @@
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="111"/>
         <source>If you like %1 and you want to support the development, consider a small donation.</source>
         <comment>first is name of the application</comment>
-        <translation type="unfinished"/>
+        <translation>Jos pidät %1sta ja haluat tukea sen kehitystä, harkitse lahjoituksen tekemistä.</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="131"/>
@@ -2407,7 +2407,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>Yhteys</translation>
     </message>
 </context>
 <context>
@@ -2642,42 +2642,42 @@
 <context>
     <name>StringMetaPage</name>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="47"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="48"/>
         <source>Metadata</source>
         <translation>Metatiedot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="50"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="51"/>
         <source>Tags</source>
         <translation>Tunnisteet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="61"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="62"/>
         <source>Comment</source>
         <translation>Kommentti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="72"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
         <source>Occurences</source>
         <translation>Ilmentymät</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="83"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
         <source>Character limit</source>
         <translation>Merkkirajoitus</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="95"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
         <source>Last update</source>
         <translation>Viimeisin päivitys</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="105"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="115"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
         <source>Hash</source>
         <translation type="unfinished"/>
     </message>
@@ -2708,32 +2708,32 @@
 <context>
     <name>TranslationStringsAPI</name>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="93"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="99"/>
         <source>Server reply was empty.</source>
         <translation>Palvelin palautti tyhjän vastauksen.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="104"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="110"/>
         <source>Not found</source>
         <translation>Ei löytynyt</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="107"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="113"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
         <translation>Toiminto peruttu. Väärä käyttäjätunnus tai salasana, tai SSL-kättely epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="178"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="184"/>
         <source>Not found. Code %1.</source>
         <translation>Ei löytynyt. Koodi %1.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="181"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="187"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
         <translation>Toiminto peruttiin. Väärä käyttäjätunnus tai salasana, tai SSL-kättely epäonnistui. Koodi %1.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="184"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="190"/>
         <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
         <translation type="unfinished"/>
     </message>

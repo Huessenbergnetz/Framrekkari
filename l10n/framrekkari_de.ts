@@ -206,7 +206,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
-        <translation>Hauptentwickler, Framrakkari-Autor</translation>
+        <translation>Hauptentwickler, Framrekkari-Autor</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="27"/>
@@ -297,7 +297,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="50"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation>Nach dem Start von Framrekkari sehen Sie die Hauptseite, die Ihre Benutzerkonten auflistet. Nach dem ersten Start wird diese noch leer sein. Ziehen Sie das obere Menü herunter und wählen Sie &lt;i&gt;Konto hinzufügen&lt;/li&gt;. Nachdem Sie eins hinzugefügt haben wird es in der Liste angezeigt und ein Klick darauf öffnet es. Die Kontoansicht gibt Ihnen zugriff auf die Such- und Öffnenfunktionen des Dienstes und lässt Sie durch die Projekte stöbern.&lt;br&gt;&lt;br&gt; Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite zeigt Ihnen die verfügbaren Sprachen und allgemeine Informationen über das Projekt an. Ein Klick auf eine Sprache öffnet die Liste mit den Projektressourcen. Über die Projektressourcen gelangen Sie zur Liste mit den Quellzeichenketten. Klicken Sie auf einen Eintrag um ihn zu öffnen und mit der Übersetzung zu beginnen. Ihre Eingaben werden beim Verlassen der Übersetzungsansicht und beim Laden des nächsten oder vorherigen Eintrags automatisch gespeichert.</translation>
+        <translation>Nach dem Start von Framrekkari sehen Sie die Hauptseite, die Ihre Benutzerkonten auflistet. Nach dem ersten Start wird diese noch leer sein. Ziehen Sie das obere Menü herunter und wählen Sie &lt;i&gt;Konto hinzufügen&lt;/li&gt;. Nachdem Sie eins hinzugefügt haben wird es in der Liste angezeigt und ein Klick darauf öffnet es. Die Kontoansicht gibt Ihnen zugriff auf die Such- und Öffnenfunktionen des Dienstes und lässt Sie durch die Projekte stöbern.&lt;br&gt;&lt;br&gt;Suchen oder stöbern Sie nach einem Projekt um es zu öffnen. Die Projektseite zeigt Ihnen die verfügbaren Sprachen und allgemeine Informationen über das Projekt an. Ein Klick auf eine Sprache öffnet die Liste mit den Projektressourcen. Über die Projektressourcen gelangen Sie zur Liste mit den Quellzeichenketten. Klicken Sie auf einen Eintrag um ihn zu öffnen und mit der Übersetzung zu beginnen. Ihre Eingaben werden beim Verlassen der Übersetzungsansicht und beim Laden des nächsten oder vorherigen Eintrags automatisch gespeichert.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="53"/>
@@ -2642,42 +2642,42 @@
 <context>
     <name>StringMetaPage</name>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="47"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="48"/>
         <source>Metadata</source>
         <translation>Metadaten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="50"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="51"/>
         <source>Tags</source>
         <translation>Tags</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="61"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="62"/>
         <source>Comment</source>
         <translation>Kommentar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="72"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
         <source>Occurences</source>
         <translation>Vorkommen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="83"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
         <source>Character limit</source>
         <translation>Zeichengrenze</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="95"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
         <source>Last update</source>
         <translation>Letzte Bearbeitung</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="105"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
         <translation>Letzter Bearbeiter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="115"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
         <source>Hash</source>
         <translation>Prüfsumme</translation>
     </message>
@@ -2708,32 +2708,32 @@
 <context>
     <name>TranslationStringsAPI</name>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="93"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="99"/>
         <source>Server reply was empty.</source>
         <translation>Server-Anzwot war leer.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="104"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="110"/>
         <source>Not found</source>
         <translation>Nicht gefunden</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="107"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="113"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
         <translation>Operation abgebrochen. Falscher Benutzername und/oder Passwort oder fehlgeschlagene SSL-Aushandlung.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="178"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="184"/>
         <source>Not found. Code %1.</source>
         <translation>Nicht gefunden. Code %1</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="181"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="187"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
         <translation>Operation abgebrochen. Falscher Benutzername und/oder Passwort,  oder fehlgeschlagene SSL-Aushandlung. Code %1.</translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="184"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="190"/>
         <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
         <translation>Konnte Inhalt nicht auf Server speichern. Eventuell falscher Hash-Wert. Code %1.</translation>
     </message>
