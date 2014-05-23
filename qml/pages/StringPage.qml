@@ -191,6 +191,7 @@ Page {
         }
 
 
+        Qt.inputMethod.commit()
 
         var item = projectTranslationsModel.get(modelIdx)
         key = item["key"]

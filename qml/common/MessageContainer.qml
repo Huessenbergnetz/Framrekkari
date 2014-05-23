@@ -58,9 +58,7 @@ BackgroundItem {
         root.height = 0
     }
 
-    Behavior on height {
-                NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
-            }
+    Behavior on height { NumberAnimation { duration: 250; easing.type: Easing.InOutQuad } }
 
     Timer {
         id: hideTimer

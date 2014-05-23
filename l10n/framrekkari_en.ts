@@ -2653,42 +2653,42 @@
 <context>
     <name>StringMetaPage</name>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="47"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="48"/>
         <source>Metadata</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="50"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="51"/>
         <source>Tags</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="61"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="62"/>
         <source>Comment</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="72"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
         <source>Occurences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="83"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
         <source>Character limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="95"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
         <source>Last update</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="105"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringMetaPage.qml" line="115"/>
+        <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
         <source>Hash</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2719,32 +2719,32 @@
 <context>
     <name>TranslationStringsAPI</name>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="93"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="99"/>
         <source>Server reply was empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="104"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="110"/>
         <source>Not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="107"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="113"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="178"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="184"/>
         <source>Not found. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="181"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="187"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/api/translationstringsapi.cpp" line="184"/>
+        <location filename="../src/api/translationstringsapi.cpp" line="190"/>
         <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
         <translation type="unfinished"></translation>
     </message>

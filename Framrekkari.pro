@@ -78,7 +78,6 @@ OTHER_FILES += \
     qml/common/OpenSlugField.qml \
     qml/common/MessageContainer.qml \
     qml/pages/PrivacyPolicy.qml \
-    qml/common/ImageButton.qml \
     qml/dialogs/ListFilterDialog.qml \
     qml/dialogs/OneClickDialogItem.qml \
     qml/pages/Help.qml \
