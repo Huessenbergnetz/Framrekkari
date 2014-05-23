@@ -32,6 +32,17 @@ ListModel {
     }
 
     ListElement {
+        name: "Flywheeldk (Peter Jespersen)"
+        role: QT_TR_NOOP("Danish translation")
+        section: QT_TR_NOOP("Thanks to")
+        image: "flywheeldk.png"
+        website: "http://illogical.dk/"
+        twitter: "myflywheel"
+        linkedin: "pjespersen"
+        bitbucket: "flywheel"
+    }
+
+    ListElement {
         name: "Jiri Grönroos"
         role: QT_TR_NOOP("Finish translation")
         section: QT_TR_NOOP("Thanks to")

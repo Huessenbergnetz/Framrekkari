@@ -32,6 +32,7 @@ Page {
         anchors.fill: parent
         model: ContributorsModel {}
         header: PageHeader { title: qsTr("Contributors") }
+        spacing: 10
 
         section {
             property: 'section'
