@@ -44,7 +44,7 @@ ListModel {
 
     ListElement {
         name: "Jiri Grönroos"
-        role: QT_TR_NOOP("Finish translation")
+        role: QT_TR_NOOP("Finnish translation")
         section: QT_TR_NOOP("Thanks to")
     }
 

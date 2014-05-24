@@ -187,7 +187,7 @@ void TranslationStringsAPI::saveStringFinished()
             emit savedStringError(tr("Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.").arg(saveStringReply->error()));
             break;
         case QNetworkReply::UnknownContentError:
-            emit savedStringError(tr("Could not save content on server. Maybe wrong entitiy hash. Code %1.").arg(saveStringReply->error()));
+            emit savedStringError(tr("Could not save content on server. Maybe wrong entity hash. Code %1.").arg(saveStringReply->error()));
             break;
         default:
             emit savedStringError(saveStringReply->errorString());
