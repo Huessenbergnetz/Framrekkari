@@ -49,6 +49,13 @@ ListModel {
     }
 
     ListElement {
+        name: "László Kara"
+        role: QT_TR_NOOP("Hungarian translation")
+        section: QT_TR_NOOP("Thanks to")
+        image: "laszlokara.png"
+    }
+
+    ListElement {
         name: QT_TR_NOOP("Martin Grimme's Tidings Elements")
         role: "FancyScroller"
         section: QT_TR_NOOP("Used third party elements")
