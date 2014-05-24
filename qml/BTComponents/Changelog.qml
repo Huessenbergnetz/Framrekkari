@@ -30,8 +30,11 @@ Page {
 
     SilicaListView {
         anchors.fill: parent
+        anchors.bottomMargin: Theme.paddingLarge
         model: ChangelogModel {}
         header: PageHeader { title: qsTr("Changelog") }
+
+        VerticalScrollDecorator {}
 
         section {
             property: 'version'

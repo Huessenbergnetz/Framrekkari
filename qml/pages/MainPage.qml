@@ -70,6 +70,8 @@ Page {
         model: accountsModel
         delegate: AccountsDelegate {}
 
+        VerticalScrollDecorator {}
+
         ViewPlaceholder {
             enabled: accountsListView.count == 0
             text: qsTr("Please add at least one account for a Transifex instance.")

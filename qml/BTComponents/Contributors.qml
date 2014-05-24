@@ -34,6 +34,8 @@ Page {
         header: PageHeader { title: qsTr("Contributors") }
         spacing: 10
 
+        VerticalScrollDecorator {}
+
         section {
             property: 'section'
             delegate: SectionHeader {

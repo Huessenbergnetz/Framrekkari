@@ -45,6 +45,8 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
+        VerticalScrollDecorator {}
+
         PullDownMenu {
             MenuItem {
                 text: qsTr("Website")

@@ -36,6 +36,8 @@ Page {
 
         contentHeight: column.height + Theme.paddingLarge
 
+        VerticalScrollDecorator {}
+
         Column {
             id: column
 

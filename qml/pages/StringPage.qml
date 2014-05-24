@@ -247,6 +247,8 @@ Page {
 
         contentHeight: column.height + pluralList.height + translationField.height + Theme.paddingLarge
 
+        VerticalScrollDecorator {}
+
         PullDownMenu {
             id: pullDown
             MenuItem {
