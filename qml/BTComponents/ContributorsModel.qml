@@ -56,7 +56,7 @@ ListModel {
     }
 
     ListElement {
-        name: "maurycy"
+        name: "Maurycy Czerwieniec"
         role: QT_TR_NOOP("Polish translation")
         section: QT_TR_NOOP("Thanks to")
     }
