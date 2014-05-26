@@ -22,6 +22,19 @@ import QtQuick 2.0
 
 ListModel {
     ListElement {
+        version: "1.1.2"
+        date: 1401095958000
+        text: "<ul>
+                <li>New: Danish translation by Peter Jespersen</li>
+                <li>New: Hungarian translation by László Kara</li>
+                <li>New: Polish translation by maurycy</li>
+                <li>Fixed: clear still visible word predictions after source string change</li>
+                <li>Fixed: added missing scroll decorators</li>
+                <li>Improved: data models, use QAbstractListModel instead of QAbstractTableModel</li>
+               </ul>"
+    }
+
+    ListElement {
         version: "1.1.1"
         date: 1400160294000
         text: "<ul><li>Fixed: crash on filtered lists, when using previous and next on string page</li></ul>"

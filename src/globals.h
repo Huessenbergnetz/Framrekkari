@@ -21,11 +21,11 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
-#define VERSION_STRING "1.1.1"
-#define VERSION 111
+#define VERSION_STRING "1.1.2"
+#define VERSION 112
 #define VER_MAJ 1
 #define VER_MIN 1
-#define VER_PAT 1
+#define VER_PAT 2
 
 #define DATA_DIR "/.local/share/harbour-framrekkari"
 
