@@ -224,6 +224,7 @@
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="48"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="54"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="61"/>
         <source>Thanks to</source>
         <translation type="unfinished"></translation>
     </message>
@@ -238,12 +239,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="59"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="60"/>
+        <source>Polish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="65"/>
         <source>Martin Grimme&apos;s Tidings Elements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="61"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="67"/>
         <source>Used third party elements</source>
         <translation type="unfinished"></translation>
     </message>

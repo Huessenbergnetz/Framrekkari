@@ -11,67 +11,67 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="50"/>
+        <location filename="../qml/pages/About.qml" line="52"/>
         <source>Website</source>
         <translation>Verkkosivusto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="54"/>
+        <location filename="../qml/pages/About.qml" line="56"/>
         <source>Privacy Policy</source>
         <translation>Yksityisyydensuoja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="58"/>
+        <location filename="../qml/pages/About.qml" line="60"/>
         <source>Changelog</source>
         <translation>Muutosloki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="62"/>
+        <location filename="../qml/pages/About.qml" line="64"/>
         <source>Contributors</source>
         <translation>Avustajat</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="72"/>
+        <location filename="../qml/pages/About.qml" line="74"/>
         <source>About</source>
         <translation>Tietoja</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="99"/>
+        <location filename="../qml/pages/About.qml" line="101"/>
         <source>Online translation services client for Sailfish OS</source>
         <translation>Verkkopohjainen käännöspalvelusovellus Sailfish OS:lle</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="115"/>
+        <location filename="../qml/pages/About.qml" line="117"/>
         <source>Licenses</source>
         <translation>Lisenssit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="119"/>
+        <location filename="../qml/pages/About.qml" line="121"/>
         <source>Source code is licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
         <translation>Lähdekoodin kattaa &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt; -lisenssi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="127"/>
+        <location filename="../qml/pages/About.qml" line="129"/>
         <source>Contribute</source>
         <translation>Avusta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="134"/>
+        <location filename="../qml/pages/About.qml" line="136"/>
         <source>Translate</source>
         <translation>Käännä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="140"/>
+        <location filename="../qml/pages/About.qml" line="142"/>
         <source>Report bugs</source>
         <translation>Raportoi ongelmista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="151"/>
+        <location filename="../qml/pages/About.qml" line="153"/>
         <source>Leave a message (English or German):</source>
         <translation>Jätä viesti (englanniksi tai saksaksi):</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="154"/>
+        <location filename="../qml/pages/About.qml" line="156"/>
         <source>Contact</source>
         <translation>Yhteys</translation>
     </message>
@@ -183,12 +183,12 @@
 <context>
     <name>Changelog</name>
     <message>
-        <location filename="../qml/BTComponents/Changelog.qml" line="34"/>
+        <location filename="../qml/BTComponents/Changelog.qml" line="35"/>
         <source>Changelog</source>
         <translation>Muutosloki</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/Changelog.qml" line="39"/>
+        <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
         <source>Version</source>
         <translation>Versio</translation>
     </message>
@@ -215,21 +215,39 @@
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
-        <source>Finish translation</source>
-        <translation type="unfinished"/>
+        <source>Danish translation</source>
+        <translation>Tanskan käännös</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="48"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="54"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="61"/>
         <source>Thanks to</source>
         <translation>Kiitokset</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="41"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="47"/>
+        <source>Finnish translation</source>
+        <translation>Suomen käännös</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="53"/>
+        <source>Hungarian translation</source>
+        <translation>Unkarin käännös</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="60"/>
+        <source>Polish translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="65"/>
         <source>Martin Grimme&apos;s Tidings Elements</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="43"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="67"/>
         <source>Used third party elements</source>
         <translation type="unfinished"/>
     </message>
@@ -285,27 +303,27 @@
 <context>
     <name>Help</name>
     <message>
-        <location filename="../qml/pages/Help.qml" line="38"/>
+        <location filename="../qml/pages/Help.qml" line="40"/>
         <source>Help</source>
         <translation>Ohje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="41"/>
+        <location filename="../qml/pages/Help.qml" line="43"/>
         <source>General</source>
         <translation>Yleistä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="50"/>
+        <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="53"/>
+        <location filename="../qml/pages/Help.qml" line="55"/>
         <source>Transifex API limitations</source>
         <translation>Transifexin API-rajoitukset</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Help.qml" line="62"/>
+        <location filename="../qml/pages/Help.qml" line="64"/>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
         <translation type="unfinished"/>
     </message>
@@ -2158,7 +2176,7 @@
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="42"/>
         <source>List filter</source>
-        <translation type="unfinished"/>
+        <translation>Luettelosuodatin</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="44"/>
@@ -2214,7 +2232,7 @@
         <translation>Lisää tili</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="75"/>
+        <location filename="../qml/pages/MainPage.qml" line="77"/>
         <source>Please add at least one account for a Transifex instance.</source>
         <translation>Lisää ainakin yksi tili Transifex-istuntoa varten.</translation>
     </message>
@@ -2538,7 +2556,7 @@
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>
         <source>dd.MM.yy hh:mmAP</source>
-        <translation type="unfinished"/>
+        <translation>dd.MM.yy hh:mm</translation>
     </message>
 </context>
 <context>
@@ -2562,52 +2580,52 @@
 <context>
     <name>Settings</name>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="44"/>
+        <location filename="../qml/pages/Settings.qml" line="46"/>
         <source>Settings</source>
         <translation>Asetukset</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="46"/>
+        <location filename="../qml/pages/Settings.qml" line="48"/>
         <source>Behavior</source>
         <translation>Toiminta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="51"/>
+        <location filename="../qml/pages/Settings.qml" line="53"/>
         <source>Default list filter</source>
-        <translation type="unfinished"/>
+        <translation>Oletusluettelosuodatin</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="54"/>
+        <location filename="../qml/pages/Settings.qml" line="56"/>
         <source>All</source>
         <translation>Kaikki</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="55"/>
+        <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Untranslated</source>
         <translation>Kääntämättä</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="56"/>
+        <location filename="../qml/pages/Settings.qml" line="58"/>
         <source>Not reviewed</source>
         <translation>Ei tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="57"/>
+        <location filename="../qml/pages/Settings.qml" line="59"/>
         <source>Reviewed</source>
         <translation>Tarkastettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="62"/>
+        <location filename="../qml/pages/Settings.qml" line="64"/>
         <source>Font sizes</source>
         <translation>Fonttikoot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="71"/>
+        <location filename="../qml/pages/Settings.qml" line="73"/>
         <source>Source text font size</source>
         <translation>Lähdetekstin fontin koko</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="82"/>
+        <location filename="../qml/pages/Settings.qml" line="84"/>
         <source>Translation text font size</source>
         <translation>Käännöstekstin fontin koko</translation>
     </message>
@@ -2685,22 +2703,22 @@
 <context>
     <name>StringPage</name>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="252"/>
+        <location filename="../qml/pages/StringPage.qml" line="255"/>
         <source>Previous</source>
         <translation>Edellinen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="260"/>
+        <location filename="../qml/pages/StringPage.qml" line="263"/>
         <source>Next</source>
         <translation>Seuraava</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="273"/>
+        <location filename="../qml/pages/StringPage.qml" line="276"/>
         <source>Reviewed</source>
         <translation>Tarkistettu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StringPage.qml" line="339"/>
+        <location filename="../qml/pages/StringPage.qml" line="342"/>
         <source>Copy to clipboard</source>
         <translation>Kopioi leikepöydälle</translation>
     </message>
@@ -2734,7 +2752,7 @@
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="190"/>
-        <source>Could not save content on server. Maybe wrong entitiy hash. Code %1.</source>
+        <source>Could not save content on server. Maybe wrong entity hash. Code %1.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2819,7 +2837,7 @@
     <message>
         <location filename="../qml/js/helper.js" line="5"/>
         <source>Zero</source>
-        <translation type="unfinished"/>
+        <translation>Nolla</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="8"/>
@@ -2829,17 +2847,17 @@
     <message>
         <location filename="../qml/js/helper.js" line="11"/>
         <source>Two</source>
-        <translation type="unfinished"/>
+        <translation>Kaksi</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="14"/>
         <source>Few</source>
-        <translation type="unfinished"/>
+        <translation>Muutama</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="17"/>
         <source>Many</source>
-        <translation type="unfinished"/>
+        <translation>Monta</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="20"/>

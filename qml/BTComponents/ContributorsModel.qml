@@ -56,6 +56,12 @@ ListModel {
     }
 
     ListElement {
+        name: "maurycy"
+        role: QT_TR_NOOP("Polish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
         name: QT_TR_NOOP("Martin Grimme's Tidings Elements")
         role: "FancyScroller"
         section: QT_TR_NOOP("Used third party elements")

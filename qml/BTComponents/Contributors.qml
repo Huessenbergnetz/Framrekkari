@@ -30,9 +30,10 @@ Page {
 
     SilicaListView {
         anchors.fill: parent
+        anchors.bottomMargin: Theme.paddingLarge
         model: ContributorsModel {}
         header: PageHeader { title: qsTr("Contributors") }
-        spacing: 10
+        spacing: 15
 
         VerticalScrollDecorator {}
 
