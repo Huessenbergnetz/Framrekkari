@@ -66,21 +66,30 @@ ListItem {
         onGotError: inOperation = false
     }
 
-    GlassItem {
-        width: Theme.itemSizeExtraSmall
-        height: width
+    Item {
+        width: gi.width
+        height: gi.height
         x: -(width / 2)
         y: 0
-        color: Theme.highlightColor
-        visible: model.reviewed
-    }
 
-    BusyIndicator {
-        size: BusyIndicatorSize.Small
-        running: visible
-        visible: inOperation
-        x: -(width / 2)
-        y: 0
+        GlassItem {
+            id: gi
+            width: Theme.itemSizeExtraSmall
+            height: width
+            color: Theme.highlightColor
+            visible: model.reviewed
+            opacity: visible ? 1 : 0
+            Behavior on opacity { NumberAnimation { duration: 250; easing.type: Easing.InOutQuad } }
+        }
+
+        BusyIndicator {
+            size: BusyIndicatorSize.Small
+            running: visible
+            visible: inOperation
+            anchors.centerIn: parent
+            opacity: visible ? 1 : 0
+            Behavior on opacity { NumberAnimation { duration: 250; easing.type: Easing.InOutQuad } }
+        }
     }
 
     Column {
