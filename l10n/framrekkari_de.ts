@@ -196,7 +196,7 @@
 <context>
     <name>Contributors</name>
     <message>
-        <location filename="../qml/BTComponents/Contributors.qml" line="34"/>
+        <location filename="../qml/BTComponents/Contributors.qml" line="35"/>
         <source>Contributors</source>
         <translation>Mitwirkende</translation>
     </message>
@@ -329,1844 +329,1857 @@
     </message>
 </context>
 <context>
+    <name>LanguageChooser</name>
+    <message>
+        <location filename="../qml/common/LanguageChooser.qml" line="92"/>
+        <source>Search</source>
+        <translation>Suche</translation>
+    </message>
+</context>
+<context>
     <name>LanguageNameHelper</name>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="38"/>
+        <location filename="../src/languagenamehelper.cpp" line="39"/>
         <source>Acoli</source>
         <translation>Acholi</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="39"/>
+        <location filename="../src/languagenamehelper.cpp" line="40"/>
         <source>Adyghe</source>
         <translation>Adygeisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="40"/>
+        <location filename="../src/languagenamehelper.cpp" line="41"/>
         <source>Afrikaans</source>
         <translation>Afrikaans</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="41"/>
+        <location filename="../src/languagenamehelper.cpp" line="42"/>
         <source>Afrikaans (South Africa)</source>
         <translation>Afrikaans (Südafrika)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="42"/>
+        <location filename="../src/languagenamehelper.cpp" line="43"/>
         <source>Akan</source>
         <translation>Akan</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="43"/>
+        <location filename="../src/languagenamehelper.cpp" line="44"/>
         <source>Albanian</source>
         <translation>Albanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="44"/>
+        <location filename="../src/languagenamehelper.cpp" line="45"/>
         <source>Albanian (Albania)</source>
         <translation>Albanisch (Albanien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="45"/>
+        <location filename="../src/languagenamehelper.cpp" line="46"/>
         <source>Albanian Gheg</source>
         <translation>Gegisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="46"/>
+        <location filename="../src/languagenamehelper.cpp" line="47"/>
         <source>Amharic</source>
         <translation>Amharisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="47"/>
+        <location filename="../src/languagenamehelper.cpp" line="48"/>
         <source>Amharic (Ethiopia)</source>
         <translation>Amharisch (Äthiopien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="48"/>
+        <location filename="../src/languagenamehelper.cpp" line="49"/>
         <source>Arabic</source>
         <translation>Arabisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="49"/>
+        <location filename="../src/languagenamehelper.cpp" line="50"/>
         <source>Arabic (Egypt)</source>
         <translation>Arabisch (Ägypten)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="50"/>
+        <location filename="../src/languagenamehelper.cpp" line="51"/>
         <source>Arabic (Saudi Arabia)</source>
         <translation>Arabisch (Saudi-Arabien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="51"/>
+        <location filename="../src/languagenamehelper.cpp" line="52"/>
         <source>Arabic (Sudan)</source>
         <translation>Arabisch (Sudan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="52"/>
+        <location filename="../src/languagenamehelper.cpp" line="53"/>
         <source>Arabic (Syria)</source>
         <translation>Arabisch (Syrien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="53"/>
+        <location filename="../src/languagenamehelper.cpp" line="54"/>
         <source>Arabic (Unitag)</source>
         <translation>Arabisch (Unitag)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="54"/>
+        <location filename="../src/languagenamehelper.cpp" line="55"/>
         <source>Aragonese</source>
         <translation>Aragonesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="55"/>
+        <location filename="../src/languagenamehelper.cpp" line="56"/>
         <source>Armenian</source>
         <translation>Armenisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="56"/>
+        <location filename="../src/languagenamehelper.cpp" line="57"/>
         <source>Armenian (Armenia)</source>
         <translation>Armenisch (Armenien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="57"/>
+        <location filename="../src/languagenamehelper.cpp" line="58"/>
         <source>Assamese</source>
         <translation>Assamesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="58"/>
+        <location filename="../src/languagenamehelper.cpp" line="59"/>
         <source>Assamese (India)</source>
         <translation>Assamesisch (Inidien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="59"/>
+        <location filename="../src/languagenamehelper.cpp" line="60"/>
         <source>Asturian</source>
         <translation>Asturisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="60"/>
+        <location filename="../src/languagenamehelper.cpp" line="61"/>
         <source>Asturian (Spain)</source>
         <translation>Asturisch (Spanien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="61"/>
+        <location filename="../src/languagenamehelper.cpp" line="62"/>
         <source>Azerbaijani</source>
         <translation>Aserbaidschanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="62"/>
+        <location filename="../src/languagenamehelper.cpp" line="63"/>
         <source>Azerbaijani (Azerbaijan)</source>
         <translation>Aserbaidschanisch (Aserbaidschan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="63"/>
+        <location filename="../src/languagenamehelper.cpp" line="64"/>
         <source>Azerbaijani (Latin)</source>
         <translation>Aserbaidschanisch (Latein)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="64"/>
+        <location filename="../src/languagenamehelper.cpp" line="65"/>
         <source>Balochi</source>
         <translation>Belutschisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="65"/>
+        <location filename="../src/languagenamehelper.cpp" line="66"/>
         <source>Bashkir</source>
         <translation>Baschkirisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="66"/>
+        <location filename="../src/languagenamehelper.cpp" line="67"/>
         <source>Basque</source>
         <translation>Baskisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="67"/>
+        <location filename="../src/languagenamehelper.cpp" line="68"/>
         <source>Basque (Spain)</source>
         <translation>Baskisch (Spanien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="68"/>
+        <location filename="../src/languagenamehelper.cpp" line="69"/>
         <source>Belarusian</source>
         <translation>Weißrussisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="69"/>
+        <location filename="../src/languagenamehelper.cpp" line="70"/>
         <source>Belarusian (Belarus)</source>
         <translation>Weißrussisch (Weißrussland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="70"/>
+        <location filename="../src/languagenamehelper.cpp" line="71"/>
         <source>Belarusian (Tarask)</source>
         <translation>Weißrussisch (Tarask)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="71"/>
+        <location filename="../src/languagenamehelper.cpp" line="72"/>
         <source>Bengali</source>
         <translation>Bengalisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="72"/>
+        <location filename="../src/languagenamehelper.cpp" line="73"/>
         <source>Bengali (Bangladesh)</source>
         <translation>Bengalisch (Bangladesch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="73"/>
+        <location filename="../src/languagenamehelper.cpp" line="74"/>
         <source>Bengali (India)</source>
         <translation>Bengalisch (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="74"/>
+        <location filename="../src/languagenamehelper.cpp" line="75"/>
         <source>Bodo</source>
         <translation>Bodo</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="75"/>
+        <location filename="../src/languagenamehelper.cpp" line="76"/>
         <source>Bosnian</source>
         <translation>Bosnisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="76"/>
+        <location filename="../src/languagenamehelper.cpp" line="77"/>
         <source>Bosnian (Bosnia and Herzegovina)</source>
         <translation>Bosnisch (Bosnien-Herzegowina)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="77"/>
+        <location filename="../src/languagenamehelper.cpp" line="78"/>
         <source>Breton</source>
         <translation>Bretonisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="78"/>
+        <location filename="../src/languagenamehelper.cpp" line="79"/>
         <source>Bulgarian</source>
         <translation>Bulgarisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="79"/>
+        <location filename="../src/languagenamehelper.cpp" line="80"/>
         <source>Bulgarian (Bulgaria)</source>
         <translation>Bulgarisch (Bulgarien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="80"/>
+        <location filename="../src/languagenamehelper.cpp" line="81"/>
         <source>Burmese</source>
         <translation>Burmesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="81"/>
+        <location filename="../src/languagenamehelper.cpp" line="82"/>
         <source>Burmese (Myanmar)</source>
         <translation>Burmesisch (Myanmar)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="82"/>
+        <location filename="../src/languagenamehelper.cpp" line="83"/>
         <source>Catalan</source>
         <translation>Katalanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="83"/>
+        <location filename="../src/languagenamehelper.cpp" line="84"/>
         <source>Catalan (Spain)</source>
         <translation>Katalanisch (Spanien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="84"/>
+        <location filename="../src/languagenamehelper.cpp" line="85"/>
         <source>Catalan (Valencian)</source>
         <translation>Katalanisch (Valencianisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="85"/>
+        <location filename="../src/languagenamehelper.cpp" line="86"/>
         <source>Central Atlas Tamazight</source>
         <translation>Tamazight</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="86"/>
+        <location filename="../src/languagenamehelper.cpp" line="87"/>
         <source>Chhattisgarhi</source>
         <translation>Chhattisgarhi</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="87"/>
+        <location filename="../src/languagenamehelper.cpp" line="88"/>
         <source>Chiga</source>
         <translation>Bakiga</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="88"/>
+        <location filename="../src/languagenamehelper.cpp" line="89"/>
         <source>Chinese</source>
         <translation>Chinesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="89"/>
+        <location filename="../src/languagenamehelper.cpp" line="90"/>
         <source>Chinese (China)</source>
         <translation>Chinesisch (China)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="90"/>
+        <location filename="../src/languagenamehelper.cpp" line="91"/>
         <source>Chinese (China) (GB2312)</source>
         <translation>Chinesisch (China) (GB2312)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="91"/>
+        <location filename="../src/languagenamehelper.cpp" line="92"/>
         <source>Chinese (Gan)</source>
         <translation>Chinesisch (Gan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="92"/>
+        <location filename="../src/languagenamehelper.cpp" line="93"/>
         <source>Chinese (Hakka)</source>
         <translation>Chinesisch (Hakka)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="93"/>
+        <location filename="../src/languagenamehelper.cpp" line="94"/>
         <source>Chinese (Hong Kong)</source>
         <translation>Chinesisch (Hong Kong)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="94"/>
+        <location filename="../src/languagenamehelper.cpp" line="95"/>
         <source>Chinese (Huizhou)</source>
         <translation>Chinesisch (Huizhou)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="95"/>
+        <location filename="../src/languagenamehelper.cpp" line="96"/>
         <source>Chinese (Jinyu)</source>
         <translation>Chinesisch (Jinyu)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="96"/>
+        <location filename="../src/languagenamehelper.cpp" line="97"/>
         <source>Chinese (Literary)</source>
         <translation>Chinesisch (Literarisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="97"/>
+        <location filename="../src/languagenamehelper.cpp" line="98"/>
         <source>Chinese (Mandarin)</source>
         <translation>Chinesisch (Mandarin)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="98"/>
+        <location filename="../src/languagenamehelper.cpp" line="99"/>
         <source>Chinese (Min Bei)</source>
         <translation>Chinesisch (Min Bei)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="99"/>
+        <location filename="../src/languagenamehelper.cpp" line="100"/>
         <source>Chinese (Min Dong)</source>
         <translation>Chinesisch (Min Dong)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="100"/>
+        <location filename="../src/languagenamehelper.cpp" line="101"/>
         <source>Chinese (Min Nan)</source>
         <translation>Chinesisch (Min Nan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="101"/>
+        <location filename="../src/languagenamehelper.cpp" line="102"/>
         <source>Chinese (Min Zhong)</source>
         <translation>Chinesisch (Min Zhong)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="102"/>
+        <location filename="../src/languagenamehelper.cpp" line="103"/>
         <source>Chinese (Pu-Xian)</source>
         <translation>Chinesisch (Pu-Xian)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="103"/>
+        <location filename="../src/languagenamehelper.cpp" line="104"/>
         <source>Chinese (Taiwan)</source>
         <translation>Chinesisch (Taiwan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="104"/>
+        <location filename="../src/languagenamehelper.cpp" line="105"/>
         <source>Chinese (Taiwan) (Big5) </source>
         <translation>Chinesisch (Tainwan) (Big5)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="105"/>
+        <location filename="../src/languagenamehelper.cpp" line="106"/>
         <source>Chinese (Wu)</source>
         <translation>Chinesisch (Wu)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="106"/>
+        <location filename="../src/languagenamehelper.cpp" line="107"/>
         <source>Chinese (Xiang)</source>
         <translation>Chinesisch (Xiang)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="107"/>
+        <location filename="../src/languagenamehelper.cpp" line="108"/>
         <source>Chinese (Yue)</source>
         <translation>Chinesisch (Yue)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="108"/>
+        <location filename="../src/languagenamehelper.cpp" line="109"/>
         <source>Chuvash</source>
         <translation>Tschuwaschisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="109"/>
+        <location filename="../src/languagenamehelper.cpp" line="110"/>
         <source>Colognian</source>
         <translation>Kölsch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="110"/>
+        <location filename="../src/languagenamehelper.cpp" line="111"/>
         <source>Cornish</source>
         <translation>Kornisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="111"/>
+        <location filename="../src/languagenamehelper.cpp" line="112"/>
         <source>Corsican</source>
         <translation>Korsisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="112"/>
+        <location filename="../src/languagenamehelper.cpp" line="113"/>
         <source>Crimean Turkish</source>
         <translation>Krimtatarisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="113"/>
+        <location filename="../src/languagenamehelper.cpp" line="114"/>
         <source>Croatian</source>
         <translation>Kroatisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="114"/>
+        <location filename="../src/languagenamehelper.cpp" line="115"/>
         <source>Croatian (Croatia)</source>
         <translation>Kroatisch (Kroatien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="115"/>
+        <location filename="../src/languagenamehelper.cpp" line="116"/>
         <source>Czech</source>
         <translation>Tschechisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="116"/>
+        <location filename="../src/languagenamehelper.cpp" line="117"/>
         <source>Czech (Czech Republic)</source>
         <translation>Tschechisch (Tschechien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="117"/>
+        <location filename="../src/languagenamehelper.cpp" line="118"/>
         <source>Danish</source>
         <translation>Dänisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="118"/>
+        <location filename="../src/languagenamehelper.cpp" line="119"/>
         <source>Danish (Denmark)</source>
         <translation>Dänisch (Dänemark)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="119"/>
+        <location filename="../src/languagenamehelper.cpp" line="120"/>
         <source>Divehi</source>
         <translation>Divehi</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="120"/>
+        <location filename="../src/languagenamehelper.cpp" line="121"/>
         <source>Dutch</source>
         <translation>Niederländisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="121"/>
+        <location filename="../src/languagenamehelper.cpp" line="122"/>
         <source>Dutch (Belgium)</source>
         <translation>Holländisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="122"/>
+        <location filename="../src/languagenamehelper.cpp" line="123"/>
         <source>Dutch (Netherlands)</source>
         <translation>Niederländisch (Niederlande)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="123"/>
+        <location filename="../src/languagenamehelper.cpp" line="124"/>
         <source>Dzongkha</source>
         <translation>Dzongkha</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="124"/>
+        <location filename="../src/languagenamehelper.cpp" line="125"/>
         <source>Dzongkha (Bhutan)</source>
         <translation>Dzongkha (Bhutan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="125"/>
+        <location filename="../src/languagenamehelper.cpp" line="126"/>
         <source>English</source>
         <translation>Englisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="126"/>
+        <location filename="../src/languagenamehelper.cpp" line="127"/>
         <source>English (Australia)</source>
         <translation>Englisch (Australien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="127"/>
+        <location filename="../src/languagenamehelper.cpp" line="128"/>
         <source>English (Canada)</source>
         <translation>Englisch (Kanada)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="128"/>
+        <location filename="../src/languagenamehelper.cpp" line="129"/>
         <source>English (Estonia)</source>
         <translation>Englisch (Estland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="129"/>
+        <location filename="../src/languagenamehelper.cpp" line="130"/>
         <source>English (Hong Kong)</source>
         <translation>Englisch (Hong Kong)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="130"/>
+        <location filename="../src/languagenamehelper.cpp" line="131"/>
         <source>English (Ireland)</source>
         <translation>Englisch (Irland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="131"/>
+        <location filename="../src/languagenamehelper.cpp" line="132"/>
         <source>English (Latvia)</source>
         <translation>Englisch (Lettland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="132"/>
+        <location filename="../src/languagenamehelper.cpp" line="133"/>
         <source>English (Lithuania)</source>
         <translation>Englisch (Litauen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="133"/>
+        <location filename="../src/languagenamehelper.cpp" line="134"/>
         <source>English (New Zealand)</source>
         <translation>Englisch (Neuseeland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="134"/>
+        <location filename="../src/languagenamehelper.cpp" line="135"/>
         <source>English (South Africa)</source>
         <translation>Englisch (Südafrika)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="135"/>
+        <location filename="../src/languagenamehelper.cpp" line="136"/>
         <source>English (Sweden)</source>
         <translation>Englisch (Schweden)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="136"/>
+        <location filename="../src/languagenamehelper.cpp" line="137"/>
         <source>English (United Kingdom)</source>
         <translation>Englisch (Vereinigtes Königreich)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="137"/>
+        <location filename="../src/languagenamehelper.cpp" line="138"/>
         <source>English (United States)</source>
         <translation>Englisch (Vereinigte Staaten)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="138"/>
+        <location filename="../src/languagenamehelper.cpp" line="139"/>
         <source>Erzya</source>
         <translation>Ersjanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="139"/>
+        <location filename="../src/languagenamehelper.cpp" line="140"/>
         <source>Esperanto</source>
         <translation>Esperanto</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="140"/>
+        <location filename="../src/languagenamehelper.cpp" line="141"/>
         <source>Estonian</source>
         <translation>Estnisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="141"/>
+        <location filename="../src/languagenamehelper.cpp" line="142"/>
         <source>Estonian (Estonia)</source>
         <translation>Estnisch (Estland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="142"/>
+        <location filename="../src/languagenamehelper.cpp" line="143"/>
         <source>Faroese</source>
         <translation>Färöisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="143"/>
+        <location filename="../src/languagenamehelper.cpp" line="144"/>
         <source>Faroese (Faroe Islands)</source>
         <translation>Färöisch (Färöer Inseln)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="144"/>
+        <location filename="../src/languagenamehelper.cpp" line="145"/>
         <source>Filipino</source>
         <translation>Filipino</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="145"/>
+        <location filename="../src/languagenamehelper.cpp" line="146"/>
         <source>Finnish</source>
         <translation>Finnisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="146"/>
+        <location filename="../src/languagenamehelper.cpp" line="147"/>
         <source>Finnish (Finland)</source>
         <translation>Finnische (Finnland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="148"/>
+        <location filename="../src/languagenamehelper.cpp" line="149"/>
         <source>French</source>
         <translation>Französisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="149"/>
+        <location filename="../src/languagenamehelper.cpp" line="150"/>
         <source>French (Belgium)</source>
         <translation>Französisch (Belgien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="150"/>
+        <location filename="../src/languagenamehelper.cpp" line="151"/>
         <source>French (Canada)</source>
         <translation>Französisch (Kanada)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="151"/>
+        <location filename="../src/languagenamehelper.cpp" line="152"/>
         <source>French (France)</source>
         <translation>Französisch (Frankreich)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="152"/>
+        <location filename="../src/languagenamehelper.cpp" line="153"/>
         <source>French (Switzerland)</source>
         <translation>Französisch (Schweiz)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="153"/>
+        <location filename="../src/languagenamehelper.cpp" line="154"/>
         <source>Friulian</source>
         <translation>Furlanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="154"/>
+        <location filename="../src/languagenamehelper.cpp" line="155"/>
         <source>Fulah</source>
         <translation>Fulfulde</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="155"/>
+        <location filename="../src/languagenamehelper.cpp" line="156"/>
         <source>Fulah (Senegal)</source>
         <translation>Fulfulde (Senegal)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="156"/>
+        <location filename="../src/languagenamehelper.cpp" line="157"/>
         <source>Gaelic, Scottish</source>
         <translation>Gälisch, Schottisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="157"/>
+        <location filename="../src/languagenamehelper.cpp" line="158"/>
         <source>Galician</source>
         <translation>Galicisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="158"/>
+        <location filename="../src/languagenamehelper.cpp" line="159"/>
         <source>Galician (Spain)</source>
         <translation>Galizisch (Spanien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="159"/>
+        <location filename="../src/languagenamehelper.cpp" line="160"/>
         <source>Ganda</source>
         <translation>Luganda</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="160"/>
+        <location filename="../src/languagenamehelper.cpp" line="161"/>
         <source>Georgian</source>
         <translation>Georgisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="161"/>
+        <location filename="../src/languagenamehelper.cpp" line="162"/>
         <source>Georgian (Georgia)</source>
         <translation>Georgisch (Georgien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="162"/>
+        <location filename="../src/languagenamehelper.cpp" line="163"/>
         <source>German</source>
         <translation>Deutsch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="163"/>
+        <location filename="../src/languagenamehelper.cpp" line="164"/>
         <source>German (Austria)</source>
         <translation>Deutsch (Österreich)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="164"/>
+        <location filename="../src/languagenamehelper.cpp" line="165"/>
         <source>German (Germany)</source>
         <translation>Deutsch (Deutschland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="165"/>
+        <location filename="../src/languagenamehelper.cpp" line="166"/>
         <source>German (Switzerland)</source>
         <translation>Deutsch (Schweiz)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="166"/>
+        <location filename="../src/languagenamehelper.cpp" line="167"/>
         <source>Greek</source>
         <translation>Griechisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="167"/>
+        <location filename="../src/languagenamehelper.cpp" line="168"/>
         <source>Greek (Greece)</source>
         <translation>Griechisch (Griechenland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="168"/>
+        <location filename="../src/languagenamehelper.cpp" line="169"/>
         <source>Greenlandic</source>
         <translation>Grönländisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="169"/>
+        <location filename="../src/languagenamehelper.cpp" line="170"/>
         <source>Gujarati</source>
         <translation>Gujarati</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="170"/>
+        <location filename="../src/languagenamehelper.cpp" line="171"/>
         <source>Gujarati (India)</source>
         <translation>Gujarati (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="171"/>
+        <location filename="../src/languagenamehelper.cpp" line="172"/>
         <source>Gun</source>
         <translation>Gun</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="172"/>
+        <location filename="../src/languagenamehelper.cpp" line="173"/>
         <source>Haitian (Haitian Creole)</source>
         <translation>Haitianisch (Haitianisch Kreol)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="173"/>
+        <location filename="../src/languagenamehelper.cpp" line="174"/>
         <source>Haitian (Haitian Creole) (Haiti)</source>
         <translation>Haitianisch (Haitianisch Kreol) (Haiti)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="174"/>
+        <location filename="../src/languagenamehelper.cpp" line="175"/>
         <source>Hausa</source>
         <translation>Hausa</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="175"/>
+        <location filename="../src/languagenamehelper.cpp" line="176"/>
         <source>Hebrew</source>
         <translation>Hebräisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="176"/>
+        <location filename="../src/languagenamehelper.cpp" line="177"/>
         <source>Hebrew (Israel)</source>
         <translation>Hebräisch (Israel)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="177"/>
+        <location filename="../src/languagenamehelper.cpp" line="178"/>
         <source>Hindi</source>
         <translation>Hindi</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="178"/>
+        <location filename="../src/languagenamehelper.cpp" line="179"/>
         <source>Hindi (India)</source>
         <translation>Hindi (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="179"/>
+        <location filename="../src/languagenamehelper.cpp" line="180"/>
         <source>Hungarian</source>
         <translation>Ungarisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="180"/>
+        <location filename="../src/languagenamehelper.cpp" line="181"/>
         <source>Hungarian (Hungary)</source>
         <translation>Ungarisch (Ungarn)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="181"/>
+        <location filename="../src/languagenamehelper.cpp" line="182"/>
         <source>Icelandic</source>
         <translation>Isländisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="182"/>
+        <location filename="../src/languagenamehelper.cpp" line="183"/>
         <source>Icelandic (Iceland)</source>
         <translation>Isländisch (Island)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="183"/>
+        <location filename="../src/languagenamehelper.cpp" line="184"/>
         <source>Ido</source>
         <translation>Ido</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="184"/>
+        <location filename="../src/languagenamehelper.cpp" line="185"/>
         <source>Igbo</source>
         <translation>Igbo</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="185"/>
+        <location filename="../src/languagenamehelper.cpp" line="186"/>
         <source>Iloko</source>
         <translation>Ilokano</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="186"/>
+        <location filename="../src/languagenamehelper.cpp" line="187"/>
         <source>Indonesian</source>
         <translation>Indonesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="187"/>
+        <location filename="../src/languagenamehelper.cpp" line="188"/>
         <source>Indonesian (Indonesia)</source>
         <translation>Indonesisch (Indonesien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="188"/>
+        <location filename="../src/languagenamehelper.cpp" line="189"/>
         <source>Interlingua</source>
         <translation>Interlingua</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="189"/>
+        <location filename="../src/languagenamehelper.cpp" line="190"/>
         <source>Irish</source>
         <translation>Irisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="190"/>
+        <location filename="../src/languagenamehelper.cpp" line="191"/>
         <source>Irish (Ireland)</source>
         <translation>Irisch (Irland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="191"/>
+        <location filename="../src/languagenamehelper.cpp" line="192"/>
         <source>Italian</source>
         <translation>Italienisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="192"/>
+        <location filename="../src/languagenamehelper.cpp" line="193"/>
         <source>Italian (Italy)</source>
         <translation>Italienisch (Italien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="193"/>
+        <location filename="../src/languagenamehelper.cpp" line="194"/>
         <source>Japanese</source>
         <translation>Japanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="194"/>
+        <location filename="../src/languagenamehelper.cpp" line="195"/>
         <source>Japanese (Japan)</source>
         <translation>Japanisch (Japan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="195"/>
+        <location filename="../src/languagenamehelper.cpp" line="196"/>
         <source>Javanese</source>
         <translation>Javanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="196"/>
+        <location filename="../src/languagenamehelper.cpp" line="197"/>
         <source>Kabyle</source>
         <translation>Kabylisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="197"/>
+        <location filename="../src/languagenamehelper.cpp" line="198"/>
         <source>Kannada</source>
         <translation>Kannada</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="198"/>
+        <location filename="../src/languagenamehelper.cpp" line="199"/>
         <source>Kannada (India)</source>
         <translation>Kannada (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="199"/>
+        <location filename="../src/languagenamehelper.cpp" line="200"/>
         <source>Kapampangan</source>
         <translation>Kapampangan</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="200"/>
+        <location filename="../src/languagenamehelper.cpp" line="201"/>
         <source>Kashmiri</source>
         <translation>Kashmiri</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="201"/>
+        <location filename="../src/languagenamehelper.cpp" line="202"/>
         <source>Kashmiri (India)</source>
         <translation>Kashmiri (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="202"/>
+        <location filename="../src/languagenamehelper.cpp" line="203"/>
         <source>Kashubian</source>
         <translation>Kaschubisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="203"/>
+        <location filename="../src/languagenamehelper.cpp" line="204"/>
         <source>Kazakh</source>
         <translation>Kasachisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="204"/>
+        <location filename="../src/languagenamehelper.cpp" line="205"/>
         <source>Kazakh (Arabic)</source>
         <translation>Kasachisch (Arabisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="205"/>
+        <location filename="../src/languagenamehelper.cpp" line="206"/>
         <source>Kazakh (Cyrillic)</source>
         <translation>Kasachisch (Kyrillisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="206"/>
+        <location filename="../src/languagenamehelper.cpp" line="207"/>
         <source>Kazakh (Kazakhstan)</source>
         <translation>Kasachisch (Kasachstan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="207"/>
+        <location filename="../src/languagenamehelper.cpp" line="208"/>
         <source>Kazakh (Latin)</source>
         <translation>Kasachisch (Latein)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="208"/>
+        <location filename="../src/languagenamehelper.cpp" line="209"/>
         <source>Khmer</source>
         <translation>Khmer</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="209"/>
+        <location filename="../src/languagenamehelper.cpp" line="210"/>
         <source>Khmer (Cambodia)</source>
         <translation>Khmer (Kambodscha)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="210"/>
+        <location filename="../src/languagenamehelper.cpp" line="211"/>
         <source>Kinyarwanda</source>
         <translation>Kinyarwanda</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="211"/>
+        <location filename="../src/languagenamehelper.cpp" line="212"/>
         <source>Kirgyz</source>
         <translation>Kirgisisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="212"/>
+        <location filename="../src/languagenamehelper.cpp" line="213"/>
         <source>Klingon</source>
         <translation>Klingonisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="213"/>
+        <location filename="../src/languagenamehelper.cpp" line="214"/>
         <source>Korean</source>
         <translation>Koreanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="214"/>
+        <location filename="../src/languagenamehelper.cpp" line="215"/>
         <source>Korean (Korea)</source>
         <translation>Koreanisch (Korea)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="215"/>
+        <location filename="../src/languagenamehelper.cpp" line="216"/>
         <source>Kurdish</source>
         <translation>Kurdisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="216"/>
+        <location filename="../src/languagenamehelper.cpp" line="217"/>
         <source>Kurdish (Iraq)</source>
         <translation>Kurdisch (Irak)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="217"/>
+        <location filename="../src/languagenamehelper.cpp" line="218"/>
         <source>Ladino</source>
         <translation>Juden-Spanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="218"/>
+        <location filename="../src/languagenamehelper.cpp" line="219"/>
         <source>Lao</source>
         <translation>Laotisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="219"/>
+        <location filename="../src/languagenamehelper.cpp" line="220"/>
         <source>Lao (Laos)</source>
         <translation>Laotisch (Laos)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="220"/>
+        <location filename="../src/languagenamehelper.cpp" line="221"/>
         <source>Latgalian</source>
         <translation>Lettgallisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="221"/>
+        <location filename="../src/languagenamehelper.cpp" line="222"/>
         <source>Latin</source>
         <translation>Latein</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="222"/>
+        <location filename="../src/languagenamehelper.cpp" line="223"/>
         <source>Latvian</source>
         <translation>Lettisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="223"/>
+        <location filename="../src/languagenamehelper.cpp" line="224"/>
         <source>Latvian (Latvia)</source>
         <translation>Lettisch (Lettland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="224"/>
+        <location filename="../src/languagenamehelper.cpp" line="225"/>
         <source>Lezghian</source>
         <translation>Lesgisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="225"/>
+        <location filename="../src/languagenamehelper.cpp" line="226"/>
         <source>Ligurian</source>
         <translation>Ligurisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="226"/>
+        <location filename="../src/languagenamehelper.cpp" line="227"/>
         <source>Limburgian</source>
         <translation>Limburgisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="227"/>
+        <location filename="../src/languagenamehelper.cpp" line="228"/>
         <source>Lingala</source>
         <translation>Lingala</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="228"/>
+        <location filename="../src/languagenamehelper.cpp" line="229"/>
         <source>Lithuanian</source>
         <translation>Litauisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="229"/>
+        <location filename="../src/languagenamehelper.cpp" line="230"/>
         <source>Lithuanian (Lithuania)</source>
         <translation>Litauisch (Litauen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="230"/>
+        <location filename="../src/languagenamehelper.cpp" line="231"/>
         <source>Lojban</source>
         <translation>Lojban</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="231"/>
+        <location filename="../src/languagenamehelper.cpp" line="232"/>
         <source>LOLCAT English</source>
         <translation>LOLCAT Englisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="232"/>
+        <location filename="../src/languagenamehelper.cpp" line="233"/>
         <source>Lombard</source>
         <translation>Lombardisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="233"/>
+        <location filename="../src/languagenamehelper.cpp" line="234"/>
         <source>Lower Sorbian</source>
         <translation>Niedersorbisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="234"/>
+        <location filename="../src/languagenamehelper.cpp" line="235"/>
         <source>Low German</source>
         <translation>Plattdeutsch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="235"/>
+        <location filename="../src/languagenamehelper.cpp" line="236"/>
         <source>Luxembourgish</source>
         <translation>Luxemburgisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="236"/>
+        <location filename="../src/languagenamehelper.cpp" line="237"/>
         <source>Macedonian</source>
         <translation>Mazedonisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="237"/>
+        <location filename="../src/languagenamehelper.cpp" line="238"/>
         <source>Macedonian (Macedonia)</source>
         <translation>Mazedonisch (Mazedonien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="238"/>
+        <location filename="../src/languagenamehelper.cpp" line="239"/>
         <source>Maithili</source>
         <translation>Maithili</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="239"/>
+        <location filename="../src/languagenamehelper.cpp" line="240"/>
         <source>Malagasy</source>
         <translation>Malagasy</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="240"/>
+        <location filename="../src/languagenamehelper.cpp" line="241"/>
         <source>Malay</source>
         <translation>Malaiisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="241"/>
+        <location filename="../src/languagenamehelper.cpp" line="242"/>
         <source>Malayalam</source>
         <translation>Malayalam</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="242"/>
+        <location filename="../src/languagenamehelper.cpp" line="243"/>
         <source>Malayalam (India)</source>
         <translation>Malayalam (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="243"/>
+        <location filename="../src/languagenamehelper.cpp" line="244"/>
         <source>Malay (Malaysia)</source>
         <translation>Malaiisch (Malaysia)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="244"/>
+        <location filename="../src/languagenamehelper.cpp" line="245"/>
         <source>Maltese</source>
         <translation>Maltesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="245"/>
+        <location filename="../src/languagenamehelper.cpp" line="246"/>
         <source>Maltese (Malta)</source>
         <translation>Maltesisch (Malta)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="246"/>
+        <location filename="../src/languagenamehelper.cpp" line="247"/>
         <source>Maori</source>
         <translation>Maorisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="247"/>
+        <location filename="../src/languagenamehelper.cpp" line="248"/>
         <source>Mapudungun</source>
         <translation>Mapudungun</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="248"/>
+        <location filename="../src/languagenamehelper.cpp" line="249"/>
         <source>Marathi</source>
         <translation>Marathi</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="249"/>
+        <location filename="../src/languagenamehelper.cpp" line="250"/>
         <source>Marathi (India)</source>
         <translation>Marathi (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="250"/>
+        <location filename="../src/languagenamehelper.cpp" line="251"/>
         <source>Mirandese</source>
         <translation>Mirandés</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="251"/>
+        <location filename="../src/languagenamehelper.cpp" line="252"/>
         <source>Mongolian</source>
         <translation>Mongolisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="252"/>
+        <location filename="../src/languagenamehelper.cpp" line="253"/>
         <source>Mongolian (Mongolia)</source>
         <translation>Mongolisch (Mongolei)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="253"/>
+        <location filename="../src/languagenamehelper.cpp" line="254"/>
         <source>Nahuatl</source>
         <translation>Nahuatl</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="254"/>
+        <location filename="../src/languagenamehelper.cpp" line="255"/>
         <source>Navajo</source>
         <translation>Navajo</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="255"/>
+        <location filename="../src/languagenamehelper.cpp" line="256"/>
         <source>Ndebele, South</source>
         <translation>Süd-Ndebele</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="256"/>
+        <location filename="../src/languagenamehelper.cpp" line="257"/>
         <source>Neapolitan</source>
         <translation>Neapolitanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="257"/>
+        <location filename="../src/languagenamehelper.cpp" line="258"/>
         <source>Nepali</source>
         <translation>Nepalesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="258"/>
+        <location filename="../src/languagenamehelper.cpp" line="259"/>
         <source>Nepali (Nepal)</source>
         <translation>Nepalesisch (Nepal)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="259"/>
+        <location filename="../src/languagenamehelper.cpp" line="260"/>
         <source>Nias</source>
         <translation>Nias</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="260"/>
+        <location filename="../src/languagenamehelper.cpp" line="261"/>
         <source>N&apos;ko</source>
         <translation>N&apos;ko</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="261"/>
+        <location filename="../src/languagenamehelper.cpp" line="262"/>
         <source>Northern Sami</source>
         <translation>Nordsamisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="262"/>
+        <location filename="../src/languagenamehelper.cpp" line="263"/>
         <source>Northern Sotho</source>
         <translation>Nord-Sotho</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="263"/>
+        <location filename="../src/languagenamehelper.cpp" line="264"/>
         <source>Norwegian</source>
         <translation>Norwegisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="147"/>
+        <location filename="../src/languagenamehelper.cpp" line="148"/>
         <source>Franco-Provençal (Arpitan)</source>
         <translation>Frankoprovenzalisch (Arpitanisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="264"/>
+        <location filename="../src/languagenamehelper.cpp" line="38"/>
+        <source>System default</source>
+        <translation>Systemstandard</translation>
+    </message>
+    <message>
+        <location filename="../src/languagenamehelper.cpp" line="265"/>
         <source>Norwegian Bokmål</source>
         <translation>Bokmål</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="265"/>
+        <location filename="../src/languagenamehelper.cpp" line="266"/>
         <source>Norwegian Bokmål (Norway)</source>
         <translation>Bokmål (Norwegen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="266"/>
+        <location filename="../src/languagenamehelper.cpp" line="267"/>
         <source>Norwegian (Norway)</source>
         <translation>Norwegisch (Norwegen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="267"/>
+        <location filename="../src/languagenamehelper.cpp" line="268"/>
         <source>Norwegian Nynorsk</source>
         <translation>Nynorsk</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="268"/>
+        <location filename="../src/languagenamehelper.cpp" line="269"/>
         <source>Norwegian Nynorsk (Norway)</source>
         <translation>Nynorsk (Norwegen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="269"/>
+        <location filename="../src/languagenamehelper.cpp" line="270"/>
         <source>Nyanja</source>
         <translation>ChiNyanja</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="270"/>
+        <location filename="../src/languagenamehelper.cpp" line="271"/>
         <source>Occitan (post 1500)</source>
         <translation>Okzitanisch (nach 1500)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="271"/>
+        <location filename="../src/languagenamehelper.cpp" line="272"/>
         <source>Oriya</source>
         <translation>Orija</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="272"/>
+        <location filename="../src/languagenamehelper.cpp" line="273"/>
         <source>Oriya (India)</source>
         <translation>Orija (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="273"/>
+        <location filename="../src/languagenamehelper.cpp" line="274"/>
         <source>Oromo</source>
         <translation>Oromo</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="274"/>
+        <location filename="../src/languagenamehelper.cpp" line="275"/>
         <source>Ossetic</source>
         <translation>Ossetisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="275"/>
+        <location filename="../src/languagenamehelper.cpp" line="276"/>
         <source>Palatinate German</source>
         <translation>Pfälzerdeutsch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="276"/>
+        <location filename="../src/languagenamehelper.cpp" line="277"/>
         <source>Panjabi (Punjabi)</source>
         <translation>Panjabi (Punjabi)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="277"/>
+        <location filename="../src/languagenamehelper.cpp" line="278"/>
         <source>Panjabi (Punjabi) (India)</source>
         <translation>Panjabi (Punjabi) (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="278"/>
+        <location filename="../src/languagenamehelper.cpp" line="279"/>
         <source>Papiamento</source>
         <translation>Papiamentu</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="279"/>
+        <location filename="../src/languagenamehelper.cpp" line="280"/>
         <source>Persian</source>
         <translation>Persisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="280"/>
+        <location filename="../src/languagenamehelper.cpp" line="281"/>
         <source>Persian (Iran)</source>
         <translation>Persisch (Iran)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="281"/>
+        <location filename="../src/languagenamehelper.cpp" line="282"/>
         <source>Piemontese</source>
         <translation>Piemontesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="282"/>
+        <location filename="../src/languagenamehelper.cpp" line="283"/>
         <source>Pirate English</source>
         <translation>Piratenenglisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="283"/>
+        <location filename="../src/languagenamehelper.cpp" line="284"/>
         <source>Polish</source>
         <translation>Polnisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="284"/>
+        <location filename="../src/languagenamehelper.cpp" line="285"/>
         <source>Polish (Poland)</source>
         <translation>Polnisch (Polen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="285"/>
+        <location filename="../src/languagenamehelper.cpp" line="286"/>
         <source>Portuguese</source>
         <translation>Portugiesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="286"/>
+        <location filename="../src/languagenamehelper.cpp" line="287"/>
         <source>Portuguese (Brazil)</source>
         <translation>Portugiesisch (Brasilien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="287"/>
+        <location filename="../src/languagenamehelper.cpp" line="288"/>
         <source>Portuguese (Portugal)</source>
         <translation>Portugiesisch (Portugal)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="288"/>
+        <location filename="../src/languagenamehelper.cpp" line="289"/>
         <source>Pushto</source>
         <translation>Paschtunisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="289"/>
+        <location filename="../src/languagenamehelper.cpp" line="290"/>
         <source>Romanian</source>
         <translation>Rumänisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="290"/>
+        <location filename="../src/languagenamehelper.cpp" line="291"/>
         <source>Romanian (Romania)</source>
         <translation>Runänisch (Rumänien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="291"/>
+        <location filename="../src/languagenamehelper.cpp" line="292"/>
         <source>Romansh</source>
         <translation>Bündnerromanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="292"/>
+        <location filename="../src/languagenamehelper.cpp" line="293"/>
         <source>Russian</source>
         <translation>Russisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="293"/>
+        <location filename="../src/languagenamehelper.cpp" line="294"/>
         <source>Russian (Estonia)</source>
         <translation>Russisch (Estland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="294"/>
+        <location filename="../src/languagenamehelper.cpp" line="295"/>
         <source>Russian (Latvia)</source>
         <translation>Russisch (Lettland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="295"/>
+        <location filename="../src/languagenamehelper.cpp" line="296"/>
         <source>Russian (Lithuania)</source>
         <translation>Russisch (Litauen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="296"/>
+        <location filename="../src/languagenamehelper.cpp" line="297"/>
         <source>Russian Petrine orthography</source>
         <translation>Russisch Petrinische Orthographie</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="297"/>
+        <location filename="../src/languagenamehelper.cpp" line="298"/>
         <source>Russian (Russia)</source>
         <translation>Russisch (Russland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="298"/>
+        <location filename="../src/languagenamehelper.cpp" line="299"/>
         <source>Sakha (Yakut)</source>
         <translation>Sakha (Jakutisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="299"/>
+        <location filename="../src/languagenamehelper.cpp" line="300"/>
         <source>Samoan</source>
         <translation>Samoanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="300"/>
+        <location filename="../src/languagenamehelper.cpp" line="301"/>
         <source>Sardinian</source>
         <translation>Sardisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="301"/>
+        <location filename="../src/languagenamehelper.cpp" line="302"/>
         <source>Scots</source>
         <translation>Schottisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="302"/>
+        <location filename="../src/languagenamehelper.cpp" line="303"/>
         <source>Serbian</source>
         <translation>Serbisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="303"/>
+        <location filename="../src/languagenamehelper.cpp" line="304"/>
         <source>Serbian (Ijekavian)</source>
         <translation>Serbisch (Ijekavisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="304"/>
+        <location filename="../src/languagenamehelper.cpp" line="305"/>
         <source>Serbian (Ijekavian Latin)</source>
         <translation>Serbisch (Ivekavisch Latein)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="305"/>
+        <location filename="../src/languagenamehelper.cpp" line="306"/>
         <source>Serbian (Latin)</source>
         <translation>Serbisch (Lateinisches Alphabet)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="306"/>
+        <location filename="../src/languagenamehelper.cpp" line="307"/>
         <source>Serbian (Latin) (Serbia)</source>
         <translation>Serbisch (Latein) (Serbien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="307"/>
+        <location filename="../src/languagenamehelper.cpp" line="308"/>
         <source>Serbian (Serbia)</source>
         <translation>Serbisch (Serbien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="308"/>
+        <location filename="../src/languagenamehelper.cpp" line="309"/>
         <source>Shona</source>
         <translation>Shona</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="309"/>
+        <location filename="../src/languagenamehelper.cpp" line="310"/>
         <source>Sicilian</source>
         <translation>Sizilianisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="310"/>
+        <location filename="../src/languagenamehelper.cpp" line="311"/>
         <source>Silesian</source>
         <translation>Schlesisch (polnischer Dialekt)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="311"/>
+        <location filename="../src/languagenamehelper.cpp" line="312"/>
         <source>Sindhi</source>
         <translation>Sindhi</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="312"/>
+        <location filename="../src/languagenamehelper.cpp" line="313"/>
         <source>Sinhala</source>
         <translation>Singhalesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="313"/>
+        <location filename="../src/languagenamehelper.cpp" line="314"/>
         <source>Sinhala (Sri Lanka)</source>
         <translation>Singhalesisch (Sri Lanka)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="314"/>
+        <location filename="../src/languagenamehelper.cpp" line="315"/>
         <source>Slovak</source>
         <translation>Slowakisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="315"/>
+        <location filename="../src/languagenamehelper.cpp" line="316"/>
         <source>Slovak (Slovakia)</source>
         <translation>Slowakisch (Slowakei)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="316"/>
+        <location filename="../src/languagenamehelper.cpp" line="317"/>
         <source>Slovenian</source>
         <translation>Slowenisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="317"/>
+        <location filename="../src/languagenamehelper.cpp" line="318"/>
         <source>Slovenian (Slovenia)</source>
         <translation>Slowenisch (Slowenien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="318"/>
+        <location filename="../src/languagenamehelper.cpp" line="319"/>
         <source>Somali</source>
         <translation>Somali</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="319"/>
+        <location filename="../src/languagenamehelper.cpp" line="320"/>
         <source>Songhay</source>
         <translation>Songhai</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="320"/>
+        <location filename="../src/languagenamehelper.cpp" line="321"/>
         <source>Sotho, Southern</source>
         <translation>Süd-Sotho</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="321"/>
+        <location filename="../src/languagenamehelper.cpp" line="322"/>
         <source>Sotho, Southern (South Africa)</source>
         <translation>Süd-Sotho (Südafrika)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="322"/>
+        <location filename="../src/languagenamehelper.cpp" line="323"/>
         <source>Southern Sami</source>
         <translation>Südsamisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="323"/>
+        <location filename="../src/languagenamehelper.cpp" line="324"/>
         <source>Spanish</source>
         <translation>Spanisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="324"/>
+        <location filename="../src/languagenamehelper.cpp" line="325"/>
         <source>Spanish (Argentina)</source>
         <translation>Spanisch (Argentinien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="325"/>
+        <location filename="../src/languagenamehelper.cpp" line="326"/>
         <source>Spanish (Bolivia)</source>
         <translation>Spanisch (Bolivien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="326"/>
+        <location filename="../src/languagenamehelper.cpp" line="327"/>
         <source>Spanish (Chile)</source>
         <translation>Spanisch (Chile)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="327"/>
+        <location filename="../src/languagenamehelper.cpp" line="328"/>
         <source>Spanish (Colombia)</source>
         <translation>Spanisch (Kolumbien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="328"/>
+        <location filename="../src/languagenamehelper.cpp" line="329"/>
         <source>Spanish (Costa Rica)</source>
         <translation>Spanisch (Costa Rica)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="329"/>
+        <location filename="../src/languagenamehelper.cpp" line="330"/>
         <source>Spanish (Dominican Republic)</source>
         <translation>Spanisch (Dominikanische Republik)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="330"/>
+        <location filename="../src/languagenamehelper.cpp" line="331"/>
         <source>Spanish (Ecuador)</source>
         <translation>Spanisch (Ecuador)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="331"/>
+        <location filename="../src/languagenamehelper.cpp" line="332"/>
         <source>Spanish (El Salvador)</source>
         <translation>Spanisch (El Salvador)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="332"/>
+        <location filename="../src/languagenamehelper.cpp" line="333"/>
         <source>Spanish (Latin America)</source>
         <translation>Spanisch (Lateinamerika)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="333"/>
+        <location filename="../src/languagenamehelper.cpp" line="334"/>
         <source>Spanish (Mexico)</source>
         <translation>Spanisch (Mexiko)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="334"/>
+        <location filename="../src/languagenamehelper.cpp" line="335"/>
         <source>Spanish (Nicaragua)</source>
         <translation>Spanisch (Nicaragua)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="335"/>
+        <location filename="../src/languagenamehelper.cpp" line="336"/>
         <source>Spanish (Panama)</source>
         <translation>Spanisch (Panama)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="336"/>
+        <location filename="../src/languagenamehelper.cpp" line="337"/>
         <source>Spanish (Paraguay)</source>
         <translation>Spanisch (Paraguay)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="337"/>
+        <location filename="../src/languagenamehelper.cpp" line="338"/>
         <source>Spanish (Peru)</source>
         <translation>Spanisch (Peru)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="338"/>
+        <location filename="../src/languagenamehelper.cpp" line="339"/>
         <source>Spanish (Puerto Rico)</source>
         <translation>Spanisch (Puerto Rico)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="339"/>
+        <location filename="../src/languagenamehelper.cpp" line="340"/>
         <source>Spanish (Spain)</source>
         <translation>Spanisch (Spanien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="340"/>
+        <location filename="../src/languagenamehelper.cpp" line="341"/>
         <source>Spanish (United States)</source>
         <translation>Spanisch (Vereinigte Staaten)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="341"/>
+        <location filename="../src/languagenamehelper.cpp" line="342"/>
         <source>Spanish (Uruguay)</source>
         <translation>Spanisch (Uruguay)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="342"/>
+        <location filename="../src/languagenamehelper.cpp" line="343"/>
         <source>Spanish (Venezuela)</source>
         <translation>Spanisch (Venezuela)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="343"/>
+        <location filename="../src/languagenamehelper.cpp" line="344"/>
         <source>Sundanese</source>
         <translation>Sundanesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="344"/>
+        <location filename="../src/languagenamehelper.cpp" line="345"/>
         <source>Swahili</source>
         <translation>Swahili</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="345"/>
+        <location filename="../src/languagenamehelper.cpp" line="346"/>
         <source>Swahili (Kenya)</source>
         <translation>Swahili (Kenia)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="346"/>
+        <location filename="../src/languagenamehelper.cpp" line="347"/>
         <source>Swati</source>
         <translation>Siswati</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="347"/>
+        <location filename="../src/languagenamehelper.cpp" line="348"/>
         <source>Swedish</source>
         <translation>Schwedisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="348"/>
+        <location filename="../src/languagenamehelper.cpp" line="349"/>
         <source>Swedish (Finland)</source>
         <translation>Schwedisch (Finnland)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="349"/>
+        <location filename="../src/languagenamehelper.cpp" line="350"/>
         <source>Swedish (Sweden)</source>
         <translation>Schwedisch (Schweden)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="350"/>
+        <location filename="../src/languagenamehelper.cpp" line="351"/>
         <source>Tagalog</source>
         <translation>Tagalog</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="351"/>
+        <location filename="../src/languagenamehelper.cpp" line="352"/>
         <source>Tagalog (Philippines)</source>
         <translation>Tagalog (Phillipinen)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="352"/>
+        <location filename="../src/languagenamehelper.cpp" line="353"/>
         <source>Tajik</source>
         <translation>Tadschikisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="353"/>
+        <location filename="../src/languagenamehelper.cpp" line="354"/>
         <source>Tajik (Tajikistan)</source>
         <translation>Tadschikisch (Tadschikistan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="354"/>
+        <location filename="../src/languagenamehelper.cpp" line="355"/>
         <source>Tamil</source>
         <translation>Tamilisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="355"/>
+        <location filename="../src/languagenamehelper.cpp" line="356"/>
         <source>Tamil (India)</source>
         <translation>Tamil (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="356"/>
+        <location filename="../src/languagenamehelper.cpp" line="357"/>
         <source>Tamil (Sri-Lanka)</source>
         <translation>Tamil (Sri Lanka)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="357"/>
+        <location filename="../src/languagenamehelper.cpp" line="358"/>
         <source>Tatar</source>
         <translation>Tatarisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="358"/>
+        <location filename="../src/languagenamehelper.cpp" line="359"/>
         <source>Telugu</source>
         <translation>Telugu</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="359"/>
+        <location filename="../src/languagenamehelper.cpp" line="360"/>
         <source>Telugu (India)</source>
         <translation>Telugu (Indien)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="360"/>
+        <location filename="../src/languagenamehelper.cpp" line="361"/>
         <source>Tetum (Tetun)</source>
         <translation>Tetum (Tetun)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="361"/>
+        <location filename="../src/languagenamehelper.cpp" line="362"/>
         <source>Thai</source>
         <translation>Thailändisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="362"/>
+        <location filename="../src/languagenamehelper.cpp" line="363"/>
         <source>Thai (Thailand)</source>
         <translation>Thailändisch (Thailand)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="363"/>
+        <location filename="../src/languagenamehelper.cpp" line="364"/>
         <source>Tibetan</source>
         <translation>Tibetisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="364"/>
+        <location filename="../src/languagenamehelper.cpp" line="365"/>
         <source>Tibetan (China)</source>
         <translation>Tibetisch (China)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="365"/>
+        <location filename="../src/languagenamehelper.cpp" line="366"/>
         <source>Tigrinya</source>
         <translation>Tigrinya</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="366"/>
+        <location filename="../src/languagenamehelper.cpp" line="367"/>
         <source>Tongan</source>
         <translation>Tongaisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="367"/>
+        <location filename="../src/languagenamehelper.cpp" line="368"/>
         <source>Tsonga</source>
         <translation>Xitsonga</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="368"/>
+        <location filename="../src/languagenamehelper.cpp" line="369"/>
         <source>Tswana</source>
         <translation>Setswana</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="369"/>
+        <location filename="../src/languagenamehelper.cpp" line="370"/>
         <source>Turkish</source>
         <translation>Türkisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="370"/>
+        <location filename="../src/languagenamehelper.cpp" line="371"/>
         <source>Turkish (Turkey)</source>
         <translation>Türkisch (Türkei)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="371"/>
+        <location filename="../src/languagenamehelper.cpp" line="372"/>
         <source>Turkmen</source>
         <translation>Turkmenisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="372"/>
+        <location filename="../src/languagenamehelper.cpp" line="373"/>
         <source>Turkmen (Turkmenistan)</source>
         <translation>Turkmenisch (Turkmenistan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="373"/>
+        <location filename="../src/languagenamehelper.cpp" line="374"/>
         <source>Udmurt</source>
         <translation>Udmurtisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="374"/>
+        <location filename="../src/languagenamehelper.cpp" line="375"/>
         <source>Uighur</source>
         <translation>Uigurisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="375"/>
+        <location filename="../src/languagenamehelper.cpp" line="376"/>
         <source>Uighur (Arabic)</source>
         <translation>Uigurisch (Arabisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="376"/>
+        <location filename="../src/languagenamehelper.cpp" line="377"/>
         <source>Uighur (Cyrillic)</source>
         <translation>Uigurisch (Kyrillisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="377"/>
+        <location filename="../src/languagenamehelper.cpp" line="378"/>
         <source>Uighur (Latin)</source>
         <translation>Uigurisch (Latein)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="378"/>
+        <location filename="../src/languagenamehelper.cpp" line="379"/>
         <source>Ukrainian</source>
         <translation>Ukrainisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="379"/>
+        <location filename="../src/languagenamehelper.cpp" line="380"/>
         <source>Ukrainian (Ukraine)</source>
         <translation>Ukrainisch (Ukraine)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="380"/>
+        <location filename="../src/languagenamehelper.cpp" line="381"/>
         <source>Upper Franconian</source>
         <translation>Oberfränkisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="381"/>
+        <location filename="../src/languagenamehelper.cpp" line="382"/>
         <source>Upper Sorbian</source>
         <translation>Obersorbisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="382"/>
+        <location filename="../src/languagenamehelper.cpp" line="383"/>
         <source>Urdu</source>
         <translation>Urdu</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="383"/>
+        <location filename="../src/languagenamehelper.cpp" line="384"/>
         <source>Urdu (Pakistan)</source>
         <translation>Urdu (Pakistan)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="384"/>
+        <location filename="../src/languagenamehelper.cpp" line="385"/>
         <source>Uzbek</source>
         <translation>Usbekisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="385"/>
+        <location filename="../src/languagenamehelper.cpp" line="386"/>
         <source>Uzbek (Arabic)</source>
         <translation>Usbekisch (Arabisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="386"/>
+        <location filename="../src/languagenamehelper.cpp" line="387"/>
         <source>Uzbek (Cyrillic)</source>
         <translation>Usbekisch (Kyrillisch)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="387"/>
+        <location filename="../src/languagenamehelper.cpp" line="388"/>
         <source>Uzbek (Latin)</source>
         <translation>Usbekisch (Latein)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="388"/>
+        <location filename="../src/languagenamehelper.cpp" line="389"/>
         <source>Venda</source>
         <translation>Tshivenda</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="389"/>
+        <location filename="../src/languagenamehelper.cpp" line="390"/>
         <source>Venetian</source>
         <translation>Venetisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="390"/>
+        <location filename="../src/languagenamehelper.cpp" line="391"/>
         <source>Vietnamese</source>
         <translation>Vietnamesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="391"/>
+        <location filename="../src/languagenamehelper.cpp" line="392"/>
         <source>Vietnamese (Viet Nam)</source>
         <translation>Vietnamesisch (Vietnam)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="392"/>
+        <location filename="../src/languagenamehelper.cpp" line="393"/>
         <source>Vlaams</source>
         <translation>Flämisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="393"/>
+        <location filename="../src/languagenamehelper.cpp" line="394"/>
         <source>Walloon</source>
         <translation>Wallonisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="394"/>
+        <location filename="../src/languagenamehelper.cpp" line="395"/>
         <source>Waray-Waray</source>
         <translation>Wáray-Wáray</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="395"/>
+        <location filename="../src/languagenamehelper.cpp" line="396"/>
         <source>Welsh</source>
         <translation>Walisisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="396"/>
+        <location filename="../src/languagenamehelper.cpp" line="397"/>
         <source>Welsh (United Kingdom)</source>
         <translation>Walisisch (Vereinigtes Königreich)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="397"/>
+        <location filename="../src/languagenamehelper.cpp" line="398"/>
         <source>Western Frisian</source>
         <translation>Westfriesisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="398"/>
+        <location filename="../src/languagenamehelper.cpp" line="399"/>
         <source>Western Frisian (Netherlands)</source>
         <translation>Westfriesisch (Niederlande)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="399"/>
+        <location filename="../src/languagenamehelper.cpp" line="400"/>
         <source>Wolof</source>
         <translation>Wolof</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="400"/>
+        <location filename="../src/languagenamehelper.cpp" line="401"/>
         <source>Wolof (Senegal)</source>
         <translation>Wolof (Senegal)</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="401"/>
+        <location filename="../src/languagenamehelper.cpp" line="402"/>
         <source>Xhosa</source>
         <translation>isiXhosa</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="402"/>
+        <location filename="../src/languagenamehelper.cpp" line="403"/>
         <source>Yiddish</source>
         <translation>Jiddisch</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="403"/>
+        <location filename="../src/languagenamehelper.cpp" line="404"/>
         <source>Yoruba</source>
         <translation>Yoruba</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="404"/>
+        <location filename="../src/languagenamehelper.cpp" line="405"/>
         <source>Zulu</source>
         <translation>Zulu</translation>
     </message>
     <message>
-        <location filename="../src/languagenamehelper.cpp" line="405"/>
+        <location filename="../src/languagenamehelper.cpp" line="406"/>
         <source>Zulu (South Africa)</source>
         <translation>IsiZulu (Südafrika)</translation>
     </message>
@@ -2580,52 +2593,67 @@
 <context>
     <name>Settings</name>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="46"/>
+        <location filename="../qml/pages/Settings.qml" line="42"/>
         <source>Settings</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="48"/>
+        <location filename="../qml/pages/Settings.qml" line="44"/>
+        <source>Display language</source>
+        <translation>Anzeigesprache</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="49"/>
+        <source>Language</source>
+        <translation>Sprache</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="57"/>
+        <source>Changing the display language is only applied after a restart of the application.</source>
+        <translation>Das Ändern der Anzeigesprache tritt erst nach einem Neustart der Anwendung in Kraft.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="64"/>
         <source>Behavior</source>
         <translation>Verhalten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="53"/>
+        <location filename="../qml/pages/Settings.qml" line="69"/>
         <source>Default list filter</source>
         <translation>Standardlistenfilter</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="56"/>
+        <location filename="../qml/pages/Settings.qml" line="72"/>
         <source>All</source>
         <translation>Alle</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="57"/>
+        <location filename="../qml/pages/Settings.qml" line="73"/>
         <source>Untranslated</source>
         <translation>Nicht übersetzt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="58"/>
+        <location filename="../qml/pages/Settings.qml" line="74"/>
         <source>Not reviewed</source>
         <translation>Ungeprüft</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="59"/>
+        <location filename="../qml/pages/Settings.qml" line="75"/>
         <source>Reviewed</source>
         <translation>Geprüft</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="64"/>
+        <location filename="../qml/pages/Settings.qml" line="81"/>
         <source>Font sizes</source>
         <translation>Schriftgrößen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="73"/>
+        <location filename="../qml/pages/Settings.qml" line="90"/>
         <source>Source text font size</source>
         <translation>Schriftgröße für Quelltext</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="84"/>
+        <location filename="../qml/pages/Settings.qml" line="102"/>
         <source>Translation text font size</source>
         <translation>Schriftgröße für Übersetzung</translation>
     </message>
@@ -2781,7 +2809,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
         <source>Ooops, the following error occured:</source>
-        <translation>Upps, da trat ein Fehler auf:</translation>
+        <translation>Upps, der folgende Fehler trat auf:</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
@@ -2817,17 +2845,17 @@
 <context>
     <name>TranslationsDelegate</name>
     <message>
-        <location filename="../qml/delegates/TranslationsDelegate.qml" line="105"/>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="114"/>
         <source>Not translated</source>
         <translation>Nicht übersetzt</translation>
     </message>
     <message>
-        <location filename="../qml/delegates/TranslationsDelegate.qml" line="118"/>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as not reviewed</source>
         <translation>Als nicht geprüft markieren</translation>
     </message>
     <message>
-        <location filename="../qml/delegates/TranslationsDelegate.qml" line="118"/>
+        <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as reviewed</source>
         <translation>Als geprüft markieren</translation>
     </message>
