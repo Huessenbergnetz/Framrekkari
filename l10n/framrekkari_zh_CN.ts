@@ -221,34 +221,36 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="48"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="54"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="61"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="56"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="62"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="69"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="75"/>
         <source>Thanks to</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="47"/>
+        <source>French translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="55"/>
         <source>Finnish translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="53"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="61"/>
         <source>Hungarian translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="60"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="68"/>
         <source>Polish translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="65"/>
-        <source>Martin Grimme&apos;s Tidings Elements</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="67"/>
-        <source>Used third party elements</source>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="74"/>
+        <source>Spanish translation</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2549,12 +2551,12 @@
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectsListPage.qml" line="70"/>
+        <location filename="../qml/pages/ProjectsListPage.qml" line="68"/>
         <source>Previous</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/ProjectsListPage.qml" line="84"/>
+        <location filename="../qml/pages/ProjectsListPage.qml" line="82"/>
         <source>Next</source>
         <translation type="unfinished"/>
     </message>
