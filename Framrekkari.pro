@@ -67,7 +67,6 @@ OTHER_FILES += \
     qml/pages/AccountPage.qml \
     qml/pages/ProjectsListPage.qml \
     qml/delegates/ProjectsDelegate.qml \
-    qml/common/FancyScroller.qml \
     qml/pages/ProjectPage.qml \
     qml/delegates/ProjectLangDelegate.qml \
     qml/pages/ResourcesPage.qml \
