@@ -63,8 +63,6 @@ Page {
 
         VerticalScrollDecorator {}
 
-        FancyScroller {}
-
         PullDownMenu {
             MenuItem {
                 text: qsTr("Previous")

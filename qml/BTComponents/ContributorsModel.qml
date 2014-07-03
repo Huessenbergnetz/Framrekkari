@@ -43,6 +43,14 @@ ListModel {
     }
 
     ListElement {
+        name: "Jean Clovis"
+        role: QT_TR_NOOP("French translation")
+        section: QT_TR_NOOP("Thanks to")
+        image: "jean-clovis.png"
+        github: "jean-clovis"
+    }
+
+    ListElement {
         name: "Jiri Grönroos"
         role: QT_TR_NOOP("Finnish translation")
         section: QT_TR_NOOP("Thanks to")
@@ -62,11 +70,9 @@ ListModel {
     }
 
     ListElement {
-        name: QT_TR_NOOP("Martin Grimme's Tidings Elements")
-        role: "FancyScroller"
-        section: QT_TR_NOOP("Used third party elements")
-        website: "https://github.com/pycage/tidings"
-        github: "pycage"
+        name: "pakoR"
+        role: QT_TR_NOOP("Spanish translation")
+        section: QT_TR_NOOP("Thanks to")
     }
 
 }
