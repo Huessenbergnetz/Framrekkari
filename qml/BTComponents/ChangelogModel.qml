@@ -22,6 +22,16 @@ import QtQuick 2.0
 
 ListModel {
     ListElement {
+        version: "1.1.3"
+        date: 1404391433000
+        text: "<ul>
+                <li>New: choose UI language in the settings</li>
+                <li>New: Spanish translation by pakoR</li>
+                <li>New: partly Frensh translation by Jean Clovis</li>
+               </ul>"
+    }
+
+    ListElement {
         version: "1.1.2"
         date: 1401095958000
         text: "<ul>

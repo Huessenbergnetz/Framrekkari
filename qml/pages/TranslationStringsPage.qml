@@ -44,7 +44,7 @@ Page {
     property string searchString
     property int searchTarget: 0
 
-    property int filter: config.get("display/stringListFilter", 0)
+    property int filter: config.defaultFilter
     property string filterName: getFilterName()
 
     property bool inOperation: true

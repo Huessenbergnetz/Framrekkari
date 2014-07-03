@@ -297,7 +297,7 @@ Page {
                 Text {
                     id: sourceText
                     anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
-                    font.pixelSize: config.get("display/sourceFontSize", Theme.fontSizeExtraSmall)
+                    font.pixelSize: config.sourceFontSize
                     color: Theme.primaryColor
                     wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                     textFormat: Text.PlainText
@@ -326,7 +326,7 @@ Page {
             id: translationField
             width: parent.width
             wrapMode: TextEdit.Wrap
-            font.pixelSize: config.get("display/translationFontSize", Theme.fontSizeMedium)
+            font.pixelSize: config.translationFontSize
             anchors.top: pluralized ? pluralList.bottom : column.bottom
 //            anchors.topMargin: pluralized ? 0 : 7
             onTextChanged: {
