@@ -18,30 +18,36 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef LANGUAGENAMEHELPER_H
-#define LANGUAGENAMEHELPER_H
+#ifndef LANGUAGEMODEL_H
+#define LANGUAGEMODEL_H
 
-#include <QObject>
-#include <QLocale>
-#include <QHash>
+#include <QAbstractListModel>
+#include "../languagenamehelper.h"
 
-
-class LanguageNameHelper : public QObject
+class LanguageModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    explicit LanguageNameHelper(QObject *parent = 0);
+    explicit LanguageModel(QObject *parent = 0);
 
-    Q_INVOKABLE QString getLanguageName(const QString &lang) const;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const;
+    QHash<int, QByteArray> roleNames() const;
+    QModelIndex index(int row, int column = 0, const QModelIndex &parent = QModelIndex()) const;
+
+    static const int ValueRole;
+    static const int NameRole;
 
 signals:
 
 public slots:
 
 private:
-    QHash<QString, QString> languageCode;
-    void init();
+    QList<QString> m_langs;
+
+    LanguageNameHelper langHelper;
+
 
 };
 
-#endif // LANGUAGENAMEHELPER_H
+#endif // LANGUAGEMODEL_H

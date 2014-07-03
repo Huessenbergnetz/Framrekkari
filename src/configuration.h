@@ -29,6 +29,10 @@
 class Configuration : public QSettings
 {
     Q_OBJECT
+    Q_PROPERTY(int defaultFilter READ defaultFilter WRITE setDefaultFilter NOTIFY defaultFilterChanged)
+    Q_PROPERTY(int sourceFontSize READ sourceFontSize WRITE setSourceFontSize NOTIFY sourceFontSizeChanged)
+    Q_PROPERTY(int translationFontSize READ translationFontSize WRITE setTranslationFontSize NOTIFY translationFontSizeChanged)
+    Q_PROPERTY(QString language READ language WRITE setLanguage NOTIFY languageChanged)
 public:
     explicit Configuration(QObject *parent = 0);
 
@@ -70,15 +74,34 @@ public:
     QList<Account> loadAccounts();
     QList<Project> loadFavoredProjects(int accountIdx);
 
+    int defaultFilter() const;
+    int sourceFontSize() const;
+    int translationFontSize() const;
+    QString language() const;
+
 signals:
     void savedAccout();
     void savedFavoredProject();
 
+    void defaultFilterChanged(const int &nDefaultFilter);
+    void sourceFontSizeChanged(const int &nSourceFontSize);
+    void translationFontSizeChanged(const int &nTranslationFontSize);
+    void languageChanged(const QString &nLanguage);
+
 public slots:
+    void setDefaultFilter(const int &nDefaultFilter);
+    void setSourceFontSize(const int &nSourceFontSize);
+    void setTranslationFontSize(const int &nTranslationFontSize);
+    void setLanguage(const QString &nLanguage);
 
 private:
     void writeAccounts(const QList<Account> &accounts);
     void writeFavoredProjects(const QList<Project> &projects, int accountIdx);
+
+    int m_defaultFilter;
+    int m_sourceFontSize;
+    int m_translationFontSize;
+    QString m_language;
 
 };
 

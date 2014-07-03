@@ -28,13 +28,14 @@ LanguageNameHelper::LanguageNameHelper(QObject *parent) :
 }
 
 
-QString LanguageNameHelper::getLanguageName(const QString &lang)
+QString LanguageNameHelper::getLanguageName(const QString &lang) const
 {
     return languageCode[lang];
 }
 
 void LanguageNameHelper::init()
 {
+    languageCode["C"] = tr("System default");
     languageCode["ach"] = tr("Acoli");
     languageCode["ady"] = tr("Adyghe");
     languageCode["af"] = tr("Afrikaans");

@@ -23,6 +23,10 @@
 Configuration::Configuration(QObject *parent) :
     QSettings(parent)
 {
+    m_defaultFilter = value("display/stringListFilter", 0).toInt();
+    m_sourceFontSize = value("display/sourceFontSize", 24).toInt();
+    m_translationFontSize = value("display/translationFontSize", 32).toInt();
+    m_language = value("display/language", "C").toString();
 }
 
 
@@ -360,4 +364,92 @@ int Configuration::getTransifexAccount()
     }
 
     return -1;
+}
+
+
+
+/*!
+ * \fn int Configuration::defaultFilter() const
+ * \brief Returns the default filter
+ * \return int default filter type
+ */
+int Configuration::defaultFilter() const { return m_defaultFilter; }
+
+/*!
+ * \fn void Configuration::setDefaultFilter(const int &nDefaultFilter)
+ * \brief Sets the default filter
+ * \param nDefaultFilter int filter type
+ */
+void Configuration::setDefaultFilter(const int &nDefaultFilter)
+{
+    if (nDefaultFilter != m_defaultFilter) {
+        m_defaultFilter = nDefaultFilter;
+        setValue("display/stringListFilter", defaultFilter());
+        emit defaultFilterChanged(defaultFilter());
+    }
+}
+
+
+/*!
+ * \fn int Configuration::sourceFontSize() const
+ * \brief Returns the font size for source strings
+ * \return int source font size
+ */
+int Configuration::sourceFontSize() const { return m_sourceFontSize; }
+
+/*!
+ * \fn void Configuration::setSourceFontSize(const int &nSourceFontSize)
+ * \brief Sets the font size for source strings
+ * \param nSourceFontSize int source font size
+ */
+void Configuration::setSourceFontSize(const int &nSourceFontSize)
+{
+    if (nSourceFontSize != m_sourceFontSize) {
+        m_sourceFontSize = nSourceFontSize;
+        setValue("display/sourceFontSize", sourceFontSize());
+        emit sourceFontSizeChanged(sourceFontSize());
+    }
+}
+
+
+/*!
+ * \fn int Configuration::translationFontSize() const
+ * \brief Returns the font size for translation strings
+ * \return int translation font size
+ */
+int Configuration::translationFontSize() const { return m_translationFontSize; }
+
+/*!
+ * \fn void Configuration::setTranslationFontSize(const int &nTranslationFontSize)
+ * \brief Sets the font size for translation strings
+ * \param nTranslationFontSize int translation font size
+ */
+void Configuration::setTranslationFontSize(const int &nTranslationFontSize)
+{
+    if (nTranslationFontSize != m_translationFontSize) {
+        m_translationFontSize = nTranslationFontSize;
+        setValue("display/translationFontSize", translationFontSize());
+        emit translationFontSizeChanged(translationFontSize());
+    }
+}
+
+/*!
+ * \fn QString Configuration::language() const
+ * \brief Returns the current set UI language code
+ * \return QString UI language code
+ */
+QString Configuration::language() const { return m_language; }
+
+/*!
+ * \fn void Configuration::setLanguage(const QString &nLanguage)
+ * \brief Sets the UI language to use
+ * \param nLanguage QString language code
+ */
+void Configuration::setLanguage(const QString &nLanguage)
+{
+    if (nLanguage != m_language) {
+        m_language = nLanguage;
+        setValue("display/language", language());
+        emit languageChanged(language());
+    }
 }

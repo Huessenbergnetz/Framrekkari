@@ -48,7 +48,9 @@ SOURCES += \
     src/models/projecttranslationsmodel.cpp \
     src/md5generator.cpp \
     src/languagenamehelper.cpp \
-    src/notifications.cpp
+    src/notifications.cpp \
+    src/models/languagemodel.cpp \
+    src/models/languagemodelfilter.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -89,7 +91,8 @@ OTHER_FILES += \
     qml/BTComponents/FirstStartInfo.qml \
     qml/BTComponents/ContributorsModel.qml \
     qml/BTComponents/ContributorsDelegate.qml \
-    qml/BTComponents/Contributors.qml
+    qml/BTComponents/Contributors.qml \
+    qml/common/LanguageChooser.qml
 
 HEADERS += \
     src/globals.h \
@@ -114,7 +117,9 @@ HEADERS += \
     src/models/translationsobject.h \
     src/md5generator.h \
     src/languagenamehelper.h \
-    src/notifications.h
+    src/notifications.h \
+    src/models/languagemodel.h \
+    src/models/languagemodelfilter.h
 
 RESOURCES +=
 

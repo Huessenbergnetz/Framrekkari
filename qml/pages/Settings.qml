@@ -21,15 +21,11 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
+import "../common"
+
 
 Page {
     id: settingsPage
-
-    Component.onDestruction: {
-        config.set("display/sourceFontSize", sourceFontSize.value)
-        config.set("display/translationFontSize", translationFontSize.value)
-        config.set("display/stringListFilter", listFilter.currentIndex)
-    }
 
     SilicaFlickable {
         anchors.fill: parent
@@ -42,8 +38,28 @@ Page {
             id: column
 
             width: settingsPage.width
-            spacing: Theme.paddingLarge
+//            spacing: Theme.paddingLarge
             PageHeader { title: qsTr("Settings") }
+
+            SectionHeader { text: qsTr("Display language") }
+
+            LanguageChooser {
+                id: langChooser
+                anchors { left: parent.left; right: parent.right }
+                label: qsTr("Language")
+                choosenValue: config.language
+                textChoosen: langHelper.getLanguageName(config.language)
+                onChoosenValueChanged: config.language = choosenValue
+            }
+
+            Text {
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                text: qsTr("Changing the display language is only applied after a restart of the application.")
+                wrapMode: Text.WordWrap
+                color: Theme.secondaryColor
+                textFormat: Text.PlainText
+                font.pixelSize: Theme.fontSizeSmall
+            }
 
             SectionHeader { text: qsTr("Behavior") }
 
@@ -58,7 +74,8 @@ Page {
                     MenuItem { text: qsTr("Not reviewed") }
                     MenuItem { text: qsTr("Reviewed") }
                 }
-                currentIndex: config.get("display/stringListFilter", 0)
+                currentIndex: config.defaultFilter
+                onCurrentIndexChanged: config.defaultFilter = currentIndex
             }
 
             SectionHeader { text: qsTr("Font sizes") }
@@ -71,7 +88,8 @@ Page {
                 valueText: value + "px"
                 stepSize: 1
                 label: qsTr("Source text font size")
-                value: config.get("display/sourceFontSize", Theme.fontSizeExtraSmall)
+                value: config.sourceFontSize
+                onValueChanged: config.sourceFontSize = value
             }
 
             Slider {
@@ -82,7 +100,8 @@ Page {
                 valueText: value + "px"
                 stepSize: 1
                 label: qsTr("Translation text font size")
-                value: config.get("display/translationFontSize", Theme.fontSizeMedium)
+                value: config.translationFontSize
+                onValueChanged: config.translationFontSize = value
             }
         }
     }

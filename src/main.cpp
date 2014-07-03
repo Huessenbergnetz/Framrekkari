@@ -39,6 +39,7 @@
 #include "models/projectlangstatsmodel.h"
 #include "models/projectresourcesmodel.h"
 #include "models/projecttranslationsmodel.h"
+#include "models/languagemodelfilter.h"
 #include "api/projectsapi.h"
 #include "md5generator.h"
 #include "languagenamehelper.h"
@@ -54,7 +55,13 @@ int main(int argc, char *argv[])
 
 //    QDir().mkpath(QDir::homePath().append(DATA_DIR));
 
-    QString locale = QLocale::system().name();
+    Configuration *configuration = new Configuration;
+
+    QString locale = configuration->language();
+
+    if (locale == "C")
+        locale = QLocale::system().name();
+
     QTranslator *translator = new QTranslator;
     if ((translator->load("framrekkari_"+locale, "/usr/share/harbour-framrekkari/translations")))
         app->installTranslator(translator);
@@ -65,7 +72,6 @@ int main(int argc, char *argv[])
 
     QQuickView* view = SailfishApp::createView();
 
-    Configuration *configuration = new Configuration;
     AccountsModel *accountsModel = new AccountsModel;
     ProjectsModel *projectsModel = new ProjectsModel;
     FavoredProjectsModel *favoredProjectsModel = new FavoredProjectsModel;
@@ -75,6 +81,7 @@ int main(int argc, char *argv[])
     ProjectTranslationsModel *projectTranslationsModel = new ProjectTranslationsModel;
     MD5generator *md5Generator = new MD5generator;
     LanguageNameHelper *langHelper = new LanguageNameHelper;
+    LanguageModelFilter *languageModel = new LanguageModelFilter;
 
     view->rootContext()->setContextProperty("versionString", VERSION_STRING);
     view->rootContext()->setContextProperty("versionInt", VERSION);
@@ -82,6 +89,7 @@ int main(int argc, char *argv[])
     view->rootContext()->setContextProperty("accountsModel", accountsModel);
     view->rootContext()->setContextProperty("projectsModel", projectsModel);
     view->rootContext()->setContextProperty("favoredProjectsModel", favoredProjectsModel);
+    view->rootContext()->setContextProperty("languageModel", languageModel);
     view->rootContext()->setContextProperty("projectsAPI", projectsAPI);
     view->rootContext()->setContextProperty("projectLangstatsModel", projectLangstatsModel);
     view->rootContext()->setContextProperty("projectResourceModel", projectResourceModel);

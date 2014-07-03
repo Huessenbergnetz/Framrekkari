@@ -18,30 +18,32 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef LANGUAGENAMEHELPER_H
-#define LANGUAGENAMEHELPER_H
+#ifndef LANGUAGEMODELFILTER_H
+#define LANGUAGEMODELFILTER_H
 
-#include <QObject>
-#include <QLocale>
-#include <QHash>
+#include <QSortFilterProxyModel>
+#include "languagemodel.h"
 
-
-class LanguageNameHelper : public QObject
+class LanguageModelFilter : public QSortFilterProxyModel
 {
     Q_OBJECT
+    Q_PROPERTY(QString search READ search WRITE setSearch NOTIFY searchChanged)
 public:
-    explicit LanguageNameHelper(QObject *parent = 0);
+    explicit LanguageModelFilter(QObject *parent = 0);
 
-    Q_INVOKABLE QString getLanguageName(const QString &lang) const;
+    QString search() const;
 
 signals:
+    void searchChanged(const QString &nSearch);
 
 public slots:
+    void setSearch(const QString &nSearch);
 
 private:
-    QHash<QString, QString> languageCode;
-    void init();
+    QString m_search;
+
+    LanguageModel m_sourceModel;
 
 };
 
-#endif // LANGUAGENAMEHELPER_H
+#endif // LANGUAGEMODELFILTER_H
