@@ -26,7 +26,7 @@ const int LanguageModel::ValueRole = Qt::UserRole + 2;
 LanguageModel::LanguageModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    m_langs << "en" << "C" << "ca" << "nl_NL";
+    m_langs << "en" << "C" << "ca" << "nl_NL" << "cs";
     m_langs << "de" << "hu" << "pl" << "es" << "da" << "fi" << "fr";
 }
 

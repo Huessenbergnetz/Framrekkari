@@ -32,14 +32,36 @@ ListModel {
     }
 
     ListElement {
-        name: "Flywheeldk (Peter Jespersen)"
-        role: QT_TR_NOOP("Danish translation")
+        name: "Antoine Vacher (Tigre-Bleu)"
+        role: QT_TR_NOOP("French translation")
         section: QT_TR_NOOP("Thanks to")
-        image: "flywheeldk.png"
-        website: "http://illogical.dk/"
-        twitter: "myflywheel"
-        linkedin: "pjespersen"
-        bitbucket: "flywheel"
+        image: "tigre-bleu.png"
+        twitter: "tigre_bleu"
+    }
+
+    ListElement {
+        name: "Agustí Clara"
+        role: QT_TR_NOOP("Catalan translation")
+        section: QT_TR_NOOP("Thanks to")
+        twitter: "agusticlara"
+    }
+
+    ListElement {
+        name: "elain1"
+        role: QT_TR_NOOP("Finnish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "fri"
+        role: QT_TR_NOOP("Czech translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "Heimen Stoffels"
+        role: QT_TR_NOOP("Dutch (Netherlands) translation")
+        section: QT_TR_NOOP("Thanks to")
     }
 
     ListElement {
@@ -72,6 +94,23 @@ ListModel {
     ListElement {
         name: "pakoR"
         role: QT_TR_NOOP("Spanish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "Peter Jespersen (Flywheeldk)"
+        role: QT_TR_NOOP("Danish translation")
+        section: QT_TR_NOOP("Thanks to")
+        image: "flywheeldk.png"
+        website: "http://illogical.dk/"
+        twitter: "myflywheel"
+        linkedin: "pjespersen"
+        bitbucket: "flywheel"
+    }
+
+    ListElement {
+        name: "szopin"
+        role: QT_TR_NOOP("Polish translation")
         section: QT_TR_NOOP("Thanks to")
     }
 
