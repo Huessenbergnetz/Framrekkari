@@ -231,7 +231,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="47"/>
         <source>French translation</source>
-        <translation type="unfinished"/>
+        <translation>Tłumaczenie francuskie</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="55"/>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="74"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>Tłumaczenie hiszpańskie</translation>
     </message>
 </context>
 <context>
@@ -316,8 +316,8 @@
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
-        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation>Po uruchomieniu Framrekkari zobaczysz stronę z listą zdefiniowanych kont. Przy pierwszym uruchomieniu lista ta będzie pusta. Ściągnij górne menu i wybierz &lt;i&gt;Dodaj konto&lt;/a&gt;, aby zdefiniować nowe konto. Po dodaniu pojawi się ono na liście, a po kliknięciu na wpisie zostanie otwarte. Konto daje Ci dostęp do funkcjonalności serwisów tłumaczeniowych.&lt;br&gt;&lt;br&gt;Aby otworzyć projekt należy go wyszukać bądź wybrać z listy. Po otwarciu projektu pojawia się jego strona, zawierająca podstawowe informacje o projekcie oraz listę dostępnych języków do tłumaczenia. Kliknięcie na języku otwiera listę zasobów - w danym języku może być ich klika. Po kliknięciu na zasobie pojawia się lista tekstów do przetłumaczenia. Wybranie napisu przechodzi do strony tłumaczenia, gdzie możesz zaproponować swoją wersję tłumaczenia. Przy wyjściu ze strony tłumaczenia lub przechodząc na następny lub poprzedni tekst bieżące tłumaczenie jest zapisywanie automatycznie na serwerze.</translation>
+        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
@@ -1473,7 +1473,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="38"/>
         <source>System default</source>
-        <translation type="unfinished"/>
+        <translation>Domyślny systemowy</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="265"/>
@@ -2465,8 +2465,8 @@
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
-        <source>This project has so far created no resources.</source>
-        <translation>Projekt nie zawiera zasobów.</translation>
+        <source>This project has so far created ​​no resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
@@ -2602,17 +2602,17 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation type="unfinished"/>
+        <translation>Język aplikacji</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>Język</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation type="unfinished"/>
+        <translation>Zmiana języka zostanie zastosowana po ponownym uruchomieniu aplikacji.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>

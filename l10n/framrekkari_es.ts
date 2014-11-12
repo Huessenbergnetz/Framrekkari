@@ -28,12 +28,12 @@
     <message>
         <location filename="../qml/pages/About.qml" line="64"/>
         <source>Contributors</source>
-        <translation>Contribuyentes</translation>
+        <translation>Colaboradores</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="74"/>
         <source>About</source>
-        <translation>Sobre</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="101"/>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="129"/>
         <source>Contribute</source>
-        <translation>Contribuye</translation>
+        <translation>Colabora</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="136"/>
@@ -198,7 +198,7 @@
     <message>
         <location filename="../qml/BTComponents/Contributors.qml" line="35"/>
         <source>Contributors</source>
-        <translation>Contribuyentes</translation>
+        <translation>Colaboradores</translation>
     </message>
 </context>
 <context>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="47"/>
         <source>French translation</source>
-        <translation type="unfinished"/>
+        <translation>Traduccion francesa</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="55"/>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="74"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>Traduccion española </translation>
     </message>
 </context>
 <context>
@@ -316,8 +316,8 @@
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
-        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation>Despues del inicio de Framrekkari se muestra la vista de la pagina principal que contiene sus cuentas. Estara vacia en el primer inicio. En el menu desplegable superior podra elegir &lt;i&gt;Añadir cuenta&lt;/i&gt;, para añadir una nueva cuenta. Despues de añadir una se mostrara en la lista y podra seleccionarla para abrirla. La vista de la cuenta da acceso a los servicios de busqueda y abrir proyectos. &lt;br&gt;&lt;br&gt;Busque un proyecto para abrirlo. La pagina del proyecto muestra los idiomas disponibles y la informacion general sobre el proyecto. Clicando un idioma mostrara los recursos del proyecto. Un clic en un recurso abre la lista con las cadenas de origen. Cliquee una cadena para abrirla y empezar a traducir. Cerrando una cadena simple o avanzando a la siguiente o anterior guarda automaticamente el texto introducido.</translation>
+        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
@@ -1473,7 +1473,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="38"/>
         <source>System default</source>
-        <translation type="unfinished"/>
+        <translation>Por defecto del sistema </translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="265"/>
@@ -2229,7 +2229,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="53"/>
         <source>About</source>
-        <translation>Sobre</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="57"/>
@@ -2257,7 +2257,7 @@
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="125"/>
         <source>Currency</source>
-        <translation>Moneda</translation>
+        <translation>Divisa</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="126"/>
@@ -2465,13 +2465,13 @@
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
-        <source>This project has so far created no resources.</source>
-        <translation>Todavia no hay recursos para este proyecto.</translation>
+        <source>This project has so far created ​​no resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
         <source>Bugtracker</source>
-        <translation>Informar Bugs</translation>
+        <translation>Rastreador de fallos</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="227"/>
@@ -2602,17 +2602,17 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation type="unfinished"/>
+        <translation>Idioma de aplicacion</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>Idioma </translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation type="unfinished"/>
+        <translation>El idioma de la aplicación se cambiará en el proximo reinicio.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>

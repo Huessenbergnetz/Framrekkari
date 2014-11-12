@@ -231,7 +231,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="47"/>
         <source>French translation</source>
-        <translation type="unfinished"/>
+        <translation>Fransk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="55"/>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="74"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>Spansk oversættelse</translation>
     </message>
 </context>
 <context>
@@ -316,8 +316,8 @@
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
-        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the services search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation>Efter at have startet ​Framrekkari op, vil du først se den side der indeholder dine konti. Denne vil være tom den første gang. Træk ned i topmenuen og vælg &lt;i&gt;Tilføj konto&lt;/ i&gt; for at tilføje en ny konto. Når den er tilføjet, dukker den op på listen og giver adgang til konto visningen, der giver dig adgang til at søge efter / åbne projekter og lader dig bladre gennem projekterne. &lt;br&gt;&lt;br&gt; Projektvisningen viser de tilgængelige sprog og generelle oplysninger om projektet. Hvis du klikker på et sprog vil det åbne projektets ressourcer. Et klik på en ressource åbner listen med kildestrenge. Klik på en streng for at åbne den og begynde at oversætte. Når du lukker enkelt streng siden eller går videre til den næste eller til den forrige streng gemmes din oversættelse automatisk.</translation>
+        <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
@@ -378,7 +378,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="46"/>
         <source>Albanian Gheg</source>
-        <translation type="unfinished"/>
+        <translation>Albansk Gheg</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="47"/>
@@ -443,7 +443,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="59"/>
         <source>Assamese (India)</source>
-        <translation type="unfinished"/>
+        <translation>Assamesisk (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="60"/>
@@ -453,7 +453,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="61"/>
         <source>Asturian (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Asturiansk (Spanien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="62"/>
@@ -1133,12 +1133,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="198"/>
         <source>Kannada</source>
-        <translation type="unfinished"/>
+        <translation>Kannada</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="199"/>
         <source>Kannada (India)</source>
-        <translation type="unfinished"/>
+        <translation>Kannada (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="200"/>
@@ -1153,7 +1153,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="202"/>
         <source>Kashmiri (India)</source>
-        <translation type="unfinished"/>
+        <translation>Kashmirisk (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="203"/>
@@ -1243,7 +1243,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="220"/>
         <source>Lao (Laos)</source>
-        <translation type="unfinished"/>
+        <translation>Lao (Laos)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="221"/>
@@ -1473,7 +1473,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="38"/>
         <source>System default</source>
-        <translation type="unfinished"/>
+        <translation>Systemstandard</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="265"/>
@@ -1513,12 +1513,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="272"/>
         <source>Oriya</source>
-        <translation type="unfinished"/>
+        <translation>Oriya</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="273"/>
         <source>Oriya (India)</source>
-        <translation type="unfinished"/>
+        <translation>Oriya (Indien)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="274"/>
@@ -1908,12 +1908,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="351"/>
         <source>Tagalog</source>
-        <translation type="unfinished"/>
+        <translation>Tagalog</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="352"/>
         <source>Tagalog (Philippines)</source>
-        <translation type="unfinished"/>
+        <translation>Tagalog (Filippinerne)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="353"/>
@@ -2224,7 +2224,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="41"/>
         <source>Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.</source>
-        <translation>Framrekkari er en klient til forskellige kollaborative online oversættelse platforme, der i øjeblikket understøtter Transifex API.</translation>
+        <translation>Framrekkari er en klient til forskellige kollaborative online oversættelses-platforme, der i øjeblikket understøtter Transifex API.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="53"/>
@@ -2405,12 +2405,12 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="71"/>
         <source>Framrekkari needs your login data to connect to your translation server. Your log in data is used to log in to your translation server to perform the tasks of downloading and uploading translations.</source>
-        <translation>Framrekkari bruger dine login-data til at oprette forbindelse til din oversættelse server. Dine login data bliver brugt til at logge ind på din oversættelse server for at hente og lægge oversættelser op.</translation>
+        <translation>Framrekkari bruger dine login-data til at oprette forbindelse til din oversættelsesserver. Dine login data bliver brugt til at logge ind på din oversættelse server for at hente og lægge oversættelser op.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="81"/>
         <source>Does Framrekkari disclose any information to outside parties?</source>
-        <translation>Afslører Framrekkari nogen information til tredjepart?</translation>
+        <translation>Videregiver Framrekkari nogen information til tredjepart?</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="89"/>
@@ -2466,8 +2466,8 @@ Framrekkari sender hverken din data tilbage til Framrekkaris udvikler eller til 
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
-        <source>This project has so far created no resources.</source>
-        <translation>Dette projekt har indtil videre ikke oprettet nogen ressourcer.</translation>
+        <source>This project has so far created ​​no resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
@@ -2603,17 +2603,17 @@ Framrekkari sender hverken din data tilbage til Framrekkaris udvikler eller til 
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation type="unfinished"/>
+        <translation>Visningssprog</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>Sprog</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation type="unfinished"/>
+        <translation>Skift af sprog sættes først i værk efter genstart af program.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>
