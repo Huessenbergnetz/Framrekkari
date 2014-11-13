@@ -214,42 +214,66 @@
         <translation>Udvikler</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="102"/>
         <source>Danish translation</source>
         <translation>Dansk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="48"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="56"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="62"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="69"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="75"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="45"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="52"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="58"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="64"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="70"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="78"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="84"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="91"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="97"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="103"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="114"/>
         <source>Thanks to</source>
         <translation>Tak til</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="47"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="69"/>
         <source>French translation</source>
         <translation>Fransk oversættelse</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="55"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="44"/>
+        <source>Catalan translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="51"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="77"/>
         <source>Finnish translation</source>
         <translation>Finsk oversættelse</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="61"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="57"/>
+        <source>Czech translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="63"/>
+        <source>Dutch (Netherlands) translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="83"/>
         <source>Hungarian translation</source>
         <translation>Ungarsk oversættelse</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="68"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="90"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="113"/>
         <source>Polish translation</source>
         <translation>Polsk oversættelse</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="74"/>
+        <location filename="../qml/BTComponents/ContributorsModel.qml" line="96"/>
         <source>Spanish translation</source>
         <translation>Spansk oversættelse</translation>
     </message>

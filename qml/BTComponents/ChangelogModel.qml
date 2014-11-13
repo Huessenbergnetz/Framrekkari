@@ -22,6 +22,15 @@ import QtQuick 2.0
 
 ListModel {
     ListElement {
+        version: "1.1.4"
+        date: 1415835700000
+        text: "<ul>
+                <li>New: Catalan, Czech and Dutch (Netherlands) translations</li>
+                <li>Improved: translation updates</li>
+               </ul>"
+    }
+
+    ListElement {
         version: "1.1.3"
         date: 1404391433000
         text: "<ul>
