@@ -47,6 +47,12 @@ ListModel {
     }
 
     ListElement {
+        name: "Carmen F. B."
+        role: QT_TR_NOOP("Spanish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
         name: "elain1"
         role: QT_TR_NOOP("Finnish translation")
         section: QT_TR_NOOP("Thanks to")
@@ -86,14 +92,28 @@ ListModel {
     }
 
     ListElement {
+        name: "Lorenzo Facca"
+        role: QT_TR_NOOP("Italian translation")
+        section: QT_TR_NOOP("Thanks to")
+        twitter: "LorenzoFacca"
+        website: "http://jollacommunity.altervista.org/"
+    }
+
+    ListElement {
         name: "Maurycy Czerwieniec"
         role: QT_TR_NOOP("Polish translation")
         section: QT_TR_NOOP("Thanks to")
     }
 
     ListElement {
+        name: "Miikka Kukko"
+        role: QT_TR_NOOP("Finnish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
         name: "pakoR"
-        role: QT_TR_NOOP("Spanish translation")
+        role: QT_TR_NOOP("Galician and Spanish translation")
         section: QT_TR_NOOP("Thanks to")
     }
 
