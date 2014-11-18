@@ -5,7 +5,7 @@
         <location filename="../qml/common/OpenSlugField.qml" line="58"/>
         <source>Search</source>
         <extracomment>Placeholder text of SearchField</extracomment>
-        <translation type="unfinished"/>
+        <translation>Busqueda</translation>
     </message>
 </context>
 <context>
@@ -13,27 +13,27 @@
     <message>
         <location filename="../qml/pages/About.qml" line="52"/>
         <source>Website</source>
-        <translation type="unfinished"/>
+        <translation>Paxina web</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="56"/>
         <source>Privacy Policy</source>
-        <translation type="unfinished"/>
+        <translation>Politica de privacidade</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="60"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Rexistro de cambios</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="64"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>Contribuintes</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="74"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="101"/>
@@ -43,7 +43,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="117"/>
         <source>Licenses</source>
-        <translation type="unfinished"/>
+        <translation>Licenzas</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="121"/>
@@ -53,27 +53,27 @@
     <message>
         <location filename="../qml/pages/About.qml" line="129"/>
         <source>Contribute</source>
-        <translation type="unfinished"/>
+        <translation>Contribue</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="136"/>
         <source>Translate</source>
-        <translation type="unfinished"/>
+        <translation>Traduce</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="142"/>
         <source>Report bugs</source>
-        <translation type="unfinished"/>
+        <translation>Informar de erros</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="153"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>Deixar unha mensaxe (ingles ou aleman):</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="156"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>Contacto</translation>
     </message>
 </context>
 <context>
@@ -86,17 +86,17 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Create account</source>
-        <translation type="unfinished"/>
+        <translation>Crear conta</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Edit account</source>
-        <translation type="unfinished"/>
+        <translation>Editar conta</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="69"/>
         <source>Account type</source>
-        <translation type="unfinished"/>
+        <translation>Tipo de conta</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
@@ -106,22 +106,22 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
         <source>Server</source>
-        <translation type="unfinished"/>
+        <translation>Servidor</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="125"/>
         <source>User name</source>
-        <translation type="unfinished"/>
+        <translation>Nome de usuario</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="135"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Contrasinal</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="145"/>
         <source>Ignore SSL errors</source>
-        <translation type="unfinished"/>
+        <translation>Ignorar errores SSL</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="164"/>
         <source>Show all projects</source>
-        <translation type="unfinished"/>
+        <translation>Amosar todolos proxectos</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="72"/>
@@ -185,7 +185,7 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="35"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Rexistro de cambios</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
@@ -198,7 +198,7 @@
     <message>
         <location filename="../qml/BTComponents/Contributors.qml" line="35"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>Contribuintes</translation>
     </message>
 </context>
 <context>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../qml/common/LanguageChooser.qml" line="92"/>
         <source>Search</source>
-        <translation type="unfinished"/>
+        <translation>Busqueda</translation>
     </message>
 </context>
 <context>
@@ -2243,7 +2243,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>Deixar unha mensaxe (ingles ou aleman):</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="41"/>
@@ -2253,7 +2253,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="53"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="57"/>
@@ -2464,7 +2464,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>Contacto</translation>
     </message>
 </context>
 <context>

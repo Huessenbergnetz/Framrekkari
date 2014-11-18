@@ -5,7 +5,7 @@
         <location filename="../qml/common/OpenSlugField.qml" line="58"/>
         <source>Search</source>
         <extracomment>Placeholder text of SearchField</extracomment>
-        <translation type="unfinished"/>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
@@ -13,67 +13,67 @@
     <message>
         <location filename="../qml/pages/About.qml" line="52"/>
         <source>Website</source>
-        <translation type="unfinished"/>
+        <translation>Sito web</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="56"/>
         <source>Privacy Policy</source>
-        <translation type="unfinished"/>
+        <translation>Informativa sulla Privacy</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="60"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="64"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>Collaboratori</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="74"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Crediti</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="101"/>
         <source>Online translation services client for Sailfish OS</source>
-        <translation type="unfinished"/>
+        <translation>Client per servizi di traduzione online per Sailfish OS</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="117"/>
         <source>Licenses</source>
-        <translation type="unfinished"/>
+        <translation>Licenze</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="121"/>
         <source>Source code is licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Codice sorgente è in licenza &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="129"/>
         <source>Contribute</source>
-        <translation type="unfinished"/>
+        <translation>Contribuisci</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="136"/>
         <source>Translate</source>
-        <translation type="unfinished"/>
+        <translation>Traduci</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="142"/>
         <source>Report bugs</source>
-        <translation type="unfinished"/>
+        <translation>Segnala bug</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="153"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>Lascia un messaggio (inglese o tedesco):</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="156"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>Contatta</translation>
     </message>
 </context>
 <context>
@@ -81,47 +81,47 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="50"/>
         <source>Transifex is a collaborative online translation platform. In order to use it you need an account on &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Transifex è una piattaforma di traduzione online. Per usarlo hai bisogno di un account su &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Create account</source>
-        <translation type="unfinished"/>
+        <translation>Crea account</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Edit account</source>
-        <translation type="unfinished"/>
+        <translation>Modifica account</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="69"/>
         <source>Account type</source>
-        <translation type="unfinished"/>
+        <translation>Tipo account</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
         <source>Display name</source>
-        <translation type="unfinished"/>
+        <translation>Mostra nome</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
         <source>Server</source>
-        <translation type="unfinished"/>
+        <translation>Server</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="125"/>
         <source>User name</source>
-        <translation type="unfinished"/>
+        <translation>Nome utente</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="135"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Password</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="145"/>
         <source>Ignore SSL errors</source>
-        <translation type="unfinished"/>
+        <translation>Ignora errori SSL</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="164"/>
         <source>Show all projects</source>
-        <translation type="unfinished"/>
+        <translation>Mostra tutti i progetti</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="72"/>
@@ -149,7 +149,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Source lang:</source>
-        <translation type="unfinished"/>
+        <translation>Lingua sorgente:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="154"/>
         <source>Favorites</source>
-        <translation type="unfinished"/>
+        <translation>Preferiti</translation>
     </message>
 </context>
 <context>
@@ -167,17 +167,17 @@
     <message>
         <location filename="../qml/delegates/AccountsDelegate.qml" line="127"/>
         <source>Edit</source>
-        <translation type="unfinished"/>
+        <translation>Modifica</translation>
     </message>
     <message>
         <location filename="../qml/delegates/AccountsDelegate.qml" line="133"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>Elimina</translation>
     </message>
     <message>
         <location filename="../qml/delegates/AccountsDelegate.qml" line="140"/>
         <source>Removing account %1</source>
-        <translation type="unfinished"/>
+        <translation>Eliminazione account %1</translation>
     </message>
 </context>
 <context>
@@ -185,12 +185,12 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="35"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
         <source>Version</source>
-        <translation type="unfinished"/>
+        <translation>Versione</translation>
     </message>
 </context>
 <context>
@@ -198,7 +198,7 @@
     <message>
         <location filename="../qml/BTComponents/Contributors.qml" line="35"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>Collaboratori</translation>
     </message>
 </context>
 <context>
@@ -206,17 +206,17 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
-        <translation type="unfinished"/>
+        <translation>Sviluppatore principale ed ideatore</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="27"/>
         <source>Author</source>
-        <translation type="unfinished"/>
+        <translation>Autore</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="102"/>
         <source>Danish translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione danese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
@@ -232,50 +232,50 @@
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="103"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="114"/>
         <source>Thanks to</source>
-        <translation type="unfinished"/>
+        <translation>Grazie a</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="69"/>
         <source>French translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione francese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione catalano</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="51"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="77"/>
         <source>Finnish translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione finlandese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione ceca</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione olandese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="83"/>
         <source>Hungarian translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione ungherese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="90"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="113"/>
         <source>Polish translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione polacco</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="96"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>traduzione spagnolo</translation>
     </message>
 </context>
 <context>
@@ -283,12 +283,12 @@
     <message numerus="yes">
         <location filename="../qml/cover/CoverPage.qml" line="63"/>
         <source>%n language(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n lingua</numerusform><numerusform>%n lingue</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="159"/>
         <source>Source</source>
-        <translation type="unfinished"/>
+        <translation>Fonte</translation>
     </message>
 </context>
 <context>
@@ -297,33 +297,33 @@
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="71"/>
         <source>Welcome to %1 %2</source>
         <comment>First is app name, second is version number</comment>
-        <translation type="unfinished"/>
+        <translation>Benvenuto in %1 %2</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="87"/>
         <source>Last changes</source>
-        <translation type="unfinished"/>
+        <translation>Ultime modifiche</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="102"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Dona</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="111"/>
         <source>If you like %1 and you want to support the development, consider a small donation.</source>
         <comment>first is name of the application</comment>
-        <translation type="unfinished"/>
+        <translation>Se ti piace %1 e vuoi aiutare lo sviluppo, prendi in considerazione una piccola donazione.</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="131"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="137"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Chiudi</translation>
     </message>
 </context>
 <context>
@@ -331,12 +331,12 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="40"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="43"/>
         <source>General</source>
-        <translation type="unfinished"/>
+        <translation>Generale</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../qml/common/LanguageChooser.qml" line="92"/>
         <source>Search</source>
-        <translation type="unfinished"/>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
@@ -937,7 +937,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="154"/>
         <source>Friulian</source>
-        <translation type="unfinished"/>
+        <translation>Friulano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="155"/>
@@ -1127,12 +1127,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="192"/>
         <source>Italian</source>
-        <translation type="unfinished"/>
+        <translation>Italiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="193"/>
         <source>Italian (Italy)</source>
-        <translation type="unfinished"/>
+        <translation>Italiano (Italia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="194"/>
@@ -2215,27 +2215,27 @@
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="42"/>
         <source>List filter</source>
-        <translation type="unfinished"/>
+        <translation>Filtri lista</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="44"/>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation>Tutti</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="45"/>
         <source>Untranslated</source>
-        <translation type="unfinished"/>
+        <translation>Non tradotte</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="46"/>
         <source>Not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Da revisionare</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="47"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Revisionate</translation>
     </message>
 </context>
 <context>
@@ -2243,37 +2243,37 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>Lascia un messaggio (inglese o tedesco):</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="41"/>
         <source>Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.</source>
-        <translation type="unfinished"/>
+        <translation>Framrekkari è un client per varie piattaforme di traduzione online, attualmente supporta le API Transifex.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="53"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Crediti</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="57"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="61"/>
         <source>Settings</source>
-        <translation type="unfinished"/>
+        <translation>Impostazioni</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="65"/>
         <source>Add account</source>
-        <translation type="unfinished"/>
+        <translation>Aggiungi account</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="77"/>
         <source>Please add at least one account for a Transifex instance.</source>
-        <translation type="unfinished"/>
+        <translation>Aggiungi almeno un account </translation>
     </message>
 </context>
 <context>
@@ -2281,27 +2281,27 @@
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="125"/>
         <source>Currency</source>
-        <translation type="unfinished"/>
+        <translation>Valuta</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="126"/>
         <source>Euro</source>
-        <translation type="unfinished"/>
+        <translation>Euro</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="127"/>
         <source>US Dollar</source>
-        <translation type="unfinished"/>
+        <translation>Dollaro USA</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="128"/>
         <source>Australian Dollar</source>
-        <translation type="unfinished"/>
+        <translation>Dollaro australiano</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="129"/>
         <source>Brazilian Real</source>
-        <translation type="unfinished"/>
+        <translation>Real brasiliano</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="130"/>
@@ -2401,7 +2401,7 @@
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="155"/>
         <source>Donate via PayPal</source>
-        <translation type="unfinished"/>
+        <translation>Dona con PayPal</translation>
     </message>
 </context>
 <context>
@@ -2409,12 +2409,12 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="40"/>
         <source>Privacy policy</source>
-        <translation type="unfinished"/>
+        <translation>Informativa sulla privacy</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="44"/>
         <source>What information does Framrekkari collect?</source>
-        <translation type="unfinished"/>
+        <translation>Che informazioni raccoglie Framrekkari?</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="53"/>
@@ -2454,17 +2454,17 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="117"/>
         <source>Your consent</source>
-        <translation type="unfinished"/>
+        <translation>Il tuo consenso</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="125"/>
         <source>By using Framrekkari, you consent to this privacy policy.</source>
-        <translation type="unfinished"/>
+        <translation>Usando Framrekkari acconsenti alla sua politica sulla privacy.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>Contatta</translation>
     </message>
 </context>
 <context>
@@ -2472,12 +2472,12 @@
     <message>
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="69"/>
         <source>(Source language)</source>
-        <translation type="unfinished"/>
+        <translation>(Lingua sorgente)</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
         <source>%n string(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n stringa</numerusform><numerusform>%n stringhe</numerusform></translation>
     </message>
 </context>
 <context>
@@ -2485,7 +2485,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="53"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>Ooops, si è verificato il seguente errore:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
@@ -2500,32 +2500,32 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="227"/>
         <source>Translation instructions</source>
-        <translation type="unfinished"/>
+        <translation>Istruzioni di traduzione</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="232"/>
         <source>Project website</source>
-        <translation type="unfinished"/>
+        <translation>Sito web del progetto</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Remove from favorites</source>
-        <translation type="unfinished"/>
+        <translation>Rimuovi dai preferiti</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Add to favorites</source>
-        <translation type="unfinished"/>
+        <translation>Aggiungi ai preferiti</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="249"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>Aggiorna</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="191"/>
         <source>Languages</source>
-        <translation type="unfinished"/>
+        <translation>Lingue</translation>
     </message>
 </context>
 <context>
@@ -2534,19 +2534,19 @@
         <location filename="../src/api/projectsapi.cpp" line="62"/>
         <location filename="../src/api/projectsapi.cpp" line="121"/>
         <source>Server reply was empty.</source>
-        <translation type="unfinished"/>
+        <translation>Nessuna risposta dal server.</translation>
     </message>
     <message>
         <location filename="../src/api/projectsapi.cpp" line="73"/>
         <location filename="../src/api/projectsapi.cpp" line="132"/>
         <source>Not found</source>
-        <translation type="unfinished"/>
+        <translation>Non trovato</translation>
     </message>
     <message>
         <location filename="../src/api/projectsapi.cpp" line="76"/>
         <location filename="../src/api/projectsapi.cpp" line="135"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita.</translation>
     </message>
 </context>
 <context>
@@ -2554,7 +2554,7 @@
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="59"/>
         <source>Source lang: %1</source>
-        <translation type="unfinished"/>
+        <translation>Lingua sorgente: %1</translation>
     </message>
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="68"/>
@@ -2567,22 +2567,22 @@
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="46"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>Ooops, si è verificato il seguente errore:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="62"/>
         <source>Projects:</source>
-        <translation type="unfinished"/>
+        <translation>Progetti:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="68"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>Precedente</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="82"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>Successivo</translation>
     </message>
 </context>
 <context>
@@ -2590,7 +2590,7 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="117"/>
         <source>%n string(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n stringa</numerusform><numerusform>%n stringhe</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>
@@ -2603,12 +2603,12 @@
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="48"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>Ooops, si è verificato il seguente errore:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="65"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>Aggiorna</translation>
     </message>
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="75"/>
@@ -2621,17 +2621,17 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="42"/>
         <source>Settings</source>
-        <translation type="unfinished"/>
+        <translation>Impostazioni</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation type="unfinished"/>
+        <translation>Mostra lingua</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>Lingua</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
@@ -2641,7 +2641,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>
         <source>Behavior</source>
-        <translation type="unfinished"/>
+        <translation>Comportamento</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="69"/>
@@ -2651,37 +2651,37 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="72"/>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation>Tutti</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="73"/>
         <source>Untranslated</source>
-        <translation type="unfinished"/>
+        <translation>Non tradotte</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="74"/>
         <source>Not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Da revisionare</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="75"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Revisionate</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="81"/>
         <source>Font sizes</source>
-        <translation type="unfinished"/>
+        <translation>Dimensione font</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="90"/>
         <source>Source text font size</source>
-        <translation type="unfinished"/>
+        <translation>Dimensione testo sorgente</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="102"/>
         <source>Translation text font size</source>
-        <translation type="unfinished"/>
+        <translation>Dimensione testo traduzione</translation>
     </message>
 </context>
 <context>
@@ -2696,19 +2696,19 @@
         <location filename="../src/api/statisticsapi.cpp" line="77"/>
         <location filename="../src/api/statisticsapi.cpp" line="155"/>
         <source>Server reply was empty.</source>
-        <translation type="unfinished"/>
+        <translation>Nessuna risposta dal server.</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="87"/>
         <location filename="../src/api/statisticsapi.cpp" line="165"/>
         <source>Not found</source>
-        <translation type="unfinished"/>
+        <translation>Non trovato</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="90"/>
         <location filename="../src/api/statisticsapi.cpp" line="168"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita.</translation>
     </message>
 </context>
 <context>
@@ -2716,17 +2716,17 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="48"/>
         <source>Metadata</source>
-        <translation type="unfinished"/>
+        <translation>Metadati</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="51"/>
         <source>Tags</source>
-        <translation type="unfinished"/>
+        <translation>Tag</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="62"/>
         <source>Comment</source>
-        <translation type="unfinished"/>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
@@ -2736,12 +2736,12 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
         <source>Character limit</source>
-        <translation type="unfinished"/>
+        <translation>Limite caratteri</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
         <source>Last update</source>
-        <translation type="unfinished"/>
+        <translation>Ultimo aggiornamento</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
@@ -2759,22 +2759,22 @@
     <message>
         <location filename="../qml/pages/StringPage.qml" line="255"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>Precedente</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="263"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>Successivo</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="276"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Revisionate</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="342"/>
         <source>Copy to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>Copia negli appunti</translation>
     </message>
 </context>
 <context>
@@ -2782,32 +2782,32 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="99"/>
         <source>Server reply was empty.</source>
-        <translation type="unfinished"/>
+        <translation>Nessuna risposta dal server.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="110"/>
         <source>Not found</source>
-        <translation type="unfinished"/>
+        <translation>Non trovato</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="113"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="184"/>
         <source>Not found. Code %1.</source>
-        <translation type="unfinished"/>
+        <translation>Non trovato. Codice %1.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="187"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
-        <translation type="unfinished"/>
+        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita. Codice %1.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="190"/>
         <source>Could not save content on server. Maybe wrong entity hash. Code %1.</source>
-        <translation type="unfinished"/>
+        <translation>Impossibile savare contenuto nel server</translation>
     </message>
 </context>
 <context>
@@ -2815,57 +2815,57 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
         <source>Untranslated</source>
-        <translation type="unfinished"/>
+        <translation>Non tradotte</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="58"/>
         <source>Not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Da revisionare</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="60"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Revisionate</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="63"/>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation>Tutti</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>Ooops, si è verificato il seguente errore:</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
         <source>Search for</source>
-        <translation type="unfinished"/>
+        <translation>Cerca</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="128"/>
         <source>Source string</source>
-        <translation type="unfinished"/>
+        <translation>Stringa sorgente</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="129"/>
         <source>Translation</source>
-        <translation type="unfinished"/>
+        <translation>Traduzione</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="145"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>Aggiorna</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="153"/>
         <source>Filter:</source>
-        <translation type="unfinished"/>
+        <translation>Filtri:</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="199"/>
         <source>Ooops, you got no results. Check your filter.</source>
-        <translation type="unfinished"/>
+        <translation>Oops, nessun risultato. Controlla i filtri.</translation>
     </message>
 </context>
 <context>
@@ -2873,17 +2873,17 @@
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="114"/>
         <source>Not translated</source>
-        <translation type="unfinished"/>
+        <translation>Non tradotto</translation>
     </message>
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Segna da revisionare</translation>
     </message>
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Segna revisionato</translation>
     </message>
 </context>
 <context>
@@ -2891,32 +2891,32 @@
     <message>
         <location filename="../qml/js/helper.js" line="5"/>
         <source>Zero</source>
-        <translation type="unfinished"/>
+        <translation>Zero</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="8"/>
         <source>Singular</source>
-        <translation type="unfinished"/>
+        <translation>Singolare</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="11"/>
         <source>Two</source>
-        <translation type="unfinished"/>
+        <translation>Due</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="14"/>
         <source>Few</source>
-        <translation type="unfinished"/>
+        <translation>Pochi</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="17"/>
         <source>Many</source>
-        <translation type="unfinished"/>
+        <translation>Molti</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="20"/>
         <source>Plural</source>
-        <translation type="unfinished"/>
+        <translation>Plurale</translation>
     </message>
 </context>
 </TS>

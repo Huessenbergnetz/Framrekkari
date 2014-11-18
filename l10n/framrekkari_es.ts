@@ -13,7 +13,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="52"/>
         <source>Website</source>
-        <translation>Pagina web</translation>
+        <translation>Página Web</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="56"/>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="101"/>
         <source>Online translation services client for Sailfish OS</source>
-        <translation>Cliente Sailfish OS para servicios de traduccion online</translation>
+        <translation>Cliente Sailfish OS para servicios de traducción online</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="117"/>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="153"/>
         <source>Leave a message (English or German):</source>
-        <translation>Dejar un mensaje (Ingles o Aleman)</translation>
+        <translation>Dejar un mensaje (Inglés o Alemán)</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="156"/>
@@ -81,7 +81,7 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="50"/>
         <source>Transifex is a collaborative online translation platform. In order to use it you need an account on &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</source>
-        <translation>Transiflex es una plataforma de traduccion online colaborativa. Necesitas una cuenta en &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</translation>
+        <translation>Transiflex es una plataforma de traducción online colaborativa. Necesitas una cuenta en &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
@@ -190,7 +190,7 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Versión</translation>
     </message>
 </context>
 <context>
@@ -216,7 +216,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="102"/>
         <source>Danish translation</source>
-        <translation>Traduccion danesa</translation>
+        <translation>Traducción danesa</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
@@ -238,39 +238,39 @@
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="69"/>
         <source>French translation</source>
-        <translation>Traduccion francesa</translation>
+        <translation>Traducción francesa</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción catalana</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="51"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="77"/>
         <source>Finnish translation</source>
-        <translation>Traduccion finlandesa</translation>
+        <translation>Traducción finlandesa</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción checa</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción holandesa</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="83"/>
         <source>Hungarian translation</source>
-        <translation>Traduccion hungara</translation>
+        <translation>Traduccion húngara</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="90"/>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="113"/>
         <source>Polish translation</source>
-        <translation>Traduccion polaca</translation>
+        <translation>Traducción polaca</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="96"/>
@@ -302,7 +302,7 @@
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="87"/>
         <source>Last changes</source>
-        <translation>Ultimos cambios</translation>
+        <translation>Últimos cambios</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="102"/>
@@ -313,7 +313,7 @@
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="111"/>
         <source>If you like %1 and you want to support the development, consider a small donation.</source>
         <comment>first is name of the application</comment>
-        <translation>Si te gusta %1 y quieres dar soporte a su desarrollo, considera hacer una pequeña donacion.</translation>
+        <translation>Si te gusta %1 y quieres dar soporte a su desarrollo, considera hacer una pequeña donación.</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="131"/>
@@ -341,7 +341,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation type="unfinished"/>
+        <translation>Al iniciar Framrekkari se mostrará la página principal que contiene tus cuentas. Estará vacia la primera vez que se inicie la aplicación. En el menú desplegable superior podrá elegir &lt;i&gt;Añadir cuenta&lt;/i&gt;, para añadir una nueva cuenta. Después de añadir una, se mostrará en la lista y podrá seleccionarla para abrirla. La vista de la cuenta da acceso a los servicios de búsqueda y abrir proyectos. &lt;br&gt;&lt;br&gt;Busque un proyecto para abrirlo. La página del proyecto muestra los idiomas disponibles y la información general sobre el proyecto. Pulsando sobre un idioma se mostrarán los recursos del proyecto. Al pulsar sobre  un recurso se abrirá la lista con las cadenas de origen. Pulsa sobre una cadena para abrirla y empezar a traducir. Cerrando una cadena simple o avanzando a la siguiente o anterior se guarda automáticamente el texto introducido.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
@@ -351,7 +351,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="64"/>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
-        <translation>El API de Transifex tiene ciertas limitaciones. La peor es que solo da acceso sobre idiomas y recursos al dueño del proyecto y encargados pero no a usuarios comunes. Por lo que no es posible determinar si un usuario tiene permisos para cambiar el contenido, el usuario debe saber por si mismo si puede. Si no se tienen permisos suficientes para modificar se obtendra un error, pero no es posible para Framrekkari comprobarlo con antelacion.&lt;br&gt;&lt;br&gt;Otra gran limitacion es que no hay funcion de busqueda, se debe introducir el nombre correcto del proyecto (el usado en el URL del navegador) para abrirlo directamente o buscarlo manualmente en la lista de todos los proyectos.</translation>
+        <translation>El API de Transifex tiene ciertas limitaciones. La peor es que sólo da acceso sobre idiomas y recursos al dueño del proyecto y encargados pero no a usuarios comunes. Por lo tanto, no es posible determinar si un usuario tiene permisos para cambiar el contenido. Deberías saberlo por tí mismo si eres responsable del proyecto de idioma. Si no tienes permisos suficientes para hacer modificaciones, se producirá un error, pero no es posible para Framrekkari comprobarlo con antelación.&lt;br&gt;&lt;br&gt;Otra gran limitación es que no hay función de busqueda, se debe introducir el nombre correcto del proyecto (el usado en la URL del navegador) para abrirlo directamente o buscarlo manualmente en la lista de todos los proyectos.</translation>
     </message>
 </context>
 <context>
@@ -377,7 +377,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="41"/>
         <source>Afrikaans</source>
-        <translation>Afrikaans</translation>
+        <translation>Africano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="42"/>
@@ -447,7 +447,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="55"/>
         <source>Aragonese</source>
-        <translation>Aragonese</translation>
+        <translation>Aragonés</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="56"/>
@@ -517,7 +517,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="69"/>
         <source>Belarusian</source>
-        <translation>Belarusian</translation>
+        <translation>Bielorruso</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="70"/>
@@ -552,7 +552,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="76"/>
         <source>Bosnian</source>
-        <translation>Bosnian</translation>
+        <translation>Bosnio</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="77"/>
@@ -587,17 +587,17 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="83"/>
         <source>Catalan</source>
-        <translation>Catalan</translation>
+        <translation>Catalán</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="84"/>
         <source>Catalan (Spain)</source>
-        <translation>Catalan (Spain)</translation>
+        <translation>Catalán (España)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="85"/>
         <source>Catalan (Valencian)</source>
-        <translation>Catalan (Valencian)</translation>
+        <translation>Catalán (Valencia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="86"/>
@@ -622,7 +622,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="90"/>
         <source>Chinese (China)</source>
-        <translation>Chinese (China)</translation>
+        <translation>Chino (China)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="91"/>
@@ -652,7 +652,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="96"/>
         <source>Chinese (Jinyu)</source>
-        <translation>Chinese (Jinyu)</translation>
+        <translation>Chino (Jinyu)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="97"/>
@@ -742,7 +742,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="114"/>
         <source>Croatian</source>
-        <translation>Croatian</translation>
+        <translation>Croata</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="115"/>
@@ -767,7 +767,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="119"/>
         <source>Danish (Denmark)</source>
-        <translation>Danish (Denmark)</translation>
+        <translation>Danés (Dinamarca)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="120"/>
@@ -802,7 +802,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="126"/>
         <source>English</source>
-        <translation>English</translation>
+        <translation>Inglés</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="127"/>
@@ -817,7 +817,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="129"/>
         <source>English (Estonia)</source>
-        <translation>English (Estonia)</translation>
+        <translation>Inglés (Estonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="130"/>
@@ -852,17 +852,17 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="136"/>
         <source>English (Sweden)</source>
-        <translation>English (Sweden)</translation>
+        <translation>Inglés (Suecia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="137"/>
         <source>English (United Kingdom)</source>
-        <translation>English (United Kingdom)</translation>
+        <translation>Inglés (Reino Unido)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="138"/>
         <source>English (United States)</source>
-        <translation>English (United States)</translation>
+        <translation>Inglés (Estados Unidos)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="139"/>
@@ -902,7 +902,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="146"/>
         <source>Finnish</source>
-        <translation>Finnish</translation>
+        <translation>Finlandés</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="147"/>
@@ -922,12 +922,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="151"/>
         <source>French (Canada)</source>
-        <translation>French (Canada)</translation>
+        <translation>Francés (Canada)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="152"/>
         <source>French (France)</source>
-        <translation>French (France)</translation>
+        <translation>Francés (Francia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="153"/>
@@ -962,7 +962,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="159"/>
         <source>Galician (Spain)</source>
-        <translation>Galician (Spain)</translation>
+        <translation>Gallego (España)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="160"/>
@@ -987,17 +987,17 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="164"/>
         <source>German (Austria)</source>
-        <translation>German (Austria)</translation>
+        <translation>Alemán (Austria)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="165"/>
         <source>German (Germany)</source>
-        <translation>German (Germany)</translation>
+        <translation>Alemán (Alemania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="166"/>
         <source>German (Switzerland)</source>
-        <translation>German (Switzerland)</translation>
+        <translation>Alemán (Suiza)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="167"/>
@@ -1107,7 +1107,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="188"/>
         <source>Indonesian (Indonesia)</source>
-        <translation>Indonesian (Indonesia)</translation>
+        <translation>Indonesio (Indonesia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="189"/>
@@ -1132,7 +1132,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="193"/>
         <source>Italian (Italy)</source>
-        <translation>Italian (Italy)</translation>
+        <translation>Italiano (Italia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="194"/>
@@ -1317,7 +1317,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="230"/>
         <source>Lithuanian (Lithuania)</source>
-        <translation>Lithuanian (Lithuania)</translation>
+        <translation>Lituano (Lituania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="231"/>
@@ -1427,7 +1427,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="252"/>
         <source>Mongolian</source>
-        <translation>Mongolian</translation>
+        <translation>Mongol</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="253"/>
@@ -1607,17 +1607,17 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="286"/>
         <source>Portuguese</source>
-        <translation>Portuguese</translation>
+        <translation>Portugués</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="287"/>
         <source>Portuguese (Brazil)</source>
-        <translation>Portuguese (Brazil)</translation>
+        <translation>Portugués (Brasil)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="288"/>
         <source>Portuguese (Portugal)</source>
-        <translation>Portuguese (Portugal)</translation>
+        <translation>Portugués (Portugal)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="289"/>
@@ -1667,7 +1667,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="298"/>
         <source>Russian (Russia)</source>
-        <translation>Russian (Russia)</translation>
+        <translation>Ruso (Rusia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="299"/>
@@ -1797,102 +1797,102 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="324"/>
         <source>Spanish</source>
-        <translation>Spanish</translation>
+        <translation>Español</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="325"/>
         <source>Spanish (Argentina)</source>
-        <translation>Spanish (Argentina)</translation>
+        <translation>Español (Argentina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="326"/>
         <source>Spanish (Bolivia)</source>
-        <translation>Spanish (Bolivia)</translation>
+        <translation>Español (Bolivia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="327"/>
         <source>Spanish (Chile)</source>
-        <translation>Spanish (Chile)</translation>
+        <translation>Español (Chile)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="328"/>
         <source>Spanish (Colombia)</source>
-        <translation>Spanish (Colombia)</translation>
+        <translation>Español (Colombia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="329"/>
         <source>Spanish (Costa Rica)</source>
-        <translation>Spanish (Costa Rica)</translation>
+        <translation>Español (Costa Rica)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="330"/>
         <source>Spanish (Dominican Republic)</source>
-        <translation>Spanish (Dominican Republic)</translation>
+        <translation>Español (República Dominicana)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="331"/>
         <source>Spanish (Ecuador)</source>
-        <translation>Spanish (Ecuador)</translation>
+        <translation>Español (Ecuador)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="332"/>
         <source>Spanish (El Salvador)</source>
-        <translation>Spanish (El Salvador)</translation>
+        <translation>Español (El Salvador)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="333"/>
         <source>Spanish (Latin America)</source>
-        <translation>Spanish (Latin America)</translation>
+        <translation>Español (Latinoamérica)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="334"/>
         <source>Spanish (Mexico)</source>
-        <translation>Spanish (Mexico)</translation>
+        <translation>Español (Mexico)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="335"/>
         <source>Spanish (Nicaragua)</source>
-        <translation>Spanish (Nicaragua)</translation>
+        <translation>Español (Nicaragua)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="336"/>
         <source>Spanish (Panama)</source>
-        <translation>Spanish (Panama)</translation>
+        <translation>Español (Panamá)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="337"/>
         <source>Spanish (Paraguay)</source>
-        <translation>Spanish (Paraguay)</translation>
+        <translation>Español (Paraguay)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="338"/>
         <source>Spanish (Peru)</source>
-        <translation>Spanish (Peru)</translation>
+        <translation>Español (Peru)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="339"/>
         <source>Spanish (Puerto Rico)</source>
-        <translation>Spanish (Puerto Rico)</translation>
+        <translation>Español (Puerto Rico)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="340"/>
         <source>Spanish (Spain)</source>
-        <translation>Spanish (Spain)</translation>
+        <translation>Español (España)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="341"/>
         <source>Spanish (United States)</source>
-        <translation>Spanish (United States)</translation>
+        <translation>Español (Estados Unidos)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="342"/>
         <source>Spanish (Uruguay)</source>
-        <translation>Spanish (Uruguay)</translation>
+        <translation>Español (Uruguay)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="343"/>
         <source>Spanish (Venezuela)</source>
-        <translation>Spanish (Venezuela)</translation>
+        <translation>Español (Venezuela)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="344"/>
@@ -1927,12 +1927,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="350"/>
         <source>Swedish (Sweden)</source>
-        <translation>Swedish (Sweden)</translation>
+        <translation>Sueco (Suecia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="351"/>
         <source>Tagalog</source>
-        <translation>Tagalog</translation>
+        <translation>Tagalo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="352"/>
@@ -2243,12 +2243,12 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>Leave a message (English or German):</source>
-        <translation>Dejar un mensaje (Ingles o Aleman)</translation>
+        <translation>Dejar un mensaje (Inglés o Alemán)</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="41"/>
         <source>Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.</source>
-        <translation>Framrekkari es un cliente para varias plataformas colaborativas de traduccion online, que actualmente soporta el API de Transifex.</translation>
+        <translation>Framrekkari es un cliente para varias plataformas colaborativas de traducción online, que actualmente soporta el API de Transifex.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="53"/>
@@ -2361,7 +2361,7 @@
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
         <source>Polish Zloty</source>
-        <translation>Polish Zloty</translation>
+        <translation>Esloti polaco</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="142"/>
@@ -2409,37 +2409,37 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="40"/>
         <source>Privacy policy</source>
-        <translation>Politica de privacidad</translation>
+        <translation>Política de privacidad</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="44"/>
         <source>What information does Framrekkari collect?</source>
-        <translation>¿Que informacion recoge Framrekkari?</translation>
+        <translation>¿Que información recoge Framrekkari?</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="53"/>
         <source>In order to login to your translation server Framrekkari needs your username and password as well as the server address. These information is not given to the author of Framrekkari or other third parties (except the server operator).</source>
-        <translation>Para iniciar sesion en tu servidor de traduccion Framrekkari necesita tu usuario y contraseña asi como la dirrecion del servidor. Esta informacion no se comparte con el autor de Framrekkari ni otros terceros (excepto el operador del servidor).</translation>
+        <translation>Para iniciar sesión en tu servidor de traducción Framrekkari necesita tu usuario y contraseña asi como la dirección del servidor. Esta informacion no se comparte con el autor de Framrekkari ni otros terceros (excepto el operador del servidor).</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="63"/>
         <source>What does Framrekkari use your information for?</source>
-        <translation>¿Para que usa Framrekkari tu informacion?</translation>
+        <translation>¿Para qué usa Framrekkari tu información?</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="71"/>
         <source>Framrekkari needs your login data to connect to your translation server. Your log in data is used to log in to your translation server to perform the tasks of downloading and uploading translations.</source>
-        <translation>Framrekkari necesita tu informacion de inicio de sesion para conectar con tu servidor de traduccion. Tus datos de sesion son usados para realizar tareas de descarga y subida de traducciones.</translation>
+        <translation>Framrekkari necesita tu información de inicio de sesión para conectar con tu servidor de traducción. Tus datos de sesión se usan para realizar tareas de descarga y subida de traducciones.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="81"/>
         <source>Does Framrekkari disclose any information to outside parties?</source>
-        <translation>¿Comparte Framrekkari alguna informacion con terceras partes?</translation>
+        <translation>¿Comparte Framrekkari alguna información con terceras partes?</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="89"/>
         <source>Framrekkari only uses your data for the login process into the server that you configured. Framrekkari does not send these data to the author of Framrekkari or other third parties. For questions concerning the privacy on the server side, you have to contact your translation service provider.</source>
-        <translation>Framrekkari solo usa tus datos para el inicio de sesion en el servidor que has configurado. Framrekkari no envia esos datos al autor de Framrekkari o a terceras partes. Para cuestiones relacionadas con la privacidad de parte del servidor deberas contactar con tu proveedor del servicio de traduccion.</translation>
+        <translation>Framrekkari sólo usa tus datos para el inicio de sesión en el servidor que has configurado. Framrekkari no envía esos datos al autor de Framrekkari o a terceras partes. Para cuestiones relacionadas con la privacidad de parte del servidor deberás contactar con tu proveedor del servicio de traducción.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="99"/>
@@ -2449,7 +2449,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="107"/>
         <source>Framrekkari is a client for collaborated translations services like Transifex. It has no preinstalled third party links other than the own application website links on the About page and on this page. Showing translation project details and opening the project webistes is in the user&apos;s responsibility. For questions concerning the privacy of this sites you have to contact the site operator.</source>
-        <translation>Framrekkari es un cliente para colaborar con servicios de traduccion como Transifex. No tiene preinstalado ningun enlace a terceros aparte de los de la pagina web de Framrekkari. Mostrar detalles de los proyectos de traduccion y la apertura de enlaces a estos proyectos es responsabilidad del usuario. Para preguntas relativas a la privacidad de estos sitios web debe ponerse en contacto con sus administradores.</translation>
+        <translation>Framrekkari es un cliente para colaborar con servicios de traducción como Transifex. No tiene preinstalado ningún enlace a terceros aparte de los de la página Web de Framrekkari. Mostrar detalles de los proyectos de traducción y la apertura de enlaces a estos proyectos es responsabilidad del usuario. Para preguntas relativas a la privacidad de estos sitios Web debe ponerse en contacto con sus administradores.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="117"/>
@@ -2459,7 +2459,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="125"/>
         <source>By using Framrekkari, you consent to this privacy policy.</source>
-        <translation>Usando Framrekkari aceptas su politica de privacidad.</translation>
+        <translation>Usando Framrekkari aceptas su política de privacidad.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
@@ -2490,7 +2490,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation type="unfinished"/>
+        <translation>Todavía no hay recursos para este proyecto.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
@@ -2534,7 +2534,7 @@
         <location filename="../src/api/projectsapi.cpp" line="62"/>
         <location filename="../src/api/projectsapi.cpp" line="121"/>
         <source>Server reply was empty.</source>
-        <translation>La respuesta del servidor esta vacia.</translation>
+        <translation>La respuesta del servidor esta vacía.</translation>
     </message>
     <message>
         <location filename="../src/api/projectsapi.cpp" line="73"/>
@@ -2626,7 +2626,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation>Idioma de aplicacion</translation>
+        <translation>Idioma de aplicación</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
@@ -2690,13 +2690,13 @@
         <location filename="../src/api/statisticsapi.cpp" line="15"/>
         <location filename="../src/api/statisticsapi.cpp" line="106"/>
         <source>No resources set.</source>
-        <translation>Ningun recurso asignado.</translation>
+        <translation>Ningún recurso asignado.</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="77"/>
         <location filename="../src/api/statisticsapi.cpp" line="155"/>
         <source>Server reply was empty.</source>
-        <translation>La respuesta del servidor esta vacia.</translation>
+        <translation>La respuesta del servidor esta vacía.</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="87"/>
@@ -2736,7 +2736,7 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
         <source>Character limit</source>
-        <translation>Limite de caracter</translation>
+        <translation>Límite de carácter</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
@@ -2746,7 +2746,7 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
-        <translation>Ultima aportacion</translation>
+        <translation>Última aportación</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
@@ -2782,7 +2782,7 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="99"/>
         <source>Server reply was empty.</source>
-        <translation>La respuesta del servidor esta vacia.</translation>
+        <translation>La respuesta del servidor esta vacía.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="110"/>
@@ -2797,17 +2797,17 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="184"/>
         <source>Not found. Code %1.</source>
-        <translation>No encontrado. Codigo %1.</translation>
+        <translation>No encontrado. Código %1.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="187"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
-        <translation>Operacion cancelada. Nombre de usuario y/o contraseña incorrectos o presentacion SSL fallada. Codigo %1.</translation>
+        <translation>Operación cancelada. Nombre de usuario y/o contraseña incorrectos o presentacion SSL fallada. Codigo %1.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="190"/>
         <source>Could not save content on server. Maybe wrong entity hash. Code %1.</source>
-        <translation>No se puede guardar en el servidor. Posible hash de la entidad erroneo. Codigo %1.</translation>
+        <translation>No se puede guardar en el servidor. Posible hash de la entidad erróneo. Código %1.</translation>
     </message>
 </context>
 <context>
@@ -2850,7 +2850,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="129"/>
         <source>Translation</source>
-        <translation>Traduccion</translation>
+        <translation>Traducción</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="145"/>

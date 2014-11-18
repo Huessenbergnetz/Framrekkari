@@ -243,7 +243,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>Katalaanin käännös</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="51"/>
@@ -254,12 +254,12 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Tsekin käännös</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>Hollannin (Alankomaat) käännös</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="83"/>
@@ -2490,7 +2490,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation type="unfinished"/>
+        <translation>Tämä projekti ei ole vielä luonut yhtäkään resurssia.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>

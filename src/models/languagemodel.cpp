@@ -28,6 +28,7 @@ LanguageModel::LanguageModel(QObject *parent) :
 {
     m_langs << "en" << "C" << "ca" << "nl_NL" << "cs";
     m_langs << "de" << "hu" << "pl" << "es" << "da" << "fi" << "fr";
+    m_langs << "it" << "gl";
 }
 
 

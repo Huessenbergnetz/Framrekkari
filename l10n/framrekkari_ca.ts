@@ -243,7 +243,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció catalana</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="51"/>
@@ -254,12 +254,12 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció txeca</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció neerlandesa (Països Baixos) </translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsModel.qml" line="83"/>
@@ -341,7 +341,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation type="unfinished"/>
+        <translation>Un cop s&apos;inicia Framrekkari es mostra la pàgina principal que conté els vostres comptes. Aquesta pàgina estarà en blanc el primer cop que s&apos;iniciï l&apos;aplicació. Arrossegueu cap avall el menú superior i escolliu &lt;i&gt;Afegeix un compte&lt;/i&gt;, per afegir un compte nou. Un cop afegit, es mostrarà a la llista i es podrà clicar-hi a sobre per obrir-lo. La vista del compte permet utilizar les eines de cerca/obertura de projectes i navegar a través d&apos;ells.&lt;br&gt;&lt;br&gt;Cerqueu o navegueu per poder obrir un projecte. La vista del projecte mostra els idiomes disponibles i la informació general del projecte obert. Cal clicar sobre un idioma per obrir-ne els continguts. En clicar sobre els continguts es mostren les cadenes d&apos;origen. Per començar a traduir només cal clicar sobre una cadena. Les traduccions es desen quan s&apos;avanci o retrocedeixi a una altra cadena o bé quan en sortiu.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
@@ -2490,7 +2490,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest projecte encara no ha generat cap contingut.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
@@ -2554,7 +2554,7 @@
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="59"/>
         <source>Source lang: %1</source>
-        <translation>Idiome d&apos;origen: %1</translation>
+        <translation>Idioma d&apos;origen: %1</translation>
     </message>
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="68"/>
