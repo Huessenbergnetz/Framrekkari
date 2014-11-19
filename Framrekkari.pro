@@ -91,7 +91,10 @@ OTHER_FILES += \
     qml/BTComponents/ContributorsModel.qml \
     qml/BTComponents/ContributorsDelegate.qml \
     qml/BTComponents/Contributors.qml \
-    qml/common/LanguageChooser.qml
+    qml/common/LanguageChooser.qml \
+    qml/models/ChangelogModel.qml \
+    qml/models/ContributorsModel.qml \
+    qml/BTComponents/AboutPage.qml
 
 HEADERS += \
     src/globals.h \

@@ -30,7 +30,8 @@ Page {
     id: mainPage
 
     FirstStartInfo {
-        visible: config.get("system/version", 0) < versionInt
+//        visible: config.get("system/version", 0) < versionInt
+        visible: true
         name: "Framrekkari"
         version: versionString
         helpPage: "../pages/Help.qml"

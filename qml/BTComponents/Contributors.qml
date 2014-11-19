@@ -25,15 +25,14 @@ Page {
     id: contributorsPage
 
     property string avatarBasePath
-    property string iconBasePath
+    property alias model: contributorsList.model
 
 
     SilicaListView {
+        id: contributorsList
         anchors.fill: parent
-        anchors.bottomMargin: Theme.paddingLarge
-        model: ContributorsModel {}
         header: PageHeader { title: qsTr("Contributors") }
-        spacing: 15
+        spacing: 10
 
         VerticalScrollDecorator {}
 
@@ -45,7 +44,7 @@ Page {
             }
         }
 
-        delegate: ContributorsDelegate { avatarPath: contributorsPage.avatarBasePath; iconPath: contributorsPage.iconBasePath }
+        delegate: ContributorsDelegate { avatarPath: contributorsPage.avatarBasePath }
     }
 }
 

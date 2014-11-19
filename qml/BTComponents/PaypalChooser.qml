@@ -31,11 +31,12 @@ Item {
     property string item
     property string message
     property string url
+    property string label
 
     function openDonation(currency)
     {
         var lang = "";
-        var locale = String(Qt.locale().name);
+        var locale = new String(Qt.locale().name);
         var cc = locale.slice(3, 5);
 
         console.log(locale)
@@ -59,6 +60,7 @@ Item {
             break;
         default:
             lang = "";
+            break;
         }
 
         if (lang === "") {
@@ -152,7 +154,7 @@ Item {
     ComboBoxList {
         id: donation
         anchors { left: parent.left; right: parent.right }
-        label: qsTr("Donate via PayPal")
+        label: root.label
         model: donationModel
         onChoosenValueChanged: openDonation(choosenValue)
     }
