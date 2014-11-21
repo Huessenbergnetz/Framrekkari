@@ -86,15 +86,14 @@ OTHER_FILES += \
     qml/BTComponents/ComboBoxList.qml \
     qml/BTComponents/PaypalChooser.qml \
     qml/BTComponents/Changelog.qml \
-    qml/BTComponents/ChangelogModel.qml \
     qml/BTComponents/FirstStartInfo.qml \
-    qml/BTComponents/ContributorsModel.qml \
     qml/BTComponents/ContributorsDelegate.qml \
     qml/BTComponents/Contributors.qml \
     qml/common/LanguageChooser.qml \
     qml/models/ChangelogModel.qml \
     qml/models/ContributorsModel.qml \
-    qml/BTComponents/AboutPage.qml
+    qml/BTComponents/AboutPage.qml \
+    qml/BTComponents/ChangelogDelegate.qml
 
 HEADERS += \
     src/globals.h \

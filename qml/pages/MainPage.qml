@@ -24,6 +24,7 @@ import Sailfish.Silica 1.0
 import "../delegates"
 import "../common"
 import "../BTComponents"
+import "../models"
 
 
 Page {
@@ -35,11 +36,16 @@ Page {
         name: "Framrekkari"
         version: versionString
         helpPage: "../pages/Help.qml"
+        donationHeader: qsTr("Donate")
+        donationText: qsTr("If you like Framrekkari and you want to support the development, consider a small donation.")
         paypalOrganization: "Buschtrommel"
         paypalItem: "Framrekkari"
         paypalEmail: "kontakt@buschmann23.de"
         paypalMessage: qsTr("Leave a message (English or German):")
+        paypalLabel: qsTr("Donate via PayPal")
         description: qsTr("Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.")
+        changeLogModel: ChangelogModel {}
+        changeLogTracker: "https://github.com/Buschtrommel/Framrekkari/issues/"
         onClicked: config.set("system/version", versionInt)
     }
 
