@@ -11,69 +11,87 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="52"/>
-        <source>Website</source>
-        <translation>Sito web</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/About.qml" line="56"/>
-        <source>Privacy Policy</source>
-        <translation>Informativa sulla Privacy</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/About.qml" line="60"/>
-        <source>Changelog</source>
-        <translation>Changelog</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/About.qml" line="64"/>
-        <source>Contributors</source>
-        <translation>Collaboratori</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/About.qml" line="74"/>
-        <source>About</source>
-        <translation>Crediti</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/About.qml" line="101"/>
+        <location filename="../qml/pages/About.qml" line="10"/>
         <source>Online translation services client for Sailfish OS</source>
         <translation>Client per servizi di traduzione online per Sailfish OS</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="117"/>
-        <source>Licenses</source>
-        <translation>Licenze</translation>
+        <location filename="../qml/pages/About.qml" line="14"/>
+        <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="121"/>
-        <source>Source code is licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation>Codice sorgente è in licenza &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
+        <location filename="../qml/pages/About.qml" line="29"/>
+        <source>Munich</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="129"/>
+        <location filename="../qml/pages/About.qml" line="30"/>
+        <source>Germany</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="34"/>
+        <source>Donate via PayPal</source>
+        <translation>Dona con PayPal</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="38"/>
+        <source>Leave a message (English or German):</source>
+        <translation>Lascia un messaggio (inglese o tedesco):</translation>
+    </message>
+</context>
+<context>
+    <name>AboutPage</name>
+    <message>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
+        <source>Homepage</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
+        <source>Privacy Policy</source>
+        <translation>Informativa sulla Privacy</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="87"/>
+        <source>Changelog</source>
+        <translation>Changelog</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="92"/>
+        <source>Contributors</source>
+        <translation>Collaboratori</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="102"/>
+        <source>About</source>
+        <translation>Crediti</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="160"/>
+        <source>Contact</source>
+        <translation>Contatta</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="244"/>
         <source>Contribute</source>
         <translation>Contribuisci</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="136"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="252"/>
         <source>Translate</source>
         <translation>Traduci</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="142"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="259"/>
         <source>Report bugs</source>
         <translation>Segnala bug</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="153"/>
-        <source>Leave a message (English or German):</source>
-        <translation>Lascia un messaggio (inglese o tedesco):</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/About.qml" line="156"/>
-        <source>Contact</source>
-        <translation>Contatta</translation>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
+        <source>3rd party licenses</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -183,111 +201,125 @@
 <context>
     <name>Changelog</name>
     <message>
-        <location filename="../qml/BTComponents/Changelog.qml" line="35"/>
+        <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
         <source>Changelog</source>
         <translation>Changelog</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
-        <source>Version</source>
-        <translation>Versione</translation>
+        <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
+        <source>New</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
+        <source>Improved</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
+        <source>Fixed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
+        <source>Note</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Contributors</name>
     <message>
-        <location filename="../qml/BTComponents/Contributors.qml" line="35"/>
+        <location filename="../qml/BTComponents/Contributors.qml" line="34"/>
         <source>Contributors</source>
         <translation>Collaboratori</translation>
     </message>
 </context>
 <context>
+    <name>ContributorsDelegate</name>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="127"/>
+        <source>Website</source>
+        <translation>Sito web</translation>
+    </message>
+    <message>
+        <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="152"/>
+        <source>Sina Weibo</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>ContributorsModel</name>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="26"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
         <translation>Sviluppatore principale ed ideatore</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="27"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="27"/>
         <source>Author</source>
         <translation>Autore</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="116"/>
-        <source>Galician and Spanish translation</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="122"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="102"/>
         <source>Danish translation</source>
         <translation>traduzione danese</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="37"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="45"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="52"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="58"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="64"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="70"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="76"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="84"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="90"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="97"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="105"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="111"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="117"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="123"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="134"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="37"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="45"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="52"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="58"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="64"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="70"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="78"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="84"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="91"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="97"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="103"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="114"/>
         <source>Thanks to</source>
         <translation>Grazie a</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="36"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="75"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="36"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="69"/>
         <source>French translation</source>
         <translation>traduzione francese</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="44"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
         <translation>traduzione catalano</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="57"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="83"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="110"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="51"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="77"/>
         <source>Finnish translation</source>
         <translation>traduzione finlandese</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="63"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
         <translation>traduzione ceca</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="69"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
         <translation>traduzione olandese</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="89"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="83"/>
         <source>Hungarian translation</source>
         <translation>traduzione ungherese</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="96"/>
-        <source>Italian translation</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="104"/>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="133"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="90"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="113"/>
         <source>Polish translation</source>
         <translation>traduzione polacco</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/ContributorsModel.qml" line="51"/>
+        <location filename="../qml/models/ContributorsModel.qml" line="96"/>
         <source>Spanish translation</source>
         <translation>traduzione spagnolo</translation>
     </message>
@@ -308,34 +340,23 @@
 <context>
     <name>FirstStartInfo</name>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="71"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="76"/>
         <source>Welcome to %1 %2</source>
         <comment>First is app name, second is version number</comment>
         <translation>Benvenuto in %1 %2</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="87"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="91"/>
         <source>Last changes</source>
         <translation>Ultime modifiche</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="102"/>
-        <source>Donate</source>
-        <translation>Dona</translation>
-    </message>
-    <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="111"/>
-        <source>If you like %1 and you want to support the development, consider a small donation.</source>
-        <comment>first is name of the application</comment>
-        <translation>Se ti piace %1 e vuoi aiutare lo sviluppo, prendi in considerazione una piccola donazione.</translation>
-    </message>
-    <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="131"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="154"/>
         <source>Help</source>
         <translation>Aiuto</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="137"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="160"/>
         <source>Close</source>
         <translation>Chiudi</translation>
     </message>
@@ -2255,37 +2276,52 @@
 <context>
     <name>MainPage</name>
     <message>
+        <location filename="../qml/pages/MainPage.qml" line="39"/>
+        <source>Donate</source>
+        <translation>Dona</translation>
+    </message>
+    <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
+        <source>If you like Framrekkari and you want to support the development, consider a small donation.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="44"/>
         <source>Leave a message (English or German):</source>
         <translation>Lascia un messaggio (inglese o tedesco):</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="41"/>
+        <location filename="../qml/pages/MainPage.qml" line="45"/>
+        <source>Donate via PayPal</source>
+        <translation>Dona con PayPal</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="46"/>
         <source>Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.</source>
         <translation>Framrekkari è un client per varie piattaforme di traduzione online, attualmente supporta le API Transifex.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="53"/>
+        <location filename="../qml/pages/MainPage.qml" line="60"/>
         <source>About</source>
         <translation>Crediti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="57"/>
+        <location filename="../qml/pages/MainPage.qml" line="64"/>
         <source>Help</source>
         <translation>Aiuto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="61"/>
+        <location filename="../qml/pages/MainPage.qml" line="68"/>
         <source>Settings</source>
         <translation>Impostazioni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="65"/>
+        <location filename="../qml/pages/MainPage.qml" line="72"/>
         <source>Add account</source>
         <translation>Aggiungi account</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="77"/>
+        <location filename="../qml/pages/MainPage.qml" line="84"/>
         <source>Please add at least one account for a Transifex instance.</source>
         <translation>Aggiungi almeno un account </translation>
     </message>
@@ -2293,129 +2329,124 @@
 <context>
     <name>PaypalChooser</name>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="125"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="127"/>
         <source>Currency</source>
         <translation>Valuta</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="126"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="128"/>
         <source>Euro</source>
         <translation>Euro</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="127"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="129"/>
         <source>US Dollar</source>
         <translation>Dollaro USA</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="128"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="130"/>
         <source>Australian Dollar</source>
         <translation>Dollaro australiano</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="129"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="131"/>
         <source>Brazilian Real</source>
         <translation>Real brasiliano</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="130"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="132"/>
         <source>Pound Sterling</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="131"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="133"/>
         <source>Danish Krone</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="132"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="134"/>
         <source>Hong Kong Dollar</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="133"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="135"/>
         <source>Israel New Shekel</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="134"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="136"/>
         <source>Japanese Yen</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="135"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="137"/>
         <source>Canadian Dollar</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="136"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="138"/>
         <source>Mexican Peso</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="137"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="139"/>
         <source>New Taiwan Dollar</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="138"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="140"/>
         <source>New Zealand Dollar</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="139"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
         <source>Norwegian Krone</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="140"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="142"/>
         <source>Philippine Peso</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="143"/>
         <source>Polish Zloty</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="142"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="144"/>
         <source>Russian Ruble</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="143"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="145"/>
         <source>Swedish Krone</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="144"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="146"/>
         <source>Swiss Franc</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="145"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="147"/>
         <source>Singapore Dollar</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="146"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="148"/>
         <source>Thai Baht</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="147"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="149"/>
         <source>Czech Koruna</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="148"/>
+        <location filename="../qml/BTComponents/PaypalChooser.qml" line="150"/>
         <source>Hungarian Forint</source>
         <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../qml/BTComponents/PaypalChooser.qml" line="155"/>
-        <source>Donate via PayPal</source>
-        <translation>Dona con PayPal</translation>
     </message>
 </context>
 <context>

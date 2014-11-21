@@ -93,7 +93,8 @@ OTHER_FILES += \
     qml/models/ChangelogModel.qml \
     qml/models/ContributorsModel.qml \
     qml/BTComponents/AboutPage.qml \
-    qml/BTComponents/ChangelogDelegate.qml
+    qml/BTComponents/ChangelogDelegate.qml \
+    qml/pages/OldAbout.qml
 
 HEADERS += \
     src/globals.h \
