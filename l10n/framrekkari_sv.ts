@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.0">
 <context>
-    <name></name>
+    <name/>
     <message id="components-ph-search">
         <location filename="../qml/common/OpenSlugField.qml" line="58"/>
         <source>Search</source>
@@ -331,10 +329,7 @@
     <message numerus="yes">
         <location filename="../qml/cover/CoverPage.qml" line="63"/>
         <source>%n language(s)</source>
-        <translation>
-            <numerusform>%n översättning</numerusform>
-            <numerusform>%n översättningar</numerusform>
-        </translation>
+        <translation><numerusform>%n översättning</numerusform><numerusform>%n översättningar</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="159"/>
@@ -1707,7 +1702,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="298"/>
         <source>Russian (Russia)</source>
-        <translation></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="299"/>
@@ -1722,7 +1717,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="301"/>
         <source>Sardinian</source>
-        <translation></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="302"/>
@@ -2527,10 +2522,7 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
         <source>%n string(s)</source>
-        <translation>
-            <numerusform>%n sträng</numerusform>
-            <numerusform>%n strängar</numerusform>
-        </translation>
+        <translation><numerusform>%n sträng</numerusform><numerusform>%n strängar</numerusform></translation>
     </message>
 </context>
 <context>
@@ -2643,15 +2635,12 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="117"/>
         <source>%n string(s)</source>
-        <translation>
-            <numerusform>%n sträng</numerusform>
-            <numerusform>%n strängar</numerusform>
-        </translation>
+        <translation><numerusform>%n sträng</numerusform><numerusform>%n strängar</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>
         <source>dd.MM.yy hh:mmAP</source>
-        <translation></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

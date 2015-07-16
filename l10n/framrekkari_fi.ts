@@ -213,17 +213,17 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>Parannettu</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>Korjattu</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation type="unfinished"/>
+        <translation>Huomio</translation>
     </message>
 </context>
 <context>

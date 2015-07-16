@@ -18,17 +18,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Rilasciato sotto licenza &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>Monaco</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>Germania</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="38"/>
         <source>Leave a message (English or German):</source>
-        <translation>Lascia un messaggio (inglese o tedesco):</translation>
+        <translation>Invia un messaggio (inglese o tedesco):</translation>
     </message>
 </context>
 <context>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>Pagina iniziale</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
         <source>3rd party licenses</source>
-        <translation type="unfinished"/>
+        <translation>Licenze di terze parti</translation>
     </message>
 </context>
 <context>
@@ -99,7 +99,7 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="50"/>
         <source>Transifex is a collaborative online translation platform. In order to use it you need an account on &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</source>
-        <translation>Transifex è una piattaforma di traduzione online. Per usarlo hai bisogno di un account su &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</translation>
+        <translation>Transifex è una piattaforma online di traduzione collaborativa. Per usarlo hai bisogno di un account su &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
@@ -119,7 +119,7 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
         <source>Display name</source>
-        <translation>Mostra nome</translation>
+        <translation>Nome visualizzato</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
-        <translation type="unfinished"/>
+        <translation>Ignora gli errori SSL sono quando sei veramente sicuro di quel che stai facendo. (Al momento non c&apos;è un sistema per gestire i certificati SSL. Per ora è necessario ignorare gli errori SSL se si usa un certificato auto-firmato.)</translation>
     </message>
 </context>
 <context>
@@ -157,22 +157,22 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="72"/>
         <source>Project slug</source>
-        <translation type="unfinished"/>
+        <translation>Nome progetto</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="84"/>
         <source>You need to enter the exact and correct project slug (project name used in the browser URL).</source>
-        <translation type="unfinished"/>
+        <translation>È necessario inserire il nome esatto del progetto (quello utilizzato nell&apos;URL del browser).</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Source lang:</source>
-        <translation>Lingua sorgente:</translation>
+        <translation>Lingua di origine:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Slug:</source>
-        <translation type="unfinished"/>
+        <translation>Progetto:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="154"/>
@@ -208,22 +208,22 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation>Nuova</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>Migliorata</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>Corretta</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation type="unfinished"/>
+        <translation>Nota</translation>
     </message>
 </context>
 <context>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="152"/>
         <source>Sina Weibo</source>
-        <translation type="unfinished"/>
+        <translation>Sina Weibo</translation>
     </message>
 </context>
 <context>
@@ -252,7 +252,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
-        <translation>Sviluppatore principale ed ideatore</translation>
+        <translation>Sviluppatore principale, ideatore</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="27"/>
@@ -262,7 +262,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="102"/>
         <source>Danish translation</source>
-        <translation>traduzione danese</translation>
+        <translation>Traduzione danese</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="37"/>
@@ -284,44 +284,44 @@
         <location filename="../qml/models/ContributorsModel.qml" line="36"/>
         <location filename="../qml/models/ContributorsModel.qml" line="69"/>
         <source>French translation</source>
-        <translation>traduzione francese</translation>
+        <translation>Traduzione francese</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation>traduzione catalano</translation>
+        <translation>Traduzione catalana</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="51"/>
         <location filename="../qml/models/ContributorsModel.qml" line="77"/>
         <source>Finnish translation</source>
-        <translation>traduzione finlandese</translation>
+        <translation>Traduzione finlandese</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation>traduzione ceca</translation>
+        <translation>Traduzione ceca</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation>traduzione olandese</translation>
+        <translation>Traduzione olandese</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="83"/>
         <source>Hungarian translation</source>
-        <translation>traduzione ungherese</translation>
+        <translation>Traduzione ungherese</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="90"/>
         <location filename="../qml/models/ContributorsModel.qml" line="113"/>
         <source>Polish translation</source>
-        <translation>traduzione polacco</translation>
+        <translation>Traduzione polacca</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="96"/>
         <source>Spanish translation</source>
-        <translation>traduzione spagnolo</translation>
+        <translation>Traduzione spagnola</translation>
     </message>
 </context>
 <context>
@@ -343,7 +343,7 @@
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="76"/>
         <source>Welcome to %1 %2</source>
         <comment>First is app name, second is version number</comment>
-        <translation>Benvenuto in %1 %2</translation>
+        <translation>Benvenuto a %1 %2</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="91"/>
@@ -376,17 +376,17 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation type="unfinished"/>
+        <translation>Dopo l&apos;avvio di Framrekkari vedrai la pagina principale, che contiene i tuoi account. Al primo avvio sarà vuota. Tira il menu superiore e scegli &lt;i&gt;Aggiungi account&lt;/i&gt;, per aggiungere un nuovo account. Dopo averlo aggiunto, esso apparirà nella lista e sarà possibile toccarlo per aprirlo. La pagina dell&apos;account dà accesso alle funzionalità di ricerca del servizio e permette di sfogliare i vari progetti.&lt;br&gt;&lt;br&gt;Tocca un progetto per aprirlo. La pagina del progetto mostra le lingue disponibili e le informazioni generali riguardo al progetto. Toccare un progetto aprirà le risorse di quel progetto. Toccando una risorsa si apre la lista delle stringhe di origine. Tocca una stringa per aprirla e iniziare a tradurre. Chiudere la pagina di una stringa o passare alle stringhe precedenti o successive salva automaticamente le tue modifiche.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
         <source>Transifex API limitations</source>
-        <translation type="unfinished"/>
+        <translation>Limiti dell&apos;API di Transifex</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="64"/>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;API di Transifex ha alcuni limiti. Il più grande è che dà accesso alle informazioni sulle lingue e le risorse solo ai proprietari e ai manutentori ma non ai normali utenti. Quindi, non è possibile stabilire se un utente abbia o meno il diritto di modificarne i contenuti. Dovresti sapere per conto tuo se sei il responsabile della lingua di un progetto. Se non hai accesso alla modifica di qualcosa, otterrai un messaggio di errore, ma è impossibile per Framrekkari verificarlo in anticipo.&lt;br&gt;&lt;br&gt;Il secondo grosso limite è che non c&apos;è una funzione di ricerca. Dovrai inserire il nome esatto del progetto (lo stesso usato nell&apos;URL del browser) per aprire un progetto direttamente, o sfogliare tra tutti i progetti disponibili.</translation>
     </message>
 </context>
 <context>
@@ -402,572 +402,572 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="39"/>
         <source>Acoli</source>
-        <translation type="unfinished"/>
+        <translation>Acoli</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="40"/>
         <source>Adyghe</source>
-        <translation type="unfinished"/>
+        <translation>Adighé</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="41"/>
         <source>Afrikaans</source>
-        <translation type="unfinished"/>
+        <translation>Afrikaans</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="42"/>
         <source>Afrikaans (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>Afrikaans (Sudafrica)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="43"/>
         <source>Akan</source>
-        <translation type="unfinished"/>
+        <translation>Akan</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="44"/>
         <source>Albanian</source>
-        <translation type="unfinished"/>
+        <translation>Albanese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="45"/>
         <source>Albanian (Albania)</source>
-        <translation type="unfinished"/>
+        <translation>Albanese (Albania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="46"/>
         <source>Albanian Gheg</source>
-        <translation type="unfinished"/>
+        <translation>Albanese Ghego</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="47"/>
         <source>Amharic</source>
-        <translation type="unfinished"/>
+        <translation>Amarico</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="48"/>
         <source>Amharic (Ethiopia)</source>
-        <translation type="unfinished"/>
+        <translation>Amarico (Etiopia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="49"/>
         <source>Arabic</source>
-        <translation type="unfinished"/>
+        <translation>Arabo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="50"/>
         <source>Arabic (Egypt)</source>
-        <translation type="unfinished"/>
+        <translation>Arabo (Egitto)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="51"/>
         <source>Arabic (Saudi Arabia)</source>
-        <translation type="unfinished"/>
+        <translation>Arabo (Arabia Saudita)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="52"/>
         <source>Arabic (Sudan)</source>
-        <translation type="unfinished"/>
+        <translation>Arabo (Sudan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="53"/>
         <source>Arabic (Syria)</source>
-        <translation type="unfinished"/>
+        <translation>Arabo (Siria)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="54"/>
         <source>Arabic (Unitag)</source>
-        <translation type="unfinished"/>
+        <translation>Arabo (Unitag)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="55"/>
         <source>Aragonese</source>
-        <translation type="unfinished"/>
+        <translation>Aragonese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="56"/>
         <source>Armenian</source>
-        <translation type="unfinished"/>
+        <translation>Armeno</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="57"/>
         <source>Armenian (Armenia)</source>
-        <translation type="unfinished"/>
+        <translation>Armeno (Armenia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="58"/>
         <source>Assamese</source>
-        <translation type="unfinished"/>
+        <translation>Assamese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="59"/>
         <source>Assamese (India)</source>
-        <translation type="unfinished"/>
+        <translation>Assamese (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="60"/>
         <source>Asturian</source>
-        <translation type="unfinished"/>
+        <translation>Asturiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="61"/>
         <source>Asturian (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Asturiano (Spagna)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="62"/>
         <source>Azerbaijani</source>
-        <translation type="unfinished"/>
+        <translation>Azero</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="63"/>
         <source>Azerbaijani (Azerbaijan)</source>
-        <translation type="unfinished"/>
+        <translation>Azero (Azerbaigian)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="64"/>
         <source>Azerbaijani (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Azero (Latino)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="65"/>
         <source>Balochi</source>
-        <translation type="unfinished"/>
+        <translation>Baluci</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="66"/>
         <source>Bashkir</source>
-        <translation type="unfinished"/>
+        <translation>Baschiro</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="67"/>
         <source>Basque</source>
-        <translation type="unfinished"/>
+        <translation>Basco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="68"/>
         <source>Basque (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Basco (Spagna)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="69"/>
         <source>Belarusian</source>
-        <translation type="unfinished"/>
+        <translation>Bielorusso</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="70"/>
         <source>Belarusian (Belarus)</source>
-        <translation type="unfinished"/>
+        <translation>Bielorusso (Bielorussia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="71"/>
         <source>Belarusian (Tarask)</source>
-        <translation type="unfinished"/>
+        <translation>Bielorusso (Tarask)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="72"/>
         <source>Bengali</source>
-        <translation type="unfinished"/>
+        <translation>Bengalese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="73"/>
         <source>Bengali (Bangladesh)</source>
-        <translation type="unfinished"/>
+        <translation>Bengalese (Bangladesh)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="74"/>
         <source>Bengali (India)</source>
-        <translation type="unfinished"/>
+        <translation>Bengalese (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="75"/>
         <source>Bodo</source>
-        <translation type="unfinished"/>
+        <translation>Bodo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="76"/>
         <source>Bosnian</source>
-        <translation type="unfinished"/>
+        <translation>Bosniaco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="77"/>
         <source>Bosnian (Bosnia and Herzegovina)</source>
-        <translation type="unfinished"/>
+        <translation>Bosniaco (Bosnia ed Erzegovina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="78"/>
         <source>Breton</source>
-        <translation type="unfinished"/>
+        <translation>Bretone</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="79"/>
         <source>Bulgarian</source>
-        <translation type="unfinished"/>
+        <translation>Bulgaro</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="80"/>
         <source>Bulgarian (Bulgaria)</source>
-        <translation type="unfinished"/>
+        <translation>Bulgaro (Bulgaria)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="81"/>
         <source>Burmese</source>
-        <translation type="unfinished"/>
+        <translation>Birmano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="82"/>
         <source>Burmese (Myanmar)</source>
-        <translation type="unfinished"/>
+        <translation>Birmano (Birmania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="83"/>
         <source>Catalan</source>
-        <translation type="unfinished"/>
+        <translation>Catalano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="84"/>
         <source>Catalan (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Catalano (Spagna)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="85"/>
         <source>Catalan (Valencian)</source>
-        <translation type="unfinished"/>
+        <translation>Catalano (Valenziano)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="86"/>
         <source>Central Atlas Tamazight</source>
-        <translation type="unfinished"/>
+        <translation>Tamazight del Marocco Centrale</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="87"/>
         <source>Chhattisgarhi</source>
-        <translation type="unfinished"/>
+        <translation>Chhattisgarhi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="88"/>
         <source>Chiga</source>
-        <translation type="unfinished"/>
+        <translation>Kiga</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="89"/>
         <source>Chinese</source>
-        <translation type="unfinished"/>
+        <translation>Cinese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="90"/>
         <source>Chinese (China)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Cina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="91"/>
         <source>Chinese (China) (GB2312)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Cina) (GB2312)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="92"/>
         <source>Chinese (Gan)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Gan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="93"/>
         <source>Chinese (Hakka)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Hakka)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="94"/>
         <source>Chinese (Hong Kong)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Hong Kong)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="95"/>
         <source>Chinese (Huizhou)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Huizhou)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="96"/>
         <source>Chinese (Jinyu)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Jinyu)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="97"/>
         <source>Chinese (Literary)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Letterario)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="98"/>
         <source>Chinese (Mandarin)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Mandarino)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="99"/>
         <source>Chinese (Min Bei)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Min Bei)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="100"/>
         <source>Chinese (Min Dong)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Min Dong)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="101"/>
         <source>Chinese (Min Nan)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Min Nan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="102"/>
         <source>Chinese (Min Zhong)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Min Zhong)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="103"/>
         <source>Chinese (Pu-Xian)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Pu-Xian)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="104"/>
         <source>Chinese (Taiwan)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Taiwan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="105"/>
         <source>Chinese (Taiwan) (Big5) </source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Taiwan) (Big5) </translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="106"/>
         <source>Chinese (Wu)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Wu)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="107"/>
         <source>Chinese (Xiang)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Xiang)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="108"/>
         <source>Chinese (Yue)</source>
-        <translation type="unfinished"/>
+        <translation>Cinese (Yue)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="109"/>
         <source>Chuvash</source>
-        <translation type="unfinished"/>
+        <translation>Ciuvascio</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="110"/>
         <source>Colognian</source>
-        <translation type="unfinished"/>
+        <translation>Coloniese (Kölsch)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="111"/>
         <source>Cornish</source>
-        <translation type="unfinished"/>
+        <translation>Cornico</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="112"/>
         <source>Corsican</source>
-        <translation type="unfinished"/>
+        <translation>Corso</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="113"/>
         <source>Crimean Turkish</source>
-        <translation type="unfinished"/>
+        <translation>Tataro (Crimea)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="114"/>
         <source>Croatian</source>
-        <translation type="unfinished"/>
+        <translation>Croato</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="115"/>
         <source>Croatian (Croatia)</source>
-        <translation type="unfinished"/>
+        <translation>Croato (Croazia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="116"/>
         <source>Czech</source>
-        <translation type="unfinished"/>
+        <translation>Ceco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="117"/>
         <source>Czech (Czech Republic)</source>
-        <translation type="unfinished"/>
+        <translation>Ceco (Repubblica Ceca)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="118"/>
         <source>Danish</source>
-        <translation type="unfinished"/>
+        <translation>Danese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="119"/>
         <source>Danish (Denmark)</source>
-        <translation type="unfinished"/>
+        <translation>Danese (Danimarca)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="120"/>
         <source>Divehi</source>
-        <translation type="unfinished"/>
+        <translation>Maldiviano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="121"/>
         <source>Dutch</source>
-        <translation type="unfinished"/>
+        <translation>Olandese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="122"/>
         <source>Dutch (Belgium)</source>
-        <translation type="unfinished"/>
+        <translation>Olandese (Belgio)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="123"/>
         <source>Dutch (Netherlands)</source>
-        <translation type="unfinished"/>
+        <translation>Olandese (Olanda)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="124"/>
         <source>Dzongkha</source>
-        <translation type="unfinished"/>
+        <translation>Dzongkha</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="125"/>
         <source>Dzongkha (Bhutan)</source>
-        <translation type="unfinished"/>
+        <translation>Dzongkha (Bhutan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="126"/>
         <source>English</source>
-        <translation type="unfinished"/>
+        <translation>Inglese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="127"/>
         <source>English (Australia)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Australia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="128"/>
         <source>English (Canada)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Canada)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="129"/>
         <source>English (Estonia)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Estonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="130"/>
         <source>English (Hong Kong)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Hong Kong)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="131"/>
         <source>English (Ireland)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Irlanda)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="132"/>
         <source>English (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Lettonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="133"/>
         <source>English (Lithuania)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Lituania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="134"/>
         <source>English (New Zealand)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Nuova Zelanda)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="135"/>
         <source>English (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Sudafrica)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="136"/>
         <source>English (Sweden)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Svezia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="137"/>
         <source>English (United Kingdom)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Regno Unito)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="138"/>
         <source>English (United States)</source>
-        <translation type="unfinished"/>
+        <translation>Inglese (Stati Uniti d&apos;America)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="139"/>
         <source>Erzya</source>
-        <translation type="unfinished"/>
+        <translation>Erza</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="140"/>
         <source>Esperanto</source>
-        <translation type="unfinished"/>
+        <translation>Esperanto</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="141"/>
         <source>Estonian</source>
-        <translation type="unfinished"/>
+        <translation>Estone</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="142"/>
         <source>Estonian (Estonia)</source>
-        <translation type="unfinished"/>
+        <translation>Estone (Estonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="143"/>
         <source>Faroese</source>
-        <translation type="unfinished"/>
+        <translation>Faroese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="144"/>
         <source>Faroese (Faroe Islands)</source>
-        <translation type="unfinished"/>
+        <translation>Faroese (Isole Faroe)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="145"/>
         <source>Filipino</source>
-        <translation type="unfinished"/>
+        <translation>Filippino</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="146"/>
         <source>Finnish</source>
-        <translation type="unfinished"/>
+        <translation>Finlandese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="147"/>
         <source>Finnish (Finland)</source>
-        <translation type="unfinished"/>
+        <translation>Finlandese (Finlandia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="149"/>
         <source>French</source>
-        <translation type="unfinished"/>
+        <translation>Francese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="150"/>
         <source>French (Belgium)</source>
-        <translation type="unfinished"/>
+        <translation>Francese (Belgio)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="151"/>
         <source>French (Canada)</source>
-        <translation type="unfinished"/>
+        <translation>Francese (Canada)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="152"/>
         <source>French (France)</source>
-        <translation type="unfinished"/>
+        <translation>Francese (Francia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="153"/>
         <source>French (Switzerland)</source>
-        <translation type="unfinished"/>
+        <translation>Francese (Svizzera)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="154"/>
@@ -977,187 +977,187 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="155"/>
         <source>Fulah</source>
-        <translation type="unfinished"/>
+        <translation>Fulah</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="156"/>
         <source>Fulah (Senegal)</source>
-        <translation type="unfinished"/>
+        <translation>Fulah (Senegal)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="157"/>
         <source>Gaelic, Scottish</source>
-        <translation type="unfinished"/>
+        <translation>Gaelico scozzese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="158"/>
         <source>Galician</source>
-        <translation type="unfinished"/>
+        <translation>Galiziano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="159"/>
         <source>Galician (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Galiziano (Spagna)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="160"/>
         <source>Ganda</source>
-        <translation type="unfinished"/>
+        <translation>Ganda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="161"/>
         <source>Georgian</source>
-        <translation type="unfinished"/>
+        <translation>Georgiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="162"/>
         <source>Georgian (Georgia)</source>
-        <translation type="unfinished"/>
+        <translation>Georgiano (Georgia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="163"/>
         <source>German</source>
-        <translation type="unfinished"/>
+        <translation>Tedesco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="164"/>
         <source>German (Austria)</source>
-        <translation type="unfinished"/>
+        <translation>Tedesco (Austria)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="165"/>
         <source>German (Germany)</source>
-        <translation type="unfinished"/>
+        <translation>Tedesco (Germania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="166"/>
         <source>German (Switzerland)</source>
-        <translation type="unfinished"/>
+        <translation>Tedesco (Svizzera)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="167"/>
         <source>Greek</source>
-        <translation type="unfinished"/>
+        <translation>Greco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="168"/>
         <source>Greek (Greece)</source>
-        <translation type="unfinished"/>
+        <translation>Greco (Grecia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="169"/>
         <source>Greenlandic</source>
-        <translation type="unfinished"/>
+        <translation>Groenlandese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="170"/>
         <source>Gujarati</source>
-        <translation type="unfinished"/>
+        <translation>Gujarati</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="171"/>
         <source>Gujarati (India)</source>
-        <translation type="unfinished"/>
+        <translation>Gujarati (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="172"/>
         <source>Gun</source>
-        <translation type="unfinished"/>
+        <translation>Gun</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="173"/>
         <source>Haitian (Haitian Creole)</source>
-        <translation type="unfinished"/>
+        <translation>Creolo Haitiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="174"/>
         <source>Haitian (Haitian Creole) (Haiti)</source>
-        <translation type="unfinished"/>
+        <translation>Creolo Haitiano (Haiti)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="175"/>
         <source>Hausa</source>
-        <translation type="unfinished"/>
+        <translation>Hausa</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="176"/>
         <source>Hebrew</source>
-        <translation type="unfinished"/>
+        <translation>Ebreo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="177"/>
         <source>Hebrew (Israel)</source>
-        <translation type="unfinished"/>
+        <translation>Ebreo (Israele)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="178"/>
         <source>Hindi</source>
-        <translation type="unfinished"/>
+        <translation>Hindi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="179"/>
         <source>Hindi (India)</source>
-        <translation type="unfinished"/>
+        <translation>Hindi (india)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="180"/>
         <source>Hungarian</source>
-        <translation type="unfinished"/>
+        <translation>Ungherese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="181"/>
         <source>Hungarian (Hungary)</source>
-        <translation type="unfinished"/>
+        <translation>Ungherese (Ungheria)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="182"/>
         <source>Icelandic</source>
-        <translation type="unfinished"/>
+        <translation>Islandese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="183"/>
         <source>Icelandic (Iceland)</source>
-        <translation type="unfinished"/>
+        <translation>Islandese (Islanda)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="184"/>
         <source>Ido</source>
-        <translation type="unfinished"/>
+        <translation>Ido</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="185"/>
         <source>Igbo</source>
-        <translation type="unfinished"/>
+        <translation>Igbo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="186"/>
         <source>Iloko</source>
-        <translation type="unfinished"/>
+        <translation>Iloko</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="187"/>
         <source>Indonesian</source>
-        <translation type="unfinished"/>
+        <translation>Indonesiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="188"/>
         <source>Indonesian (Indonesia)</source>
-        <translation type="unfinished"/>
+        <translation>Indonesiano (Indonesia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="189"/>
         <source>Interlingua</source>
-        <translation type="unfinished"/>
+        <translation>Interlingua</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="190"/>
         <source>Irish</source>
-        <translation type="unfinished"/>
+        <translation>Irlandese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="191"/>
         <source>Irish (Ireland)</source>
-        <translation type="unfinished"/>
+        <translation>Irlandese (Irlanda)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="192"/>
@@ -1172,1077 +1172,1077 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="194"/>
         <source>Japanese</source>
-        <translation type="unfinished"/>
+        <translation>Giapponese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="195"/>
         <source>Japanese (Japan)</source>
-        <translation type="unfinished"/>
+        <translation>Giapponese (Giappone)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="196"/>
         <source>Javanese</source>
-        <translation type="unfinished"/>
+        <translation>Giavanese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="197"/>
         <source>Kabyle</source>
-        <translation type="unfinished"/>
+        <translation>Kabyle</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="198"/>
         <source>Kannada</source>
-        <translation type="unfinished"/>
+        <translation>Kannada</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="199"/>
         <source>Kannada (India)</source>
-        <translation type="unfinished"/>
+        <translation>Kannada (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="200"/>
         <source>Kapampangan</source>
-        <translation type="unfinished"/>
+        <translation>Kapampangan</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="201"/>
         <source>Kashmiri</source>
-        <translation type="unfinished"/>
+        <translation>Kashmiri</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="202"/>
         <source>Kashmiri (India)</source>
-        <translation type="unfinished"/>
+        <translation>Kashmiri (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="203"/>
         <source>Kashubian</source>
-        <translation type="unfinished"/>
+        <translation>Kashubian</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="204"/>
         <source>Kazakh</source>
-        <translation type="unfinished"/>
+        <translation>Kazako</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="205"/>
         <source>Kazakh (Arabic)</source>
-        <translation type="unfinished"/>
+        <translation>Kazako (Arabo)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="206"/>
         <source>Kazakh (Cyrillic)</source>
-        <translation type="unfinished"/>
+        <translation>Kazako (Cirilico)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="207"/>
         <source>Kazakh (Kazakhstan)</source>
-        <translation type="unfinished"/>
+        <translation>Kazako (Kazakistan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="208"/>
         <source>Kazakh (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Kazako (Latino)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="209"/>
         <source>Khmer</source>
-        <translation type="unfinished"/>
+        <translation>Khmer</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="210"/>
         <source>Khmer (Cambodia)</source>
-        <translation type="unfinished"/>
+        <translation>Khmer (Cambogia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="211"/>
         <source>Kinyarwanda</source>
-        <translation type="unfinished"/>
+        <translation>Kinyarwanda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="212"/>
         <source>Kirgyz</source>
-        <translation type="unfinished"/>
+        <translation>Kirgyz</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="213"/>
         <source>Klingon</source>
-        <translation type="unfinished"/>
+        <translation>Klingon</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="214"/>
         <source>Korean</source>
-        <translation type="unfinished"/>
+        <translation>Coreano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="215"/>
         <source>Korean (Korea)</source>
-        <translation type="unfinished"/>
+        <translation>Coreano (Corea)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="216"/>
         <source>Kurdish</source>
-        <translation type="unfinished"/>
+        <translation>Curdo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="217"/>
         <source>Kurdish (Iraq)</source>
-        <translation type="unfinished"/>
+        <translation>Curdo (Iraq)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="218"/>
         <source>Ladino</source>
-        <translation type="unfinished"/>
+        <translation>Giudesmo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="219"/>
         <source>Lao</source>
-        <translation type="unfinished"/>
+        <translation>Lao</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="220"/>
         <source>Lao (Laos)</source>
-        <translation type="unfinished"/>
+        <translation>Lao (Laos)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="221"/>
         <source>Latgalian</source>
-        <translation type="unfinished"/>
+        <translation>Letgalliano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="222"/>
         <source>Latin</source>
-        <translation type="unfinished"/>
+        <translation>Latino</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="223"/>
         <source>Latvian</source>
-        <translation type="unfinished"/>
+        <translation>Lettone</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="224"/>
         <source>Latvian (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>Lettone (Lettonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="225"/>
         <source>Lezghian</source>
-        <translation type="unfinished"/>
+        <translation>Lezghiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="226"/>
         <source>Ligurian</source>
-        <translation type="unfinished"/>
+        <translation>Ligure</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="227"/>
         <source>Limburgian</source>
-        <translation type="unfinished"/>
+        <translation>Limburghese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="228"/>
         <source>Lingala</source>
-        <translation type="unfinished"/>
+        <translation>Lingala</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="229"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"/>
+        <translation>Lituano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="230"/>
         <source>Lithuanian (Lithuania)</source>
-        <translation type="unfinished"/>
+        <translation>Lituano (Lituania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="231"/>
         <source>Lojban</source>
-        <translation type="unfinished"/>
+        <translation>Lojban</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="232"/>
         <source>LOLCAT English</source>
-        <translation type="unfinished"/>
+        <translation>Inglese LOLCAT</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="233"/>
         <source>Lombard</source>
-        <translation type="unfinished"/>
+        <translation>Lombardo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="234"/>
         <source>Lower Sorbian</source>
-        <translation type="unfinished"/>
+        <translation>Sorabo Inferiore</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="235"/>
         <source>Low German</source>
-        <translation type="unfinished"/>
+        <translation>Basso Sassone</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="236"/>
         <source>Luxembourgish</source>
-        <translation type="unfinished"/>
+        <translation>Lussemburghese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="237"/>
         <source>Macedonian</source>
-        <translation type="unfinished"/>
+        <translation>Macedone</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="238"/>
         <source>Macedonian (Macedonia)</source>
-        <translation type="unfinished"/>
+        <translation>Macedone (Macedonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="239"/>
         <source>Maithili</source>
-        <translation type="unfinished"/>
+        <translation>Maithili</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="240"/>
         <source>Malagasy</source>
-        <translation type="unfinished"/>
+        <translation>Malagasy</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="241"/>
         <source>Malay</source>
-        <translation type="unfinished"/>
+        <translation>Malay</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="242"/>
         <source>Malayalam</source>
-        <translation type="unfinished"/>
+        <translation>Malayalam</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="243"/>
         <source>Malayalam (India)</source>
-        <translation type="unfinished"/>
+        <translation>Malayalam (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="244"/>
         <source>Malay (Malaysia)</source>
-        <translation type="unfinished"/>
+        <translation>Malay (Malesia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="245"/>
         <source>Maltese</source>
-        <translation type="unfinished"/>
+        <translation>Maltese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="246"/>
         <source>Maltese (Malta)</source>
-        <translation type="unfinished"/>
+        <translation>Maltese (Malta)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="247"/>
         <source>Maori</source>
-        <translation type="unfinished"/>
+        <translation>Maori</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="248"/>
         <source>Mapudungun</source>
-        <translation type="unfinished"/>
+        <translation>Mapudungun</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="249"/>
         <source>Marathi</source>
-        <translation type="unfinished"/>
+        <translation>Marathi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="250"/>
         <source>Marathi (India)</source>
-        <translation type="unfinished"/>
+        <translation>Marathi (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="251"/>
         <source>Mirandese</source>
-        <translation type="unfinished"/>
+        <translation>Mirandese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="252"/>
         <source>Mongolian</source>
-        <translation type="unfinished"/>
+        <translation>Mongolo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="253"/>
         <source>Mongolian (Mongolia)</source>
-        <translation type="unfinished"/>
+        <translation>Mongolo (Mongolia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="254"/>
         <source>Nahuatl</source>
-        <translation type="unfinished"/>
+        <translation>Nahuatl</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="255"/>
         <source>Navajo</source>
-        <translation type="unfinished"/>
+        <translation>Navajo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="256"/>
         <source>Ndebele, South</source>
-        <translation type="unfinished"/>
+        <translation>Ndebele Meridionale</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="257"/>
         <source>Neapolitan</source>
-        <translation type="unfinished"/>
+        <translation>Napoletano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="258"/>
         <source>Nepali</source>
-        <translation type="unfinished"/>
+        <translation>Nepali</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="259"/>
         <source>Nepali (Nepal)</source>
-        <translation type="unfinished"/>
+        <translation>Nepali (Nepal)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="260"/>
         <source>Nias</source>
-        <translation type="unfinished"/>
+        <translation>Nias</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="261"/>
         <source>N&apos;ko</source>
-        <translation type="unfinished"/>
+        <translation>N&apos;ko</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="262"/>
         <source>Northern Sami</source>
-        <translation type="unfinished"/>
+        <translation>Sami Settentrionale</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="263"/>
         <source>Northern Sotho</source>
-        <translation type="unfinished"/>
+        <translation>Sotho Settentrionale</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="264"/>
         <source>Norwegian</source>
-        <translation type="unfinished"/>
+        <translation>Norvegese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="148"/>
         <source>Franco-Provençal (Arpitan)</source>
-        <translation type="unfinished"/>
+        <translation>Franco-Provenzale (Arpitano)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="38"/>
         <source>System default</source>
-        <translation type="unfinished"/>
+        <translation>Predefinita di sistema</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="265"/>
         <source>Norwegian Bokmål</source>
-        <translation type="unfinished"/>
+        <translation>Bokmål Norvegese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="266"/>
         <source>Norwegian Bokmål (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>Bokmål Norvegese (Norvegia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="267"/>
         <source>Norwegian (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>Norvegese (Norvegia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="268"/>
         <source>Norwegian Nynorsk</source>
-        <translation type="unfinished"/>
+        <translation>Nynorsk Norvegese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="269"/>
         <source>Norwegian Nynorsk (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>Nynorsk Norvegese (Norvegia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="270"/>
         <source>Nyanja</source>
-        <translation type="unfinished"/>
+        <translation>Nyanja</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="271"/>
         <source>Occitan (post 1500)</source>
-        <translation type="unfinished"/>
+        <translation>Occitano (post 1500)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="272"/>
         <source>Oriya</source>
-        <translation type="unfinished"/>
+        <translation>Oriya</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="273"/>
         <source>Oriya (India)</source>
-        <translation type="unfinished"/>
+        <translation>Oriya (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="274"/>
         <source>Oromo</source>
-        <translation type="unfinished"/>
+        <translation>Oromo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="275"/>
         <source>Ossetic</source>
-        <translation type="unfinished"/>
+        <translation>Ossetico</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="276"/>
         <source>Palatinate German</source>
-        <translation type="unfinished"/>
+        <translation>Tedesco palatino</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="277"/>
         <source>Panjabi (Punjabi)</source>
-        <translation type="unfinished"/>
+        <translation>Panjabi (Punjabi)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="278"/>
         <source>Panjabi (Punjabi) (India)</source>
-        <translation type="unfinished"/>
+        <translation>Panjabi (Punjabi) (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="279"/>
         <source>Papiamento</source>
-        <translation type="unfinished"/>
+        <translation>Papiamento</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="280"/>
         <source>Persian</source>
-        <translation type="unfinished"/>
+        <translation>Persiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="281"/>
         <source>Persian (Iran)</source>
-        <translation type="unfinished"/>
+        <translation>Persiano (Iran)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="282"/>
         <source>Piemontese</source>
-        <translation type="unfinished"/>
+        <translation>Piemontese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="283"/>
         <source>Pirate English</source>
-        <translation type="unfinished"/>
+        <translation>Inglese piratesco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="284"/>
         <source>Polish</source>
-        <translation type="unfinished"/>
+        <translation>Polacco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="285"/>
         <source>Polish (Poland)</source>
-        <translation type="unfinished"/>
+        <translation>Polacco (Polonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="286"/>
         <source>Portuguese</source>
-        <translation type="unfinished"/>
+        <translation>Portoghese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="287"/>
         <source>Portuguese (Brazil)</source>
-        <translation type="unfinished"/>
+        <translation>Portoghese (Brasile)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="288"/>
         <source>Portuguese (Portugal)</source>
-        <translation type="unfinished"/>
+        <translation>Portoghese (Portogallo)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="289"/>
         <source>Pushto</source>
-        <translation type="unfinished"/>
+        <translation>Pushto</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="290"/>
         <source>Romanian</source>
-        <translation type="unfinished"/>
+        <translation>Rumeno</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="291"/>
         <source>Romanian (Romania)</source>
-        <translation type="unfinished"/>
+        <translation>Rumeno (Romania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="292"/>
         <source>Romansh</source>
-        <translation type="unfinished"/>
+        <translation>Romancio</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="293"/>
         <source>Russian</source>
-        <translation type="unfinished"/>
+        <translation>Russo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="294"/>
         <source>Russian (Estonia)</source>
-        <translation type="unfinished"/>
+        <translation>Russo (Estonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="295"/>
         <source>Russian (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>Russo (Lettonia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="296"/>
         <source>Russian (Lithuania)</source>
-        <translation type="unfinished"/>
+        <translation>Russo (Lituania)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="297"/>
         <source>Russian Petrine orthography</source>
-        <translation type="unfinished"/>
+        <translation>Russo (ortografia petrina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="298"/>
         <source>Russian (Russia)</source>
-        <translation type="unfinished"/>
+        <translation>Russo (Russia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="299"/>
         <source>Sakha (Yakut)</source>
-        <translation type="unfinished"/>
+        <translation>Sakha (Yakut)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="300"/>
         <source>Samoan</source>
-        <translation type="unfinished"/>
+        <translation>Samoano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="301"/>
         <source>Sardinian</source>
-        <translation type="unfinished"/>
+        <translation>Sardo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="302"/>
         <source>Scots</source>
-        <translation type="unfinished"/>
+        <translation>Scozzese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="303"/>
         <source>Serbian</source>
-        <translation type="unfinished"/>
+        <translation>Serbo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="304"/>
         <source>Serbian (Ijekavian)</source>
-        <translation type="unfinished"/>
+        <translation>Serbo (Ijekavian)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="305"/>
         <source>Serbian (Ijekavian Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Serbio (Ijekavian Latino)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="306"/>
         <source>Serbian (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Serbo (Latino)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="307"/>
         <source>Serbian (Latin) (Serbia)</source>
-        <translation type="unfinished"/>
+        <translation>Serbo (Latin) (Serbia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="308"/>
         <source>Serbian (Serbia)</source>
-        <translation type="unfinished"/>
+        <translation>Serbo (Serbia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="309"/>
         <source>Shona</source>
-        <translation type="unfinished"/>
+        <translation>Shona</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="310"/>
         <source>Sicilian</source>
-        <translation type="unfinished"/>
+        <translation>Siciliano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="311"/>
         <source>Silesian</source>
-        <translation type="unfinished"/>
+        <translation>Slesiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="312"/>
         <source>Sindhi</source>
-        <translation type="unfinished"/>
+        <translation>Sindhi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="313"/>
         <source>Sinhala</source>
-        <translation type="unfinished"/>
+        <translation>Sinhala</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="314"/>
         <source>Sinhala (Sri Lanka)</source>
-        <translation type="unfinished"/>
+        <translation>Sinhala (Sri Lanka)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="315"/>
         <source>Slovak</source>
-        <translation type="unfinished"/>
+        <translation>Slovacco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="316"/>
         <source>Slovak (Slovakia)</source>
-        <translation type="unfinished"/>
+        <translation>Slovacco (Slovacchia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="317"/>
         <source>Slovenian</source>
-        <translation type="unfinished"/>
+        <translation>Sloveno</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="318"/>
         <source>Slovenian (Slovenia)</source>
-        <translation type="unfinished"/>
+        <translation>Sloveno (Slovenia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="319"/>
         <source>Somali</source>
-        <translation type="unfinished"/>
+        <translation>Somalo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="320"/>
         <source>Songhay</source>
-        <translation type="unfinished"/>
+        <translation>Songhay</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="321"/>
         <source>Sotho, Southern</source>
-        <translation type="unfinished"/>
+        <translation>Sotho Meridionale</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="322"/>
         <source>Sotho, Southern (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>Sotho Meridionale (Sudafrica)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="323"/>
         <source>Southern Sami</source>
-        <translation type="unfinished"/>
+        <translation>Sami Meridionale</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="324"/>
         <source>Spanish</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="325"/>
         <source>Spanish (Argentina)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Argentina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="326"/>
         <source>Spanish (Bolivia)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Bolivia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="327"/>
         <source>Spanish (Chile)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Cile)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="328"/>
         <source>Spanish (Colombia)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Colombia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="329"/>
         <source>Spanish (Costa Rica)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Costa Rica)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="330"/>
         <source>Spanish (Dominican Republic)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Repubblica Dominicana)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="331"/>
         <source>Spanish (Ecuador)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Ecuador)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="332"/>
         <source>Spanish (El Salvador)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (El Salvador)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="333"/>
         <source>Spanish (Latin America)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (America Latina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="334"/>
         <source>Spanish (Mexico)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Messico)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="335"/>
         <source>Spanish (Nicaragua)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Nicaragua)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="336"/>
         <source>Spanish (Panama)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Panama)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="337"/>
         <source>Spanish (Paraguay)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Paraguay)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="338"/>
         <source>Spanish (Peru)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Peru)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="339"/>
         <source>Spanish (Puerto Rico)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Puerto Rico)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="340"/>
         <source>Spanish (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Spagna)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="341"/>
         <source>Spanish (United States)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Stati Uniti d&apos;America)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="342"/>
         <source>Spanish (Uruguay)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Uruguay)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="343"/>
         <source>Spanish (Venezuela)</source>
-        <translation type="unfinished"/>
+        <translation>Spagnolo (Venezuela)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="344"/>
         <source>Sundanese</source>
-        <translation type="unfinished"/>
+        <translation>Sondanese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="345"/>
         <source>Swahili</source>
-        <translation type="unfinished"/>
+        <translation>Swahili</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="346"/>
         <source>Swahili (Kenya)</source>
-        <translation type="unfinished"/>
+        <translation>Swahili (Kenya)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="347"/>
         <source>Swati</source>
-        <translation type="unfinished"/>
+        <translation>Swati</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="348"/>
         <source>Swedish</source>
-        <translation type="unfinished"/>
+        <translation>Svedese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="349"/>
         <source>Swedish (Finland)</source>
-        <translation type="unfinished"/>
+        <translation>Svedese (Finlandia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="350"/>
         <source>Swedish (Sweden)</source>
-        <translation type="unfinished"/>
+        <translation>Svedese (Svezia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="351"/>
         <source>Tagalog</source>
-        <translation type="unfinished"/>
+        <translation>Tagalog</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="352"/>
         <source>Tagalog (Philippines)</source>
-        <translation type="unfinished"/>
+        <translation>Tagalog (Filippine)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="353"/>
         <source>Tajik</source>
-        <translation type="unfinished"/>
+        <translation>Tajik</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="354"/>
         <source>Tajik (Tajikistan)</source>
-        <translation type="unfinished"/>
+        <translation>Tajik (Tajikistan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="355"/>
         <source>Tamil</source>
-        <translation type="unfinished"/>
+        <translation>Tamil</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="356"/>
         <source>Tamil (India)</source>
-        <translation type="unfinished"/>
+        <translation>Tamil (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="357"/>
         <source>Tamil (Sri-Lanka)</source>
-        <translation type="unfinished"/>
+        <translation>Tamil (Sri-Lanka)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="358"/>
         <source>Tatar</source>
-        <translation type="unfinished"/>
+        <translation>Tataro</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="359"/>
         <source>Telugu</source>
-        <translation type="unfinished"/>
+        <translation>Telugu</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="360"/>
         <source>Telugu (India)</source>
-        <translation type="unfinished"/>
+        <translation>Telugu (India)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="361"/>
         <source>Tetum (Tetun)</source>
-        <translation type="unfinished"/>
+        <translation>Tetum (Tetun)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="362"/>
         <source>Thai</source>
-        <translation type="unfinished"/>
+        <translation>Tailandese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="363"/>
         <source>Thai (Thailand)</source>
-        <translation type="unfinished"/>
+        <translation>Taliandese (Tailandia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="364"/>
         <source>Tibetan</source>
-        <translation type="unfinished"/>
+        <translation>Tibetano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="365"/>
         <source>Tibetan (China)</source>
-        <translation type="unfinished"/>
+        <translation>Tibetano (Cina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="366"/>
         <source>Tigrinya</source>
-        <translation type="unfinished"/>
+        <translation>Tigrinya</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="367"/>
         <source>Tongan</source>
-        <translation type="unfinished"/>
+        <translation>Tongano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="368"/>
         <source>Tsonga</source>
-        <translation type="unfinished"/>
+        <translation>Tsonga</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="369"/>
         <source>Tswana</source>
-        <translation type="unfinished"/>
+        <translation>Tswana</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="370"/>
         <source>Turkish</source>
-        <translation type="unfinished"/>
+        <translation>Turco</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="371"/>
         <source>Turkish (Turkey)</source>
-        <translation type="unfinished"/>
+        <translation>Turco (Turchia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="372"/>
         <source>Turkmen</source>
-        <translation type="unfinished"/>
+        <translation>Turkmeno</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="373"/>
         <source>Turkmen (Turkmenistan)</source>
-        <translation type="unfinished"/>
+        <translation>Turkmeno (Turkmenistan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="374"/>
         <source>Udmurt</source>
-        <translation type="unfinished"/>
+        <translation>Udmurt</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="375"/>
         <source>Uighur</source>
-        <translation type="unfinished"/>
+        <translation>Uighur</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="376"/>
         <source>Uighur (Arabic)</source>
-        <translation type="unfinished"/>
+        <translation>Uighur (Arabo)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="377"/>
         <source>Uighur (Cyrillic)</source>
-        <translation type="unfinished"/>
+        <translation>Uighur (Cirillico)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="378"/>
         <source>Uighur (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Uighur (Latino)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="379"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"/>
+        <translation>Ucraino</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="380"/>
         <source>Ukrainian (Ukraine)</source>
-        <translation type="unfinished"/>
+        <translation>Ucraino (Ucraina)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="381"/>
         <source>Upper Franconian</source>
-        <translation type="unfinished"/>
+        <translation>Francone superiore</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="382"/>
         <source>Upper Sorbian</source>
-        <translation type="unfinished"/>
+        <translation>Sorabo superiore</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="383"/>
         <source>Urdu</source>
-        <translation type="unfinished"/>
+        <translation>Urdu</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="384"/>
         <source>Urdu (Pakistan)</source>
-        <translation type="unfinished"/>
+        <translation>Urdu (Pakistan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="385"/>
         <source>Uzbek</source>
-        <translation type="unfinished"/>
+        <translation>Uzbeko</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="386"/>
         <source>Uzbek (Arabic)</source>
-        <translation type="unfinished"/>
+        <translation>Uzbeko (Arabo)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="387"/>
         <source>Uzbek (Cyrillic)</source>
-        <translation type="unfinished"/>
+        <translation>Uzbeko (Cirillico)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="388"/>
         <source>Uzbek (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Uzbeko (Latino)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="389"/>
         <source>Venda</source>
-        <translation type="unfinished"/>
+        <translation>Venda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="390"/>
         <source>Venetian</source>
-        <translation type="unfinished"/>
+        <translation>Veneto</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="391"/>
         <source>Vietnamese</source>
-        <translation type="unfinished"/>
+        <translation>Vietnamita</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="392"/>
         <source>Vietnamese (Viet Nam)</source>
-        <translation type="unfinished"/>
+        <translation>Vietnamita (Vietnam)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="393"/>
         <source>Vlaams</source>
-        <translation type="unfinished"/>
+        <translation>Fiammingo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="394"/>
         <source>Walloon</source>
-        <translation type="unfinished"/>
+        <translation>Vallone</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="395"/>
         <source>Waray-Waray</source>
-        <translation type="unfinished"/>
+        <translation>Waray-Waray</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="396"/>
         <source>Welsh</source>
-        <translation type="unfinished"/>
+        <translation>Gallese</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="397"/>
         <source>Welsh (United Kingdom)</source>
-        <translation type="unfinished"/>
+        <translation>Gallese (Regno Unito)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="398"/>
         <source>Western Frisian</source>
-        <translation type="unfinished"/>
+        <translation>Frisone occidentale</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="399"/>
         <source>Western Frisian (Netherlands)</source>
-        <translation type="unfinished"/>
+        <translation>Frisone occidentale (Olanda)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="400"/>
         <source>Wolof</source>
-        <translation type="unfinished"/>
+        <translation>Wolof</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="401"/>
         <source>Wolof (Senegal)</source>
-        <translation type="unfinished"/>
+        <translation>Wolof (Senegal)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="402"/>
         <source>Xhosa</source>
-        <translation type="unfinished"/>
+        <translation>Xhosa</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="403"/>
         <source>Yiddish</source>
-        <translation type="unfinished"/>
+        <translation>Yiddish</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="404"/>
         <source>Yoruba</source>
-        <translation type="unfinished"/>
+        <translation>Yoruba</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="405"/>
         <source>Zulu</source>
-        <translation type="unfinished"/>
+        <translation>Zulu</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="406"/>
         <source>Zulu (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>Zulu (Sudafrica)</translation>
     </message>
 </context>
 <context>
@@ -2283,7 +2283,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>If you like Framrekkari and you want to support the development, consider a small donation.</source>
-        <translation type="unfinished"/>
+        <translation>Se ti piace Framrekkari e vuoi supportarne lo sviluppo, potresti fare una piccola donazione.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>
@@ -2356,97 +2356,97 @@
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="132"/>
         <source>Pound Sterling</source>
-        <translation type="unfinished"/>
+        <translation>Sterlina britannica</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="133"/>
         <source>Danish Krone</source>
-        <translation type="unfinished"/>
+        <translation>Corona danese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="134"/>
         <source>Hong Kong Dollar</source>
-        <translation type="unfinished"/>
+        <translation>Dollaro di Hong Kong</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="135"/>
         <source>Israel New Shekel</source>
-        <translation type="unfinished"/>
+        <translation>Nuovo siclo israeliano</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="136"/>
         <source>Japanese Yen</source>
-        <translation type="unfinished"/>
+        <translation>Yen giapponese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="137"/>
         <source>Canadian Dollar</source>
-        <translation type="unfinished"/>
+        <translation>Dollaro canadese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="138"/>
         <source>Mexican Peso</source>
-        <translation type="unfinished"/>
+        <translation>Peso messicano</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="139"/>
         <source>New Taiwan Dollar</source>
-        <translation type="unfinished"/>
+        <translation>Dollaro taiwanese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="140"/>
         <source>New Zealand Dollar</source>
-        <translation type="unfinished"/>
+        <translation>Dollaro neozelandese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="141"/>
         <source>Norwegian Krone</source>
-        <translation type="unfinished"/>
+        <translation>Corona norvegese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="142"/>
         <source>Philippine Peso</source>
-        <translation type="unfinished"/>
+        <translation>Peso filippino</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="143"/>
         <source>Polish Zloty</source>
-        <translation type="unfinished"/>
+        <translation>Złoty polacco</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="144"/>
         <source>Russian Ruble</source>
-        <translation type="unfinished"/>
+        <translation>Rublo russo</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="145"/>
         <source>Swedish Krone</source>
-        <translation type="unfinished"/>
+        <translation>Corona svedese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="146"/>
         <source>Swiss Franc</source>
-        <translation type="unfinished"/>
+        <translation>Franco svizzero</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="147"/>
         <source>Singapore Dollar</source>
-        <translation type="unfinished"/>
+        <translation>Dollaro di Singapore</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="148"/>
         <source>Thai Baht</source>
-        <translation type="unfinished"/>
+        <translation>Baht tailandese</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="149"/>
         <source>Czech Koruna</source>
-        <translation type="unfinished"/>
+        <translation>Corona ceca</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="150"/>
         <source>Hungarian Forint</source>
-        <translation type="unfinished"/>
+        <translation>Fiorino ungherese</translation>
     </message>
 </context>
 <context>
@@ -2464,37 +2464,37 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="53"/>
         <source>In order to login to your translation server Framrekkari needs your username and password as well as the server address. These information is not given to the author of Framrekkari or other third parties (except the server operator).</source>
-        <translation type="unfinished"/>
+        <translation>Per poter accedere al tuo server di traduzione, Framrekkari ha bisogno del tuo nome utente e della tua password, così come dell&apos;indirizzo del server. Queste informazioni non vengono inviate all&apos;autore di Framrekkari o ad altre terze parti (ad eccezione del gestore del server).</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="63"/>
         <source>What does Framrekkari use your information for?</source>
-        <translation type="unfinished"/>
+        <translation>Per cosa vengono utilizzate le tue informazioni da Framrekkari?</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="71"/>
         <source>Framrekkari needs your login data to connect to your translation server. Your log in data is used to log in to your translation server to perform the tasks of downloading and uploading translations.</source>
-        <translation type="unfinished"/>
+        <translation>Framrekkari ha bisogno dei tuoi dati di accesso per connettersi al tuo server di traduzione. I tuoi dati di accesso sono usati per accedere al tuo server di traduzione per poter scaricare e inviare le traduzioni.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="81"/>
         <source>Does Framrekkari disclose any information to outside parties?</source>
-        <translation type="unfinished"/>
+        <translation>Framrekkari condivide qualche informazione con altre parti?</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="89"/>
         <source>Framrekkari only uses your data for the login process into the server that you configured. Framrekkari does not send these data to the author of Framrekkari or other third parties. For questions concerning the privacy on the server side, you have to contact your translation service provider.</source>
-        <translation type="unfinished"/>
+        <translation>Framrekkari usa i tuoi dati solo per le procedure di accesso ai server che hai configurato. Framrekkari non invia questi dati all&apos;autore di Framrekkari o ad altre terze parti. Per qualsiasi domandain merito alla privacy dal lato server, devi contattare il fornitore dei tuoi servizi di traduzione.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="99"/>
         <source>Third party links</source>
-        <translation type="unfinished"/>
+        <translation>Collegamenti a terze parti</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="107"/>
         <source>Framrekkari is a client for collaborated translations services like Transifex. It has no preinstalled third party links other than the own application website links on the About page and on this page. Showing translation project details and opening the project webistes is in the user&apos;s responsibility. For questions concerning the privacy of this sites you have to contact the site operator.</source>
-        <translation type="unfinished"/>
+        <translation>Framrekkari è un client per servizi di traduzione collaborativa come Transifex. Non contiene collegamenti preinstallati a terze parti oltre al collegamento al proprio sito web nella pagina dei Crediti e in questa pagina. Visualizzare i dettagli sui progetti di traduzione e aprire i relativi siti web è responsabilità dell&apos;utente. Per domande riguardo alla privacy di questi siti dovrai contattarne i rispettivi gestori.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="117"/>
@@ -2504,7 +2504,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="125"/>
         <source>By using Framrekkari, you consent to this privacy policy.</source>
-        <translation>Usando Framrekkari acconsenti alla sua politica sulla privacy.</translation>
+        <translation>Usando Framrekkari acconsenti alla sua informativa sulla privacy.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
@@ -2517,7 +2517,7 @@
     <message>
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="69"/>
         <source>(Source language)</source>
-        <translation>(Lingua sorgente)</translation>
+        <translation>(Lingua di origine)</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
@@ -2535,12 +2535,12 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation type="unfinished"/>
+        <translation>Questo progetto non ha ancora creato alcuna risorsa.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
         <source>Bugtracker</source>
-        <translation type="unfinished"/>
+        <translation>Bugtracker</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="227"/>
@@ -2591,7 +2591,7 @@
         <location filename="../src/api/projectsapi.cpp" line="76"/>
         <location filename="../src/api/projectsapi.cpp" line="135"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita.</translation>
+        <translation>Operazione annullata. Nome utente e/o password errati oppure sincronizzazione SSL non riuscita.</translation>
     </message>
 </context>
 <context>
@@ -2599,12 +2599,12 @@
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="59"/>
         <source>Source lang: %1</source>
-        <translation>Lingua sorgente: %1</translation>
+        <translation>Lingua di origine: %1</translation>
     </message>
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="68"/>
         <source>Slug: %1</source>
-        <translation type="unfinished"/>
+        <translation>Progetto: %1</translation>
     </message>
 </context>
 <context>
@@ -2640,7 +2640,7 @@
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>
         <source>dd.MM.yy hh:mmAP</source>
-        <translation type="unfinished"/>
+        <translation>gg.MM.aa oo:mmAP</translation>
     </message>
 </context>
 <context>
@@ -2658,7 +2658,7 @@
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="75"/>
         <source>Resources:</source>
-        <translation type="unfinished"/>
+        <translation>Risorse:</translation>
     </message>
 </context>
 <context>
@@ -2671,7 +2671,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation>Mostra lingua</translation>
+        <translation>Lingua applicazione</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
@@ -2681,7 +2681,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation type="unfinished"/>
+        <translation>Il cambio della lingua dell&apos;applicazione viene applicato dopo il prossimo riavvio.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>
@@ -2691,12 +2691,12 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="69"/>
         <source>Default list filter</source>
-        <translation type="unfinished"/>
+        <translation>Filtro predefinito liste</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="72"/>
         <source>All</source>
-        <translation>Tutti</translation>
+        <translation>Tutte</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="73"/>
@@ -2716,12 +2716,12 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="81"/>
         <source>Font sizes</source>
-        <translation>Dimensione font</translation>
+        <translation>Dimensione caratteri</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="90"/>
         <source>Source text font size</source>
-        <translation>Dimensione testo sorgente</translation>
+        <translation>Dimensione testo di origine</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="102"/>
@@ -2735,7 +2735,7 @@
         <location filename="../src/api/statisticsapi.cpp" line="15"/>
         <location filename="../src/api/statisticsapi.cpp" line="106"/>
         <source>No resources set.</source>
-        <translation type="unfinished"/>
+        <translation>Nessuna risorsa selezionata.</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="77"/>
@@ -2753,7 +2753,7 @@
         <location filename="../src/api/statisticsapi.cpp" line="90"/>
         <location filename="../src/api/statisticsapi.cpp" line="168"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita.</translation>
+        <translation>Operazione annullata. Nome utente e/o password errati oppure sincronizzazione SSL non riuscita.</translation>
     </message>
 </context>
 <context>
@@ -2776,7 +2776,7 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
         <source>Occurences</source>
-        <translation type="unfinished"/>
+        <translation>Ricorrenze</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
@@ -2791,12 +2791,12 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
-        <translation type="unfinished"/>
+        <translation>Ultima traduzione</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
         <source>Hash</source>
-        <translation type="unfinished"/>
+        <translation>Hash</translation>
     </message>
 </context>
 <context>
@@ -2837,7 +2837,7 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="113"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita.</translation>
+        <translation>Operazione annullata. Nome utente e/o password errati oppure sincronizzazione SSL non riuscita.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="184"/>
@@ -2847,12 +2847,12 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="187"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
-        <translation>Operazione annullata. Nome utente o password errati oppure sincronizzazione SSL non riuscita. Codice %1.</translation>
+        <translation>Operazione annullata. Nome utente e/o password errati oppure sincronizzazione SSL non riuscita. Codice %1.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="190"/>
         <source>Could not save content on server. Maybe wrong entity hash. Code %1.</source>
-        <translation>Impossibile savare contenuto nel server</translation>
+        <translation>Impossibile salvare contenuto nel server. Forse l&apos;hash dell&apos;entità è errato. Codice %1.</translation>
     </message>
 </context>
 <context>
@@ -2875,7 +2875,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="63"/>
         <source>All</source>
-        <translation>Tutti</translation>
+        <translation>Tutte</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
@@ -2890,7 +2890,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="128"/>
         <source>Source string</source>
-        <translation>Stringa sorgente</translation>
+        <translation>Stringa di origine</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="129"/>
@@ -2918,17 +2918,17 @@
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="114"/>
         <source>Not translated</source>
-        <translation>Non tradotto</translation>
+        <translation>Non tradotte</translation>
     </message>
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as not reviewed</source>
-        <translation>Segna da revisionare</translation>
+        <translation>Segna come da revisionare</translation>
     </message>
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as reviewed</source>
-        <translation>Segna revisionato</translation>
+        <translation>Segna come revisionato</translation>
     </message>
 </context>
 <context>

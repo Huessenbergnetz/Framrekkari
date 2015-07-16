@@ -18,17 +18,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Zdrojový kód je licencován pod &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>Mnichov</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>Německo</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>Domovská stránka</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
         <source>3rd party licenses</source>
-        <translation type="unfinished"/>
+        <translation>Licence třetích stran</translation>
     </message>
 </context>
 <context>
@@ -208,22 +208,22 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation>Nové</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>Vylepšeno</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>Opraveno</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation type="unfinished"/>
+        <translation>Poznámka</translation>
     </message>
 </context>
 <context>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="152"/>
         <source>Sina Weibo</source>
-        <translation type="unfinished"/>
+        <translation>Sina Weibo</translation>
     </message>
 </context>
 <context>
@@ -289,7 +289,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>Překlad do katalánštiny</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="51"/>
@@ -300,12 +300,12 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Překlad do češtiny</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>Překlad do nizozemštiny (holandštiny)</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="83"/>
@@ -792,7 +792,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="117"/>
         <source>Czech (Czech Republic)</source>
-        <translation type="unfinished"/>
+        <translation>Český (Česká republika)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="118"/>
@@ -2283,7 +2283,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>If you like Framrekkari and you want to support the development, consider a small donation.</source>
-        <translation type="unfinished"/>
+        <translation>Pokud se vám Framrekkari líbí a chcete podpořit jeho vývoj, zvažte malý dar.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>
@@ -2535,7 +2535,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation type="unfinished"/>
+        <translation>Tento projekt zatím nevytvořil žádné zdroje.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>

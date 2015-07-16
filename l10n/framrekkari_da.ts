@@ -18,17 +18,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Licenseret under &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt; GNU GPL v2 &lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>München</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>Tyskland</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>Hjemmeside</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
         <source>3rd party licenses</source>
-        <translation type="unfinished"/>
+        <translation>Tredjepart licenser</translation>
     </message>
 </context>
 <context>
@@ -208,22 +208,22 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation>Ny</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>Forbedret</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>Fast</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation type="unfinished"/>
+        <translation>Note</translation>
     </message>
 </context>
 <context>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="152"/>
         <source>Sina Weibo</source>
-        <translation type="unfinished"/>
+        <translation>Sina Weibo</translation>
     </message>
 </context>
 <context>
@@ -289,7 +289,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>Catalansk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="51"/>
@@ -300,12 +300,12 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Tjekkisk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>Hollandsk (Nederlandene) oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="83"/>
@@ -376,7 +376,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation type="unfinished"/>
+        <translation>Efter starten af Framrekkari vil du se hovedsiden, der indeholder dine konti. Denne vil være tom ved første opstart. Træk ned topmenuen og vælg &lt;i&gt;Tilføj konto&lt;/i&gt;, for at tilføje en ny konto. Når du har tilføjet en, dukker den op på listen, og du kan trykke på den for at åbne den. Kontovisning giver dig adgang til tjenestens søgning/åben funktionalitet og lader dig gennemse projekterne.&lt;br&gt; Søg eller gennemse efter et projekt for at åbne det. Projektsiden viser de tilgængelige sprog og generelle oplysninger om projektet. Hvis du trykker på et sprog åbner projektets ressourcer. Et tryk på en ressource åbner listen med kildestrenge. Tryk på en streng for at åbne den og begynde at oversætte. Lukning af enkeltstrengsiden hvis du går til den næste eller forrige streng gemmer automatisk oversættelsen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
@@ -507,7 +507,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="60"/>
         <source>Asturian</source>
-        <translation type="unfinished"/>
+        <translation>Asturisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="61"/>
@@ -597,7 +597,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="78"/>
         <source>Breton</source>
-        <translation type="unfinished"/>
+        <translation>Bretonsk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="79"/>
@@ -1067,7 +1067,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="173"/>
         <source>Haitian (Haitian Creole)</source>
-        <translation type="unfinished"/>
+        <translation>Haitisk (Kreolsk)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="174"/>
@@ -1347,7 +1347,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="229"/>
         <source>Lithuanian</source>
-        <translation>Litauen</translation>
+        <translation>Litauisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="230"/>
@@ -1402,7 +1402,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="240"/>
         <source>Malagasy</source>
-        <translation type="unfinished"/>
+        <translation>Madagaskisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="241"/>
@@ -1517,7 +1517,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="263"/>
         <source>Northern Sotho</source>
-        <translation type="unfinished"/>
+        <translation>Nordsotho</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="264"/>
@@ -1592,7 +1592,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="276"/>
         <source>Palatinate German</source>
-        <translation type="unfinished"/>
+        <translation>Pfalz Tysk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="277"/>
@@ -1712,7 +1712,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="300"/>
         <source>Samoan</source>
-        <translation type="unfinished"/>
+        <translation>Samoansk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="301"/>
@@ -1822,7 +1822,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="322"/>
         <source>Sotho, Southern (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>Sotho, Sydligt (Sydafrika)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="323"/>
@@ -2283,7 +2283,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>If you like Framrekkari and you want to support the development, consider a small donation.</source>
-        <translation type="unfinished"/>
+        <translation>Hvis du kan lide Framrekkari og du ønsker at støtte udviklingen, så overvej en lille donation.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>
@@ -2536,7 +2536,7 @@ Framrekkari sender hverken din data tilbage til Framrekkaris udvikler eller til 
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation type="unfinished"/>
+        <translation>Projektet har indtil videre skabt nogen ressourcer.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
@@ -2561,7 +2561,7 @@ Framrekkari sender hverken din data tilbage til Framrekkaris udvikler eller til 
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="237"/>
         <source>Add to favorites</source>
-        <translation>Tilføj favorit</translation>
+        <translation>Tilføj som favorit</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="249"/>
@@ -2767,7 +2767,7 @@ Framrekkari sender hverken din data tilbage til Framrekkaris udvikler eller til 
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="51"/>
         <source>Tags</source>
-        <translation type="unfinished"/>
+        <translation>Mærker</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="62"/>

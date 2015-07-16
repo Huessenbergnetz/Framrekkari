@@ -18,17 +18,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Na licencji &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.pl.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>Monachium</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>Niemcy</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>Strona</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
@@ -208,17 +208,17 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation>Nowe</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>Usprawnione</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>Poprawione</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
@@ -289,7 +289,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>Katalońska wersja językowa</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="51"/>
@@ -300,12 +300,12 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Czeska wersja językowa</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>Holenderska wersja językowa</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="83"/>

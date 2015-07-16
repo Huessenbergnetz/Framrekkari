@@ -5,7 +5,7 @@
         <location filename="../qml/common/OpenSlugField.qml" line="58"/>
         <source>Search</source>
         <extracomment>Placeholder text of SearchField</extracomment>
-        <translation type="unfinished"/>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
@@ -13,32 +13,32 @@
     <message>
         <location filename="../qml/pages/About.qml" line="10"/>
         <source>Online translation services client for Sailfish OS</source>
-        <translation type="unfinished"/>
+        <translation>Sailfish OS在线翻译服务客户端</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>基于 &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;许可证</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>慕尼黑</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>德国</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
         <source>Donate via PayPal</source>
-        <translation type="unfinished"/>
+        <translation>通过PayPal捐助</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="38"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>留言（英语或德语）：</translation>
     </message>
 </context>
 <context>
@@ -46,52 +46,52 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>主页</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
         <source>Privacy Policy</source>
-        <translation type="unfinished"/>
+        <translation>隐私策略</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="87"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>修改日志</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="92"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>贡献者</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="102"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>关于</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="160"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>联系</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="244"/>
         <source>Contribute</source>
-        <translation type="unfinished"/>
+        <translation>贡献</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="252"/>
         <source>Translate</source>
-        <translation type="unfinished"/>
+        <translation>翻译</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="259"/>
         <source>Report bugs</source>
-        <translation type="unfinished"/>
+        <translation>反馈BUG</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
         <source>3rd party licenses</source>
-        <translation type="unfinished"/>
+        <translation>第三方协议</translation>
     </message>
 </context>
 <context>
@@ -99,52 +99,52 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="50"/>
         <source>Transifex is a collaborative online translation platform. In order to use it you need an account on &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Transifex是一个在线协作翻译平台。使用需先在 &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;注册。</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Create account</source>
-        <translation type="unfinished"/>
+        <translation>创建账号</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
         <source>Edit account</source>
-        <translation type="unfinished"/>
+        <translation>编辑账号</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="69"/>
         <source>Account type</source>
-        <translation type="unfinished"/>
+        <translation>账号类型</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
         <source>Display name</source>
-        <translation type="unfinished"/>
+        <translation>显示名称</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
         <source>Server</source>
-        <translation type="unfinished"/>
+        <translation>服务</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="125"/>
         <source>User name</source>
-        <translation type="unfinished"/>
+        <translation>用户名</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="135"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>密码</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="145"/>
         <source>Ignore SSL errors</source>
-        <translation type="unfinished"/>
+        <translation>忽略SSL错误</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
-        <translation type="unfinished"/>
+        <translation>仅在你知道你在做什么的情况下忽略SSL错误。（目前还没有处理SSL证书的系统，你需要对使用自签名的证书选择忽略SSL错误。）</translation>
     </message>
 </context>
 <context>
@@ -152,7 +152,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="164"/>
         <source>Show all projects</source>
-        <translation type="unfinished"/>
+        <translation>显示所有项目</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="72"/>
@@ -167,7 +167,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Source lang:</source>
-        <translation type="unfinished"/>
+        <translation>源语言：</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
@@ -177,7 +177,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="154"/>
         <source>Favorites</source>
-        <translation type="unfinished"/>
+        <translation>收藏</translation>
     </message>
 </context>
 <context>
@@ -185,17 +185,17 @@
     <message>
         <location filename="../qml/delegates/AccountsDelegate.qml" line="127"/>
         <source>Edit</source>
-        <translation type="unfinished"/>
+        <translation>编辑</translation>
     </message>
     <message>
         <location filename="../qml/delegates/AccountsDelegate.qml" line="133"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../qml/delegates/AccountsDelegate.qml" line="140"/>
         <source>Removing account %1</source>
-        <translation type="unfinished"/>
+        <translation>正在移除账户%1</translation>
     </message>
 </context>
 <context>
@@ -203,27 +203,27 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>修改日志</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation>新的</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>改进的</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>固定的</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation type="unfinished"/>
+        <translation>注</translation>
     </message>
 </context>
 <context>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../qml/BTComponents/Contributors.qml" line="34"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>贡献者</translation>
     </message>
 </context>
 <context>
@@ -239,12 +239,12 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="127"/>
         <source>Website</source>
-        <translation type="unfinished"/>
+        <translation>网站</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="152"/>
         <source>Sina Weibo</source>
-        <translation type="unfinished"/>
+        <translation>新浪微博</translation>
     </message>
 </context>
 <context>
@@ -252,17 +252,17 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
-        <translation type="unfinished"/>
+        <translation>主要开发者，Framrekkari创造者</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="27"/>
         <source>Author</source>
-        <translation type="unfinished"/>
+        <translation>作者</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="102"/>
         <source>Danish translation</source>
-        <translation type="unfinished"/>
+        <translation>丹麦翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="37"/>
@@ -278,50 +278,50 @@
         <location filename="../qml/models/ContributorsModel.qml" line="103"/>
         <location filename="../qml/models/ContributorsModel.qml" line="114"/>
         <source>Thanks to</source>
-        <translation type="unfinished"/>
+        <translation>感谢</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="36"/>
         <location filename="../qml/models/ContributorsModel.qml" line="69"/>
         <source>French translation</source>
-        <translation type="unfinished"/>
+        <translation>法语翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="44"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>加泰罗尼亚语翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="51"/>
         <location filename="../qml/models/ContributorsModel.qml" line="77"/>
         <source>Finnish translation</source>
-        <translation type="unfinished"/>
+        <translation>芬兰语翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>捷克语翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="63"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>德语（荷兰）翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="83"/>
         <source>Hungarian translation</source>
-        <translation type="unfinished"/>
+        <translation>匈牙利语翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="90"/>
         <location filename="../qml/models/ContributorsModel.qml" line="113"/>
         <source>Polish translation</source>
-        <translation type="unfinished"/>
+        <translation>波兰语翻译</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="96"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语翻译</translation>
     </message>
 </context>
 <context>
@@ -329,12 +329,12 @@
     <message numerus="yes">
         <location filename="../qml/cover/CoverPage.qml" line="63"/>
         <source>%n language(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation><numerusform>%n语言</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="159"/>
         <source>Source</source>
-        <translation type="unfinished"/>
+        <translation>源</translation>
     </message>
 </context>
 <context>
@@ -343,22 +343,22 @@
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="76"/>
         <source>Welcome to %1 %2</source>
         <comment>First is app name, second is version number</comment>
-        <translation type="unfinished"/>
+        <translation>欢迎来到 %1 %2</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="91"/>
         <source>Last changes</source>
-        <translation type="unfinished"/>
+        <translation>上次修改</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="154"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>帮助</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/FirstStartInfo.qml" line="160"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
@@ -366,27 +366,27 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="40"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>帮助</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="43"/>
         <source>General</source>
-        <translation type="unfinished"/>
+        <translation>概要</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation type="unfinished"/>
+        <translation>启动Framrekkari后可以看到主页面显示着你的账户信息。如果是第一次打开则页面为空。下拉菜单选择&lt;i&gt;添加账户&lt;/i&gt;来添加新账户。添加后账户会显示在这个页面，你可以点击打开账户。你可以通过这个账户视图来使用服务器的搜索/打开功能并浏览项目。&lt;br&gt;&lt;br&gt;搜索项目以打开它。项目页会显示项目的可用语言和总`概要信息。点击语言会打开项目源。点击源会打开源字符串列表。点击字符串以打开并开始翻译。关闭单字符串页面或着跳到上一个或下一个字符串会自动保存你输入的内容。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
         <source>Transifex API limitations</source>
-        <translation type="unfinished"/>
+        <translation>Transifex接口限制</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="64"/>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
-        <translation type="unfinished"/>
+        <translation>Transifex接口有一些限制。最大的限制便是只有项目所有者和成员可以看到语言和源信息，普通用户则看不到。因此无法判断一个用户是否有权限去修改内容。你需要自行确定你是否是项目语言负责人。如果你没有权限而做了修改，你会收到一条错误信息，这是Framrekkari无法提前检测的。&lt;br&gt;&lt;br&gt;其次是没有搜索功能。你必须输入正确的Slag（浏览器地址栏使用的项目名称）才能打开项目。你也可以浏览所有可用项目来打开。</translation>
     </message>
 </context>
 <context>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../qml/common/LanguageChooser.qml" line="92"/>
         <source>Search</source>
-        <translation type="unfinished"/>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
@@ -407,32 +407,32 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="40"/>
         <source>Adyghe</source>
-        <translation type="unfinished"/>
+        <translation>阿迪格语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="41"/>
         <source>Afrikaans</source>
-        <translation type="unfinished"/>
+        <translation>南非公用荷兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="42"/>
         <source>Afrikaans (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>南非荷兰（南非）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="43"/>
         <source>Akan</source>
-        <translation type="unfinished"/>
+        <translation>阿坎语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="44"/>
         <source>Albanian</source>
-        <translation type="unfinished"/>
+        <translation>阿尔巴尼亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="45"/>
         <source>Albanian (Albania)</source>
-        <translation type="unfinished"/>
+        <translation> 阿尔巴尼亚（阿尔巴尼亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="46"/>
@@ -442,37 +442,37 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="47"/>
         <source>Amharic</source>
-        <translation type="unfinished"/>
+        <translation>阿姆哈拉语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="48"/>
         <source>Amharic (Ethiopia)</source>
-        <translation type="unfinished"/>
+        <translation>阿姆哈拉语（埃塞俄比亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="49"/>
         <source>Arabic</source>
-        <translation type="unfinished"/>
+        <translation>阿拉伯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="50"/>
         <source>Arabic (Egypt)</source>
-        <translation type="unfinished"/>
+        <translation>阿拉伯语（埃及）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="51"/>
         <source>Arabic (Saudi Arabia)</source>
-        <translation type="unfinished"/>
+        <translation>阿拉伯语（沙特阿拉伯）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="52"/>
         <source>Arabic (Sudan)</source>
-        <translation type="unfinished"/>
+        <translation>阿拉伯语（苏丹）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="53"/>
         <source>Arabic (Syria)</source>
-        <translation type="unfinished"/>
+        <translation>阿拉伯语（叙利亚共和国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="54"/>
@@ -482,82 +482,82 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="55"/>
         <source>Aragonese</source>
-        <translation type="unfinished"/>
+        <translation>阿拉贡语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="56"/>
         <source>Armenian</source>
-        <translation type="unfinished"/>
+        <translation>亚美尼亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="57"/>
         <source>Armenian (Armenia)</source>
-        <translation type="unfinished"/>
+        <translation>亚美尼亚语（亚美尼亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="58"/>
         <source>Assamese</source>
-        <translation type="unfinished"/>
+        <translation>阿萨姆语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="59"/>
         <source>Assamese (India)</source>
-        <translation type="unfinished"/>
+        <translation>阿萨姆语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="60"/>
         <source>Asturian</source>
-        <translation type="unfinished"/>
+        <translation>阿斯图里亚斯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="61"/>
         <source>Asturian (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>阿斯图里亚斯语（西班牙）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="62"/>
         <source>Azerbaijani</source>
-        <translation type="unfinished"/>
+        <translation>阿塞拜疆语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="63"/>
         <source>Azerbaijani (Azerbaijan)</source>
-        <translation type="unfinished"/>
+        <translation>阿塞拜疆语（阿塞拜疆）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="64"/>
         <source>Azerbaijani (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>阿塞拜疆语（拉丁）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="65"/>
         <source>Balochi</source>
-        <translation type="unfinished"/>
+        <translation>俾路支语 </translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="66"/>
         <source>Bashkir</source>
-        <translation type="unfinished"/>
+        <translation>巴什基尔语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="67"/>
         <source>Basque</source>
-        <translation type="unfinished"/>
+        <translation>巴斯克语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="68"/>
         <source>Basque (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>巴斯克语（西班牙）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="69"/>
         <source>Belarusian</source>
-        <translation type="unfinished"/>
+        <translation>白俄罗斯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="70"/>
         <source>Belarusian (Belarus)</source>
-        <translation type="unfinished"/>
+        <translation>白俄罗斯语（白俄罗斯）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="71"/>
@@ -567,42 +567,42 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="72"/>
         <source>Bengali</source>
-        <translation type="unfinished"/>
+        <translation>孟加拉语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="73"/>
         <source>Bengali (Bangladesh)</source>
-        <translation type="unfinished"/>
+        <translation>孟加拉语（孟加拉国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="74"/>
         <source>Bengali (India)</source>
-        <translation type="unfinished"/>
+        <translation>孟加拉语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="75"/>
         <source>Bodo</source>
-        <translation type="unfinished"/>
+        <translation>博多语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="76"/>
         <source>Bosnian</source>
-        <translation type="unfinished"/>
+        <translation>波斯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="77"/>
         <source>Bosnian (Bosnia and Herzegovina)</source>
-        <translation type="unfinished"/>
+        <translation>波斯语（波斯尼亚和黑塞哥维那）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="78"/>
         <source>Breton</source>
-        <translation type="unfinished"/>
+        <translation>布列塔尼语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="79"/>
         <source>Bulgarian</source>
-        <translation type="unfinished"/>
+        <translation>保加利亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="80"/>
@@ -2288,12 +2288,12 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>留言（英语或德语）：</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="45"/>
         <source>Donate via PayPal</source>
-        <translation type="unfinished"/>
+        <translation>通过PayPal捐助</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="46"/>
@@ -2303,12 +2303,12 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="60"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>关于</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="64"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>帮助</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="68"/>
@@ -2509,7 +2509,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>联系</translation>
     </message>
 </context>
 <context>

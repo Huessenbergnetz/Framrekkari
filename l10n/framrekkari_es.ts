@@ -18,17 +18,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Autorizado bajo la &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>Múnich</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>Alemania</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>Página de inicio</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
         <source>3rd party licenses</source>
-        <translation type="unfinished"/>
+        <translation>Licencia de terceras partes</translation>
     </message>
 </context>
 <context>
@@ -208,22 +208,22 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation>Nuevo</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>Mejorado</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>Arreglado</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation type="unfinished"/>
+        <translation>Nota</translation>
     </message>
 </context>
 <context>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="152"/>
         <source>Sina Weibo</source>
-        <translation type="unfinished"/>
+        <translation>Sina Weibo</translation>
     </message>
 </context>
 <context>
@@ -507,7 +507,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="60"/>
         <source>Asturian</source>
-        <translation>Asturian</translation>
+        <translation>Asturiano</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="61"/>
@@ -992,7 +992,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="158"/>
         <source>Galician</source>
-        <translation>Galician</translation>
+        <translation>Gallego</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="159"/>
@@ -2283,7 +2283,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>If you like Framrekkari and you want to support the development, consider a small donation.</source>
-        <translation type="unfinished"/>
+        <translation>Si te gusta Framrekkari y quieres apoyar al desarrollo, considera hacer una pequeña donación.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>

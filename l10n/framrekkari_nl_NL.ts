@@ -13,7 +13,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="10"/>
         <source>Online translation services client for Sailfish OS</source>
-        <translation>Online vertalingsdienst-client voor SailfishOS</translation>
+        <translation>Online vertalingsdienst-app voor SailfishOS</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
@@ -99,7 +99,7 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="50"/>
         <source>Transifex is a collaborative online translation platform. In order to use it you need an account on &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</source>
-        <translation>Transifex is een online samenwerkingsvertalingsplatform. Om het te kunnen gebruiken heeft een account nodig op &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</translation>
+        <translation>Transifex is een online samenwerkingsvertalingsplatform. Om Transifex te kunnen gebruiken heeft u een account nodig op &lt;a href=&apos;https://www.transifex.com&apos;&gt;transifex.com&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="63"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
         <source>Only ignore SSL errors when you really know what you are doing. (Currently there is no system service for handling SSL certificates. For now you have to ignore SSL errors when you are using a self signed certificate.)</source>
-        <translation>Negeer alleen SSL-fouten als u weet wat u doet. (Er is momenteel geen systeemdienst voor het behandelen van SSL-certificaten. Voor nu kunt ervoor kiezen om SSL-fouten te negeren als u een zelf-gesigneerd certificaat gebruikt.)</translation>
+        <translation>Negeer alleen SSL-fouten als u zeker weet wat u doet. (Er is momenteel geen systeemdienst voor het behandelen van SSL-certificaten. Voorlopig kunt u ervoor kiezen om SSL-fouten te negeren als u een door uzelf gesigneerd certificaat gebruikt.)</translation>
     </message>
 </context>
 <context>
@@ -223,7 +223,7 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation>Noot</translation>
+        <translation>Opmerking</translation>
     </message>
 </context>
 <context>
@@ -252,7 +252,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="26"/>
         <source>Main developer, Framrekkari creator</source>
-        <translation>Hoofdontwikkelaar, Framrekkari-bedenker</translation>
+        <translation>Hoofdontwikkelaar, Framrekkari-schepper</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="27"/>
@@ -376,17 +376,17 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation>Na het opstarten van Framrekkari ziet u de hoofdweergave-pagina die uw accounts weergeeft. Deze zal leeg zijn bij de eerste opstart. Trek het trekmenu naar beden en kies &lt;i&gt;Account toevoegen&lt;/i&gt; om een account toe te voegen. Nadat u een account heeft toegevoegd zal ie verschijnen in de lijst en kunt u erop drukken om deze te openen. De accountweergave geeft u toegang tot de zoek- en open-functionaliteit van de dienst en laat u bladeren door de projecten.&lt;br&gt;&lt;br&gt;Zoek of blader naar een project en open deze. De projectpagina weergeeft de beschikbare talen en de algemene informatie over het project. Druk op een taal om de projecthulpbronnen te zien. Door vervolgens op een hulpbron te klikken komt u in de lijst met bronteksten. Klik op een tekst om deze te openen en te beginnen met vertalen. Door het sluiten van een tekstpagina of naar de vorige of volgende tekst te gaan wordt uw invoer automatisch opgeslagen.</translation>
+        <translation>Na het opstarten van Framrekkari ziet u de hoofdweergave-pagina waar al uw accounts worden weergegeven. Deze zal leeg zijn als u Framrekkari voor de eerste keer start. Trek het menu naar beneden en kies &lt;i&gt;Account toevoegen&lt;/i&gt; om een account toe te voegen. Nadat u een account heeft toegevoegd, zal deze verschijnen in de lijst en kunt u erop drukken om deze te openen. De accountweergave geeft u toegang tot de zoek- en open-functionaliteit van de dienst en stelt u in staat om te bladeren door de projecten.&lt;br&gt;&lt;br&gt;Zoek of blader naar een project en open deze. De projectpagina weergeeft de beschikbare talen en algemene projectinformatie. Druk op een taal om de hulpbronnen te zien. Door op een hulpbron te drukken komt u in de lijst met bronteksten. Druk op een tekst om deze te openen en te beginnen met vertalen. Door het sluiten van een tekstpagina of naar de vorige of volgende tekst te gaan wordt uw invoer automatisch opgeslagen.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
         <source>Transifex API limitations</source>
-        <translation>Transifex-API-limitaties</translation>
+        <translation>Transifex API-limitaties</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="64"/>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
-        <translation>Transifex API heeft limitaties. De grootste limitatie is dat het toegang geeft tot de taalinformatie en -hulpbronnen maar alleen aan de projecteigenaar en -beheerders en dus niet aan normale gebruikers. Het is dus niet mogelijk om uit te vogelen of een gebruikers de juiste aanpassingsrechten heeft. U zult dus bij uzelf moeten nagaan of u verantwoordelijk bent voor projecttaal. Als u niet voldoende rechten heeft om iets aan te passen, zal u een foutmelding krijgen. Het is niet mogelijk voor Framrekkari om dit op voorhand te controleren.&lt;br&gt;&lt;br&gt;De tweede grote limitatie is dat er geen zoekfunctionaliteit is. U moet de correcte slug invullen (projectnaam zoals gebruikt in de browser-URL) om een project te openen of bladeren door de lijst van alle beschikbare projecten.</translation>
+        <translation>Transifex API heeft limitaties. De grootste limitatie is dat het toegang geeft tot de taalinformatie en -hulpbronnen maar alleen aan de projecteigenaar en -beheerders en dus niet aan normale gebruikers. Het is dus niet mogelijk om uit te vogelen of een gebruikers de juiste wijzigingsrechten heeft. U zult dus bij uzelf na moeten gaan of u verantwoordelijk bent voor een projecttaal. Als u niet beschikt over voldoende rechten om iets te wijzigen, zal u een foutmelding krijgen. Het is voor Framrekkari niet mogelijk om dit op voorhand te controleren.&lt;br&gt;&lt;br&gt;De tweede grote limitatie is dat er geen zoekfunctionaliteit is. U moet de correcte slug invullen (projectnaam zoals gebruikt in de browser-URL) om een project te openen of bladeren door de lijst van alle beschikbare projecten.</translation>
     </message>
 </context>
 <context>
@@ -2283,7 +2283,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>If you like Framrekkari and you want to support the development, consider a small donation.</source>
-        <translation>Als u Framrekkari goed vindt en u wilt de ontwikkeling ondersteunen, overweeg dan een kleine donatie.</translation>
+        <translation>Vindt u Framrekkari een goede app en wilt u de ontwikkeling ondersteunen? Overweeg dan een kleine donatie.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>
@@ -2308,7 +2308,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="64"/>
         <source>Help</source>
-        <translation>Hul</translation>
+        <translation>Hulp</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="68"/>
@@ -2336,7 +2336,7 @@
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="128"/>
         <source>Euro</source>
-        <translation>Eur</translation>
+        <translation>Euro</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/PaypalChooser.qml" line="129"/>
@@ -2499,7 +2499,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="117"/>
         <source>Your consent</source>
-        <translation>Uw goedkeuring</translation>
+        <translation>Uw instemming</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="125"/>
@@ -2530,12 +2530,12 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="53"/>
         <source>Ooops, the following error occured:</source>
-        <translation>Oeps, de volgende fout trad op:</translation>
+        <translation>Oeps, de volgende fout deed zich voor:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation>DIt project heeft nog geen hulpbronnen gecreeërd.</translation>
+        <translation>DIt project heeft nog geen hulpbronnen gecreëerd.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
@@ -2612,7 +2612,7 @@
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="46"/>
         <source>Ooops, the following error occured:</source>
-        <translation>Oeps, de volgende fout trad op:</translation>
+        <translation>Oeps, de volgende fout deed zich voor:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="62"/>
@@ -2648,7 +2648,7 @@
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="48"/>
         <source>Ooops, the following error occured:</source>
-        <translation>Oeps, de volgende fout trad op:</translation>
+        <translation>Oeps, de volgende fout deed zich voor:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="65"/>
@@ -2681,7 +2681,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation>Het veranderen van de weergavetaal zal alleen gebeuren na een herstart van de applicatie.</translation>
+        <translation>De wijziging van de weergavetaal zal worden toegepast na het herstarten van de applicatie.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>
@@ -2786,12 +2786,12 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
         <source>Last update</source>
-        <translation>Laatste bijwerking</translation>
+        <translation>Nieuwste bijwerking</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
-        <translation>Laatste bijwerker</translation>
+        <translation>Laatste bijdrager</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
@@ -2865,7 +2865,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="58"/>
         <source>Not reviewed</source>
-        <translation>Niet nagekeken</translation>
+        <translation>Niet-nagekeken</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="60"/>
@@ -2880,7 +2880,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
         <source>Ooops, the following error occured:</source>
-        <translation>Oeps, de volgende fout trad op:</translation>
+        <translation>Oeps, de volgende fout deed zich voor:</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
@@ -2910,7 +2910,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="199"/>
         <source>Ooops, you got no results. Check your filter.</source>
-        <translation>Oeps, geen resultaten. Controleer het filter.</translation>
+        <translation>Oeps, geen resultaten. Controleer uw filter.</translation>
     </message>
 </context>
 <context>
