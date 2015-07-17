@@ -1702,7 +1702,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="298"/>
         <source>Russian (Russia)</source>
-        <translation type="unfinished"/>
+        <translation>Russian (Russia)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="299"/>
@@ -1717,7 +1717,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="301"/>
         <source>Sardinian</source>
-        <translation type="unfinished"/>
+        <translation>Sardinian</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="302"/>
@@ -2640,7 +2640,7 @@
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>
         <source>dd.MM.yy hh:mmAP</source>
-        <translation type="unfinished"/>
+        <translation>dd.MM.yy hh:mmAP</translation>
     </message>
 </context>
 <context>
