@@ -1,15 +1,5 @@
-# Rename this file as Framrekkari.changes to include changelog
-# entries in your RPM file.
-#
-# Add new changelog entries following the format below.
-# Add newest entries to the top of the list.
-# Separate entries from eachother with a blank line.
-
-# * date Author's Name <author's email> version-release
-# - Summary of changes
-
-* Sun Apr 13 2014 Jack Tar <jack.tar@example.com> 0.0.1-1
-- Scrubbed the deck
-- Hoisted the sails
+* Fri Jul 17 2015 Matthias Fehring <kontakt@buschmann23.de> 1.1.5-1
+- Added Swedish, Norwegian Bokmal, Turkish, Russian, Chinese translations
+- Translation updates
 
 

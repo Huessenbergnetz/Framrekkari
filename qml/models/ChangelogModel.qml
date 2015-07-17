@@ -24,11 +24,21 @@
   1 - Improved/Enhanced
   2 - Fixed
   3 - Note
+  "sv" << "nb_NO" << "tr" << "ru" << "zh_CN"
 */
 
 import QtQuick 2.0
 
 ListModel {
+    ListElement {
+        version: "1.1.5"
+        date: 1437130902000
+        entries: [
+            ListElement { type: 0; issue: ""; description: "Swedish, Norwegian Bokmal, Turkish, Russian, Chinese translations" },
+            ListElement { type: 1; issue: ""; description: "translation updates" }
+        ]
+    }
+
     ListElement {
         version: "1.1.4"
         date: 1415835700000
