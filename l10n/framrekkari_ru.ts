@@ -2459,12 +2459,12 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="44"/>
         <source>What information does Framrekkari collect?</source>
-        <translation type="unfinished"/>
+        <translation>Сбор информации</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="53"/>
         <source>In order to login to your translation server Framrekkari needs your username and password as well as the server address. These information is not given to the author of Framrekkari or other third parties (except the server operator).</source>
-        <translation type="unfinished"/>
+        <translation>Для доступа к серверу переводов Framrekkari необходимы адрес сервера, а также Ваши имя пользователя и пароль для аутентификации. Личные данные не передаются ни автору Framrekkari, ни каким-либо другим лицам, за исключением сервера авторизации.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="63"/>
@@ -2474,7 +2474,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="71"/>
         <source>Framrekkari needs your login data to connect to your translation server. Your log in data is used to log in to your translation server to perform the tasks of downloading and uploading translations.</source>
-        <translation type="unfinished"/>
+        <translation>Для авторизации на сервере переводов Framrekkari необходимы Ваши учетные данные. После авторизации Вам будут доступны загрузка и выгрузка переводов.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="81"/>
@@ -2484,7 +2484,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="89"/>
         <source>Framrekkari only uses your data for the login process into the server that you configured. Framrekkari does not send these data to the author of Framrekkari or other third parties. For questions concerning the privacy on the server side, you have to contact your translation service provider.</source>
-        <translation type="unfinished"/>
+        <translation>Framrekkari использует Ваши личные данные исключительно для аутентификации на сервере перевода. Framrekkari не передает эти данные ни автору приложения, ни каким-либо другим лицам. За более подробной информацией о политике конфиденциальности обращайтесь к провайдеру службы перевода.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="99"/>
@@ -2735,7 +2735,7 @@
         <location filename="../src/api/statisticsapi.cpp" line="15"/>
         <location filename="../src/api/statisticsapi.cpp" line="106"/>
         <source>No resources set.</source>
-        <translation type="unfinished"/>
+        <translation>Нет ресурсов.</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="77"/>

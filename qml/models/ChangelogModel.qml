@@ -24,7 +24,6 @@
   1 - Improved/Enhanced
   2 - Fixed
   3 - Note
-  "sv" << "nb_NO" << "tr" << "ru" << "zh_CN"
 */
 
 import QtQuick 2.0

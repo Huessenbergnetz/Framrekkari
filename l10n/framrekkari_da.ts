@@ -442,7 +442,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="47"/>
         <source>Amharic</source>
-        <translation type="unfinished"/>
+        <translation>Amharisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="48"/>
@@ -482,7 +482,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="55"/>
         <source>Aragonese</source>
-        <translation type="unfinished"/>
+        <translation>Aragonesisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="56"/>
@@ -1072,7 +1072,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="174"/>
         <source>Haitian (Haitian Creole) (Haiti)</source>
-        <translation type="unfinished"/>
+        <translation>Haitisk (Haitisk Kreolsk) (Haiti)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="175"/>
@@ -1217,12 +1217,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="203"/>
         <source>Kashubian</source>
-        <translation type="unfinished"/>
+        <translation>Kasjubisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="204"/>
         <source>Kazakh</source>
-        <translation type="unfinished"/>
+        <translation>kazakisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="205"/>
@@ -1242,12 +1242,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="208"/>
         <source>Kazakh (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Kasakhisk (Latin)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="209"/>
         <source>Khmer</source>
-        <translation type="unfinished"/>
+        <translation>Khmer</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="210"/>
@@ -1292,12 +1292,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="218"/>
         <source>Ladino</source>
-        <translation type="unfinished"/>
+        <translation>Ladino (Judeo-spansk)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="219"/>
         <source>Lao</source>
-        <translation type="unfinished"/>
+        <translation>laotisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="220"/>
@@ -1307,7 +1307,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="221"/>
         <source>Latgalian</source>
-        <translation type="unfinished"/>
+        <translation>latgalisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="222"/>
@@ -1332,7 +1332,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="226"/>
         <source>Ligurian</source>
-        <translation type="unfinished"/>
+        <translation>ligurisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="227"/>
@@ -1367,7 +1367,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="233"/>
         <source>Lombard</source>
-        <translation type="unfinished"/>
+        <translation>Lombardisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="234"/>
@@ -1407,7 +1407,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="241"/>
         <source>Malay</source>
-        <translation type="unfinished"/>
+        <translation>Malay</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="242"/>
@@ -1527,7 +1527,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="148"/>
         <source>Franco-Provençal (Arpitan)</source>
-        <translation type="unfinished"/>
+        <translation>Fransk-Provençal (Arpitan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="38"/>
@@ -1622,7 +1622,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="282"/>
         <source>Piemontese</source>
-        <translation type="unfinished"/>
+        <translation>Piemontesisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="283"/>
@@ -1732,12 +1732,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="304"/>
         <source>Serbian (Ijekavian)</source>
-        <translation type="unfinished"/>
+        <translation>Serbisk (Ijekavian)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="305"/>
         <source>Serbian (Ijekavian Latin)</source>
-        <translation type="unfinished"/>
+        <translation>Serbisk (Ijekavian Latin)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="306"/>
@@ -2047,7 +2047,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="367"/>
         <source>Tongan</source>
-        <translation type="unfinished"/>
+        <translation>Tongansk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="368"/>
