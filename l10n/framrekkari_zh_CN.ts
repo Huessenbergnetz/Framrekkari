@@ -157,12 +157,12 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="72"/>
         <source>Project slug</source>
-        <translation type="unfinished"/>
+        <translation>项目SLUG</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="84"/>
         <source>You need to enter the exact and correct project slug (project name used in the browser URL).</source>
-        <translation type="unfinished"/>
+        <translation>你需要输入正确的项目SLUG（浏览器URL中的项目名称）。</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
@@ -172,7 +172,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="136"/>
         <source>Slug:</source>
-        <translation type="unfinished"/>
+        <translation>SLUG：</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="154"/>
@@ -402,7 +402,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="39"/>
         <source>Acoli</source>
-        <translation type="unfinished"/>
+        <translation>阿乔利语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="40"/>
@@ -437,7 +437,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="46"/>
         <source>Albanian Gheg</source>
-        <translation type="unfinished"/>
+        <translation>阿尔巴尼亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="47"/>
@@ -477,7 +477,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="54"/>
         <source>Arabic (Unitag)</source>
-        <translation type="unfinished"/>
+        <translation>阿拉伯语（Unitag）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="55"/>
@@ -562,7 +562,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="71"/>
         <source>Belarusian (Tarask)</source>
-        <translation type="unfinished"/>
+        <translation>白俄罗斯语（Tarask）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="72"/>
@@ -607,32 +607,32 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="80"/>
         <source>Bulgarian (Bulgaria)</source>
-        <translation type="unfinished"/>
+        <translation>保加利亚语（保加利亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="81"/>
         <source>Burmese</source>
-        <translation type="unfinished"/>
+        <translation>缅甸语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="82"/>
         <source>Burmese (Myanmar)</source>
-        <translation type="unfinished"/>
+        <translation>Burmese（缅甸）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="83"/>
         <source>Catalan</source>
-        <translation type="unfinished"/>
+        <translation>加泰罗尼亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="84"/>
         <source>Catalan (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>加泰罗尼亚语（西班牙）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="85"/>
         <source>Catalan (Valencian)</source>
-        <translation type="unfinished"/>
+        <translation>加泰罗尼亚语（巴伦西亚语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="86"/>
@@ -642,867 +642,867 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="87"/>
         <source>Chhattisgarhi</source>
-        <translation type="unfinished"/>
+        <translation>恰蒂斯加尔语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="88"/>
         <source>Chiga</source>
-        <translation type="unfinished"/>
+        <translation>奇加语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="89"/>
         <source>Chinese</source>
-        <translation type="unfinished"/>
+        <translation>中文</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="90"/>
         <source>Chinese (China)</source>
-        <translation type="unfinished"/>
+        <translation>中文（中国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="91"/>
         <source>Chinese (China) (GB2312)</source>
-        <translation type="unfinished"/>
+        <translation>中文（中国）（GB2312）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="92"/>
         <source>Chinese (Gan)</source>
-        <translation type="unfinished"/>
+        <translation>中文（赣语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="93"/>
         <source>Chinese (Hakka)</source>
-        <translation type="unfinished"/>
+        <translation>中文（客家话）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="94"/>
         <source>Chinese (Hong Kong)</source>
-        <translation type="unfinished"/>
+        <translation>中文（港语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="95"/>
         <source>Chinese (Huizhou)</source>
-        <translation type="unfinished"/>
+        <translation>中文（徽语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="96"/>
         <source>Chinese (Jinyu)</source>
-        <translation type="unfinished"/>
+        <translation>中文（晋语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="97"/>
         <source>Chinese (Literary)</source>
-        <translation type="unfinished"/>
+        <translation>中文（文言）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="98"/>
         <source>Chinese (Mandarin)</source>
-        <translation type="unfinished"/>
+        <translation>中文（普通话）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="99"/>
         <source>Chinese (Min Bei)</source>
-        <translation type="unfinished"/>
+        <translation>中文（闽北语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="100"/>
         <source>Chinese (Min Dong)</source>
-        <translation type="unfinished"/>
+        <translation>中文（闽东语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="101"/>
         <source>Chinese (Min Nan)</source>
-        <translation type="unfinished"/>
+        <translation>中文（闽南语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="102"/>
         <source>Chinese (Min Zhong)</source>
-        <translation type="unfinished"/>
+        <translation>中文（闽中语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="103"/>
         <source>Chinese (Pu-Xian)</source>
-        <translation type="unfinished"/>
+        <translation>中文（莆仙语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="104"/>
         <source>Chinese (Taiwan)</source>
-        <translation type="unfinished"/>
+        <translation>中文（台湾语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="105"/>
         <source>Chinese (Taiwan) (Big5) </source>
-        <translation type="unfinished"/>
+        <translation>中文（台湾语）（Big5）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="106"/>
         <source>Chinese (Wu)</source>
-        <translation type="unfinished"/>
+        <translation>中文（吴）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="107"/>
         <source>Chinese (Xiang)</source>
-        <translation type="unfinished"/>
+        <translation>中文（湘语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="108"/>
         <source>Chinese (Yue)</source>
-        <translation type="unfinished"/>
+        <translation>中文（粤语)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="109"/>
         <source>Chuvash</source>
-        <translation type="unfinished"/>
+        <translation>楚瓦什语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="110"/>
         <source>Colognian</source>
-        <translation type="unfinished"/>
+        <translation>克林贡语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="111"/>
         <source>Cornish</source>
-        <translation type="unfinished"/>
+        <translation>康沃尔语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="112"/>
         <source>Corsican</source>
-        <translation type="unfinished"/>
+        <translation>科西嘉语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="113"/>
         <source>Crimean Turkish</source>
-        <translation type="unfinished"/>
+        <translation>克里米亚鞑靼语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="114"/>
         <source>Croatian</source>
-        <translation type="unfinished"/>
+        <translation>克罗地亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="115"/>
         <source>Croatian (Croatia)</source>
-        <translation type="unfinished"/>
+        <translation>克罗地亚语（克罗地亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="116"/>
         <source>Czech</source>
-        <translation type="unfinished"/>
+        <translation>捷克语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="117"/>
         <source>Czech (Czech Republic)</source>
-        <translation type="unfinished"/>
+        <translation>捷克语（捷克共和国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="118"/>
         <source>Danish</source>
-        <translation type="unfinished"/>
+        <translation>丹麦语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="119"/>
         <source>Danish (Denmark)</source>
-        <translation type="unfinished"/>
+        <translation>丹麦语（丹麦）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="120"/>
         <source>Divehi</source>
-        <translation type="unfinished"/>
+        <translation>迪维西语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="121"/>
         <source>Dutch</source>
-        <translation type="unfinished"/>
+        <translation>荷兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="122"/>
         <source>Dutch (Belgium)</source>
-        <translation type="unfinished"/>
+        <translation>荷兰语（比利时）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="123"/>
         <source>Dutch (Netherlands)</source>
-        <translation type="unfinished"/>
+        <translation>德语（荷兰）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="124"/>
         <source>Dzongkha</source>
-        <translation type="unfinished"/>
+        <translation>宗喀语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="125"/>
         <source>Dzongkha (Bhutan)</source>
-        <translation type="unfinished"/>
+        <translation>宗喀语（不丹）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="126"/>
         <source>English</source>
-        <translation type="unfinished"/>
+        <translation>英语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="127"/>
         <source>English (Australia)</source>
-        <translation type="unfinished"/>
+        <translation>英语（澳大利亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="128"/>
         <source>English (Canada)</source>
-        <translation type="unfinished"/>
+        <translation>英语（加拿大）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="129"/>
         <source>English (Estonia)</source>
-        <translation type="unfinished"/>
+        <translation>英语（爱沙尼亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="130"/>
         <source>English (Hong Kong)</source>
-        <translation type="unfinished"/>
+        <translation>英语（香港）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="131"/>
         <source>English (Ireland)</source>
-        <translation type="unfinished"/>
+        <translation>英语（爱尔兰）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="132"/>
         <source>English (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>英语（拉脱维亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="133"/>
         <source>English (Lithuania)</source>
-        <translation type="unfinished"/>
+        <translation>英语（立陶宛）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="134"/>
         <source>English (New Zealand)</source>
-        <translation type="unfinished"/>
+        <translation>英语（新西兰）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="135"/>
         <source>English (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>南非荷兰（南非）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="136"/>
         <source>English (Sweden)</source>
-        <translation type="unfinished"/>
+        <translation>英语（瑞典）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="137"/>
         <source>English (United Kingdom)</source>
-        <translation type="unfinished"/>
+        <translation>英语（英国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="138"/>
         <source>English (United States)</source>
-        <translation type="unfinished"/>
+        <translation>英语（美国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="139"/>
         <source>Erzya</source>
-        <translation type="unfinished"/>
+        <translation>厄尔兹亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="140"/>
         <source>Esperanto</source>
-        <translation type="unfinished"/>
+        <translation>世界语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="141"/>
         <source>Estonian</source>
-        <translation type="unfinished"/>
+        <translation>爱沙尼亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="142"/>
         <source>Estonian (Estonia)</source>
-        <translation type="unfinished"/>
+        <translation>爱沙尼亚语（爱沙尼亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="143"/>
         <source>Faroese</source>
-        <translation type="unfinished"/>
+        <translation>法罗语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="144"/>
         <source>Faroese (Faroe Islands)</source>
-        <translation type="unfinished"/>
+        <translation>法罗语（法罗群岛）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="145"/>
         <source>Filipino</source>
-        <translation type="unfinished"/>
+        <translation>菲律宾语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="146"/>
         <source>Finnish</source>
-        <translation type="unfinished"/>
+        <translation>芬兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="147"/>
         <source>Finnish (Finland)</source>
-        <translation type="unfinished"/>
+        <translation>芬兰语（芬兰）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="149"/>
         <source>French</source>
-        <translation type="unfinished"/>
+        <translation>法语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="150"/>
         <source>French (Belgium)</source>
-        <translation type="unfinished"/>
+        <translation>法语（比利时）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="151"/>
         <source>French (Canada)</source>
-        <translation type="unfinished"/>
+        <translation>法语（加拿大）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="152"/>
         <source>French (France)</source>
-        <translation type="unfinished"/>
+        <translation>法语（法国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="153"/>
         <source>French (Switzerland)</source>
-        <translation type="unfinished"/>
+        <translation>法语（瑞士）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="154"/>
         <source>Friulian</source>
-        <translation type="unfinished"/>
+        <translation>弗留利语 </translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="155"/>
         <source>Fulah</source>
-        <translation type="unfinished"/>
+        <translation>富拉赫语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="156"/>
         <source>Fulah (Senegal)</source>
-        <translation type="unfinished"/>
+        <translation>富拉赫语（塞内加尔）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="157"/>
         <source>Gaelic, Scottish</source>
-        <translation type="unfinished"/>
+        <translation>盖尔语，苏格兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="158"/>
         <source>Galician</source>
-        <translation type="unfinished"/>
+        <translation>加里西亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="159"/>
         <source>Galician (Spain)</source>
-        <translation type="unfinished"/>
+        <translation>加里西亚语（西班牙）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="160"/>
         <source>Ganda</source>
-        <translation type="unfinished"/>
+        <translation>干达语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="161"/>
         <source>Georgian</source>
-        <translation type="unfinished"/>
+        <translation>格鲁吉亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="162"/>
         <source>Georgian (Georgia)</source>
-        <translation type="unfinished"/>
+        <translation>格鲁吉亚语（乔治亚州）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="163"/>
         <source>German</source>
-        <translation type="unfinished"/>
+        <translation>德语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="164"/>
         <source>German (Austria)</source>
-        <translation type="unfinished"/>
+        <translation>德语（澳大利亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="165"/>
         <source>German (Germany)</source>
-        <translation type="unfinished"/>
+        <translation>德语（德国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="166"/>
         <source>German (Switzerland)</source>
-        <translation type="unfinished"/>
+        <translation>德语（瑞士）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="167"/>
         <source>Greek</source>
-        <translation type="unfinished"/>
+        <translation>希腊语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="168"/>
         <source>Greek (Greece)</source>
-        <translation type="unfinished"/>
+        <translation>希腊语（希腊）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="169"/>
         <source>Greenlandic</source>
-        <translation type="unfinished"/>
+        <translation>格陵兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="170"/>
         <source>Gujarati</source>
-        <translation type="unfinished"/>
+        <translation>古吉拉特语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="171"/>
         <source>Gujarati (India)</source>
-        <translation type="unfinished"/>
+        <translation>古吉拉特语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="172"/>
         <source>Gun</source>
-        <translation type="unfinished"/>
+        <translation>丰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="173"/>
         <source>Haitian (Haitian Creole)</source>
-        <translation type="unfinished"/>
+        <translation>海地语（海地克里奥尔语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="174"/>
         <source>Haitian (Haitian Creole) (Haiti)</source>
-        <translation type="unfinished"/>
+        <translation>海地语（海地克里奥尔语）（海地）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="175"/>
         <source>Hausa</source>
-        <translation type="unfinished"/>
+        <translation>豪萨语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="176"/>
         <source>Hebrew</source>
-        <translation type="unfinished"/>
+        <translation>希伯来语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="177"/>
         <source>Hebrew (Israel)</source>
-        <translation type="unfinished"/>
+        <translation>希伯来语（以色列）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="178"/>
         <source>Hindi</source>
-        <translation type="unfinished"/>
+        <translation>北印度语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="179"/>
         <source>Hindi (India)</source>
-        <translation type="unfinished"/>
+        <translation>北印度语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="180"/>
         <source>Hungarian</source>
-        <translation type="unfinished"/>
+        <translation>匈牙利语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="181"/>
         <source>Hungarian (Hungary)</source>
-        <translation type="unfinished"/>
+        <translation>匈牙利语（匈牙利）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="182"/>
         <source>Icelandic</source>
-        <translation type="unfinished"/>
+        <translation>冰岛语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="183"/>
         <source>Icelandic (Iceland)</source>
-        <translation type="unfinished"/>
+        <translation>冰岛语（冰岛）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="184"/>
         <source>Ido</source>
-        <translation type="unfinished"/>
+        <translation>伊多语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="185"/>
         <source>Igbo</source>
-        <translation type="unfinished"/>
+        <translation>伊布语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="186"/>
         <source>Iloko</source>
-        <translation type="unfinished"/>
+        <translation>伊洛干诺语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="187"/>
         <source>Indonesian</source>
-        <translation type="unfinished"/>
+        <translation>印尼语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="188"/>
         <source>Indonesian (Indonesia)</source>
-        <translation type="unfinished"/>
+        <translation>印尼语（印尼）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="189"/>
         <source>Interlingua</source>
-        <translation type="unfinished"/>
+        <translation>国际语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="190"/>
         <source>Irish</source>
-        <translation type="unfinished"/>
+        <translation>爱尔兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="191"/>
         <source>Irish (Ireland)</source>
-        <translation type="unfinished"/>
+        <translation>爱尔兰语（爱尔兰）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="192"/>
         <source>Italian</source>
-        <translation type="unfinished"/>
+        <translation>意大利语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="193"/>
         <source>Italian (Italy)</source>
-        <translation type="unfinished"/>
+        <translation>意大利语（意大利）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="194"/>
         <source>Japanese</source>
-        <translation type="unfinished"/>
+        <translation>日本语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="195"/>
         <source>Japanese (Japan)</source>
-        <translation type="unfinished"/>
+        <translation>日本语（日本）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="196"/>
         <source>Javanese</source>
-        <translation type="unfinished"/>
+        <translation>爪哇语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="197"/>
         <source>Kabyle</source>
-        <translation type="unfinished"/>
+        <translation>卡拜尔语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="198"/>
         <source>Kannada</source>
-        <translation type="unfinished"/>
+        <translation>坎那达语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="199"/>
         <source>Kannada (India)</source>
-        <translation type="unfinished"/>
+        <translation>坎那达语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="200"/>
         <source>Kapampangan</source>
-        <translation type="unfinished"/>
+        <translation>邦板牙语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="201"/>
         <source>Kashmiri</source>
-        <translation type="unfinished"/>
+        <translation>克什米尔语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="202"/>
         <source>Kashmiri (India)</source>
-        <translation type="unfinished"/>
+        <translation>克什米尔语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="203"/>
         <source>Kashubian</source>
-        <translation type="unfinished"/>
+        <translation>卡舒比语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="204"/>
         <source>Kazakh</source>
-        <translation type="unfinished"/>
+        <translation>哈萨克语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="205"/>
         <source>Kazakh (Arabic)</source>
-        <translation type="unfinished"/>
+        <translation>哈萨克语（阿拉伯）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="206"/>
         <source>Kazakh (Cyrillic)</source>
-        <translation type="unfinished"/>
+        <translation>哈萨克语（西里尔）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="207"/>
         <source>Kazakh (Kazakhstan)</source>
-        <translation type="unfinished"/>
+        <translation>哈萨克语（哈萨克斯坦）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="208"/>
         <source>Kazakh (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>哈萨克语（拉丁）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="209"/>
         <source>Khmer</source>
-        <translation type="unfinished"/>
+        <translation>高棉语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="210"/>
         <source>Khmer (Cambodia)</source>
-        <translation type="unfinished"/>
+        <translation>高棉语（柬埔寨）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="211"/>
         <source>Kinyarwanda</source>
-        <translation type="unfinished"/>
+        <translation>卢旺达语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="212"/>
         <source>Kirgyz</source>
-        <translation type="unfinished"/>
+        <translation>柯尔克孜语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="213"/>
         <source>Klingon</source>
-        <translation type="unfinished"/>
+        <translation>克林贡语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="214"/>
         <source>Korean</source>
-        <translation type="unfinished"/>
+        <translation>韩语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="215"/>
         <source>Korean (Korea)</source>
-        <translation type="unfinished"/>
+        <translation>韩语（韩国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="216"/>
         <source>Kurdish</source>
-        <translation type="unfinished"/>
+        <translation>库尔德语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="217"/>
         <source>Kurdish (Iraq)</source>
-        <translation type="unfinished"/>
+        <translation>库尔德语（伊拉克）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="218"/>
         <source>Ladino</source>
-        <translation type="unfinished"/>
+        <translation>拉地诺语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="219"/>
         <source>Lao</source>
-        <translation type="unfinished"/>
+        <translation>老挝语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="220"/>
         <source>Lao (Laos)</source>
-        <translation type="unfinished"/>
+        <translation>老挝语（老挝）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="221"/>
         <source>Latgalian</source>
-        <translation type="unfinished"/>
+        <translation>拉特加莱语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="222"/>
         <source>Latin</source>
-        <translation type="unfinished"/>
+        <translation>拉丁</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="223"/>
         <source>Latvian</source>
-        <translation type="unfinished"/>
+        <translation>拉脱维亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="224"/>
         <source>Latvian (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>拉脱维亚语（拉脱维亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="225"/>
         <source>Lezghian</source>
-        <translation type="unfinished"/>
+        <translation>立陶宛语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="226"/>
         <source>Ligurian</source>
-        <translation type="unfinished"/>
+        <translation>利古里亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="227"/>
         <source>Limburgian</source>
-        <translation type="unfinished"/>
+        <translation>林堡语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="228"/>
         <source>Lingala</source>
-        <translation type="unfinished"/>
+        <translation>林加拉语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="229"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"/>
+        <translation>立陶宛语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="230"/>
         <source>Lithuanian (Lithuania)</source>
-        <translation type="unfinished"/>
+        <translation>立陶宛语（立陶宛）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="231"/>
         <source>Lojban</source>
-        <translation type="unfinished"/>
+        <translation>逻辑语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="232"/>
         <source>LOLCAT English</source>
-        <translation type="unfinished"/>
+        <translation>大笑猫英语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="233"/>
         <source>Lombard</source>
-        <translation type="unfinished"/>
+        <translation>伦巴第语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="234"/>
         <source>Lower Sorbian</source>
-        <translation type="unfinished"/>
+        <translation>下索布语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="235"/>
         <source>Low German</source>
-        <translation type="unfinished"/>
+        <translation>低地德语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="236"/>
         <source>Luxembourgish</source>
-        <translation type="unfinished"/>
+        <translation>卢森堡语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="237"/>
         <source>Macedonian</source>
-        <translation type="unfinished"/>
+        <translation>马其顿语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="238"/>
         <source>Macedonian (Macedonia)</source>
-        <translation type="unfinished"/>
+        <translation>马其顿语（马其顿）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="239"/>
         <source>Maithili</source>
-        <translation type="unfinished"/>
+        <translation>迈蒂利语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="240"/>
         <source>Malagasy</source>
-        <translation type="unfinished"/>
+        <translation>马达加斯加语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="241"/>
         <source>Malay</source>
-        <translation type="unfinished"/>
+        <translation>马来语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="242"/>
         <source>Malayalam</source>
-        <translation type="unfinished"/>
+        <translation>马拉雅拉姆语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="243"/>
         <source>Malayalam (India)</source>
-        <translation type="unfinished"/>
+        <translation>马拉雅拉姆语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="244"/>
         <source>Malay (Malaysia)</source>
-        <translation type="unfinished"/>
+        <translation>马来语（马来西亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="245"/>
         <source>Maltese</source>
-        <translation type="unfinished"/>
+        <translation>马耳他语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="246"/>
         <source>Maltese (Malta)</source>
-        <translation type="unfinished"/>
+        <translation>马耳他语（马尔他）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="247"/>
         <source>Maori</source>
-        <translation type="unfinished"/>
+        <translation>毛利语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="248"/>
         <source>Mapudungun</source>
-        <translation type="unfinished"/>
+        <translation>马普切语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="249"/>
         <source>Marathi</source>
-        <translation type="unfinished"/>
+        <translation>马拉地语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="250"/>
         <source>Marathi (India)</source>
-        <translation type="unfinished"/>
+        <translation>马拉地语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="251"/>
         <source>Mirandese</source>
-        <translation type="unfinished"/>
+        <translation>米兰德斯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="252"/>
         <source>Mongolian</source>
-        <translation type="unfinished"/>
+        <translation>蒙古语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="253"/>
         <source>Mongolian (Mongolia)</source>
-        <translation type="unfinished"/>
+        <translation>蒙古语（蒙古）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="254"/>
         <source>Nahuatl</source>
-        <translation type="unfinished"/>
+        <translation>纳瓦特尔语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="255"/>
         <source>Navajo</source>
-        <translation type="unfinished"/>
+        <translation>纳瓦霍语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="256"/>
         <source>Ndebele, South</source>
-        <translation type="unfinished"/>
+        <translation>恩德贝勒语，南部</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="257"/>
         <source>Neapolitan</source>
-        <translation type="unfinished"/>
+        <translation>那不勒斯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="258"/>
         <source>Nepali</source>
-        <translation type="unfinished"/>
+        <translation>尼泊尔语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="259"/>
         <source>Nepali (Nepal)</source>
-        <translation type="unfinished"/>
+        <translation>尼泊尔语（尼泊尔）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="260"/>
         <source>Nias</source>
-        <translation type="unfinished"/>
+        <translation>尼亚斯</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="261"/>
@@ -1512,362 +1512,362 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="262"/>
         <source>Northern Sami</source>
-        <translation type="unfinished"/>
+        <translation>北方萨米语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="263"/>
         <source>Northern Sotho</source>
-        <translation type="unfinished"/>
+        <translation>北索托语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="264"/>
         <source>Norwegian</source>
-        <translation type="unfinished"/>
+        <translation>挪威语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="148"/>
         <source>Franco-Provençal (Arpitan)</source>
-        <translation type="unfinished"/>
+        <translation>法兰克（法兰克）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="38"/>
         <source>System default</source>
-        <translation type="unfinished"/>
+        <translation>系统默认</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="265"/>
         <source>Norwegian Bokmål</source>
-        <translation type="unfinished"/>
+        <translation>书面挪威语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="266"/>
         <source>Norwegian Bokmål (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>书面挪威语（挪威）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="267"/>
         <source>Norwegian (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>挪威语（挪威）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="268"/>
         <source>Norwegian Nynorsk</source>
-        <translation type="unfinished"/>
+        <translation>挪威的尼诺斯克语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="269"/>
         <source>Norwegian Nynorsk (Norway)</source>
-        <translation type="unfinished"/>
+        <translation>挪威的尼诺斯克语（挪威）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="270"/>
         <source>Nyanja</source>
-        <translation type="unfinished"/>
+        <translation>尼昂加语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="271"/>
         <source>Occitan (post 1500)</source>
-        <translation type="unfinished"/>
+        <translation>奥克西唐语（post 1500）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="272"/>
         <source>Oriya</source>
-        <translation type="unfinished"/>
+        <translation>奥里雅语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="273"/>
         <source>Oriya (India)</source>
-        <translation type="unfinished"/>
+        <translation>奥里雅语（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="274"/>
         <source>Oromo</source>
-        <translation type="unfinished"/>
+        <translation>奥罗莫语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="275"/>
         <source>Ossetic</source>
-        <translation type="unfinished"/>
+        <translation>奥塞特语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="276"/>
         <source>Palatinate German</source>
-        <translation type="unfinished"/>
+        <translation>普法尔茨德语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="277"/>
         <source>Panjabi (Punjabi)</source>
-        <translation type="unfinished"/>
+        <translation>旁遮普语（旁遮普）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="278"/>
         <source>Panjabi (Punjabi) (India)</source>
-        <translation type="unfinished"/>
+        <translation>旁遮普语（旁遮普）（印度）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="279"/>
         <source>Papiamento</source>
-        <translation type="unfinished"/>
+        <translation>帕皮阿门托语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="280"/>
         <source>Persian</source>
-        <translation type="unfinished"/>
+        <translation>波斯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="281"/>
         <source>Persian (Iran)</source>
-        <translation type="unfinished"/>
+        <translation>波斯语（伊朗）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="282"/>
         <source>Piemontese</source>
-        <translation type="unfinished"/>
+        <translation>皮埃蒙特</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="283"/>
         <source>Pirate English</source>
-        <translation type="unfinished"/>
+        <translation>海盗英语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="284"/>
         <source>Polish</source>
-        <translation type="unfinished"/>
+        <translation>波兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="285"/>
         <source>Polish (Poland)</source>
-        <translation type="unfinished"/>
+        <translation>波兰语（波兰）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="286"/>
         <source>Portuguese</source>
-        <translation type="unfinished"/>
+        <translation>葡萄牙语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="287"/>
         <source>Portuguese (Brazil)</source>
-        <translation type="unfinished"/>
+        <translation>葡萄牙语（巴西）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="288"/>
         <source>Portuguese (Portugal)</source>
-        <translation type="unfinished"/>
+        <translation>葡萄牙语（葡萄牙）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="289"/>
         <source>Pushto</source>
-        <translation type="unfinished"/>
+        <translation>普什图语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="290"/>
         <source>Romanian</source>
-        <translation type="unfinished"/>
+        <translation>罗马尼亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="291"/>
         <source>Romanian (Romania)</source>
-        <translation type="unfinished"/>
+        <translation>罗马尼亚语（罗马尼亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="292"/>
         <source>Romansh</source>
-        <translation type="unfinished"/>
+        <translation>罗曼什语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="293"/>
         <source>Russian</source>
-        <translation type="unfinished"/>
+        <translation>俄语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="294"/>
         <source>Russian (Estonia)</source>
-        <translation type="unfinished"/>
+        <translation>俄语（爱沙尼亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="295"/>
         <source>Russian (Latvia)</source>
-        <translation type="unfinished"/>
+        <translation>俄语（拉脱维亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="296"/>
         <source>Russian (Lithuania)</source>
-        <translation type="unfinished"/>
+        <translation>俄语（立陶宛）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="297"/>
         <source>Russian Petrine orthography</source>
-        <translation type="unfinished"/>
+        <translation>俄罗斯圣彼得的拼字法</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="298"/>
         <source>Russian (Russia)</source>
-        <translation type="unfinished"/>
+        <translation>俄语（俄国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="299"/>
         <source>Sakha (Yakut)</source>
-        <translation type="unfinished"/>
+        <translation>萨哈（雅库特语）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="300"/>
         <source>Samoan</source>
-        <translation type="unfinished"/>
+        <translation>萨摩亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="301"/>
         <source>Sardinian</source>
-        <translation type="unfinished"/>
+        <translation>撒丁语的</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="302"/>
         <source>Scots</source>
-        <translation type="unfinished"/>
+        <translation>苏格兰语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="303"/>
         <source>Serbian</source>
-        <translation type="unfinished"/>
+        <translation>塞尔维亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="304"/>
         <source>Serbian (Ijekavian)</source>
-        <translation type="unfinished"/>
+        <translation>塞尔维亚语（克罗地亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="305"/>
         <source>Serbian (Ijekavian Latin)</source>
-        <translation type="unfinished"/>
+        <translation>塞尔维亚语（克罗地亚拉丁）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="306"/>
         <source>Serbian (Latin)</source>
-        <translation type="unfinished"/>
+        <translation>塞尔维亚语（拉丁）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="307"/>
         <source>Serbian (Latin) (Serbia)</source>
-        <translation type="unfinished"/>
+        <translation>塞尔维亚语（拉丁）（塞尔维亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="308"/>
         <source>Serbian (Serbia)</source>
-        <translation type="unfinished"/>
+        <translation>塞尔维亚语（塞尔维亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="309"/>
         <source>Shona</source>
-        <translation type="unfinished"/>
+        <translation>修纳语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="310"/>
         <source>Sicilian</source>
-        <translation type="unfinished"/>
+        <translation>西西里语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="311"/>
         <source>Silesian</source>
-        <translation type="unfinished"/>
+        <translation>西莱亚西语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="312"/>
         <source>Sindhi</source>
-        <translation type="unfinished"/>
+        <translation>信德语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="313"/>
         <source>Sinhala</source>
-        <translation type="unfinished"/>
+        <translation>僧伽罗语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="314"/>
         <source>Sinhala (Sri Lanka)</source>
-        <translation type="unfinished"/>
+        <translation>僧伽罗语（斯里兰卡）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="315"/>
         <source>Slovak</source>
-        <translation type="unfinished"/>
+        <translation>斯洛伐克语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="316"/>
         <source>Slovak (Slovakia)</source>
-        <translation type="unfinished"/>
+        <translation>斯洛伐克语（斯洛伐克）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="317"/>
         <source>Slovenian</source>
-        <translation type="unfinished"/>
+        <translation>斯洛维尼亚语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="318"/>
         <source>Slovenian (Slovenia)</source>
-        <translation type="unfinished"/>
+        <translation>斯洛维尼亚语（斯洛维尼亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="319"/>
         <source>Somali</source>
-        <translation type="unfinished"/>
+        <translation>索马里语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="320"/>
         <source>Songhay</source>
-        <translation type="unfinished"/>
+        <translation>桑海语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="321"/>
         <source>Sotho, Southern</source>
-        <translation type="unfinished"/>
+        <translation>梭托语，南部</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="322"/>
         <source>Sotho, Southern (South Africa)</source>
-        <translation type="unfinished"/>
+        <translation>梭托语，南部（南非）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="323"/>
         <source>Southern Sami</source>
-        <translation type="unfinished"/>
+        <translation>南萨莫斯语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="324"/>
         <source>Spanish</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="325"/>
         <source>Spanish (Argentina)</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语（阿根廷）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="326"/>
         <source>Spanish (Bolivia)</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语（玻利维亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="327"/>
         <source>Spanish (Chile)</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语（智利）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="328"/>
         <source>Spanish (Colombia)</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语（哥伦比亚）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="329"/>
         <source>Spanish (Costa Rica)</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语（哥斯达黎加）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="330"/>
         <source>Spanish (Dominican Republic)</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语（多米尼加共和国）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="331"/>
         <source>Spanish (Ecuador)</source>
-        <translation type="unfinished"/>
+        <translation>西班牙语（厄瓜多尔）</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="332"/>
@@ -2255,22 +2255,22 @@
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="44"/>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation>所有</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="45"/>
         <source>Untranslated</source>
-        <translation type="unfinished"/>
+        <translation>未翻译</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="46"/>
         <source>Not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>未审阅</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/ListFilterDialog.qml" line="47"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>已审阅</translation>
     </message>
 </context>
 <context>
@@ -2313,7 +2313,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="68"/>
         <source>Settings</source>
-        <translation type="unfinished"/>
+        <translation>设置</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="72"/>
@@ -2530,7 +2530,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="53"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>哎呀，出错了：</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
@@ -2565,7 +2565,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="249"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>刷新</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="191"/>
@@ -2579,19 +2579,19 @@
         <location filename="../src/api/projectsapi.cpp" line="62"/>
         <location filename="../src/api/projectsapi.cpp" line="121"/>
         <source>Server reply was empty.</source>
-        <translation type="unfinished"/>
+        <translation>服务器反馈为空。</translation>
     </message>
     <message>
         <location filename="../src/api/projectsapi.cpp" line="73"/>
         <location filename="../src/api/projectsapi.cpp" line="132"/>
         <source>Not found</source>
-        <translation type="unfinished"/>
+        <translation>未找到</translation>
     </message>
     <message>
         <location filename="../src/api/projectsapi.cpp" line="76"/>
         <location filename="../src/api/projectsapi.cpp" line="135"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>操作已取消。用户名和/或密码错误，或SSL握手失败。</translation>
     </message>
 </context>
 <context>
@@ -2612,7 +2612,7 @@
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="46"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>哎呀，出错了：</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="62"/>
@@ -2622,12 +2622,12 @@
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="68"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>前一个</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="82"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>下一个</translation>
     </message>
 </context>
 <context>
@@ -2635,12 +2635,12 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="117"/>
         <source>%n string(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation><numerusform>%n个字符串</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>
         <source>dd.MM.yy hh:mmAP</source>
-        <translation type="unfinished"/>
+        <translation>dd.MM.yy hh:mmAP</translation>
     </message>
 </context>
 <context>
@@ -2648,17 +2648,17 @@
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="48"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>哎呀，出错了：</translation>
     </message>
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="65"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>刷新</translation>
     </message>
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="75"/>
         <source>Resources:</source>
-        <translation type="unfinished"/>
+        <translation>源：</translation>
     </message>
 </context>
 <context>
@@ -2666,67 +2666,67 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="42"/>
         <source>Settings</source>
-        <translation type="unfinished"/>
+        <translation>设置</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation type="unfinished"/>
+        <translation>显示语言</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>语言</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation type="unfinished"/>
+        <translation>修改显示语言需要在重启后生效。</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>
         <source>Behavior</source>
-        <translation type="unfinished"/>
+        <translation>行为</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="69"/>
         <source>Default list filter</source>
-        <translation type="unfinished"/>
+        <translation>默认列表过滤规则</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="72"/>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation>所有</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="73"/>
         <source>Untranslated</source>
-        <translation type="unfinished"/>
+        <translation>未翻译</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="74"/>
         <source>Not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>未审阅</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="75"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>已审阅</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="81"/>
         <source>Font sizes</source>
-        <translation type="unfinished"/>
+        <translation>字体大小</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="90"/>
         <source>Source text font size</source>
-        <translation type="unfinished"/>
+        <translation>源文字体大小</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="102"/>
         <source>Translation text font size</source>
-        <translation type="unfinished"/>
+        <translation>译文字体大小</translation>
     </message>
 </context>
 <context>
@@ -2735,25 +2735,25 @@
         <location filename="../src/api/statisticsapi.cpp" line="15"/>
         <location filename="../src/api/statisticsapi.cpp" line="106"/>
         <source>No resources set.</source>
-        <translation type="unfinished"/>
+        <translation>未设置源。</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="77"/>
         <location filename="../src/api/statisticsapi.cpp" line="155"/>
         <source>Server reply was empty.</source>
-        <translation type="unfinished"/>
+        <translation>服务器反馈为空。</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="87"/>
         <location filename="../src/api/statisticsapi.cpp" line="165"/>
         <source>Not found</source>
-        <translation type="unfinished"/>
+        <translation>未找到</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="90"/>
         <location filename="../src/api/statisticsapi.cpp" line="168"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>操作已取消。用户名和/或密码错误，或SSL握手失败。</translation>
     </message>
 </context>
 <context>
@@ -2761,42 +2761,42 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="48"/>
         <source>Metadata</source>
-        <translation type="unfinished"/>
+        <translation>元数据</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="51"/>
         <source>Tags</source>
-        <translation type="unfinished"/>
+        <translation>标签</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="62"/>
         <source>Comment</source>
-        <translation type="unfinished"/>
+        <translation>评论</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
         <source>Occurences</source>
-        <translation type="unfinished"/>
+        <translation>历史</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
         <source>Character limit</source>
-        <translation type="unfinished"/>
+        <translation>字符限定</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
         <source>Last update</source>
-        <translation type="unfinished"/>
+        <translation>上次更新</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
-        <translation type="unfinished"/>
+        <translation>上次提交者</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
         <source>Hash</source>
-        <translation type="unfinished"/>
+        <translation>哈希</translation>
     </message>
 </context>
 <context>
@@ -2804,22 +2804,22 @@
     <message>
         <location filename="../qml/pages/StringPage.qml" line="255"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>前一个</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="263"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>下一个</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="276"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>已审阅</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="342"/>
         <source>Copy to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>复制到剪贴板</translation>
     </message>
 </context>
 <context>
@@ -2827,17 +2827,17 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="99"/>
         <source>Server reply was empty.</source>
-        <translation type="unfinished"/>
+        <translation>服务器反馈为空。</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="110"/>
         <source>Not found</source>
-        <translation type="unfinished"/>
+        <translation>未找到</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="113"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>操作已取消。用户名和/或密码错误，或SSL握手失败。</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="184"/>
@@ -2860,27 +2860,27 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="56"/>
         <source>Untranslated</source>
-        <translation type="unfinished"/>
+        <translation>未翻译</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="58"/>
         <source>Not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>未审阅</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="60"/>
         <source>Reviewed</source>
-        <translation type="unfinished"/>
+        <translation>已审阅</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="63"/>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation>所有</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="82"/>
         <source>Ooops, the following error occured:</source>
-        <translation type="unfinished"/>
+        <translation>哎呀，出错了：</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
@@ -2900,7 +2900,7 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="145"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>刷新</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="153"/>

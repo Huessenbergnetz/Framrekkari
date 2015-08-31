@@ -2017,7 +2017,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="361"/>
         <source>Tetum (Tetun)</source>
-        <translation type="unfinished"/>
+        <translation>Tetum (Tetun)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="362"/>
