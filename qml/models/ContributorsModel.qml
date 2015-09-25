@@ -22,7 +22,7 @@ import QtQuick 2.2
 
 ListModel {
     ListElement {
-        name: "Buschmann (Matthias Fehring)"
+        name: "Matthias Fehring (Buschmann)"
         role: QT_TR_NOOP("Main developer, Framrekkari creator")
         section: QT_TR_NOOP("Author")
         image: "buschmann.png"
@@ -32,18 +32,24 @@ ListModel {
     }
 
     ListElement {
+        name: "Agustí Clara (fri666)"
+        role: QT_TR_NOOP("Catalan translation")
+        section: QT_TR_NOOP("Thanks to")
+        twitter: "agusticlara"
+    }
+
+    ListElement {
+        name: "Åke Engelbrektson (eson)"
+        role: QT_TR_NOOP("Swedish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
         name: "Antoine Vacher (Tigre-Bleu)"
         role: QT_TR_NOOP("French translation")
         section: QT_TR_NOOP("Thanks to")
         image: "tigre-bleu.png"
         twitter: "tigre_bleu"
-    }
-
-    ListElement {
-        name: "Agustí Clara"
-        role: QT_TR_NOOP("Catalan translation")
-        section: QT_TR_NOOP("Thanks to")
-        twitter: "agusticlara"
     }
 
     ListElement {
@@ -73,8 +79,14 @@ ListModel {
     }
 
     ListElement {
-        name: "Jiri Grönroos"
+        name: "Jiri Grönroos (artnay)"
         role: QT_TR_NOOP("Finnish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "Kjetil Kilhavn"
+        role: QT_TR_NOOP("Norwegian Bokmål (Norway) translation")
         section: QT_TR_NOOP("Thanks to")
     }
 
@@ -86,8 +98,28 @@ ListModel {
     }
 
     ListElement {
+        name: "Lorenzo Facca"
+        role: QT_TR_NOOP("Italian translation")
+        section: QT_TR_NOOP("Thanks to")
+        twitter: "LorenzoFacca"
+        website: "http://jollacommunity.altervista.org/"
+    }
+
+    ListElement {
         name: "Maurycy Czerwieniec"
         role: QT_TR_NOOP("Polish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "Mesut Aktaş"
+        role: QT_TR_NOOP("Turkish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "Miikka Kukko (jotakinhan)"
+        role: QT_TR_NOOP("Finnish translation")
         section: QT_TR_NOOP("Thanks to")
     }
 
@@ -109,8 +141,32 @@ ListModel {
     }
 
     ListElement {
+        name: "Petr Tsymbarovich (mentaljam)"
+        role: QT_TR_NOOP("Russian translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
         name: "szopin"
         role: QT_TR_NOOP("Polish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "Thomas Tanghus"
+        role: QT_TR_NOOP("Danish translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "TylerTemp"
+        role: QT_TR_NOOP("Chinese (China) translation")
+        section: QT_TR_NOOP("Thanks to")
+    }
+
+    ListElement {
+        name: "Watchmaker"
+        role: QT_TR_NOOP("Italian translation")
         section: QT_TR_NOOP("Thanks to")
     }
 
