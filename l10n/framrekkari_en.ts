@@ -81,17 +81,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="252"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="253"/>
         <source>Translate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="259"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="260"/>
         <source>Report bugs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="283"/>
         <source>3rd party licenses</source>
         <translation type="unfinished"></translation>
     </message>
@@ -356,12 +356,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="154"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="155"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="160"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="161"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>

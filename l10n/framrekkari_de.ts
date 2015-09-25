@@ -79,17 +79,17 @@
         <translation>Mitwirken</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="252"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="253"/>
         <source>Translate</source>
         <translation>Übersetzen</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="259"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="260"/>
         <source>Report bugs</source>
         <translation>Fehler melden</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="283"/>
         <source>3rd party licenses</source>
         <translation>Lizenzen von Dritten</translation>
     </message>
@@ -351,12 +351,12 @@
         <translation>Letzte Änderungen</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="154"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="155"/>
         <source>Help</source>
         <translation>Hilfe</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="160"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="161"/>
         <source>Close</source>
         <translation>Schließen</translation>
     </message>

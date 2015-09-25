@@ -79,17 +79,17 @@
         <translation>Bidrag</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="252"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="253"/>
         <source>Translate</source>
         <translation>Oversæt</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="259"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="260"/>
         <source>Report bugs</source>
         <translation>Indrapporter fejl</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="283"/>
         <source>3rd party licenses</source>
         <translation>Tredjepart licenser</translation>
     </message>
@@ -351,12 +351,12 @@
         <translation>Sidst ændret</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="154"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="155"/>
         <source>Help</source>
         <translation>Hjælp</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="160"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="161"/>
         <source>Close</source>
         <translation>Luk</translation>
     </message>
@@ -537,7 +537,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="66"/>
         <source>Bashkir</source>
-        <translation type="unfinished"/>
+        <translation>Basjkirsk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="67"/>
@@ -1257,7 +1257,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="211"/>
         <source>Kinyarwanda</source>
-        <translation type="unfinished"/>
+        <translation>Kinyarwanda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="212"/>
@@ -1397,7 +1397,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="239"/>
         <source>Maithili</source>
-        <translation type="unfinished"/>
+        <translation>Maithili</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="240"/>
@@ -1412,7 +1412,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="242"/>
         <source>Malayalam</source>
-        <translation type="unfinished"/>
+        <translation>Malayalam</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="243"/>
@@ -1607,7 +1607,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="279"/>
         <source>Papiamento</source>
-        <translation type="unfinished"/>
+        <translation>Papiamento</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="280"/>
@@ -1657,7 +1657,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="289"/>
         <source>Pushto</source>
-        <translation type="unfinished"/>
+        <translation>Pashto</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="290"/>
@@ -1767,7 +1767,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="311"/>
         <source>Silesian</source>
-        <translation type="unfinished"/>
+        <translation>Schlesisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="312"/>
@@ -2002,7 +2002,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="358"/>
         <source>Tatar</source>
-        <translation type="unfinished"/>
+        <translation>Tatarisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="359"/>

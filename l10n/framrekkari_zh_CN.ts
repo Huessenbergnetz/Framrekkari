@@ -79,17 +79,17 @@
         <translation>贡献</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="252"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="253"/>
         <source>Translate</source>
         <translation>翻译</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="259"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="260"/>
         <source>Report bugs</source>
         <translation>反馈BUG</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="283"/>
         <source>3rd party licenses</source>
         <translation>第三方协议</translation>
     </message>
@@ -351,12 +351,12 @@
         <translation>上次修改</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="154"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="155"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="160"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="161"/>
         <source>Close</source>
         <translation>关闭</translation>
     </message>

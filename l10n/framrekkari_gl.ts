@@ -79,17 +79,17 @@
         <translation>Contribue</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="252"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="253"/>
         <source>Translate</source>
         <translation>Traduce</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="259"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="260"/>
         <source>Report bugs</source>
         <translation>Informar de erros</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/AboutPage.qml" line="282"/>
+        <location filename="../qml/BTComponents/AboutPage.qml" line="283"/>
         <source>3rd party licenses</source>
         <translation>Licencias de terceiros</translation>
     </message>
@@ -351,12 +351,12 @@
         <translation>Últimos cambios</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="154"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="155"/>
         <source>Help</source>
         <translation>Axuda</translation>
     </message>
     <message>
-        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="160"/>
+        <location filename="../qml/BTComponents/FirstStartInfo.qml" line="161"/>
         <source>Close</source>
         <translation>Pechar</translation>
     </message>
@@ -2591,7 +2591,7 @@
         <location filename="../src/api/projectsapi.cpp" line="76"/>
         <location filename="../src/api/projectsapi.cpp" line="135"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>Operación cancelada. Nome de usuario e/ou contrasinal erroneo ou fallou o SSL handshake.</translation>
     </message>
 </context>
 <context>
@@ -2599,12 +2599,12 @@
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="59"/>
         <source>Source lang: %1</source>
-        <translation type="unfinished"/>
+        <translation>Idioma orixe: %1</translation>
     </message>
     <message>
         <location filename="../qml/delegates/ProjectsDelegate.qml" line="68"/>
         <source>Slug: %1</source>
-        <translation type="unfinished"/>
+        <translation>Slug: %1</translation>
     </message>
 </context>
 <context>
@@ -2617,17 +2617,17 @@
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="62"/>
         <source>Projects:</source>
-        <translation type="unfinished"/>
+        <translation>Proxectos:</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="68"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>Previo</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectsListPage.qml" line="82"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>Seguinte</translation>
     </message>
 </context>
 <context>
@@ -2635,12 +2635,12 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="117"/>
         <source>%n string(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n cadea</numerusform><numerusform>%n cadeas</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>
         <source>dd.MM.yy hh:mmAP</source>
-        <translation type="unfinished"/>
+        <translation>dd.MM.yy hh:mmAP</translation>
     </message>
 </context>
 <context>
@@ -2658,7 +2658,7 @@
     <message>
         <location filename="../qml/pages/ResourcesPage.qml" line="75"/>
         <source>Resources:</source>
-        <translation type="unfinished"/>
+        <translation>Recursos:</translation>
     </message>
 </context>
 <context>
@@ -2671,27 +2671,27 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation type="unfinished"/>
+        <translation>Idioma da aplicación</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>Idioma</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation type="unfinished"/>
+        <translation>O idioma da aplicación cambiarase no seguinte reinicio.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>
         <source>Behavior</source>
-        <translation type="unfinished"/>
+        <translation>Conducta</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="69"/>
         <source>Default list filter</source>
-        <translation type="unfinished"/>
+        <translation>Filtro da lista por defecto</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="72"/>
@@ -2716,17 +2716,17 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="81"/>
         <source>Font sizes</source>
-        <translation type="unfinished"/>
+        <translation>Tamaño de fontes</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="90"/>
         <source>Source text font size</source>
-        <translation type="unfinished"/>
+        <translation>Tamaño da fonte do texto de orixe</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="102"/>
         <source>Translation text font size</source>
-        <translation type="unfinished"/>
+        <translation>Tamaño de fonte do texto traducido</translation>
     </message>
 </context>
 <context>
@@ -2735,7 +2735,7 @@
         <location filename="../src/api/statisticsapi.cpp" line="15"/>
         <location filename="../src/api/statisticsapi.cpp" line="106"/>
         <source>No resources set.</source>
-        <translation type="unfinished"/>
+        <translation>Non hai recursos asignados.</translation>
     </message>
     <message>
         <location filename="../src/api/statisticsapi.cpp" line="77"/>
@@ -2753,7 +2753,7 @@
         <location filename="../src/api/statisticsapi.cpp" line="90"/>
         <location filename="../src/api/statisticsapi.cpp" line="168"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>Operación cancelada. Nome de usuario e/ou contrasinal erroneo ou fallou o SSL handshake.</translation>
     </message>
 </context>
 <context>
@@ -2761,17 +2761,17 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="48"/>
         <source>Metadata</source>
-        <translation type="unfinished"/>
+        <translation>Metadata</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="51"/>
         <source>Tags</source>
-        <translation type="unfinished"/>
+        <translation>Etiquetas</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="62"/>
         <source>Comment</source>
-        <translation type="unfinished"/>
+        <translation>Comentar</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
@@ -2804,12 +2804,12 @@
     <message>
         <location filename="../qml/pages/StringPage.qml" line="255"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>Previo</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="263"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>Seguinte</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringPage.qml" line="276"/>
@@ -2837,7 +2837,7 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="113"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed.</source>
-        <translation type="unfinished"/>
+        <translation>Operación cancelada. Nome de usuario e/ou contrasinal erroneo ou fallou o SSL handshake.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="184"/>
