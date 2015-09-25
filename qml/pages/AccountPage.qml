@@ -79,7 +79,7 @@ Page {
             id: transifexHint
             font.pixelSize: Theme.fontSizeTiny
             color: projectItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             text: qsTr("You need to enter the exact and correct project slug (project name used in the browser URL).")
             visible: accountPage.accountType === 0
@@ -95,7 +95,7 @@ Page {
 
         Label {
             id: errorLabel
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             visible: false
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             color: Theme.highlightColor
@@ -119,7 +119,7 @@ Page {
 
             Column {
                 id: projectItemCol
-                anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
 
                 Label {
                     id: nameLabel

@@ -44,7 +44,7 @@ Page {
 
             Text {
                 id: general
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -56,7 +56,7 @@ Page {
 
             Text {
                 id: transifexLimitations
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere

@@ -296,7 +296,7 @@ Page {
 
                 Text {
                     id: sourceText
-                    anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                    anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                     font.pixelSize: config.sourceFontSize
                     color: Theme.primaryColor
                     wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -310,7 +310,7 @@ Page {
             visible: pluralized
             orientation: ListView.Horizontal
             model: translationsModel
-            anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingRight; top: column.bottom }
+            anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin; top: column.bottom }
             height: Theme.itemSizeSmall
             delegate: PluralDelegate {
                 count: translationsModel.count

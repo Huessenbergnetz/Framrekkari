@@ -41,7 +41,7 @@ ListItem {
         width: parent.width
 
         Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: nameLabel.height
             spacing: 5
 
@@ -75,7 +75,7 @@ ListItem {
         }
 
         Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
 
             Row {
                 width: parent.width/3

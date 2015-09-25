@@ -111,14 +111,14 @@ Page {
 
         Text {
             id: description
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.primaryColor
             wrapMode: Text.WordWrap
         }
 
         Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: tags.height
             visible: tags.text !== ""
             spacing: 5
@@ -141,7 +141,7 @@ Page {
         }
 
         Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: owner.height
             visible: owner.text !== ""
             spacing: 5
@@ -165,7 +165,7 @@ Page {
         }
 
         Row {
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: maintainers.height
             visible: maintainers.text !== ""
             spacing: 5
@@ -199,7 +199,7 @@ Page {
 
         Text {
             id: noResources
-            anchors { left: parent.left; leftMargin: Theme.paddingLarge; right: parent.right; rightMargin: Theme.paddingLarge }
+            anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             font.pixelSize: Theme.fontSizeExtraSmall
             color: Theme.secondaryColor
             wrapMode: Text.WordWrap

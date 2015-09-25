@@ -52,7 +52,7 @@ Page {
 
             Text {
                 id: tagsText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -63,7 +63,7 @@ Page {
 
             Text {
                 id: commentText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -74,7 +74,7 @@ Page {
 
             Text {
                 id: occurrencesText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -85,7 +85,7 @@ Page {
 
             Text {
                 id: characterLimitText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -97,7 +97,7 @@ Page {
 
             Text {
                 id: lastUpdateText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -107,7 +107,7 @@ Page {
 
             Text {
                 id: lastCommiterText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -117,7 +117,7 @@ Page {
 
             Text {
                 id: hashText
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.primaryColor
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere

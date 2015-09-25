@@ -77,7 +77,7 @@ BackgroundItem {
             id: text
             color: Theme.primaryColor
             font.pixelSize: Theme.fontSizeSmall
-            anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
+            anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin; verticalCenter: parent.verticalCenter }
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
     }

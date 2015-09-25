@@ -79,7 +79,7 @@ Dialog {
             }
 
             Row {
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
 
                 Text {
                     id: typeInfo

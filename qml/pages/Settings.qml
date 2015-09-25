@@ -53,7 +53,7 @@ Page {
             }
 
             Text {
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
                 text: qsTr("Changing the display language is only applied after a restart of the application.")
                 wrapMode: Text.WordWrap
                 color: Theme.secondaryColor

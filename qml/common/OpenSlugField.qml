@@ -82,7 +82,7 @@ TextField {
                 id: clearButton
                 anchors {
                     right: parent.right
-                    rightMargin: Theme.paddingLarge
+                    rightMargin: Theme.horizontalPageMargin
                 }
                 width: icon.width
                 height: parent.height
