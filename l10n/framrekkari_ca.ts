@@ -304,7 +304,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="43"/>
         <source>Swedish translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció sueca</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="89"/>
         <source>Norwegian Bokmål (Norway) translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció Bokmål Noruega</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="95"/>
@@ -337,7 +337,7 @@
         <location filename="../qml/models/ContributorsModel.qml" line="102"/>
         <location filename="../qml/models/ContributorsModel.qml" line="169"/>
         <source>Italian translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció italiana</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="110"/>
@@ -348,7 +348,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="116"/>
         <source>Turkish translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció turca</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="128"/>
@@ -358,12 +358,12 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="145"/>
         <source>Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció russa</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="163"/>
         <source>Chinese (China) translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducció xinesa</translation>
     </message>
 </context>
 <context>

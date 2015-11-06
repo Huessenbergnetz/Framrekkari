@@ -304,7 +304,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="43"/>
         <source>Swedish translation</source>
-        <translation type="unfinished"/>
+        <translation>Svensk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="89"/>
         <source>Norwegian Bokmål (Norway) translation</source>
-        <translation type="unfinished"/>
+        <translation>Norsk Bokmål (Norge) oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="95"/>
@@ -337,7 +337,7 @@
         <location filename="../qml/models/ContributorsModel.qml" line="102"/>
         <location filename="../qml/models/ContributorsModel.qml" line="169"/>
         <source>Italian translation</source>
-        <translation type="unfinished"/>
+        <translation>Italiensk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="110"/>
@@ -348,7 +348,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="116"/>
         <source>Turkish translation</source>
-        <translation type="unfinished"/>
+        <translation>Tyrkisk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="128"/>
@@ -358,12 +358,12 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="145"/>
         <source>Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>Russisk oversættelse</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="163"/>
         <source>Chinese (China) translation</source>
-        <translation type="unfinished"/>
+        <translation>Kinesisk (Kina) oversættelse</translation>
     </message>
 </context>
 <context>
@@ -464,7 +464,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="43"/>
         <source>Akan</source>
-        <translation type="unfinished"/>
+        <translation>Akan</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="44"/>
@@ -574,7 +574,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="65"/>
         <source>Balochi</source>
-        <translation type="unfinished"/>
+        <translation>Baluchisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="66"/>
@@ -849,7 +849,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="120"/>
         <source>Divehi</source>
-        <translation type="unfinished"/>
+        <translation>Dhivehi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="121"/>
@@ -869,7 +869,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="124"/>
         <source>Dzongkha</source>
-        <translation type="unfinished"/>
+        <translation>Dzongkha</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="125"/>
@@ -1119,7 +1119,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="175"/>
         <source>Hausa</source>
-        <translation type="unfinished"/>
+        <translation>Hausa</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="176"/>
@@ -1164,12 +1164,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="184"/>
         <source>Ido</source>
-        <translation type="unfinished"/>
+        <translation>Ido</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="185"/>
         <source>Igbo</source>
-        <translation type="unfinished"/>
+        <translation>Igbo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="186"/>
@@ -1229,7 +1229,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="197"/>
         <source>Kabyle</source>
-        <translation type="unfinished"/>
+        <translation>Kabyle</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="198"/>
@@ -1244,7 +1244,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="200"/>
         <source>Kapampangan</source>
-        <translation type="unfinished"/>
+        <translation>Kapampangan</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="201"/>
@@ -1304,7 +1304,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="212"/>
         <source>Kirgyz</source>
-        <translation type="unfinished"/>
+        <translation>Kirgisisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="213"/>
@@ -1384,7 +1384,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="228"/>
         <source>Lingala</source>
-        <translation type="unfinished"/>
+        <translation>Lingala</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="229"/>
@@ -1399,7 +1399,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="231"/>
         <source>Lojban</source>
-        <translation type="unfinished"/>
+        <translation>Lojban</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="232"/>
@@ -1489,7 +1489,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="249"/>
         <source>Marathi</source>
-        <translation type="unfinished"/>
+        <translation>Marathi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="250"/>
@@ -1499,7 +1499,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="251"/>
         <source>Mirandese</source>
-        <translation type="unfinished"/>
+        <translation>Mirandesisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="252"/>
@@ -1514,7 +1514,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="254"/>
         <source>Nahuatl</source>
-        <translation type="unfinished"/>
+        <translation>Nahuatl</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="255"/>
@@ -1524,7 +1524,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="256"/>
         <source>Ndebele, South</source>
-        <translation type="unfinished"/>
+        <translation>Ndebele, Syd</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="257"/>
@@ -1604,7 +1604,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="270"/>
         <source>Nyanja</source>
-        <translation type="unfinished"/>
+        <translation>Nyanja</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="271"/>
@@ -1624,12 +1624,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="274"/>
         <source>Oromo</source>
-        <translation type="unfinished"/>
+        <translation>Oromo</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="275"/>
         <source>Ossetic</source>
-        <translation type="unfinished"/>
+        <translation>Ossetisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="276"/>
@@ -1814,7 +1814,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="312"/>
         <source>Sindhi</source>
-        <translation type="unfinished"/>
+        <translation>Sindhi</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="313"/>
@@ -1854,12 +1854,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="320"/>
         <source>Songhay</source>
-        <translation type="unfinished"/>
+        <translation>Songhay</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="321"/>
         <source>Sotho, Southern</source>
-        <translation type="unfinished"/>
+        <translation>Sotho, Sydlig</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="322"/>
@@ -1989,7 +1989,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="347"/>
         <source>Swati</source>
-        <translation type="unfinished"/>
+        <translation>Swati</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="348"/>
@@ -2019,12 +2019,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="353"/>
         <source>Tajik</source>
-        <translation type="unfinished"/>
+        <translation>Tadsjikisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="354"/>
         <source>Tajik (Tajikistan)</source>
-        <translation type="unfinished"/>
+        <translation>Tajik (Tadsjikistan)</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="355"/>
@@ -2049,7 +2049,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="359"/>
         <source>Telugu</source>
-        <translation type="unfinished"/>
+        <translation>Telugu</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="360"/>
@@ -2084,7 +2084,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="366"/>
         <source>Tigrinya</source>
-        <translation type="unfinished"/>
+        <translation>Tigrinyansk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="367"/>
@@ -2094,7 +2094,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="368"/>
         <source>Tsonga</source>
-        <translation type="unfinished"/>
+        <translation>Tsonga</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="369"/>
@@ -2124,7 +2124,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="374"/>
         <source>Udmurt</source>
-        <translation type="unfinished"/>
+        <translation>Udmurtisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="375"/>
@@ -2199,7 +2199,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="389"/>
         <source>Venda</source>
-        <translation type="unfinished"/>
+        <translation>Venda</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="390"/>
@@ -2219,7 +2219,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="393"/>
         <source>Vlaams</source>
-        <translation type="unfinished"/>
+        <translation>Flamsk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="394"/>
@@ -2254,7 +2254,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="400"/>
         <source>Wolof</source>
-        <translation type="unfinished"/>
+        <translation>Wolof</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="401"/>
@@ -2264,7 +2264,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="402"/>
         <source>Xhosa</source>
-        <translation type="unfinished"/>
+        <translation>Xhosa</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="403"/>
@@ -2274,7 +2274,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="404"/>
         <source>Yoruba</source>
-        <translation type="unfinished"/>
+        <translation>Yoruba</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="405"/>

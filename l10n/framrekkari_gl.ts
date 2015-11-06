@@ -304,7 +304,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="43"/>
         <source>Swedish translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción ao sueco</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="89"/>
         <source>Norwegian Bokmål (Norway) translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción ao Bokmål (Noruega)</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="95"/>
@@ -337,7 +337,7 @@
         <location filename="../qml/models/ContributorsModel.qml" line="102"/>
         <location filename="../qml/models/ContributorsModel.qml" line="169"/>
         <source>Italian translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción ao italiano</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="110"/>
@@ -348,7 +348,7 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="116"/>
         <source>Turkish translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción ao turco</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="128"/>
@@ -358,12 +358,12 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="145"/>
         <source>Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción ao ruso</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="163"/>
         <source>Chinese (China) translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción ao chines (China)</translation>
     </message>
 </context>
 <context>
@@ -2818,27 +2818,27 @@
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="73"/>
         <source>Occurences</source>
-        <translation type="unfinished"/>
+        <translation>Sucesos</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="84"/>
         <source>Character limit</source>
-        <translation type="unfinished"/>
+        <translation>Límite de caracteres</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="96"/>
         <source>Last update</source>
-        <translation type="unfinished"/>
+        <translation>Última actualización</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="106"/>
         <source>Last commiter</source>
-        <translation type="unfinished"/>
+        <translation>Última contribución</translation>
     </message>
     <message>
         <location filename="../qml/pages/StringMetaPage.qml" line="116"/>
         <source>Hash</source>
-        <translation type="unfinished"/>
+        <translation>Hash</translation>
     </message>
 </context>
 <context>
@@ -2861,7 +2861,7 @@
     <message>
         <location filename="../qml/pages/StringPage.qml" line="342"/>
         <source>Copy to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>Copiar ao portapapeis</translation>
     </message>
 </context>
 <context>
@@ -2884,17 +2884,17 @@
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="184"/>
         <source>Not found. Code %1.</source>
-        <translation type="unfinished"/>
+        <translation>Non atopado. Código %1.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="187"/>
         <source>Operation canceled. Wrong username and/or password or SSL handshake failed. Code %1.</source>
-        <translation type="unfinished"/>
+        <translation>Cancelouse a operación. Nome de usuario e/ou contrasinal ou faio no SSL handshake. Código %1.</translation>
     </message>
     <message>
         <location filename="../src/api/translationstringsapi.cpp" line="190"/>
         <source>Could not save content on server. Maybe wrong entity hash. Code %1.</source>
-        <translation type="unfinished"/>
+        <translation>Non se pode gardar contido no servidor. Posible hash da entidade erróneo. Código %1.</translation>
     </message>
 </context>
 <context>
@@ -2927,17 +2927,17 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="126"/>
         <source>Search for</source>
-        <translation type="unfinished"/>
+        <translation>Búsqueda por</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="128"/>
         <source>Source string</source>
-        <translation type="unfinished"/>
+        <translation>Cadea de orixe</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="129"/>
         <source>Translation</source>
-        <translation type="unfinished"/>
+        <translation>Traducción</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="145"/>
@@ -2947,12 +2947,12 @@
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="153"/>
         <source>Filter:</source>
-        <translation type="unfinished"/>
+        <translation>Filtro:</translation>
     </message>
     <message>
         <location filename="../qml/pages/TranslationStringsPage.qml" line="199"/>
         <source>Ooops, you got no results. Check your filter.</source>
-        <translation type="unfinished"/>
+        <translation>Non hai resultados. Comprobe os filtros.</translation>
     </message>
 </context>
 <context>
@@ -2960,17 +2960,17 @@
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="114"/>
         <source>Not translated</source>
-        <translation type="unfinished"/>
+        <translation>Sen traducir</translation>
     </message>
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as not reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Marcar coma non revisado</translation>
     </message>
     <message>
         <location filename="../qml/delegates/TranslationsDelegate.qml" line="127"/>
         <source>Mark as reviewed</source>
-        <translation type="unfinished"/>
+        <translation>Marcar coma revisado</translation>
     </message>
 </context>
 <context>
@@ -2978,32 +2978,32 @@
     <message>
         <location filename="../qml/js/helper.js" line="5"/>
         <source>Zero</source>
-        <translation type="unfinished"/>
+        <translation>Cero</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="8"/>
         <source>Singular</source>
-        <translation type="unfinished"/>
+        <translation>Singular</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="11"/>
         <source>Two</source>
-        <translation type="unfinished"/>
+        <translation>Dous</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="14"/>
         <source>Few</source>
-        <translation type="unfinished"/>
+        <translation>Uns poucos</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="17"/>
         <source>Many</source>
-        <translation type="unfinished"/>
+        <translation>Uns cantos</translation>
     </message>
     <message>
         <location filename="../qml/js/helper.js" line="20"/>
         <source>Plural</source>
-        <translation type="unfinished"/>
+        <translation>Plural</translation>
     </message>
 </context>
 </TS>
