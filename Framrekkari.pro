@@ -3,13 +3,11 @@ TEMPLATE = app
 TARGET = harbour-framrekkari
 
 CONFIG += sailfishapp
-#CONFIG += link_pkgconfig
+CONFIG += c++11
 
 QT += core
 QT += network
 QT += sql
-
-#PKGCONFIG += mlite5
 
 translations.path = /usr/share/harbour-framrekkari/translations
 translations.files = l10n/*.qm
