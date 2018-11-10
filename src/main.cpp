@@ -22,17 +22,19 @@
 #include <QtQuick>
 #endif
 
+#ifndef CLAZY
 #include <sailfishapp.h>
+#endif
 #include <QtQml>
 #include <QGuiApplication>
 #include <QQuickView>
-//#include <QScopedPointer>
+#include <QScopedPointer>
 #include <QLocale>
 #include <QTranslator>
+#include <QtDebug>
 
 #include "globals.h"
 #include "configuration.h"
-//#include "dbmanager.h"
 #include "models/accountsmodel.h"
 #include "models/projectsmodel.h"
 #include "models/favoredprojectsmodel.h"
@@ -46,42 +48,48 @@
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication* app = SailfishApp::application(argc, argv);
+#ifndef CLAZY
+    QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
+#else
+    QScopedPointer<QGuiApplication> app(new QGuiApplication(argc, argv));
+#endif
 
     app->setOrganizationName("harbour-framrekkari");
     app->setOrganizationDomain("buschmann23.de");
     app->setApplicationName("harbour-framrekkari");
     app->setApplicationVersion(VERSION_STRING);
 
-//    QDir().mkpath(QDir::homePath().append(DATA_DIR));
+    Configuration *configuration = new Configuration(app.data());
 
-    Configuration *configuration = new Configuration;
+    {
+        QString locale = configuration->language();
 
-    QString locale = configuration->language();
+        if (locale == QLatin1String("C")) {
+            locale = QLocale::system().name();
+        }
 
-    if (locale == "C")
-        locale = QLocale::system().name();
+        QTranslator *translator = new QTranslator(app.data());
+        if ((translator->load("framrekkari_"+locale, "/usr/share/harbour-framrekkari/translations"))) {
+            app->installTranslator(translator);
+        }
+    }
 
-    QTranslator *translator = new QTranslator;
-    if ((translator->load("framrekkari_"+locale, "/usr/share/harbour-framrekkari/translations")))
-        app->installTranslator(translator);
+#ifndef CLAZY
+    QScopedPointer<QQuickView> view(SailfishApp::createView());
+#else
+    QScopedPointer<QQuickView> view(new QQuickView());
+#endif
 
-//    DbManager dbMan;
-//    dbMan.openDB();
-//    dbMan.createTables();
-
-    QQuickView* view = SailfishApp::createView();
-
-    AccountsModel *accountsModel = new AccountsModel;
-    ProjectsModel *projectsModel = new ProjectsModel;
-    FavoredProjectsModel *favoredProjectsModel = new FavoredProjectsModel;
-    ProjectsAPI *projectsAPI = new ProjectsAPI;
-    ProjectLangstatsModel *projectLangstatsModel = new ProjectLangstatsModel;
-    ProjectResourcesModel *projectResourceModel = new ProjectResourcesModel;
-    ProjectTranslationsModel *projectTranslationsModel = new ProjectTranslationsModel;
-    MD5generator *md5Generator = new MD5generator;
-    LanguageNameHelper *langHelper = new LanguageNameHelper;
-    LanguageModelFilter *languageModel = new LanguageModelFilter;
+    auto *accountsModel = new AccountsModel(app.data());
+    auto *projectsModel = new ProjectsModel(app.data());
+    auto *favoredProjectsModel = new FavoredProjectsModel(app.data());
+    auto *projectsAPI = new ProjectsAPI(app.data());
+    auto *projectLangstatsModel = new ProjectLangstatsModel(app.data());
+    auto *projectResourceModel = new ProjectResourcesModel(app.data());
+    auto *projectTranslationsModel = new ProjectTranslationsModel(app.data());
+    auto *md5Generator = new MD5generator(app.data());
+    auto *langHelper = new LanguageNameHelper(app.data());
+    auto *languageModel = new LanguageModelFilter(app.data());
 
     view->rootContext()->setContextProperty("versionString", VERSION_STRING);
     view->rootContext()->setContextProperty("versionInt", VERSION);
@@ -97,7 +105,10 @@ int main(int argc, char *argv[])
     view->rootContext()->setContextProperty("md5Generator", md5Generator);
     view->rootContext()->setContextProperty("langHelper", langHelper);
 
-    view->setSource(QUrl::fromLocalFile("/usr/share/harbour-framrekkari/qml/harbour-framrekkari.qml"));
+#ifndef CLAZY
+    view->setSource(SailfishApp::pathToMainQml());
+#endif
+
     view->show();
 
     return app->exec();

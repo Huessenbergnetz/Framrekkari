@@ -13,6 +13,20 @@ CONFIG(release, debug|release) {
     DEFINES += QT_NO_DEBUG_OUTPUT
 }
 
+CONFIG(clazy) {
+    message(Clazy is enabled)
+    DEFINES += CLAZY
+    QT += qml quick
+    QMAKE_CXX = clang++
+    QMAKE_CXXFLAGS += "-Xclang -load -Xclang ClangLazy.so -Xclang -add-plugin -Xclang clang-lazy -Xclang -plugin-arg-clang-lazy -Xclang level0,level1,level2"
+}
+
+CONFIG(asan) {
+    message(Address sanitizer is enabled)
+    QMAKE_CXXFLAGS += "-fsanitize=address -fno-omit-frame-pointer -Wformat -Werror=format-security -Werror=array-bounds -g -ggdb"
+    QMAKE_LFLAGS += "-fsanitize=address"
+}
+
 translations.path = /usr/share/harbour-framrekkari/translations
 translations.files = l10n/*.qm
 INSTALLS += translations
