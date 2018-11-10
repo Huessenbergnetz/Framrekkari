@@ -371,7 +371,7 @@
     <message numerus="yes">
         <location filename="../qml/cover/CoverPage.qml" line="63"/>
         <source>%n language(s)</source>
-        <translation><numerusform>%n język</numerusform><numerusform>%n języki</numerusform><numerusform>%n języków</numerusform></translation>
+        <translation><numerusform>%n język</numerusform><numerusform>%n języki</numerusform><numerusform>%n języków</numerusform><numerusform>%n języków</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="159"/>
@@ -2564,7 +2564,7 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
         <source>%n string(s)</source>
-        <translation><numerusform>%n napis</numerusform><numerusform>%n napisy</numerusform><numerusform>%n napisów</numerusform></translation>
+        <translation><numerusform>%n napis</numerusform><numerusform>%n napisy</numerusform><numerusform>%n napisów</numerusform><numerusform>%n napisów</numerusform></translation>
     </message>
 </context>
 <context>
@@ -2677,7 +2677,7 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="117"/>
         <source>%n string(s)</source>
-        <translation><numerusform>%n napis</numerusform><numerusform>%n napisy</numerusform><numerusform>%n napisów</numerusform></translation>
+        <translation><numerusform>%n napis</numerusform><numerusform>%n napisy</numerusform><numerusform>%n napisów</numerusform><numerusform>%n napisów</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>

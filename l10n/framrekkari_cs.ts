@@ -371,7 +371,7 @@
     <message numerus="yes">
         <location filename="../qml/cover/CoverPage.qml" line="63"/>
         <source>%n language(s)</source>
-        <translation><numerusform>%n jazyk</numerusform><numerusform>%n jazyky</numerusform><numerusform>%n jazyků</numerusform></translation>
+        <translation><numerusform>%n jazyk</numerusform><numerusform>%n jazyky</numerusform><numerusform>%n jazyků</numerusform><numerusform>%n jazyků</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="159"/>
@@ -2564,7 +2564,7 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ProjectLangDelegate.qml" line="134"/>
         <source>%n string(s)</source>
-        <translation><numerusform>%n řetězec</numerusform><numerusform>%n řetězce</numerusform><numerusform>%n řetězců</numerusform></translation>
+        <translation><numerusform>%n řetězec</numerusform><numerusform>%n řetězce</numerusform><numerusform>%n řetězců</numerusform><numerusform>%n řetězců</numerusform></translation>
     </message>
 </context>
 <context>
@@ -2677,7 +2677,7 @@
     <message numerus="yes">
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="117"/>
         <source>%n string(s)</source>
-        <translation><numerusform>%n řetězec</numerusform><numerusform>%n řetězce</numerusform><numerusform>%n řetězců</numerusform></translation>
+        <translation><numerusform>%n řetězec</numerusform><numerusform>%n řetězce</numerusform><numerusform>%n řetězců</numerusform><numerusform>%n řetězců</numerusform></translation>
     </message>
     <message>
         <location filename="../qml/delegates/ResourcesDelegate.qml" line="71"/>

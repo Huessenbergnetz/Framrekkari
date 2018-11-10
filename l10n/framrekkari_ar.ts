@@ -5,7 +5,7 @@
         <location filename="../qml/common/OpenSlugField.qml" line="58"/>
         <source>Search</source>
         <extracomment>Placeholder text of SearchField</extracomment>
-        <translation type="unfinished"/>
+        <translation>بحث</translation>
     </message>
 </context>
 <context>
@@ -13,32 +13,32 @@
     <message>
         <location filename="../qml/pages/About.qml" line="10"/>
         <source>Online translation services client for Sailfish OS</source>
-        <translation type="unfinished"/>
+        <translation>العميل الخاص بخدمة الترجمة عبر الانترنت لـSailfish OS</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>مرخص تحت &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>ميونيخ</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>ألمانيا</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
         <source>Donate via PayPal</source>
-        <translation type="unfinished"/>
+        <translation>تبرع عن طريق PayPal</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="38"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>اترك رسالة (بالإنجليزية أو الألمانية)</translation>
     </message>
 </context>
 <context>
@@ -46,47 +46,47 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>الصفحة الرئيسية</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
         <source>Privacy Policy</source>
-        <translation type="unfinished"/>
+        <translation>سياسة الخصوصية</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="87"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>التغيير</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="92"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>المساهمون</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="102"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>حول</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="160"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>تواصل</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="244"/>
         <source>Contribute</source>
-        <translation type="unfinished"/>
+        <translation>ساهم</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="253"/>
         <source>Translate</source>
-        <translation type="unfinished"/>
+        <translation>ترجم</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="260"/>
         <source>Report bugs</source>
-        <translation type="unfinished"/>
+        <translation>أبلغ عن الأخطاء</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="283"/>
@@ -119,27 +119,27 @@
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="105"/>
         <source>Display name</source>
-        <translation type="unfinished"/>
+        <translation>إظهار الاسم</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="115"/>
         <source>Server</source>
-        <translation type="unfinished"/>
+        <translation>الخادوم</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="125"/>
         <source>User name</source>
-        <translation type="unfinished"/>
+        <translation>اسم المستخدم</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="135"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>كلمة المرور</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="145"/>
         <source>Ignore SSL errors</source>
-        <translation type="unfinished"/>
+        <translation>تجاهل أخطاء SSL</translation>
     </message>
     <message>
         <location filename="../qml/dialogs/AccountDialog.qml" line="147"/>
@@ -152,7 +152,7 @@
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="164"/>
         <source>Show all projects</source>
-        <translation type="unfinished"/>
+        <translation>إظهار جميع المشاريع</translation>
     </message>
     <message>
         <location filename="../qml/pages/AccountPage.qml" line="72"/>
@@ -203,7 +203,7 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="42"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>التغيير</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../qml/BTComponents/Contributors.qml" line="34"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>المساهمون</translation>
     </message>
 </context>
 <context>
@@ -436,7 +436,7 @@
     <message>
         <location filename="../qml/common/LanguageChooser.qml" line="92"/>
         <source>Search</source>
-        <translation type="unfinished"/>
+        <translation>بحث</translation>
     </message>
 </context>
 <context>
@@ -2330,12 +2330,12 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"/>
+        <translation>اترك رسالة (بالإنجليزية أو الألمانية)</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="45"/>
         <source>Donate via PayPal</source>
-        <translation type="unfinished"/>
+        <translation>تبرع عن طريق PayPal</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="46"/>
@@ -2345,7 +2345,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="60"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>حول</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="64"/>
@@ -2551,7 +2551,7 @@
     <message>
         <location filename="../qml/pages/PrivacyPolicy.qml" line="135"/>
         <source>Contact</source>
-        <translation type="unfinished"/>
+        <translation>تواصل</translation>
     </message>
 </context>
 <context>

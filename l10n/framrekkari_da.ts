@@ -444,12 +444,12 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="39"/>
         <source>Acoli</source>
-        <translation type="unfinished"/>
+        <translation>Acoli</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="40"/>
         <source>Adyghe</source>
-        <translation type="unfinished"/>
+        <translation>Adygejisk</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="41"/>

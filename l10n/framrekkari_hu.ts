@@ -18,17 +18,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="14"/>
         <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>A &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt; szerint engedélyezve</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="29"/>
         <source>Munich</source>
-        <translation type="unfinished"/>
+        <translation>München</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="30"/>
         <source>Germany</source>
-        <translation type="unfinished"/>
+        <translation>Németország</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="34"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="77"/>
         <source>Homepage</source>
-        <translation type="unfinished"/>
+        <translation>honlap</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="82"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../qml/BTComponents/AboutPage.qml" line="283"/>
         <source>3rd party licenses</source>
-        <translation type="unfinished"/>
+        <translation>licenszek 3. fél részére</translation>
     </message>
 </context>
 <context>
@@ -208,22 +208,22 @@
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="62"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation>Új</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="81"/>
         <source>Improved</source>
-        <translation type="unfinished"/>
+        <translation>Fejlesztett</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="100"/>
         <source>Fixed</source>
-        <translation type="unfinished"/>
+        <translation>Kijavított</translation>
     </message>
     <message>
         <location filename="../qml/BTComponents/Changelog.qml" line="119"/>
         <source>Note</source>
-        <translation type="unfinished"/>
+        <translation>Jegyzet</translation>
     </message>
 </context>
 <context>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/BTComponents/ContributorsDelegate.qml" line="152"/>
         <source>Sina Weibo</source>
-        <translation type="unfinished"/>
+        <translation>Sina Weibo</translation>
     </message>
 </context>
 <context>
@@ -294,17 +294,17 @@
         <location filename="../qml/models/ContributorsModel.qml" line="49"/>
         <location filename="../qml/models/ContributorsModel.qml" line="75"/>
         <source>French translation</source>
-        <translation type="unfinished"/>
+        <translation>Francia fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="36"/>
         <source>Catalan translation</source>
-        <translation type="unfinished"/>
+        <translation>Katalán fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="43"/>
         <source>Swedish translation</source>
-        <translation type="unfinished"/>
+        <translation>Svéd fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="57"/>
@@ -316,17 +316,17 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="63"/>
         <source>Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Cseh fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="69"/>
         <source>Dutch (Netherlands) translation</source>
-        <translation type="unfinished"/>
+        <translation>Holland fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="89"/>
         <source>Norwegian Bokmål (Norway) translation</source>
-        <translation type="unfinished"/>
+        <translation>Norvég fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="95"/>
@@ -337,7 +337,7 @@
         <location filename="../qml/models/ContributorsModel.qml" line="102"/>
         <location filename="../qml/models/ContributorsModel.qml" line="169"/>
         <source>Italian translation</source>
-        <translation type="unfinished"/>
+        <translation>Olasz fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="110"/>
@@ -348,22 +348,22 @@
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="116"/>
         <source>Turkish translation</source>
-        <translation type="unfinished"/>
+        <translation>Török fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="128"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>Spanyol fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="145"/>
         <source>Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>Orosz fordítás</translation>
     </message>
     <message>
         <location filename="../qml/models/ContributorsModel.qml" line="163"/>
         <source>Chinese (China) translation</source>
-        <translation type="unfinished"/>
+        <translation>Kínai fordítás</translation>
     </message>
 </context>
 <context>
@@ -418,7 +418,7 @@
     <message>
         <location filename="../qml/pages/Help.qml" line="52"/>
         <source>After the start of Framrekkari you will see the main view page that holds your accounts. This will be empty on the first start. Pull down the top menu and choose &lt;i&gt;Add account&lt;/i&gt;, in order to add a new account. After you added one, it shows up in the list and you can click on it to open it. The account view gives you access to the service’s search/open functionality and lets you browse through the projects.&lt;br&gt;&lt;br&gt;Search or browse for a project to open it. The project page shows the available languages and general information about the project. Clicking on a language will open the project resources. A click on a resource opens the list with the source strings. Click on a string to open it and start translating. Closing the single string page or going to the next or previous string automatically saves your input.</source>
-        <translation type="unfinished"/>
+        <translation>A Framrekkari elindítása után látni fogod a főoldalt, ami a fiókjaidat tartalmazza. Ez először üres lesz. Húzd le a felső menüt és válaszd a &lt;i&gt;Fiók hozzáadása&lt;/i&gt; menüpontot új fiók hozzáadásához. Miután hozzáadtál egyet, az szerepelni fog a listában, és rá tudsz klikkelni a megnyitásához. A fiók nézet hozzáférést enged a szolgáltatás keresés / megnyitás funkcióihoz és átböngészheted a projekt erőforrásait. &lt;br&gt;&lt;br&gt;Keress egy projektet vagy böngészd át őket. A projektoldal megmutatja az elérhető nyelveket és az általános projektinformációkat. Egy nyelvre kattintva megnyílnak a projekt erőforrásai. Egy klikk egy erőforrásra megnyitja a karakterláncok listáját. Klikkelj egy karakterláncra a megnyitáshoz és elkezdheted a fordítást. Egyetlen karakterlánc oldalának bezárása vagy a következő vagy előző karakterláncra lépés automatikusan elmenti a beírt adatot.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Help.qml" line="55"/>
@@ -1574,7 +1574,7 @@
     <message>
         <location filename="../src/languagenamehelper.cpp" line="38"/>
         <source>System default</source>
-        <translation type="unfinished"/>
+        <translation>Alapértelmezett</translation>
     </message>
     <message>
         <location filename="../src/languagenamehelper.cpp" line="265"/>
@@ -2325,7 +2325,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="40"/>
         <source>If you like Framrekkari and you want to support the development, consider a small donation.</source>
-        <translation type="unfinished"/>
+        <translation>Ha tetszik a Framrekkari és szeretnéd támogatni a fejlesztését, fontold meg a támogatását.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="44"/>
@@ -2577,7 +2577,7 @@
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="207"/>
         <source>This project has so far created ​​no resources.</source>
-        <translation type="unfinished"/>
+        <translation>A projektnek még nincsenek erőforrásai.</translation>
     </message>
     <message>
         <location filename="../qml/pages/ProjectPage.qml" line="222"/>
@@ -2713,17 +2713,17 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="44"/>
         <source>Display language</source>
-        <translation type="unfinished"/>
+        <translation>Nyelv kijelzése</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="49"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>Nyelv</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="57"/>
         <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation type="unfinished"/>
+        <translation>A nyelv megváltoztatása csak az applikáció újraindításával lesz érvényes.</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="64"/>
