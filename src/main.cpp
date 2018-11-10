@@ -31,9 +31,8 @@
 #include <QScopedPointer>
 #include <QLocale>
 #include <QTranslator>
-#include <QtDebug>
+#include <QStringBuilder>
 
-#include "globals.h"
 #include "configuration.h"
 #include "models/accountsmodel.h"
 #include "models/projectsmodel.h"
@@ -57,7 +56,10 @@ int main(int argc, char *argv[])
     app->setOrganizationName("harbour-framrekkari");
     app->setOrganizationDomain("buschmann23.de");
     app->setApplicationName("harbour-framrekkari");
+    app->setApplicationDisplayName(QStringLiteral("Framrekkari"));
     app->setApplicationVersion(VERSION_STRING);
+
+    qDebug("Starting %s %s.", qUtf8Printable(app->applicationDisplayName()), qUtf8Printable(VERSION_STRING));
 
     Configuration *configuration = new Configuration(app.data());
 
@@ -69,8 +71,11 @@ int main(int argc, char *argv[])
         }
 
         QTranslator *translator = new QTranslator(app.data());
-        if ((translator->load("framrekkari_"+locale, "/usr/share/harbour-framrekkari/translations"))) {
+        if ((translator->load(QStringLiteral("framrekkari_") % locale, SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme)))) {
             app->installTranslator(translator);
+            qDebug("Successfully loaded translation for locale %s.", qUtf8Printable(locale));
+        } else {
+            qWarning("Failed to load translation for locale %s.", qUtf8Printable(locale));
         }
     }
 
@@ -91,8 +96,12 @@ int main(int argc, char *argv[])
     auto *langHelper = new LanguageNameHelper(app.data());
     auto *languageModel = new LanguageModelFilter(app.data());
 
+    {
+        const QVersionNumber version = QVersionNumber::fromString(QLatin1String(VERSION_STRING));
+        view->rootContext()->setContextProperty("versionInt", version.majorVersion() * 100 + version.minorVersion() * 10 + version.microVersion());
+
+    }
     view->rootContext()->setContextProperty("versionString", VERSION_STRING);
-    view->rootContext()->setContextProperty("versionInt", VERSION);
     view->rootContext()->setContextProperty("config", configuration);
     view->rootContext()->setContextProperty("accountsModel", accountsModel);
     view->rootContext()->setContextProperty("projectsModel", projectsModel);

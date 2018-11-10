@@ -2,12 +2,19 @@ TEMPLATE = app
 
 TARGET = harbour-framrekkari
 
+VER_MAJ = 0
+VER_MIN = 6
+VER_PAT = 1
+VERSION = $${VER_MAJ}.$${VER_MIN}.$${VER_PAT}
+
 CONFIG += sailfishapp
 CONFIG += c++11
 
 QT += core
 QT += network
 QT += sql
+
+DEFINES += VERSION_STRING=\"\\\"$${VERSION}\\\"\"
 
 CONFIG(release, debug|release) {
     DEFINES += QT_NO_DEBUG_OUTPUT
@@ -55,7 +62,6 @@ SOURCES += \
     src/api/projectsapi.cpp \
     src/api/apihelper.cpp \
     src/models/projectsmodel.cpp \
-    src/dbmanager.cpp \
     src/models/favoredprojectsmodel.cpp \
     src/api/statisticsapi.cpp \
     src/models/projectlangstatsmodel.cpp \
@@ -112,7 +118,6 @@ OTHER_FILES += \
     qml/BTComponents/ChangelogDelegate.qml
 
 HEADERS += \
-    src/globals.h \
     src/configuration.h \
     src/models/accountsmodel.h \
     src/models/accountobject.h \
@@ -121,7 +126,6 @@ HEADERS += \
     src/api/apihelper.h \
     src/models/projectsmodel.h \
     src/models/projectobject.h \
-    src/dbmanager.h \
     src/models/favoredprojectsmodel.h \
     src/models/favoredprojectobject.h \
     src/api/statisticsapi.h \
