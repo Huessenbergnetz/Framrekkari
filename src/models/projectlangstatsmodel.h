@@ -44,7 +44,7 @@ signals:
 
 public slots:
     void refresh(const QString &projectSlug, const QVariantList &resources, int accountIdx);
-    void updateTranslationCount(const int &idx, const QVariantMap &changed);
+    void updateTranslationCount(int idx, const QVariantMap &changed);
     void clear();
 
 private slots:

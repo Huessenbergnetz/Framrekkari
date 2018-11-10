@@ -31,19 +31,19 @@ void ProjectsAPI::getProjects(int accountIdx, int start, int end)
 {
     nm.setAccountIndex(accountIdx);
 
-    QUrl url = helper.buildUrl("/projects/", accountIdx);
+    QUrl url = helper.buildUrl(QStringLiteral("/projects/"), accountIdx);
 
     if (start > 0 && end > start)
     {
         QUrlQuery uq;
-        uq.addQueryItem("start", QString::number(start));
-        uq.addQueryItem("end", QString::number(end));
+        uq.addQueryItem(QStringLiteral("start"), QString::number(start));
+        uq.addQueryItem(QStringLiteral("end"), QString::number(end));
         url.setQuery(uq);
     }
 
     getProjectsReply = nm.get(QNetworkRequest(url));
 
-    connect(getProjectsReply, SIGNAL(finished()), this, SLOT(getProjectsFinished()));
+    connect(getProjectsReply, &QNetworkReply::finished, this, &ProjectsAPI::getProjectsFinished);
 }
 
 
@@ -95,13 +95,13 @@ void ProjectsAPI::getProject(int accountIdx, const QString &slug, bool details)
     if (details)
     {
         QUrlQuery uq;
-        uq.addQueryItem("details", QString());
+        uq.addQueryItem(QStringLiteral("details"), QString());
         url.setQuery(uq);
     }
 
     getProjectReply = nm.get(QNetworkRequest(url));
 
-    connect(getProjectReply, SIGNAL(finished()), this, SLOT(getProjectFinished()));
+    connect(getProjectReply, &QNetworkReply::finished, this, &ProjectsAPI::getProjectFinished);
 }
 
 

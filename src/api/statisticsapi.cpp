@@ -25,7 +25,7 @@ void StatisticsAPI::getAllProjectLangStats(const QString &projectSlug, const QVa
     {
         QUrl url = helper.buildUrl("/project/" + projectSlug + "/resource/" + resources.at(i).toString() + "/stats/", accountIdx);
 
-        connect(&getAllProjectLangStatsNm, SIGNAL(finished(QNetworkReply*)), this, SLOT(getAllProjectLangStatsFinished(QNetworkReply*)), Qt::UniqueConnection);
+        connect(&getAllProjectLangStatsNm, &Network::finished, this, &StatisticsAPI::getAllProjectLangStatsFinished, Qt::UniqueConnection);
 
         getAllProjectLangStatsNm.get(QNetworkRequest(url));
     }
@@ -55,9 +55,9 @@ void StatisticsAPI::getAllProjectLangStatsFinished(QNetworkReply* rep)
 
                 QVariantMap map = i.value().toMap();
 
-                valueMap["translated"] = QVariant::fromValue(valueMap["translated"].toDouble() + map.value("translated_entities").toDouble());
-                valueMap["untranslated"] = QVariant::fromValue(valueMap["untranslated"].toDouble() + map.value("untranslated_entities").toDouble());
-                valueMap["reviewed"] = QVariant::fromValue(valueMap["reviewed"].toDouble() + map.value("reviewed").toDouble());
+                valueMap[QStringLiteral("translated")] = QVariant::fromValue(valueMap[QStringLiteral("translated")].toDouble() + map.value(QStringLiteral("translated_entities")).toDouble());
+                valueMap[QStringLiteral("untranslated")] = QVariant::fromValue(valueMap[QStringLiteral("untranslated")].toDouble() + map.value(QStringLiteral("untranslated_entities")).toDouble());
+                valueMap[QStringLiteral("reviewed")] = QVariant::fromValue(valueMap[QStringLiteral("reviewed")].toDouble() + map.value(QStringLiteral("reviewed")).toDouble());
 
                 projectLangStats[i.key()] = QVariant::fromValue(valueMap);
             }
@@ -118,7 +118,7 @@ void StatisticsAPI::getLangResourcesStats(const QString &projectSlug, const QStr
         QUrl url = helper.buildUrl("/project/" + projectSlug + "/resource/" + resources.at(i).toString() + "/stats/" + lang + "/", accountIdx);
         qDebug() << url.toString();
 
-        connect(&getResourcesStatsNm, SIGNAL(finished(QNetworkReply*)), this, SLOT(getLangResourcesStatsFinished(QNetworkReply*)), Qt::UniqueConnection);
+        connect(&getResourcesStatsNm, &Network::finished, this, &StatisticsAPI::getLangResourcesStatsFinished, Qt::UniqueConnection);
 
         getResourcesStatsNm.get(QNetworkRequest(url));
     }
@@ -130,14 +130,14 @@ void StatisticsAPI::getLangResourcesStatsFinished(QNetworkReply* rep)
     if (rep->error() == QNetworkReply::NoError)
     {
 
-        QStringList path(rep->url().path().split("/"));
+        QStringList path(rep->url().path().split(QLatin1Char('/')));
 
         QVariantMap results = helper.jsonToVariantMap(rep->readAll());
 
 #ifdef QT_DEBUG
         qDebug() << results;
 #endif
-        results["resourceSlug"] = QVariant::fromValue(path.at(6));
+        results[QStringLiteral("resourceSlug")] = QVariant::fromValue(path.at(6));
 
         langResourceStats << results;
 

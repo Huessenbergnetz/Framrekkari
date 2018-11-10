@@ -25,7 +25,7 @@
 
 class LangstatObject {
 public:
-  LangstatObject(const QString &langCode, const double &trans, const double &untrans, const double &rev):
+  LangstatObject(const QString &langCode, double trans, double untrans, double rev):
     lang(langCode),
     translated(trans),
     untranslated(untrans),

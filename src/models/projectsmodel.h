@@ -48,7 +48,7 @@ public slots:
     void clear();
 
 private slots:
-    void populate(QVariantList data);
+    void populate(const QVariantList &data);
     void errorHandler(const QString &errorString);
 
 private:

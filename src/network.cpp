@@ -24,9 +24,9 @@
 Network::Network(QObject *parent) :
     QNetworkAccessManager(parent)
 {
-    connect(this, SIGNAL(authenticationRequired(QNetworkReply*,QAuthenticator*)), this, SLOT(slotAuthenticationRequired(QNetworkReply*,QAuthenticator*)));
+    connect(this, &Network::authenticationRequired, this, &Network::slotAuthenticationRequired);
 
-    connect(this, SIGNAL(sslErrors(QNetworkReply*,QList<QSslError>)), this, SLOT(sslErrorHandler(QNetworkReply*,QList<QSslError>)));
+    connect(this, &Network::sslErrors, this, &Network::sslErrorHandler);
 }
 
 
@@ -64,13 +64,13 @@ void Network::slotAuthenticationRequired(QNetworkReply* rep, QAuthenticator *aut
 
     if (authenticator->user().isEmpty() && authenticator->password().isEmpty())
     {
-        authenticator->setUser(account["user"].toString());
-        authenticator->setPassword(account["password"].toString());
+        authenticator->setUser(account[QStringLiteral("user")].toString());
+        authenticator->setPassword(account[QStringLiteral("password")].toString());
     } else {
-        if ((authenticator->user() != account["user"].toString()) || (authenticator->password() !=  account["password"].toString() ))
+        if ((authenticator->user() != account[QStringLiteral("user")].toString()) || (authenticator->password() !=  account[QStringLiteral("password")].toString() ))
         {
-            authenticator->setUser(account["user"].toString());
-            authenticator->setPassword(account["password"].toString());
+            authenticator->setUser(account[QStringLiteral("user")].toString());
+            authenticator->setPassword(account[QStringLiteral("password")].toString());
         } else {
             rep->abort();
 #ifdef QT_DEBUG
@@ -97,7 +97,7 @@ void Network::sslErrorHandler(QNetworkReply* rep,const QList<QSslError> &errors)
 {
     QVariantMap account = config.getAccount(accountIndex);
 
-    if (account["ignoreSSLErrors"].toBool())
+    if (account[QStringLiteral("ignoreSSLErrors")].toBool())
     {
         rep->ignoreSslErrors();
 

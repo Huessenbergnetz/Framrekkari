@@ -31,12 +31,13 @@ const int LanguageModel::ValueRole = Qt::UserRole + 2;
 LanguageModel::LanguageModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    const QDir transDir(SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme));
 #ifndef CLAZY
-    const QFileInfoList files = transDir.entryInfoList(QStringList(QStringLiteral("*.qm")), QDir::Files);
+    const QDir transDir(SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme));
 #else
-    const QFileInfoList files;
+    const QDir transDir;
 #endif
+
+    const QFileInfoList files = transDir.entryInfoList(QStringList(QStringLiteral("*.qm")), QDir::Files);
 
     for (const QFileInfo &file : files) {
         const QString base = file.baseName();

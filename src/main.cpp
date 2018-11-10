@@ -53,13 +53,13 @@ int main(int argc, char *argv[])
     QScopedPointer<QGuiApplication> app(new QGuiApplication(argc, argv));
 #endif
 
-    app->setOrganizationName("harbour-framrekkari");
-    app->setOrganizationDomain("buschmann23.de");
-    app->setApplicationName("harbour-framrekkari");
+    app->setOrganizationName(QStringLiteral("harbour-framrekkari"));
+    app->setOrganizationDomain(QStringLiteral("huessenbergnetz.de"));
+    app->setApplicationName(QStringLiteral("harbour-framrekkari"));
     app->setApplicationDisplayName(QStringLiteral("Framrekkari"));
-    app->setApplicationVersion(VERSION_STRING);
+    app->setApplicationVersion(QStringLiteral(VERSION_STRING));
 
-    qDebug("Starting %s %s.", qUtf8Printable(app->applicationDisplayName()), qUtf8Printable(VERSION_STRING));
+    qDebug("Starting %s %s.", qUtf8Printable(app->applicationDisplayName()), VERSION_STRING);
 
     Configuration *configuration = new Configuration(app.data());
 
@@ -71,7 +71,11 @@ int main(int argc, char *argv[])
         }
 
         QTranslator *translator = new QTranslator(app.data());
-        if ((translator->load(QStringLiteral("framrekkari_") % locale, SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme)))) {
+#ifndef CLAZY
+        if (translator->load(QStringLiteral("framrekkari_") % locale, SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme))) {
+#else
+        if (translator->load(QStringLiteral("framrekkari_") % locale, QStringLiteral("/usr/share/harbour-framrekkari/translations"))) {
+#endif
             app->installTranslator(translator);
             qDebug("Successfully loaded translation for locale %s.", qUtf8Printable(locale));
         } else {
@@ -98,21 +102,21 @@ int main(int argc, char *argv[])
 
     {
         const QVersionNumber version = QVersionNumber::fromString(QLatin1String(VERSION_STRING));
-        view->rootContext()->setContextProperty("versionInt", version.majorVersion() * 100 + version.minorVersion() * 10 + version.microVersion());
+        view->rootContext()->setContextProperty(QStringLiteral("versionInt"), version.majorVersion() * 100 + version.minorVersion() * 10 + version.microVersion());
 
     }
-    view->rootContext()->setContextProperty("versionString", VERSION_STRING);
-    view->rootContext()->setContextProperty("config", configuration);
-    view->rootContext()->setContextProperty("accountsModel", accountsModel);
-    view->rootContext()->setContextProperty("projectsModel", projectsModel);
-    view->rootContext()->setContextProperty("favoredProjectsModel", favoredProjectsModel);
-    view->rootContext()->setContextProperty("languageModel", languageModel);
-    view->rootContext()->setContextProperty("projectsAPI", projectsAPI);
-    view->rootContext()->setContextProperty("projectLangstatsModel", projectLangstatsModel);
-    view->rootContext()->setContextProperty("projectResourceModel", projectResourceModel);
-    view->rootContext()->setContextProperty("projectTranslationsModel", projectTranslationsModel);
-    view->rootContext()->setContextProperty("md5Generator", md5Generator);
-    view->rootContext()->setContextProperty("langHelper", langHelper);
+    view->rootContext()->setContextProperty(QStringLiteral("versionString"), QStringLiteral(VERSION_STRING));
+    view->rootContext()->setContextProperty(QStringLiteral("config"), configuration);
+    view->rootContext()->setContextProperty(QStringLiteral("accountsModel"), accountsModel);
+    view->rootContext()->setContextProperty(QStringLiteral("projectsModel"), projectsModel);
+    view->rootContext()->setContextProperty(QStringLiteral("favoredProjectsModel"), favoredProjectsModel);
+    view->rootContext()->setContextProperty(QStringLiteral("languageModel"), languageModel);
+    view->rootContext()->setContextProperty(QStringLiteral("projectsAPI"), projectsAPI);
+    view->rootContext()->setContextProperty(QStringLiteral("projectLangstatsModel"), projectLangstatsModel);
+    view->rootContext()->setContextProperty(QStringLiteral("projectResourceModel"), projectResourceModel);
+    view->rootContext()->setContextProperty(QStringLiteral("projectTranslationsModel"), projectTranslationsModel);
+    view->rootContext()->setContextProperty(QStringLiteral("md5Generator"), md5Generator);
+    view->rootContext()->setContextProperty(QStringLiteral("langHelper"), langHelper);
 
 #ifndef CLAZY
     view->setSource(SailfishApp::pathToMainQml());

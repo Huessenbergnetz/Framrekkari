@@ -83,15 +83,15 @@ signals:
     void savedAccout();
     void savedFavoredProject();
 
-    void defaultFilterChanged(const int &nDefaultFilter);
-    void sourceFontSizeChanged(const int &nSourceFontSize);
-    void translationFontSizeChanged(const int &nTranslationFontSize);
+    void defaultFilterChanged(int nDefaultFilter);
+    void sourceFontSizeChanged(int nSourceFontSize);
+    void translationFontSizeChanged(int nTranslationFontSize);
     void languageChanged(const QString &nLanguage);
 
 public slots:
-    void setDefaultFilter(const int &nDefaultFilter);
-    void setSourceFontSize(const int &nSourceFontSize);
-    void setTranslationFontSize(const int &nTranslationFontSize);
+    void setDefaultFilter(int nDefaultFilter);
+    void setSourceFontSize(int nSourceFontSize);
+    void setTranslationFontSize(int nTranslationFontSize);
     void setLanguage(const QString &nLanguage);
 
 private:

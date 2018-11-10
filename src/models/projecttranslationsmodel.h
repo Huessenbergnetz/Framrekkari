@@ -52,17 +52,17 @@ signals:
 
     void searchChanged(const QString &nSearch);
     void modelDataChanged(const QVariantList &nModelData);
-    void searchTargetChanged(const int &nSearchTarget);
+    void searchTargetChanged(int nSearchTarget);
 
 public slots:
     void refresh(const QString &project, const QString &resource, const QString &lang, int filter, int accountIdx);
-    void saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed, const int &modelIdx, const int &dataIndex, const int &accountIdx);
+    void saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, bool reviewed, int modelIdx, int dataIndex, int accountIdx);
     void clear();
     QVariantMap get(int modelIdx);
 
     void setSearch(const QString &nSearch);
     void setModelData(const QVariantList &nModelData);
-    void setSearchTarget(const int &nSearchTarget);
+    void setSearchTarget(int nSearchTarget);
 
 private slots:
     void populate();

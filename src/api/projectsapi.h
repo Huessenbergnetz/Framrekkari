@@ -39,9 +39,9 @@ public:
     Q_INVOKABLE void getProject(int accountIdx, const QString &slug, bool details = true);
 
 signals:
-    void gotProjects(QVariantList projects);
+    void gotProjects(const QVariantList &projects);
     void gotProjectsError(const QString &gotProjectsErrorString);
-    void gotProject(QVariantMap project);
+    void gotProject(const QVariantMap &project);
     void gotProjectError(const QString &gotProjectErrorString);
 
 public slots:

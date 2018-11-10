@@ -31,8 +31,8 @@ const int ProjectResourcesModel::LastCommiterRole = Qt::UserRole + 6;
 ProjectResourcesModel::ProjectResourcesModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    connect(&sAPI, SIGNAL(gotLangResourcesStats(QVariantList)), this, SLOT(populate(QVariantList)));
-    connect(&sAPI, SIGNAL(gotLangResourcesStatsError(QString)), this, SLOT(errorHandler(QString)));
+    connect(&sAPI, &StatisticsAPI::gotLangResourcesStats, this, &ProjectResourcesModel::populate);
+    connect(&sAPI, &StatisticsAPI::gotLangResourcesStatsError, this, &ProjectResourcesModel::errorHandler);
 }
 
 
@@ -111,12 +111,12 @@ void ProjectResourcesModel::populate(const QVariantList &data)
         QVariantMap map = data.at(i).toMap();
 
         ProjectResourceObject *robj = new ProjectResourceObject(
-                    map["resourceSlug"].toString(),
-                    map["translated_entities"].toDouble(),
-                    map["untranslated_entities"].toDouble(),
-                    map["reviewed"].toDouble(),
-                    QDateTime::fromString(map["last_update"].toString(), "yyyy-MM-dd hh:mm:ss"),
-                    map["last_commiter"].toString()
+                    map[QStringLiteral("resourceSlug")].toString(),
+                    map[QStringLiteral("translated_entities")].toDouble(),
+                    map[QStringLiteral("untranslated_entities")].toDouble(),
+                    map[QStringLiteral("reviewed")].toDouble(),
+                    QDateTime::fromString(map[QStringLiteral("last_update")].toString(), QStringLiteral("yyyy-MM-dd hh:mm:ss")),
+                    map[QStringLiteral("last_commiter")].toString()
                 );
 
         m_resources.append(robj);
@@ -130,19 +130,19 @@ void ProjectResourcesModel::updateTranslationCount(int idx, const QString &user,
     ProjectResourceObject *robj = m_resources.at(idx);
 
     robj->lastUpdate = QDateTime::currentDateTime();
-    if (changed["newTrans"].toBool()) {
+    if (changed[QStringLiteral("newTrans")].toBool()) {
         robj->translated = robj->translated + 1;
         robj->untranslated = robj->untranslated -1;
     }
 
-    robj->reviewed = robj->reviewed + changed["revCount"].toInt();
+    robj->reviewed = robj->reviewed + changed[QStringLiteral("revCount")].toInt();
 
     robj->lastCommiter = user;
 
     QVariantMap changedStats;
-    changedStats["translated"] = robj->translated;
-    changedStats["untranslated"] = robj->untranslated;
-    changedStats["reviewed"] = robj->reviewed;
+    changedStats[QStringLiteral("translated")] = robj->translated;
+    changedStats[QStringLiteral("untranslated")] = robj->untranslated;
+    changedStats[QStringLiteral("reviewed")] = robj->reviewed;
 
     m_resources[idx] = robj;
 

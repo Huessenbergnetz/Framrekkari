@@ -33,13 +33,13 @@ QString MD5generator::genMd5(const QString &entity, const QVariantList &context)
     keyList << entity;
 
     if (context.isEmpty()) {
-        keyList << "";
+        keyList << QString();
     } else {
         for (int i = 0; i < context.length(); ++i)
             keyList << context.at(i).toString();
     }
 
-    QString keys = keyList.join(":");
+    QString keys = keyList.join(QLatin1Char(':'));
 
     qDebug() << keys;
     qDebug() << QString(QCryptographicHash::hash(keys.toUtf8(), QCryptographicHash::Md5).toHex());

@@ -23,10 +23,10 @@
 Configuration::Configuration(QObject *parent) :
     QSettings(parent)
 {
-    m_defaultFilter = value("display/stringListFilter", 0).toInt();
-    m_sourceFontSize = value("display/sourceFontSize", 24).toInt();
-    m_translationFontSize = value("display/translationFontSize", 32).toInt();
-    m_language = value("display/language", "C").toString();
+    m_defaultFilter = value(QStringLiteral("display/stringListFilter"), 0).toInt();
+    m_sourceFontSize = value(QStringLiteral("display/sourceFontSize"), 24).toInt();
+    m_translationFontSize = value(QStringLiteral("display/translationFontSize"), 32).toInt();
+    m_language = value(QStringLiteral("display/language"), QStringLiteral("C")).toString();
 }
 
 
@@ -96,11 +96,11 @@ QList<Configuration::Project> Configuration::loadFavoredProjects(int accountIdx)
     {
         setArrayIndex(i);
         Project prj;
-        prj.name = value("name").toString();
-        prj.slug = value("slug").toString();
-        prj.description = value("description").toString();
-        prj.srcLang = value("srcLang").toString();
-        prj.accountIdx = value("accountIdx").toInt();
+        prj.name = value(QStringLiteral("name")).toString();
+        prj.slug = value(QStringLiteral("slug")).toString();
+        prj.description = value(QStringLiteral("description")).toString();
+        prj.srcLang = value(QStringLiteral("srcLang")).toString();
+        prj.accountIdx = value(QStringLiteral("accountIdx")).toInt();
         projects.append(prj);
     }
     endArray();
@@ -124,11 +124,11 @@ void Configuration::writeFavoredProjects(const QList<Project> &projects, int acc
     for (int i = 0; i < projects.length(); ++i)
     {
         setArrayIndex(i);
-        setValue("name", projects.at(i).name);
-        setValue("slug", projects.at(i).slug);
-        setValue("description", projects.at(i).description);
-        setValue("srcLang", projects.at(i).srcLang);
-        setValue("accountIdx", projects.at(i).accountIdx);
+        setValue(QStringLiteral("name"), projects.at(i).name);
+        setValue(QStringLiteral("slug"), projects.at(i).slug);
+        setValue(QStringLiteral("description"), projects.at(i).description);
+        setValue(QStringLiteral("srcLang"), projects.at(i).srcLang);
+        setValue(QStringLiteral("accountIdx"), projects.at(i).accountIdx);
     }
     endArray();
 
@@ -188,17 +188,17 @@ void Configuration::unfavorProject(int idx, int accountIdx)
 QList<Configuration::Account> Configuration::loadAccounts()
 {
     QList<Account> accounts;
-    int size = beginReadArray("accounts");
+    int size = beginReadArray(QStringLiteral("accounts"));
     for (int i = 0; i < size; ++i)
     {
         setArrayIndex(i);
         Account acc;
-        acc.name = value("name").toString();
-        acc.server = value("server").toString();
-        acc.user = value("user").toString();
-        acc.password = value("password").toString();
-        acc.ignoreSSLErrors = value("ignoreSSLErrors").toBool();
-        acc.type = value("type", 0).toInt();
+        acc.name = value(QStringLiteral("name")).toString();
+        acc.server = value(QStringLiteral("server")).toString();
+        acc.user = value(QStringLiteral("user")).toString();
+        acc.password = value(QStringLiteral("password")).toString();
+        acc.ignoreSSLErrors = value(QStringLiteral("ignoreSSLErrors")).toBool();
+        acc.type = value(QStringLiteral("type"), 0).toInt();
         accounts.append(acc);
     }
     endArray();
@@ -218,16 +218,16 @@ QList<Configuration::Account> Configuration::loadAccounts()
  */
 void Configuration::writeAccounts(const QList<Account> &accounts)
 {
-    beginWriteArray("accounts");
+    beginWriteArray(QStringLiteral("accounts"));
     for (int i = 0; i < accounts.length(); ++i)
     {
         setArrayIndex(i);
-        setValue("name", accounts.at(i).name);
-        setValue("server", accounts.at(i).server);
-        setValue("user", accounts.at(i).user);
-        setValue("password", accounts.at(i).password);
-        setValue("ignoreSSLErrors", accounts.at(i).ignoreSSLErrors);
-        setValue("type", accounts.at(i).type);
+        setValue(QStringLiteral("name"), accounts.at(i).name);
+        setValue(QStringLiteral("server"), accounts.at(i).server);
+        setValue(QStringLiteral("user"), accounts.at(i).user);
+        setValue(QStringLiteral("password"), accounts.at(i).password);
+        setValue(QStringLiteral("ignoreSSLErrors"), accounts.at(i).ignoreSSLErrors);
+        setValue(QStringLiteral("type"), accounts.at(i).type);
     }
     endArray();
 
@@ -332,12 +332,12 @@ QVariantMap Configuration::getAccount(int idx)
     QVariantMap account;
     QList<Account> accounts = loadAccounts();
 
-    account["name"] = accounts.at(idx).name;
-    account["server"] = accounts.at(idx).server;
-    account["user"] = accounts.at(idx).user;
-    account["password"] = accounts.at(idx).password;
-    account["ignoreSSLErrors"] = accounts.at(idx).ignoreSSLErrors;
-    account["type"] = accounts.at(idx).type;
+    account[QStringLiteral("name")] = accounts.at(idx).name;
+    account[QStringLiteral("server")] = accounts.at(idx).server;
+    account[QStringLiteral("user")] = accounts.at(idx).user;
+    account[QStringLiteral("password")] = accounts.at(idx).password;
+    account[QStringLiteral("ignoreSSLErrors")] = accounts.at(idx).ignoreSSLErrors;
+    account[QStringLiteral("type")] = accounts.at(idx).type;
 
     return account;
 }
@@ -357,7 +357,7 @@ int Configuration::getTransifexAccount()
 
     for (int i = 0; i < accounts.length(); ++i)
     {
-        if (accounts.at(i).server.contains("transifex.com", Qt::CaseInsensitive))
+        if (accounts.at(i).server.contains(QStringLiteral("transifex.com"), Qt::CaseInsensitive))
         {
             return i;
         }
@@ -380,11 +380,11 @@ int Configuration::defaultFilter() const { return m_defaultFilter; }
  * \brief Sets the default filter
  * \param nDefaultFilter int filter type
  */
-void Configuration::setDefaultFilter(const int &nDefaultFilter)
+void Configuration::setDefaultFilter(int nDefaultFilter)
 {
     if (nDefaultFilter != m_defaultFilter) {
         m_defaultFilter = nDefaultFilter;
-        setValue("display/stringListFilter", defaultFilter());
+        setValue(QStringLiteral("display/stringListFilter"), defaultFilter());
         emit defaultFilterChanged(defaultFilter());
     }
 }
@@ -402,11 +402,11 @@ int Configuration::sourceFontSize() const { return m_sourceFontSize; }
  * \brief Sets the font size for source strings
  * \param nSourceFontSize int source font size
  */
-void Configuration::setSourceFontSize(const int &nSourceFontSize)
+void Configuration::setSourceFontSize(int nSourceFontSize)
 {
     if (nSourceFontSize != m_sourceFontSize) {
         m_sourceFontSize = nSourceFontSize;
-        setValue("display/sourceFontSize", sourceFontSize());
+        setValue(QStringLiteral("display/sourceFontSize"), sourceFontSize());
         emit sourceFontSizeChanged(sourceFontSize());
     }
 }
@@ -424,11 +424,11 @@ int Configuration::translationFontSize() const { return m_translationFontSize; }
  * \brief Sets the font size for translation strings
  * \param nTranslationFontSize int translation font size
  */
-void Configuration::setTranslationFontSize(const int &nTranslationFontSize)
+void Configuration::setTranslationFontSize(int nTranslationFontSize)
 {
     if (nTranslationFontSize != m_translationFontSize) {
         m_translationFontSize = nTranslationFontSize;
-        setValue("display/translationFontSize", translationFontSize());
+        setValue(QStringLiteral("display/translationFontSize"), translationFontSize());
         emit translationFontSizeChanged(translationFontSize());
     }
 }
@@ -449,7 +449,7 @@ void Configuration::setLanguage(const QString &nLanguage)
 {
     if (nLanguage != m_language) {
         m_language = nLanguage;
-        setValue("display/language", language());
+        setValue(QStringLiteral("display/language"), language());
         emit languageChanged(language());
     }
 }

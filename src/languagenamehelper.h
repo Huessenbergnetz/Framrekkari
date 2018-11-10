@@ -30,13 +30,9 @@ class LanguageNameHelper : public QObject
 {
     Q_OBJECT
 public:
-    explicit LanguageNameHelper(QObject *parent = 0);
+    explicit LanguageNameHelper(QObject *parent = nullptr);
 
     Q_INVOKABLE QString getLanguageName(const QString &lang) const;
-
-signals:
-
-public slots:
 
 private:
     QHash<QString, QString> languageCode;

@@ -42,9 +42,9 @@ APIHelper::APIHelper(QObject *parent) :
 QUrl APIHelper::buildUrl(const QString &apipart, int accountIdx)
 {
     QVariantMap account = config.getAccount(accountIdx);
-    QString server = account["server"].toString();
+    QString server = account[QStringLiteral("server")].toString();
 
-    if (server.endsWith("/"))
+    if (server.endsWith(QLatin1Char('/')))
         server.chop(1);
 
     server.append("/api/2");

@@ -29,8 +29,8 @@ const int ProjectLangstatsModel::ReviewedRole = Qt::UserRole + 4;
 ProjectLangstatsModel::ProjectLangstatsModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    connect(&sAPI, SIGNAL(gotAllProjectLangStats(QVariantMap)), this, SLOT(populate(QVariantMap)));
-    connect(&sAPI, SIGNAL(gotAllProjectLangStatsError(QString)), this, SLOT(errorHandler(QString)));
+    connect(&sAPI, &StatisticsAPI::gotAllProjectLangStats, this, &ProjectLangstatsModel::populate);
+    connect(&sAPI, &StatisticsAPI::gotAllProjectLangStatsError, this, &ProjectLangstatsModel::errorHandler);
 }
 
 QHash<int, QByteArray> ProjectLangstatsModel::roleNames() const {
@@ -104,7 +104,7 @@ void ProjectLangstatsModel::populate(const QVariantMap &data)
 
         QVariantMap map = i.value().toMap();
 
-        LangstatObject *sobj = new LangstatObject(i.key(), map.value("translated").toDouble(), map.value("untranslated").toDouble(), map.value("reviewed").toDouble());
+        LangstatObject *sobj = new LangstatObject(i.key(), map.value(QStringLiteral("translated")).toDouble(), map.value(QStringLiteral("untranslated")).toDouble(), map.value(QStringLiteral("reviewed")).toDouble());
 
         m_stats.append(sobj);
     }
@@ -115,21 +115,21 @@ void ProjectLangstatsModel::populate(const QVariantMap &data)
 }
 
 
-void ProjectLangstatsModel::updateTranslationCount(const int &idx, const QVariantMap &changed)
+void ProjectLangstatsModel::updateTranslationCount(int idx, const QVariantMap &changed)
 {
     LangstatObject *sobj = m_stats.at(idx);
 
-    if (changed["newTrans"].toBool()) {
+    if (changed[QStringLiteral("newTrans")].toBool()) {
         sobj->translated = sobj->translated + 1;
         sobj->untranslated = sobj->untranslated -1;
     }
 
-    sobj->reviewed = sobj->reviewed + changed["revCount"].toInt();
+    sobj->reviewed = sobj->reviewed + changed[QStringLiteral("revCount")].toInt();
 
     QVariantMap changedStats;
-    changedStats["translated"] = sobj->translated;
-    changedStats["untranslated"] = sobj->untranslated;
-    changedStats["reviewed"] = sobj->reviewed;
+    changedStats[QStringLiteral("translated")] = sobj->translated;
+    changedStats[QStringLiteral("untranslated")] = sobj->untranslated;
+    changedStats[QStringLiteral("reviewed")] = sobj->reviewed;
 
     m_stats[idx] = sobj;
 

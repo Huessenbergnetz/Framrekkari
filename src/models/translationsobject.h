@@ -28,7 +28,7 @@
 
 class TranslationsObject {
 public:
-  TranslationsObject(const QString &keyString, const QVariantList &contextList, const QString &commentString, const QVariantMap &sourceMap, const QVariantMap &transMap, const bool &revBool, const bool &plur, const QDateTime &lUpdate, const QString &usr, const QString &occ, const int &charLim, const QVariantList &t, const int &dIdx):
+  TranslationsObject(const QString &keyString, const QVariantList &contextList, const QString &commentString, const QVariantMap &sourceMap, const QVariantMap &transMap, bool revBool, bool plur, const QDateTime &lUpdate, const QString &usr, const QString &occ, int charLim, const QVariantList &t, int dIdx):
     key(keyString),
     context(contextList),
     comment(commentString),

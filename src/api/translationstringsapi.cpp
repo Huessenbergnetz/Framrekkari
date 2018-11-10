@@ -16,12 +16,12 @@ void TranslationStringsAPI::getStrings(const QString &project, const QString &re
     QUrl url = helper.buildUrl("/project/" + project + "/resource/" + resource + "/translation/" + lang + "/strings/", accountIdx);
 
     QUrlQuery uq;
-    uq.addQueryItem("details", QString());
+    uq.addQueryItem(QStringLiteral("details"), QString());
     url.setQuery(uq);
 
     getStringReply = nm.get(QNetworkRequest(url));
 
-    connect(getStringReply, SIGNAL(finished()), this, SLOT(getStringsFinished()));
+    connect(getStringReply, &QNetworkReply::finished, this, &TranslationStringsAPI::getStringsFinished);
 }
 
 
@@ -41,51 +41,51 @@ void TranslationStringsAPI::getStringsFinished()
             QVariantMap map = m_results.at(i).toMap();
 
             QVariantList context;
-            if(map["context"].type() == QVariant::List) {
-                context = map["context"].toList();
+            if(map[QStringLiteral("context")].type() == QVariant::List) {
+                context = map[QStringLiteral("context")].toList();
             } else {
-                context << map["context"].toString();
+                context << map[QStringLiteral("context")].toString();
             }
 
-            map["context"] = context;
+            map[QStringLiteral("context")] = context;
 
             QVariantMap sources;
             QVariantMap translations;
-            bool pluralized = map["pluralized"].toBool();
+            bool pluralized = map[QStringLiteral("pluralized")].toBool();
             if (pluralized)
             {
-                sources = map["source_string"].toMap();
-                translations = map["translation"].toMap();
+                sources = map[QStringLiteral("source_string")].toMap();
+                translations = map[QStringLiteral("translation")].toMap();
             } else {
-                sources["1"] = map["source_string"].toString();
-                translations["1"] = map["translation"].toString();
+                sources[QStringLiteral("1")] = map[QStringLiteral("source_string")].toString();
+                translations[QStringLiteral("1")] = map[QStringLiteral("translation")].toString();
             }
 
-            map["source_string"] = sources;
-            map["translation"] = translations;
+            map[QStringLiteral("source_string")] = sources;
+            map[QStringLiteral("translation")] = translations;
 
             if (getStringFilter == 0) {
 
-                map["dataIndex"] = dataIndex++;
+                map[QStringLiteral("dataIndex")] = dataIndex++;
                 results << map;
 
             } else if (getStringFilter == 1) {
 
-                if (translations["1"].toString().isEmpty()) {
-                    map["dataIndex"] = dataIndex++;
+                if (translations[QStringLiteral("1")].toString().isEmpty()) {
+                    map[QStringLiteral("dataIndex")] = dataIndex++;
                     results << map;
                 }
 
             } else if (getStringFilter == 2) {
 
-                if (!map["reviewed"].toBool()) {
-                    map["dataIndex"] = dataIndex++;
+                if (!map[QStringLiteral("reviewed")].toBool()) {
+                    map[QStringLiteral("dataIndex")] = dataIndex++;
                     results << map;
                 }
 
             } else if (getStringFilter == 3) {
-                if (map["reviewed"].toBool()) {
-                    map["dataIndex"] = dataIndex++;
+                if (map[QStringLiteral("reviewed")].toBool()) {
+                    map[QStringLiteral("dataIndex")] = dataIndex++;
                     results << map;
                 }
             }
@@ -122,23 +122,23 @@ void TranslationStringsAPI::getStringsFinished()
 }
 
 
-void TranslationStringsAPI::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed, const int &modelIdx, const int &dataIndex, const int &accountIdx)
+void TranslationStringsAPI::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, bool reviewed, int modelIdx, int dataIndex, int accountIdx)
 {
     nm.setAccountIndex(accountIdx);
 
     transToSave.clear();
-    transToSave["modelIdx"] = QVariant::fromValue(modelIdx);
-    transToSave["translation"] = translation;
-    transToSave["reviewed"] = QVariant::fromValue(reviewed);
-    transToSave["dataIndex"] = QVariant::fromValue(dataIndex);
+    transToSave[QStringLiteral("modelIdx")] = QVariant::fromValue(modelIdx);
+    transToSave[QStringLiteral("translation")] = translation;
+    transToSave[QStringLiteral("reviewed")] = QVariant::fromValue(reviewed);
+    transToSave[QStringLiteral("dataIndex")] = QVariant::fromValue(dataIndex);
 
     QVariantMap data;
     if (translation.count() > 1) {
-        data["translation"] = translation;
+        data[QStringLiteral("translation")] = translation;
     } else {
-        data["translation"] = translation["1"].toString();
+        data[QStringLiteral("translation")] = translation[QStringLiteral("1")].toString();
     }
-    data["reviewed"] = reviewed;
+    data[QStringLiteral("reviewed")] = reviewed;
 
     QJsonDocument jsonDoc = QJsonDocument::fromVariant(data);
 
@@ -156,7 +156,7 @@ void TranslationStringsAPI::saveString(const QString &project, const QString &re
 
     saveStringReply = nm.put(request, jsonDoc.toJson(QJsonDocument::Compact));
 
-    connect(saveStringReply, SIGNAL(finished()), this, SLOT(saveStringFinished()));
+    connect(saveStringReply, &QNetworkReply::finished, this, &TranslationStringsAPI::saveStringFinished);
 
 }
 

@@ -39,15 +39,14 @@ const int ProjectTranslationsModel::DataIndexRole = Qt::UserRole + 13;
 ProjectTranslationsModel::ProjectTranslationsModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    m_search = "";
     m_searchTarget = 0;
-    connect(&tAPI, SIGNAL(gotStrings(QVariantList)), this, SLOT(setModelData(QVariantList)));
-    connect(this, SIGNAL(modelDataChanged(QVariantList)), this, SLOT(populate()));
-    connect(this, SIGNAL(searchChanged(QString)), this, SLOT(populate()));
-    connect(this, SIGNAL(searchTargetChanged(int)), this, SLOT(populate()));
-    connect(&tAPI, SIGNAL(gotStringsError(QString)), this, SLOT(errorHandler(QString)));
-    connect(&tAPI, SIGNAL(savedStringError(QString)), this, SLOT(errorHandler(QString)));
-    connect(&tAPI, SIGNAL(savedString(QVariantMap)), this, SLOT(savedString(QVariantMap)));
+    connect(&tAPI, &TranslationStringsAPI::gotStrings, this, &ProjectTranslationsModel::setModelData);
+    connect(this, &ProjectTranslationsModel::modelDataChanged, this, &ProjectTranslationsModel::populate);
+    connect(this, &ProjectTranslationsModel::searchChanged, this, &ProjectTranslationsModel::populate);
+    connect(this, &ProjectTranslationsModel::searchTargetChanged, this, &ProjectTranslationsModel::populate);
+    connect(&tAPI, &TranslationStringsAPI::gotStringsError, this, &ProjectTranslationsModel::errorHandler);
+    connect(&tAPI, &TranslationStringsAPI::savedStringError, this, &ProjectTranslationsModel::errorHandler);
+    connect(&tAPI, &TranslationStringsAPI::savedString, this, &ProjectTranslationsModel::savedString);
 }
 
 
@@ -84,19 +83,19 @@ QVariantMap ProjectTranslationsModel::get(int modelIdx)
     TranslationsObject *tobj = m_translations.at(modelIdx);
     QVariantMap result;
 
-    result["key"] = tobj->key;
-    result["context"] = tobj->context;
-    result["comment"] = tobj->comment;
-    result["source"] = tobj->source;
-    result["translation"] = tobj->translation;
-    result["reviewed"] = tobj->reviewed;
-    result["pluralized"] = tobj->pluralized;
-    result["last_update"] = tobj->lastUpdate.toLocalTime().toString(Qt::DefaultLocaleLongDate);
-    result["user"] = tobj->user;
-    result["occurences"] = tobj->occurrences;
-    result["character_limit"] = tobj->characterLimit;
-    result["tags"] = tobj->tags;
-    result["dataIndex"] = tobj->dataIndex;
+    result[QStringLiteral("key")] = tobj->key;
+    result[QStringLiteral("context")] = tobj->context;
+    result[QStringLiteral("comment")] = tobj->comment;
+    result[QStringLiteral("source")] = tobj->source;
+    result[QStringLiteral("translation")] = tobj->translation;
+    result[QStringLiteral("reviewed")] = tobj->reviewed;
+    result[QStringLiteral("pluralized")] = tobj->pluralized;
+    result[QStringLiteral("last_update")] = tobj->lastUpdate.toLocalTime().toString(Qt::DefaultLocaleLongDate);
+    result[QStringLiteral("user")] = tobj->user;
+    result[QStringLiteral("occurences")] = tobj->occurrences;
+    result[QStringLiteral("character_limit")] = tobj->characterLimit;
+    result[QStringLiteral("tags")] = tobj->tags;
+    result[QStringLiteral("dataIndex")] = tobj->dataIndex;
 
     return result;
 }
@@ -168,19 +167,19 @@ void ProjectTranslationsModel::populate()
 {
     clear();
 
-    if (search() != "") {
+    if (!search().isEmpty()) {
 
         for (int i = 0; i < m_modelData.length(); ++i)
         {
             switch (searchTarget())
             {
             case 1:
-                if (m_modelData.at(i).toMap().value("translation").toMap().value("1").toString().contains(search(), Qt::CaseInsensitive))
+                if (m_modelData.at(i).toMap().value(QStringLiteral("translation")).toMap().value(QStringLiteral("1")).toString().contains(search(), Qt::CaseInsensitive))
                     m_filteredModelData << m_modelData.at(i).toMap();
                 break;
             case 0:
             default:
-                if (m_modelData.at(i).toMap().value("source_string").toMap().value("1").toString().contains(search(), Qt::CaseInsensitive))
+                if (m_modelData.at(i).toMap().value(QStringLiteral("source_string")).toMap().value(QStringLiteral("1")).toString().contains(search(), Qt::CaseInsensitive))
                     m_filteredModelData << m_modelData.at(i).toMap();
                 break;
             }
@@ -199,19 +198,19 @@ void ProjectTranslationsModel::populate()
         QVariantMap map = m_filteredModelData.at(i).toMap();
 
         TranslationsObject *tobj = new TranslationsObject(
-                                        map["key"].toString(),
-                                        map["context"].toList(),
-                                        map["comment"].toString(),
-                                        map["source_string"].toMap(),
-                                        map["translation"].toMap(),
-                                        map["reviewed"].toBool(),
-                                        map["pluralized"].toBool(),
-                                        QDateTime::fromString(map["last_update"].toString(), "yyyy-MM-ddThh:mm:ss.zzz"),
-                                        map["user"].toString(),
-                                        map["occurrences"].toString(),
-                                        map["character_limit"].toInt(),
-                                        map["tags"].toList(),
-                                        map["dataIndex"].toInt());
+                                        map[QStringLiteral("key")].toString(),
+                                        map[QStringLiteral("context")].toList(),
+                                        map[QStringLiteral("comment")].toString(),
+                                        map[QStringLiteral("source_string")].toMap(),
+                                        map[QStringLiteral("translation")].toMap(),
+                                        map[QStringLiteral("reviewed")].toBool(),
+                                        map[QStringLiteral("pluralized")].toBool(),
+                                        QDateTime::fromString(map[QStringLiteral("last_update")].toString(), QStringLiteral("yyyy-MM-ddThh:mm:ss.zzz")),
+                                        map[QStringLiteral("user")].toString(),
+                                        map[QStringLiteral("occurrences")].toString(),
+                                        map[QStringLiteral("character_limit")].toInt(),
+                                        map[QStringLiteral("tags")].toList(),
+                                        map[QStringLiteral("dataIndex")].toInt());
 
         m_translations.append(tobj);
     }
@@ -239,7 +238,7 @@ void ProjectTranslationsModel::errorHandler(const QString &errorString)
 }
 
 
-void ProjectTranslationsModel::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, const bool &reviewed, const int &modelIdx, const int &dataIndex, const int &accountIdx)
+void ProjectTranslationsModel::saveString(const QString &project, const QString &resource, const QString &lang, const QVariantMap &translation, const QString &hash, bool reviewed, int modelIdx, int dataIndex, int accountIdx)
 {
     tAPI.saveString(project, resource, lang, translation, hash, reviewed, modelIdx, dataIndex, accountIdx);
 }
@@ -249,30 +248,30 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
 {
     QVariantMap changed;
 
-    int idx = data["modelIdx"].toInt();
-    int dataIdx = data["dataIndex"].toInt();
+    int idx = data[QStringLiteral("modelIdx")].toInt();
+    int dataIdx = data[QStringLiteral("dataIndex")].toInt();
 
     TranslationsObject *tobj = m_translations.at(idx);
     QVariantMap modelObject = m_modelData.at(dataIdx).toMap();
 
-    QVariant trData = data["translation"];
+    QVariant trData = data[QStringLiteral("translation")];
 
-    changed["newTrans"] = tobj->translation.value("1") == "";
+    changed[QStringLiteral("newTrans")] = tobj->translation.value(QStringLiteral("1")).toString().isEmpty();
 
 
     if (trData.type() == QVariant::Map) {
         tobj->translation = trData.toMap();
-        modelObject["translation"] = trData.toMap();
+        modelObject[QStringLiteral("translation")] = trData.toMap();
     } else {
         QVariantMap strMap;
-        strMap["1"] = trData.toString();
+        strMap[QStringLiteral("1")] = trData.toString();
         tobj->translation = strMap;
-        modelObject["translation"] = strMap;
+        modelObject[QStringLiteral("translation")] = strMap;
     }
 
 
     int revCount = 0;
-    bool rev = data["reviewed"].toBool();
+    bool rev = data[QStringLiteral("reviewed")].toBool();
     if (!tobj->reviewed && rev) {
         revCount = 1;
     } else if (tobj->reviewed && !rev) {
@@ -280,13 +279,13 @@ void ProjectTranslationsModel::savedString(const QVariantMap &data)
     }
 
     tobj->reviewed = rev;
-    modelObject["reviewed"] = rev;
+    modelObject[QStringLiteral("reviewed")] = rev;
 
     m_modelData.replace(dataIdx, modelObject);
 
 
-    changed["revCount"] = revCount;
-    changed["modelIdx"] = idx;
+    changed[QStringLiteral("revCount")] = revCount;
+    changed[QStringLiteral("modelIdx")] = idx;
 
     emit dataChanged(index(idx, 0), index(idx));
     emit savedStringSuccess(changed);
@@ -328,7 +327,7 @@ int ProjectTranslationsModel::searchTarget() const
 }
 
 
-void ProjectTranslationsModel::setSearchTarget(const int &nSearchTarget)
+void ProjectTranslationsModel::setSearchTarget(int nSearchTarget)
 {
     if (nSearchTarget != m_searchTarget) {
         m_searchTarget = nSearchTarget;

@@ -26,7 +26,7 @@
 
 class ProjectResourceObject {
 public:
-  ProjectResourceObject(const QString &resSlug, const double &trans, const double &untrans, const double &rev, const QDateTime &lup, const QString &lcommit):
+  ProjectResourceObject(const QString &resSlug, double trans, double untrans, double rev, const QDateTime &lup, const QString &lcommit):
     slug(resSlug),
     translated(trans),
     untranslated(untrans),

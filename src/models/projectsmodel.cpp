@@ -29,8 +29,8 @@ const int ProjectsModel::SourceLanguageCodedRole = Qt::UserRole + 4;
 ProjectsModel::ProjectsModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    connect(&pAPI, SIGNAL(gotProjects(QVariantList)), this, SLOT(populate(QVariantList)));
-    connect(&pAPI, SIGNAL(gotProjectsError(QString)), this, SLOT(errorHandler(QString)));
+    connect(&pAPI, &ProjectsAPI::gotProjects, this, &ProjectsModel::populate);
+    connect(&pAPI, &ProjectsAPI::gotProjectsError, this, &ProjectsModel::errorHandler);
 }
 
 QHash<int, QByteArray> ProjectsModel::roleNames() const {
@@ -96,7 +96,7 @@ QModelIndex ProjectsModel::index(int row, int column, const QModelIndex &parent)
 }
 
 
-void ProjectsModel::populate(QVariantList data)
+void ProjectsModel::populate(const QVariantList &data)
 {
     int length = data.length();
 
@@ -105,7 +105,7 @@ void ProjectsModel::populate(QVariantList data)
     for (int i = 0; i < data.length(); ++i)
     {
         QVariantMap map = data.at(i).toMap();
-        ProjectObject *pobj = new ProjectObject(map["slug"].toString(), map["name"].toString(), map["description"].toString(), map["source_language_code"].toString());
+        ProjectObject *pobj = new ProjectObject(map[QStringLiteral("slug")].toString(), map[QStringLiteral("name")].toString(), map[QStringLiteral("description")].toString(), map[QStringLiteral("source_language_code")].toString());
         m_projects.append(pobj);
     }
 
