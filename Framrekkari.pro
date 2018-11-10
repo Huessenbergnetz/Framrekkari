@@ -9,6 +9,10 @@ QT += core
 QT += network
 QT += sql
 
+CONFIG(release, debug|release) {
+    DEFINES += QT_NO_DEBUG_OUTPUT
+}
+
 translations.path = /usr/share/harbour-framrekkari/translations
 translations.files = l10n/*.qm
 INSTALLS += translations
