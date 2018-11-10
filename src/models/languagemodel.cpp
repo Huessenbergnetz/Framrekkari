@@ -19,6 +19,11 @@
 */
 
 #include "languagemodel.h"
+#include <QDir>
+#include <QFileInfo>
+#ifndef CLAZY
+#include <sailfishapp.h>
+#endif
 
 const int LanguageModel::NameRole = Qt::UserRole + 1;
 const int LanguageModel::ValueRole = Qt::UserRole + 2;
@@ -26,17 +31,29 @@ const int LanguageModel::ValueRole = Qt::UserRole + 2;
 LanguageModel::LanguageModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    m_langs << "en" << "C" << "ca" << "nl_NL" << "cs";
-    m_langs << "de" << "hu" << "pl" << "es" << "da" << "fi" << "fr";
-    m_langs << "it" << "gl";
-    m_langs << "sv" << "nb_NO" << "tr" << "ru" << "zh_CN"; // new in version 1.1.5
+    const QDir transDir(SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme));
+#ifndef CLAZY
+    const QFileInfoList files = transDir.entryInfoList(QStringList(QStringLiteral("*.qm")), QDir::Files);
+#else
+    const QFileInfoList files;
+#endif
+
+    for (const QFileInfo &file : files) {
+        const QString base = file.baseName();
+        const int underScoreIdx = base.indexOf(QLatin1Char('_'));
+        if (underScoreIdx > -1) {
+            const QString lc = base.right(base.length() - underScoreIdx -1 );
+            qDebug("Adding %s to the list of app translations.", qUtf8Printable(lc));
+            m_langs << lc;
+        }
+    }
 }
 
 
 QHash<int, QByteArray> LanguageModel::roleNames() const {
     QHash<int, QByteArray> roles = QAbstractItemModel::roleNames();
-    roles.insert(NameRole, QByteArray("name"));
-    roles.insert(ValueRole, QByteArray("value"));
+    roles.insert(NameRole, QByteArrayLiteral("name"));
+    roles.insert(ValueRole, QByteArrayLiteral("value"));
     return roles;
 }
 
