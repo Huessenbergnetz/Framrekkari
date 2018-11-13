@@ -26,7 +26,7 @@ ListModel {
     ListElement {
         name: "BT SFOS Components"
         author: "Matthias Fehring"
-        version: "1.2.0"
+        version: "1.2.1"
         license: "Modified BSD License"
         licenseFile: "BSD-3.qml"
         website: "https://github.com/Buschtrommel/BT_SFOS_Components"

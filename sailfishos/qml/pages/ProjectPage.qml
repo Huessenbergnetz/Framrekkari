@@ -121,13 +121,12 @@ Page {
             anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: tags.height
             visible: tags.text !== ""
-            spacing: 5
+            spacing: Theme.paddingSmall
 
             Image {
                 id: tagIcon
-                source: "/usr/share/harbour-framrekkari/icons/icon-s-tag.png"
-                sourceSize.width: 32; sourceSize.height: 32
-                anchors { top: parent.top; topMargin: 7 }
+                source: "image://fram/icon-s-tag?" + Theme.secondaryColor
+                anchors { top: parent.top }
                 width: tags.font.pixelSize; height: width
             }
 
@@ -144,15 +143,13 @@ Page {
             anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: owner.height
             visible: owner.text !== ""
-            spacing: 5
+            spacing: Theme.paddingSmall
 
             Image {
                 id: ownerIcon
-                source: "image://theme/icon-s-task"
-                sourceSize.width: 32; sourceSize.height: 32
-                anchors { top: parent.top; topMargin: 7 }
+                source: "image://theme/icon-s-task?" + Theme.secondaryColor
+                anchors { top: parent.top }
                 width: tags.font.pixelSize; height: width
-                smooth: true
             }
 
             Text {
@@ -168,13 +165,12 @@ Page {
             anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: maintainers.height
             visible: maintainers.text !== ""
-            spacing: 5
+            spacing: Theme.paddingSmall
 
             Image {
                 id: maintainerIcon
-                source: "/usr/share/harbour-framrekkari/icons/icon-s-owner.png"
-                sourceSize.width: 32; sourceSize.height: 32
-                anchors { top: parent.top; topMargin: 7 }
+                source: "image://fram/icon-s-owner?" + Theme.secondaryColor
+                anchors { top: parent.top }
                 width: tags.font.pixelSize; height: width
                 smooth: true
             }

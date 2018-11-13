@@ -95,7 +95,7 @@ Dialog {
                 Image {
                     id: icon
                     width: 64; height: 64
-                    source: HELPER.getAccountIcon(type, "m")
+                    source: HELPER.getAccountIcon(type, "m") + "?" + Theme.primaryColor
                 }
             }
 

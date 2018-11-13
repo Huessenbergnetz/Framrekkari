@@ -44,13 +44,12 @@ ListItem {
     Row {
         id: row
         anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
-
+        spacing: Theme.paddingMedium
 
         Image {
             id: icon
-            width: 96; height: 96
-            sourceSize.height: 96; sourceSize.width: 96
-            source: HELPER.getAccountIcon(model.type, "l")
+            width: Theme.iconSizeLarge; height: Theme.iconSizeLarge
+            source: HELPER.getAccountIcon(model.type, "l") + "?" + nameLabel.color
             smooth: true
         }
 
@@ -71,12 +70,11 @@ ListItem {
             Row {
                 width: parent.width
                 height: server.height
-                spacing: 5
+                spacing: Theme.paddingSmall
 
                 Image {
                     id: serverIcon
-                    source: "/usr/share/harbour-framrekkari/icons/icon-s-browser.png"
-                    sourceSize.width: 32; sourceSize.height: 32
+                    source: "image://fram/icon-s-browser?" + serverText.color
                     width: serverText.font.pixelSize; height: width
                     smooth: true
                     anchors.verticalCenter: parent.verticalCenter
@@ -96,12 +94,11 @@ ListItem {
             Row {
                 width: parent.width
                 height: server.height
-                spacing: 5
+                spacing: Theme.paddingSmall
 
                 Image {
                     id: userIcon
-                    source: "/usr/share/harbour-framrekkari/icons/icon-s-owner.png"
-                    sourceSize.width: 32; sourceSize.height: 32
+                    source: "image://fram/icon-s-owner?" + userText.color
                     width: userText.font.pixelSize; height: width
                     smooth: true
                     anchors.verticalCenter: parent.verticalCenter

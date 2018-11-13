@@ -2,9 +2,9 @@ TEMPLATE = app
 
 TARGET = harbour-framrekkari
 
-VER_MAJ = 0
-VER_MIN = 6
-VER_PAT = 1
+VER_MAJ = 1
+VER_MIN = 1
+VER_PAT = 6
 VERSION = $${VER_MAJ}.$${VER_MIN}.$${VER_PAT}
 
 CONFIG += sailfishapp
@@ -21,7 +21,7 @@ CONFIG(release, debug|release) {
 }
 
 CONFIG(clazy) {
-    message(Clazy is enabled)
+    message("Clazy is enabled")
     DEFINES += CLAZY
     QT += qml quick
     QMAKE_CXX = clang++
@@ -29,30 +29,35 @@ CONFIG(clazy) {
 }
 
 CONFIG(asan) {
-    message(Address sanitizer is enabled)
+    message("Address sanitizer is enabled")
     QMAKE_CXXFLAGS += "-fsanitize=address -fno-omit-frame-pointer -Wformat -Werror=format-security -Werror=array-bounds -g -ggdb"
     QMAKE_LFLAGS += "-fsanitize=address"
 }
 
-translations.path = /usr/share/harbour-framrekkari/translations
+SAILFISHAPP_ICONS = 86x86 108x108 128x128 150x150 172x172
+
+PKGCONFIG += sailfishsilica
+INCLUDEPATH += /usr/include/libsailfishsilica
+
+translations.path = /usr/share/$$TARGET/translations
 translations.files = l10n/*.qm
 INSTALLS += translations
 
-icons.path = /usr/share/harbour-framrekkari/icons
-icons.files = icons/*.png
+icons.path = /usr/share/$$TARGET/icons
+icons.files = icons/z*
 INSTALLS += icons
 
-images.path = /usr/share/harbour-framrekkari/images
-images.files = icons/*.jpg
+images.path = /usr/share/$$TARGET/images
+images.files = images/*.jpg
 INSTALLS += images
 
-contributors.path = /usr/share/harbour-framrekkari/images/contributors
-contributors.files = icons/contributors/*.png
-INSTALLS += contributors
+covers.path = /usr/share/$$TARGET/images
+covers.files = images/cover*.png
+INSTALLS += covers
 
-transifexlangs.path = /usr/share/harbour-framrekkari/data
-transifexlangs.files = data/transifex_langs.json
-INSTALLS += transifexlangs
+contributors.path = /usr/share/$$TARGET/images/contributors
+contributors.files = images/contributors/*.png
+INSTALLS += contributors
 
 SOURCES += \
     src/main.cpp \
@@ -115,7 +120,8 @@ OTHER_FILES += \
     qml/models/ChangelogModel.qml \
     qml/models/ContributorsModel.qml \
     qml/BTComponents/AboutPage.qml \
-    qml/BTComponents/ChangelogDelegate.qml
+    qml/BTComponents/ChangelogDelegate.qml \
+    qml/models/LicensesModel.qml
 
 HEADERS += \
     src/configuration.h \
@@ -140,9 +146,10 @@ HEADERS += \
     src/languagenamehelper.h \
     src/notifications.h \
     src/models/languagemodel.h \
-    src/models/languagemodelfilter.h
+    src/models/languagemodelfilter.h \
+    src/framrekkariiconprovider.h
 
 RESOURCES +=
 
-
+include(../BT_SFOS_Components/BT_SFOS_Components.pri)
 

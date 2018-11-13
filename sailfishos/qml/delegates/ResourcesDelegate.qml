@@ -25,6 +25,7 @@ ListItem {
     id: projectResourceItem
 
     property double overall: model.translated + model.untranslated
+    property color secColor: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
 
     contentHeight: column.height + Theme.paddingMedium
     width: parent.width
@@ -56,12 +57,12 @@ ListItem {
 
                 Row {
                     width: parent.width
-                    spacing: 5
+                    spacing: Theme.paddingSmall
                     height: lastUpdate.height
 
                     Image {
                         id: timerIcon
-                        source: "image://theme/icon-s-date"
+                        source: "image://theme/icon-s-date?" + projectResourceItem.secColor
                         width: lastUpdate.font.pixelSize; height: width;
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -70,18 +71,18 @@ ListItem {
                         id: lastUpdate
                         text: Qt.formatDateTime(model.lastUpdate, qsTr("dd.MM.yy hh:mmAP"))
                         font.pixelSize: Theme.fontSizeExtraSmall
-                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                        color: projectResourceItem.secColor
                     }
                 }
 
                 Row {
                     width: parent.width
-                    spacing: 5
+                    spacing: Theme.paddingSmall
                     height: commiter.height
 
                     Image {
                         id: commiterIcon
-                        source: "/usr/share/harbour-framrekkari/icons/icon-s-owner.png"
+                        source: "image://fram/icon-s-owner?" + projectResourceItem.secColor
                         width: commiter.font.pixelSize; height: width;
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -90,7 +91,7 @@ ListItem {
                         id: commiter
                         text: model.lastCommiter
                         font.pixelSize: Theme.fontSizeExtraSmall
-                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                        color: projectResourceItem.secColor
                     }
                 }
             }
@@ -102,11 +103,11 @@ ListItem {
                 Row {
                     id: untranslatedRow
                     width: parent.width
-                    spacing: 5
+                    spacing: Theme.paddingSmall
 
                     Image {
                         id: untranslatedIcon
-                        source: "/usr/share/harbour-framrekkari/icons/icon-s-untranslated-strings.png"
+                        source: "image://fram/icon-s-untranslated-strings?" + projectResourceItem.secColor
                         width: untranslated.font.pixelSize; height: width;
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -117,19 +118,19 @@ ListItem {
                         text: qsTr("%n string(s)", "", model.untranslated)
                         maximumLineCount: 1
                         font.pixelSize: Theme.fontSizeExtraSmall
-                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                        color: projectResourceItem.secColor
                         truncationMode: TruncationMode.Fade
                     }
                 }
 
                 Row {
                     width: parent.width
-                    spacing: 5
+                    spacing: Theme.paddingSmall
                     height: finished.height
 
                     Image {
                         id: finishedIcon
-                        source: "image://theme/icon-s-edit"
+                        source: "image://theme/icon-s-edit?" + projectResourceItem.secColor
                         width: finished.font.pixelSize; height: width;
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -138,18 +139,18 @@ ListItem {
                         id: finished
                         text: Number(Number((model.translated/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
                         font.pixelSize: Theme.fontSizeExtraSmall
-                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                        color: projectResourceItem.secColor
                     }
                 }
 
                 Row {
                     width: parent.width
-                    spacing: 5
+                    spacing: Theme.paddingSmall
                     height: reviewed.height
 
                     Image {
                         id: reviewedIcon
-                        source: "/usr/share/harbour-framrekkari/icons/icon-s-watch.png"
+                        source: "image://fram/icon-s-watch?" + projectResourceItem.secColor
                         width: reviewed.font.pixelSize; height: width;
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -158,7 +159,7 @@ ListItem {
                         id: reviewed
                         text: Number(Number((model.reviewed/overall)*100).toFixed(1)).toLocaleString(Qt.locale()) + "%"
                         font.pixelSize: Theme.fontSizeExtraSmall
-                        color: projectResourceItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                        color: projectResourceItem.secColor
                     }
                 }
             }

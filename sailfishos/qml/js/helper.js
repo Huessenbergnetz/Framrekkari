@@ -31,6 +31,7 @@ function getAccountIcon(type, size)
     {
     case 0:
     default:
-        return "/usr/share/harbour-framrekkari/icons/icon-"+ size +"-transifex.png"
+//        return "/usr/share/harbour-framrekkari/icons/icon-"+ size +"-transifex.png"
+        return "image://fram/icon-"+ size +"-transifex"
     }
 }

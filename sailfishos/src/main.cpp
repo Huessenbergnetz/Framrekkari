@@ -24,6 +24,8 @@
 
 #ifndef CLAZY
 #include <sailfishapp.h>
+#include <silicatheme.h>
+#include <silicascreen.h>
 #endif
 #include <QtQml>
 #include <QGuiApplication>
@@ -32,6 +34,7 @@
 #include <QLocale>
 #include <QTranslator>
 #include <QStringBuilder>
+#include <btsciconprovider.h>
 
 #include "configuration.h"
 #include "models/accountsmodel.h"
@@ -44,6 +47,7 @@
 #include "api/projectsapi.h"
 #include "md5generator.h"
 #include "languagenamehelper.h"
+#include "framrekkariiconprovider.h"
 
 int main(int argc, char *argv[])
 {
@@ -70,6 +74,10 @@ int main(int argc, char *argv[])
             locale = QLocale::system().name();
         }
 
+        qDebug("Setting locale to %s.", qUtf8Printable(locale));
+
+        QLocale::setDefault(QLocale(locale));
+
         QTranslator *translator = new QTranslator(app.data());
 #ifndef CLAZY
         if (translator->load(QStringLiteral("framrekkari_") % locale, SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme))) {
@@ -77,9 +85,21 @@ int main(int argc, char *argv[])
         if (translator->load(QStringLiteral("framrekkari_") % locale, QStringLiteral("/usr/share/harbour-framrekkari/translations"))) {
 #endif
             app->installTranslator(translator);
-            qDebug("Successfully loaded translation for locale %s.", qUtf8Printable(locale));
+            qDebug("Successfully loaded app translation for locale %s.", qUtf8Printable(locale));
         } else {
-            qWarning("Failed to load translation for locale %s.", qUtf8Printable(locale));
+            qWarning("Failed to load app translation for locale %s.", qUtf8Printable(locale));
+        }
+
+        QTranslator *btscTrans = new QTranslator(app.data());
+#ifndef CLAZY
+        if (btscTrans->load(QStringLiteral("btsc_") % locale, SailfishApp::pathTo(QStringLiteral("translations")).toString(QUrl::RemoveScheme))) {
+#else
+        if (btscTrans->load(QStringLiteral("framrekkari_") % locale, QStringLiteral("/usr/share/harbour-framrekkari/translations"))) {
+#endif
+            app->installTranslator(btscTrans);
+            qDebug("Successfully loaded BTSC translation for locale %s.", qUtf8Printable(locale));
+        } else {
+            qWarning("Failed to load BTSC translation for locale %s.", qUtf8Printable(locale));
         }
     }
 
@@ -88,6 +108,28 @@ int main(int argc, char *argv[])
 #else
     QScopedPointer<QQuickView> view(new QQuickView());
 #endif
+
+    qreal pixelRatio = 1.0;
+//    bool largeScreen = false;
+
+#ifndef CLAZY
+    {
+        Silica::Theme theme;
+//        Silica::Screen screen;
+        pixelRatio = theme.pixelRatio();
+//        largeScreen = screen.sizeCategory() >= Silica::Screen::Large;
+    }
+#endif
+
+    QScopedPointer<BtscIconProvider> btscIconProvider(new BtscIconProvider({1.0, 1.25, 1.5, 1.75, 2.0}, pixelRatio));
+    view->engine()->addImageProvider(QStringLiteral("btsc"), btscIconProvider.data());
+
+#ifndef CLAZY
+    QScopedPointer<FramrekkariIconProvider> framIconProvider(new FramrekkariIconProvider(SailfishApp::pathTo(QStringLiteral("icons")).toString(QUrl::RemoveScheme|QUrl::NormalizePathSegments|QUrl::StripTrailingSlash), pixelRatio));
+#else
+    QScopedPointer<FramrekkariIconProvider> framIconProvider(QStringLiteral("icons"), pixelRatio));
+#endif
+    view->engine()->addImageProvider(QStringLiteral("fram"), framIconProvider.data());
 
     auto *accountsModel = new AccountsModel(app.data());
     auto *projectsModel = new ProjectsModel(app.data());
@@ -103,7 +145,6 @@ int main(int argc, char *argv[])
     {
         const QVersionNumber version = QVersionNumber::fromString(QLatin1String(VERSION_STRING));
         view->rootContext()->setContextProperty(QStringLiteral("versionInt"), version.majorVersion() * 100 + version.minorVersion() * 10 + version.microVersion());
-
     }
     view->rootContext()->setContextProperty(QStringLiteral("versionString"), QStringLiteral(VERSION_STRING));
     view->rootContext()->setContextProperty(QStringLiteral("config"), configuration);

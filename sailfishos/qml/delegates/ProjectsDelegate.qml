@@ -52,7 +52,7 @@ ListItem {
 
         Row {
             width: parent.width
-            spacing : 5
+            spacing : Theme.paddingSmall
 
             Text {
                 id: sourceLang

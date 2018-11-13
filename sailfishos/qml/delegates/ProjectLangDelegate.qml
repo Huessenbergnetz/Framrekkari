@@ -43,7 +43,7 @@ ListItem {
         Row {
             anchors { left: parent.left; leftMargin: Theme.horizontalPageMargin; right: parent.right; rightMargin: Theme.horizontalPageMargin }
             height: nameLabel.height
-            spacing: 5
+            spacing: Theme.paddingSmall
 
             Label {
                 id: nameLabel
@@ -79,12 +79,12 @@ ListItem {
 
             Row {
                 width: parent.width/3
-                spacing: 5
+                spacing: Theme.paddingSmall
                 height: finished.height
 
                 Image {
                     id: finishedIcon
-                    source: "image://theme/icon-s-edit"
+                    source: "image://theme/icon-s-edit?" + finished.color
                     width: finished.font.pixelSize; height: width;
                     anchors.verticalCenter: parent.verticalCenter
                 }
@@ -99,12 +99,12 @@ ListItem {
 
             Row {
                 width: parent.width/3
-                spacing: 5
+                spacing: Theme.paddingSmall
                 height: reviewed.height
 
                 Image {
                     id: reviewedIcon
-                    source: "/usr/share/harbour-framrekkari/icons/icon-s-watch.png"
+                    source: "image://fram/icon-s-watch?" + reviewed.color
                     width: reviewed.font.pixelSize; height: width;
                     anchors.verticalCenter: parent.verticalCenter
                 }
@@ -119,11 +119,11 @@ ListItem {
 
             Row {
                 width: parent.width/3
-                spacing: 5
+                spacing: Theme.paddingSmall
 
                 Image {
                     id: untranslatedIcon
-                    source: "/usr/share/harbour-framrekkari/icons/icon-s-untranslated-strings.png"
+                    source: "image://fram/icon-s-untranslated-strings?" + untranslated.color
                     width: reviewed.font.pixelSize; height: width;
                     anchors.verticalCenter: parent.verticalCenter
                 }

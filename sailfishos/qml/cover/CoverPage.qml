@@ -27,7 +27,7 @@ CoverBackground {
     property int resourceOverall: coverConnector.resourceTranslated + coverConnector.resourceUntranslated
 
     Image {
-        source: "/usr/share/harbour-framrekkari/icons/cover-background.png"
+        source: "/usr/share/harbour-framrekkari/images/cover-background.png"
         x: 0; y: 0; z: -1
         opacity: 0.1
         width: parent.width
@@ -35,7 +35,7 @@ CoverBackground {
 
     CoverPlaceholder {
         text: "Framrekkari"
-        icon.source: "/usr/share/icons/hicolor/86x86/apps/harbour-framrekkari.png"
+        icon.source: "/usr/share/icons/hicolor/" + Theme.iconSizeLauncher + "x" + Theme.iconSizeLauncher + "/apps/harbour-framrekkari.png"
         visible: coverConnector.mode === "overview"
     }
 
@@ -97,7 +97,7 @@ CoverBackground {
 
             Image {
                 id: finishedIcon
-                source: "image://theme/icon-s-edit"
+                source: "image://theme/icon-s-edit?" + Theme.primaryColor
                 width: finished.font.pixelSize; height: width;
                 anchors.verticalCenter: parent.verticalCenter
             }
@@ -121,7 +121,7 @@ CoverBackground {
 
             Image {
                 id: reviewedIcon
-                source: "/usr/share/harbour-framrekkari/icons/icon-s-watch.png"
+                source: "image://fram/icon-s-watch?" + Theme.primaryColor
                 width: reviewed.font.pixelSize; height: width;
                 anchors.verticalCenter: parent.verticalCenter
             }
@@ -146,7 +146,7 @@ CoverBackground {
         Row {
             width: parent.width
             height: sourceLabel.height
-            spacing: 5
+            spacing: Theme.paddingSmall
 
             Label {
                 id: sourceLabel
@@ -160,14 +160,14 @@ CoverBackground {
             }
 
             Image {
-                source: "image://theme/icon-s-edit"
+                source: "image://theme/icon-s-edit?" + Theme.primaryColor
                 width: Theme.fontSizeSmall; height: width;
                 anchors.verticalCenter: parent.verticalCenter
                 visible: coverConnector.translated
             }
 
             Image {
-                source: "/usr/share/harbour-framrekkari/icons/icon-s-watch.png"
+                source: "image://fram/icon-s-watch?" + Theme.primaryColor
                 width: Theme.fontSizeSmall; height: width;
                 anchors.verticalCenter: parent.verticalCenter
                 visible: coverConnector.reviewed
@@ -191,7 +191,7 @@ CoverBackground {
         enabled: coverConnector.mode === "string" && !coverConnector.canGoNext
 
         CoverAction {
-            iconSource: "/usr/share/harbour-framrekkari/icons/icon-cover-clipboard.png"
+            iconSource: "image://theme/icon-s-clipboard"
             onTriggered: Clipboard.text = coverConnector.source
         }
     }
@@ -200,7 +200,7 @@ CoverBackground {
         enabled: coverConnector.mode === "string" && coverConnector.canGoNext
 
         CoverAction {
-            iconSource: "/usr/share/harbour-framrekkari/icons/icon-cover-clipboard.png"
+            iconSource: "image://theme/icon-s-clipboard"
             onTriggered: Clipboard.text = coverConnector.source
         }
 
