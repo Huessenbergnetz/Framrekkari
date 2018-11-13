@@ -3,3 +3,6 @@
 *.pro.user.*
 *.spec
 *.spec.*
+sailfishos/icons/z*
+sailfishos/icons/*x*
+sailfishos/harbour-framrekkari.png
