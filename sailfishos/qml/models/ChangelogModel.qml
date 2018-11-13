@@ -30,6 +30,16 @@ import QtQuick 2.2
 
 ListModel {
     ListElement {
+        version: "1.1.7"
+        date: 1542134024000
+        entries: [
+            ListElement { type: 1; issue: ""; description: "add used components and their licenses to the about page" },
+            ListElement { type: 1; issue: ""; description: "icons scaled for different pixel ratios" },
+            ListElement { type: 2; issue: ""; description: "icon colors on Sailfish 3" }
+        ]
+    }
+
+    ListElement {
         version: "1.1.6"
         date: 1443213797000
         entries: [
