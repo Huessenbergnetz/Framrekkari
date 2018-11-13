@@ -53,7 +53,7 @@ Item {
         id: info
 
         Rectangle {
-            color: Theme.rgba("black", 0.8)
+            color: Theme.rgba(Theme.overlayBackgroundColor, 0.9)
             anchors.fill: parent
 
             property string _RICHTEXT_STYLESHEET_PREAMBLE: "<html><style>a { text-decoration: none; color: '" + Theme.secondaryHighlightColor + "' }</style><body>";
