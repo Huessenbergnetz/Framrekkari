@@ -37,7 +37,7 @@ LanguageModel::LanguageModel(QObject *parent) :
     const QDir transDir;
 #endif
 
-    const QFileInfoList files = transDir.entryInfoList(QStringList(QStringLiteral("*.qm")), QDir::Files);
+    const QFileInfoList files = transDir.entryInfoList(QStringList(QStringLiteral("framrekkari_*.qm")), QDir::Files);
 
     for (const QFileInfo &file : files) {
         const QString base = file.baseName();
