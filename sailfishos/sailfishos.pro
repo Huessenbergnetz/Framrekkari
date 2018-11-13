@@ -110,18 +110,11 @@ OTHER_FILES += \
     qml/dialogs/OneClickDialogItem.qml \
     qml/pages/Help.qml \
     qml/pages/StringMetaPage.qml \
-    qml/BTComponents/ComboBoxList.qml \
-    qml/BTComponents/PaypalChooser.qml \
-    qml/BTComponents/Changelog.qml \
-    qml/BTComponents/FirstStartInfo.qml \
-    qml/BTComponents/ContributorsDelegate.qml \
-    qml/BTComponents/Contributors.qml \
     qml/common/LanguageChooser.qml \
     qml/models/ChangelogModel.qml \
     qml/models/ContributorsModel.qml \
-    qml/BTComponents/AboutPage.qml \
-    qml/BTComponents/ChangelogDelegate.qml \
-    qml/models/LicensesModel.qml
+    qml/models/LicensesModel.qml \
+    qml/common/FirstStartInfo.qml
 
 HEADERS += \
     src/configuration.h \

@@ -1,5 +1,5 @@
 /*
-    BTComponents - QML components shared between various Buschtrommel projects
+    Framrekkari - Transifex Client for SailfishOS
     Copyright (C) 2014  Buschtrommel/Matthias Fehring
     Contact: Matthias Fehring <kontakt@buschmann23.de>
 
@@ -20,6 +20,7 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
+import de.huessenbergnetz.btsc 1.0
 
 Item {
     id: root

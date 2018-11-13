@@ -23,7 +23,6 @@ import Sailfish.Silica 1.0
 
 import "../delegates"
 import "../common"
-import "../BTComponents"
 import "../models"
 
 
@@ -34,7 +33,7 @@ Page {
         visible: config.get("system/version", 0) < versionInt
 //        visible: true
         name: "Framrekkari"
-        version: versionString
+        version: Qt.application.version
         helpPage: "../pages/Help.qml"
         donationHeader: qsTr("Donate")
         donationText: qsTr("If you like Framrekkari and you want to support the development, consider a small donation.")

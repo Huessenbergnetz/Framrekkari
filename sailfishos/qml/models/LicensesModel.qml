@@ -1,6 +1,6 @@
 /*
-    BTComponents - QML components shared between various Buschtrommel projects
-    Copyright (C) 2014-2018  Buschtrommel/Matthias Fehring
+    Framrekkari - Transifex Client for SailfishOS
+    Copyright (C) 2014  Buschtrommel/Matthias Fehring
     Contact: Matthias Fehring <kontakt@buschmann23.de>
 
     This program is free software; you can redistribute it and/or modify
