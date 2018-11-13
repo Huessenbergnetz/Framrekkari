@@ -1,7 +1,7 @@
 /*
     Framrekkari - Transifex Client for SailfishOS
-    Copyright (C) 2014-2018  Buschtrommel/Matthias Fehring
-    Contact: Matthias Fehring <kontakt@buschmann23.de>
+    Copyright (C) 2014-2018  Hüssenbergnetz/Matthias Fehring
+    https://github.com/Buschtrommel/Framrekkari
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
