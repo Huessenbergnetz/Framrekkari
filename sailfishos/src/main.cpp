@@ -146,7 +146,6 @@ int main(int argc, char *argv[])
         const QVersionNumber version = QVersionNumber::fromString(QLatin1String(VERSION_STRING));
         view->rootContext()->setContextProperty(QStringLiteral("versionInt"), version.majorVersion() * 100 + version.minorVersion() * 10 + version.microVersion());
     }
-    view->rootContext()->setContextProperty(QStringLiteral("versionString"), QStringLiteral(VERSION_STRING));
     view->rootContext()->setContextProperty(QStringLiteral("config"), configuration);
     view->rootContext()->setContextProperty(QStringLiteral("accountsModel"), accountsModel);
     view->rootContext()->setContextProperty(QStringLiteral("projectsModel"), projectsModel);
