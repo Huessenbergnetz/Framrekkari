@@ -2,7 +2,7 @@
 host = https://www.transifex.com
 
 [framrekkari.main]
-file_filter = l10n/framrekkari_<lang>.ts
-source_file = l10n/framrekkari.ts
+file_filter = sailfishos/l10n/framrekkari_<lang>.ts
+source_file = sailfishos/l10n/framrekkari.ts
 source_lang = en
 type = QT
