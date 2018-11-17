@@ -30,30 +30,49 @@ processSvg() {
     FILENAME=$(basename -- "$SVGFILE")
     BASENAME="${FILENAME%.*}"
 
+    if [[ ($BASENAME == "lock-"* || $BASENAME == "cover-"*) && $OUTSIZE != 32 ]]
+    then
+        exit 0
+    fi
+
     SIZE=`echo "$SCALE*$OUTSIZE" | bc`
     SIZE=`LC_ALL=C printf '%.*f' 0 $SIZE`
 
-    if [ $OUTSIZE -eq 32 ]
+    if [[ $BASENAME == "lock-"* || $BASENAME == "cover-"* ]]
     then
-        FNAME=icon-s-$BASENAME.png
+        FNAME=icon-$BASENAME.png
+    else
+        if [ $OUTSIZE -eq 32 ]
+        then
+            FNAME=icon-s-$BASENAME.png
+        fi
+
+        if [ $OUTSIZE -eq 64 ]
+        then
+            FNAME=icon-m-$BASENAME.png
+        fi
+
+        if [ $OUTSIZE -eq 96 ]
+        then
+            FNAME=icon-l-$BASENAME.png
+        fi
     fi
 
-    if [ $OUTSIZE -eq 64 ]
+    if [ -r $SCALEDIR/$FNAME -a -s $SCALEDIR/$FNAME ]
     then
-        FNAME=icon-m-$BASENAME.png
-    fi
+        echo "$SCALEDIR/$FNAME already exists. Doing nothing."
+    else
+        echo "Creating $SCALEDIR/$FNAME (${SIZE}x${SIZE})"
+        TMPFILE=$(mktemp)
 
-    if [ $OUTSIZE -eq 96 ]
-    then
-        FNAME=icon-l-$BASENAME.png
-    fi
-
-    echo "Creating $SCALEDIR/$FNAME (${SIZE}x${SIZE})"
-
-    inkscape -z -e $SCALEDIR/$FNAME -w $SIZE -h $SIZE $SVGFILE &> /dev/null
-    if [ -x /usr/bin/zopflipng ]
-    then
-        zopflipng -y --iterations=500 --filters=01234mepb --lossy_transparent $SCALEDIR/$FNAME $SCALEDIR/$FNAME
+        inkscape -z -e $TMPFILE -w $SIZE -h $SIZE $SVGFILE &> /dev/null
+        if [ -x /usr/bin/zopflipng ]
+        then
+            zopflipng -y --always_zopflify --iterations=500 --filters=01234mepb --lossy_transparent $TMPFILE $SCALEDIR/$FNAME
+            rm $TMPFILE
+        else
+            mv $TMPFILE $SCALEDIR/$FNAME
+        fi
     fi
 }
 export -f processSvg
