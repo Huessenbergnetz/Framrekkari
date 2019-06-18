@@ -7,7 +7,9 @@ VER_MIN = 1
 VER_PAT = 7
 VERSION = $${VER_MAJ}.$${VER_MIN}.$${VER_PAT}
 
-CONFIG += sailfishapp
+!contains(CONFIG, clazy) {
+    CONFIG += sailfishapp
+}
 CONFIG += c++11
 
 QT += core
@@ -20,24 +22,22 @@ CONFIG(release, debug|release) {
     DEFINES += QT_NO_DEBUG_OUTPUT
 }
 
-CONFIG(clazy) {
+contains(CONFIG, clazy) {
     message("Clazy is enabled")
     DEFINES += CLAZY
+    isEmpty(CLAZY_PLUGIN_FILE): CLAZY_PLUGIN_FILE = ClazyPlugin.so
+    QMAKE_CXXFLAGS += "-Xclang -load -Xclang $${CLAZY_PLUGIN_FILE} -Xclang -add-plugin -Xclang clazy -Xclang -plugin-arg-clazy -Xclang level0,level1,level2,reserve-candidates,qrequiredresult-candidates,qvariant-template-instantiation"
     QT += qml quick
-    QMAKE_CXX = clang++
-    QMAKE_CXXFLAGS += "-Xclang -load -Xclang ClangLazy.so -Xclang -add-plugin -Xclang clang-lazy -Xclang -plugin-arg-clang-lazy -Xclang level0,level1,level2"
+    CONFIG += link_pkgconfig
 }
 
-CONFIG(asan) {
+contains(CONFIG, asan) {
     message("Address sanitizer is enabled")
     QMAKE_CXXFLAGS += "-fsanitize=address -fno-omit-frame-pointer -Wformat -Werror=format-security -Werror=array-bounds -g -ggdb"
     QMAKE_LFLAGS += "-fsanitize=address"
 }
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 150x150 172x172
-
-PKGCONFIG += sailfishsilica
-INCLUDEPATH += /usr/include/libsailfishsilica
 
 translations.path = /usr/share/$$TARGET/translations
 translations.files = l10n/*.qm
