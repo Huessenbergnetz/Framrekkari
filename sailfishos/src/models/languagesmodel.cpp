@@ -1,6 +1,6 @@
 /*
     Framrekkari - Transifex Client for SailfishOS
-    Copyright (C) 2014-2018  Hüssenbergnetz/Matthias Fehring
+    Copyright (C) 2014-2019  Hüssenbergnetz/Matthias Fehring
     https://github.com/Buschtrommel/Framrekkari
 
     This program is free software; you can redistribute it and/or modify
@@ -18,32 +18,17 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef LANGUAGEMODELFILTER_H
-#define LANGUAGEMODELFILTER_H
+#include "languagesmodel.h"
 
-#include <QSortFilterProxyModel>
-#include "languagemodel.h"
-
-class LanguageModelFilter : public QSortFilterProxyModel
+LanguagesModel::LanguagesModel(QObject *parent) :
+    Hbnsc::LanguageModel(QStringLiteral("translations"), QStringLiteral("framrekkari_"), parent)
 {
-    Q_OBJECT
-    Q_PROPERTY(QString search READ search WRITE setSearch NOTIFY searchChanged)
-public:
-    explicit LanguageModelFilter(QObject *parent = 0);
 
-    QString search() const;
+}
 
-signals:
-    void searchChanged(const QString &nSearch);
+LanguagesModel::~LanguagesModel()
+{
 
-public slots:
-    void setSearch(const QString &nSearch);
+}
 
-private:
-    QString m_search;
-
-    LanguageModel m_sourceModel;
-
-};
-
-#endif // LANGUAGEMODELFILTER_H
+#include "moc_languagesmodel.cpp"

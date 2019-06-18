@@ -20,7 +20,7 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
-import de.huessenbergnetz.btsc 1.0
+import de.huessenbergnetz.hbnsc 1.0
 
 Item {
     id: root

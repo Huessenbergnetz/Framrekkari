@@ -20,6 +20,8 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
+import harbour.framrekkari 1.0
+import de.huessenbergnetz.hbnsc 1.0
 
 import "../common"
 
@@ -43,22 +45,11 @@ Page {
 
             SectionHeader { text: qsTr("Display language") }
 
-            LanguageChooser {
-                id: langChooser
-                anchors { left: parent.left; right: parent.right }
-                label: qsTr("Language")
-                choosenValue: config.language
-                textChoosen: langHelper.getLanguageName(config.language)
-                onChoosenValueChanged: config.language = choosenValue
-            }
-
-            Text {
-                anchors { left: parent.left; right: parent.right; leftMargin: Theme.horizontalPageMargin; rightMargin: Theme.horizontalPageMargin }
-                text: qsTr("Changing the display language is only applied after a restart of the application.")
-                wrapMode: Text.WordWrap
-                color: Theme.secondaryColor
-                textFormat: Text.PlainText
-                font.pixelSize: Theme.fontSizeSmall
+            LanguagePicker {
+                id: langPicker
+                model: LanguagesModel { id: langModel }
+                onCurrentIndexChanged: if (currentItem) { config.language = currentItem.value }
+                currentIndex: langModel.findIndex(config.language)
             }
 
             SectionHeader { text: qsTr("Behavior") }

@@ -1,6 +1,6 @@
 /*
     Framrekkari - Transifex Client for SailfishOS
-    Copyright (C) 2014-2018  Hüssenbergnetz/Matthias Fehring
+    Copyright (C) 2014-2019  Hüssenbergnetz/Matthias Fehring
     https://github.com/Buschtrommel/Framrekkari
 
     This program is free software; you can redistribute it and/or modify
@@ -18,36 +18,18 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef LANGUAGEMODEL_H
-#define LANGUAGEMODEL_H
+#ifndef LANGUAGESMODEL_H
+#define LANGUAGESMODEL_H
 
-#include <QAbstractListModel>
-#include "../languagenamehelper.h"
+#include "hbnsclanguagemodel.h"
 
-class LanguageModel : public QAbstractListModel
+class LanguagesModel : public Hbnsc::LanguageModel
 {
     Q_OBJECT
+    Q_DISABLE_COPY(LanguagesModel)
 public:
-    explicit LanguageModel(QObject *parent = 0);
-
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
-    int rowCount(const QModelIndex &parent = QModelIndex()) const;
-    QHash<int, QByteArray> roleNames() const;
-    QModelIndex index(int row, int column = 0, const QModelIndex &parent = QModelIndex()) const;
-
-    static const int ValueRole;
-    static const int NameRole;
-
-signals:
-
-public slots:
-
-private:
-    QList<QString> m_langs;
-
-    LanguageNameHelper langHelper;
-
-
+    explicit LanguagesModel(QObject *parent = nullptr);
+    ~LanguagesModel() override;
 };
 
-#endif // LANGUAGEMODEL_H
+#endif // LANGUAGESMODEL_H

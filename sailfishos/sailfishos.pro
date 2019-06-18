@@ -76,8 +76,8 @@ SOURCES += \
     src/md5generator.cpp \
     src/languagenamehelper.cpp \
     src/notifications.cpp \
-    src/models/languagemodel.cpp \
-    src/models/languagemodelfilter.cpp
+    src/models/languagesmodel.cpp \
+    src/models/licensesmodel.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -110,10 +110,8 @@ OTHER_FILES += \
     qml/dialogs/OneClickDialogItem.qml \
     qml/pages/Help.qml \
     qml/pages/StringMetaPage.qml \
-    qml/common/LanguageChooser.qml \
     qml/models/ChangelogModel.qml \
     qml/models/ContributorsModel.qml \
-    qml/models/LicensesModel.qml \
     qml/common/FirstStartInfo.qml
 
 HEADERS += \
@@ -138,11 +136,8 @@ HEADERS += \
     src/md5generator.h \
     src/languagenamehelper.h \
     src/notifications.h \
-    src/models/languagemodel.h \
-    src/models/languagemodelfilter.h \
-    src/framrekkariiconprovider.h
+    src/models/languagesmodel.h \
+    src/models/licensesmodel.h
 
-RESOURCES +=
-
-include(../BT_SFOS_Components/BT_SFOS_Components.pri)
+include(../HBN_SFOS_Components/HBN_SFOS_Components.pri)
 

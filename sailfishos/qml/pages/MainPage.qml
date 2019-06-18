@@ -39,7 +39,7 @@ Page {
         donationText: qsTr("If you like Framrekkari and you want to support the development, consider a small donation.")
         paypalOrganization: "Buschtrommel"
         paypalItem: "Framrekkari"
-        paypalEmail: "kontakt@buschmann23.de"
+        paypalEmail: Qt.atob("a29udGFrdEBidXNjaG1hbm4yMy5kZQ==")
         paypalMessage: qsTr("Leave a message (English or German):")
         paypalLabel: qsTr("Donate via PayPal")
         description: qsTr("Framrekkari is a client for various collaborative online translation platforms, that currently supports the Transifex API.")

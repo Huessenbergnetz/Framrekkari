@@ -1,6 +1,6 @@
 /*
     Framrekkari - Transifex Client for SailfishOS
-    Copyright (C) 2014-2018  Hüssenbergnetz/Matthias Fehring
+    Copyright (C) 2014-2019  Hüssenbergnetz/Matthias Fehring
     https://github.com/Buschtrommel/Framrekkari
 
     This program is free software; you can redistribute it and/or modify
@@ -18,31 +18,18 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#include "languagemodelfilter.h"
+#ifndef LICENSESMODEL_H
+#define LICENSESMODEL_H
 
-LanguageModelFilter::LanguageModelFilter(QObject *parent) :
-    QSortFilterProxyModel(parent)
+#include "hbnsclicensemodel.h"
+
+class LicensesModel : public Hbnsc::LicenseModel
 {
-    this->setSourceModel(&m_sourceModel);
-    this->setFilterRole(LanguageModel::NameRole);
-    this->setFilterCaseSensitivity(Qt::CaseInsensitive);
-    this->setSortLocaleAware(true);
-    this->setSortRole(LanguageModel::NameRole);
-    this->sort(0);
-}
+    Q_OBJECT
+    Q_DISABLE_COPY(LicensesModel)
+public:
+    explicit LicensesModel(QObject *parent = nullptr);
+    ~LicensesModel() override;
+};
 
-
-QString LanguageModelFilter::search() const
-{
-    return m_search;
-}
-
-
-void LanguageModelFilter::setSearch(const QString &nSearch)
-{
-    if (nSearch != m_search) {
-        m_search = nSearch;
-        this->setFilterFixedString(search());
-        emit searchChanged(search());
-    }
-}
+#endif // LICENSESMODEL_H

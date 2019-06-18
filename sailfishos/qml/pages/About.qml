@@ -20,15 +20,16 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
-import de.huessenbergnetz.btsc 1.0
+import de.huessenbergnetz.hbnsc 1.0
+import harbour.framrekkari 1.0
 import "../models"
 
 AboutPage {
     appTitle: "Framrekkari"
     appDescription: qsTr("Online translation services client for Sailfish OS")
     appHomepage: "http://www.buschmann23.de/entwicklung/anwendungen/framrekkari"
-    appCover: "/usr/share/harbour-framrekkari/images/store-cover.jpg"
-    appCopyrightYear: "2014–2018"
+    appCopyrightYearFrom: "2014"
+    appCopyrightYearTo: "2019"
     appCopyrightHolder: "Matthias Fehring"
     appLicense: "GNU General Public License, Version 2"
     appLicenseFile: "GPLv2.qml"
@@ -48,12 +49,12 @@ AboutPage {
     contactZIP: "34439"
     contactCity: "Willebadessen"
     contactCountry: qsTr("Germany")
-    contactEmail: "kontakt@huessenbergnetz.de"
+    contactEmail: Qt.atob("a29udGFrdEBodWVzc2VuYmVyZ25ldHouZGU=")
     contactWebsite: "www.huessenbergnetz.de"
-    contactWebsiteLink: "https://www.huessenbergnetz.de"
+    contactWebsiteLink: "https://www.huessenbergnetz.de/?pk_campaign=Sailfish-App-Framrekkari&pk_kwd=AboutPage"
 
     paypalLabel: qsTr("Donate via PayPal")
-    paypalEmail: "kontakt@buschmann23.de"
+    paypalEmail: Qt.atob("a29udGFrdEBidXNjaG1hbm4yMy5kZQ==")
     paypalOrganization: "Buschtrommel"
     paypalItem: "Framrekkari"
     paypalMessage: qsTr("Leave a message (English or German):")
