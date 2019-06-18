@@ -16,14 +16,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Munich</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Germany</source>
         <translation type="unfinished"></translation>
     </message>
@@ -33,49 +25,6 @@
     </message>
     <message>
         <source>Leave a message (English or German):</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>AboutPage</name>
-    <message>
-        <source>Homepage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Privacy Policy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Contact</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Contribute</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Report bugs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>3rd party licenses</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -161,47 +110,6 @@
     </message>
     <message>
         <source>Removing account %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Changelog</name>
-    <message>
-        <source>Changelog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Improved</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Fixed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Note</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Contributors</name>
-    <message>
-        <source>Contributors</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ContributorsDelegate</name>
-    <message>
-        <source>Website</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sina Weibo</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -334,13 +242,6 @@
     </message>
     <message>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>LanguageChooser</name>
-    <message>
-        <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1824,6 +1725,13 @@
     </message>
 </context>
 <context>
+    <name>LicensesModel</name>
+    <message>
+        <source>The translations for Framrekkari are provided by the community. To see who is responsible for which translation, open the contributors page.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ListFilterDialog</name>
     <message>
         <source>List filter</source>
@@ -1886,105 +1794,6 @@
     </message>
     <message>
         <source>Please add at least one account for a Transifex instance.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>PaypalChooser</name>
-    <message>
-        <source>Currency</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Euro</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>US Dollar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Australian Dollar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Brazilian Real</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pound Sterling</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Danish Krone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Hong Kong Dollar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Israel New Shekel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Japanese Yen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Canadian Dollar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Mexican Peso</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>New Taiwan Dollar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>New Zealand Dollar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Norwegian Krone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Philippine Peso</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Polish Zloty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Russian Ruble</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Swedish Krone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Swiss Franc</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Singapore Dollar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Thai Baht</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Czech Koruna</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Hungarian Forint</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2174,14 +1983,6 @@
     </message>
     <message>
         <source>Display language</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Changing the display language is only applied after a restart of the application.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

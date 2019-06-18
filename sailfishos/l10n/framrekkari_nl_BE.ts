@@ -14,14 +14,6 @@
         <translation>Online vertalingsdiensttoepassing voor SailfishOS</translation>
     </message>
     <message>
-        <source>Licensed under the &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</source>
-        <translation>Gelicenseerd onder de &lt;a href=&apos;http://www.gnu.org/licenses/gpl-2.0.en.html&apos;&gt;GNU GPL v2&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Munich</source>
-        <translation>München</translation>
-    </message>
-    <message>
         <source>Germany</source>
         <translation>Duitsland</translation>
     </message>
@@ -32,49 +24,6 @@
     <message>
         <source>Leave a message (English or German):</source>
         <translation>Laat een bericht achter (Engels of Duits):</translation>
-    </message>
-</context>
-<context>
-    <name>AboutPage</name>
-    <message>
-        <source>Homepage</source>
-        <translation>Website</translation>
-    </message>
-    <message>
-        <source>Privacy Policy</source>
-        <translation>Privacyovereenkomst</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation>Wijzigingslog</translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation>Bijdragers</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation>Over</translation>
-    </message>
-    <message>
-        <source>Contact</source>
-        <translation>Contact</translation>
-    </message>
-    <message>
-        <source>Contribute</source>
-        <translation>Bijdragen</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Vertalen</translation>
-    </message>
-    <message>
-        <source>Report bugs</source>
-        <translation>Bugs melden</translation>
-    </message>
-    <message>
-        <source>3rd party licenses</source>
-        <translation>Licenties van derde partijen</translation>
     </message>
 </context>
 <context>
@@ -160,47 +109,6 @@
     <message>
         <source>Removing account %1</source>
         <translation>Account %1 wordt verwijderd</translation>
-    </message>
-</context>
-<context>
-    <name>Changelog</name>
-    <message>
-        <source>Changelog</source>
-        <translation>Wijzigingslog</translation>
-    </message>
-    <message>
-        <source>New</source>
-        <translation>Nieuw</translation>
-    </message>
-    <message>
-        <source>Improved</source>
-        <translation>Verbeterd</translation>
-    </message>
-    <message>
-        <source>Fixed</source>
-        <translation>Opgelost</translation>
-    </message>
-    <message>
-        <source>Note</source>
-        <translation>Opmerking</translation>
-    </message>
-</context>
-<context>
-    <name>Contributors</name>
-    <message>
-        <source>Contributors</source>
-        <translation>Bijdragers</translation>
-    </message>
-</context>
-<context>
-    <name>ContributorsDelegate</name>
-    <message>
-        <source>Website</source>
-        <translation>Website</translation>
-    </message>
-    <message>
-        <source>Sina Weibo</source>
-        <translation>Sina Weibo</translation>
     </message>
 </context>
 <context>
@@ -330,13 +238,6 @@
     <message>
         <source>Transifex API has some limitations. Biggest one is that it gives access information about languages and resources only to project owner and maintainers but not to normal users. So it is not possible to determine if a user has the rights to change content. You should now by yourself if you are resoponsible for a project language. If you have not enough rights to change something, you will get an error message, but it is not possible for Framrekkari to check this in advance.&lt;br&gt;&lt;br&gt;The second big limitation is, that there is no search functionality. You have to enter the correct slug (project name that is used in the browser URL) to open a project directly, or you can browse through all available projects.</source>
         <translation>Den API van Transifex heeft beperkingen. De grootste beperking is dat het toegang geeft tot de taalinformatie en hulpbronnen, maar alleen aan de projecteigenaar en -beheerders en dus niet aan gewone gebruikers. Het is dus niet mogelijk voor te achterhalen of ne gebruiker de juiste wijzigingsrechten heeft. Ge zult dus bij uzelf na moeten gaan of ge verantwoordelijk zijt voor een projecttaal. Als ge niet beschikt over voldoende rechten voor iets te wijzigen, zult ge een foutmelding krijgen. Het is voor Framrekkari niet mogelijk voor dit op voorhand te controleren.&lt;br&gt;&lt;br&gt;De tweede grote beperking is dat der geen zoekfunctionaliteit is. Ge moet de correcte slug invullen (projectnaam gelijk gebruikt in den browser-URL) voor een project te openen, of bladeren door de lijst van alle beschikbare projecten.</translation>
-    </message>
-</context>
-<context>
-    <name>LanguageChooser</name>
-    <message>
-        <source>Search</source>
-        <translation>Zoeken</translation>
     </message>
 </context>
 <context>
@@ -1819,6 +1720,13 @@
     </message>
 </context>
 <context>
+    <name>LicensesModel</name>
+    <message>
+        <source>The translations for Framrekkari are provided by the community. To see who is responsible for which translation, open the contributors page.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>ListFilterDialog</name>
     <message>
         <source>List filter</source>
@@ -1882,105 +1790,6 @@
     <message>
         <source>Please add at least one account for a Transifex instance.</source>
         <translation>Voeg minstens enen account toe voor een Transifex-instantie.</translation>
-    </message>
-</context>
-<context>
-    <name>PaypalChooser</name>
-    <message>
-        <source>Currency</source>
-        <translation>Munteenheid</translation>
-    </message>
-    <message>
-        <source>Euro</source>
-        <translation>Euro</translation>
-    </message>
-    <message>
-        <source>US Dollar</source>
-        <translation>Amerikaansen dollar</translation>
-    </message>
-    <message>
-        <source>Australian Dollar</source>
-        <translation>Australischen dollar</translation>
-    </message>
-    <message>
-        <source>Brazilian Real</source>
-        <translation>Braziliaanse real</translation>
-    </message>
-    <message>
-        <source>Pound Sterling</source>
-        <translation>Britse pond</translation>
-    </message>
-    <message>
-        <source>Danish Krone</source>
-        <translation>Deense kroon</translation>
-    </message>
-    <message>
-        <source>Hong Kong Dollar</source>
-        <translation>Hong Kong-dollar</translation>
-    </message>
-    <message>
-        <source>Israel New Shekel</source>
-        <translation>Israëlische nieuwe shekel</translation>
-    </message>
-    <message>
-        <source>Japanese Yen</source>
-        <translation>Japanse yen</translation>
-    </message>
-    <message>
-        <source>Canadian Dollar</source>
-        <translation>Canadesen dollar</translation>
-    </message>
-    <message>
-        <source>Mexican Peso</source>
-        <translation>Mexicaanse Peso</translation>
-    </message>
-    <message>
-        <source>New Taiwan Dollar</source>
-        <translation>Nieuwe Taiwanesen dollar</translation>
-    </message>
-    <message>
-        <source>New Zealand Dollar</source>
-        <translation>Nieuw Zeelandsen dollar</translation>
-    </message>
-    <message>
-        <source>Norwegian Krone</source>
-        <translation>Noorse kroon</translation>
-    </message>
-    <message>
-        <source>Philippine Peso</source>
-        <translation>Filipijnse peso</translation>
-    </message>
-    <message>
-        <source>Polish Zloty</source>
-        <translation>Poolse złoty</translation>
-    </message>
-    <message>
-        <source>Russian Ruble</source>
-        <translation>Russische roebel</translation>
-    </message>
-    <message>
-        <source>Swedish Krone</source>
-        <translation>Zweedse kroon</translation>
-    </message>
-    <message>
-        <source>Swiss Franc</source>
-        <translation>Zwitserse franc</translation>
-    </message>
-    <message>
-        <source>Singapore Dollar</source>
-        <translation>Singapore-dollar</translation>
-    </message>
-    <message>
-        <source>Thai Baht</source>
-        <translation>Thaïsen baht</translation>
-    </message>
-    <message>
-        <source>Czech Koruna</source>
-        <translation>Tjechische kroon</translation>
-    </message>
-    <message>
-        <source>Hungarian Forint</source>
-        <translation>Hongaarse forint</translation>
     </message>
 </context>
 <context>
@@ -2164,14 +1973,6 @@
     <message>
         <source>Display language</source>
         <translation>Weergavetaal</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>Taal</translation>
-    </message>
-    <message>
-        <source>Changing the display language is only applied after a restart of the application.</source>
-        <translation>De wijziging van de weergavetaal zal worden toegepast na het herstarten van de toepassing.</translation>
     </message>
     <message>
         <source>Behavior</source>
