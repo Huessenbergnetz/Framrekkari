@@ -28,7 +28,6 @@
 #include <QtQml>
 #include <QGuiApplication>
 #include <QQuickView>
-#include <QScopedPointer>
 #include <QLocale>
 #include <QTranslator>
 #include <QStringBuilder>
@@ -48,13 +47,14 @@
 #include "api/projectsapi.h"
 #include "md5generator.h"
 #include "languagenamehelper.h"
+#include <memory>
 
 int main(int argc, char *argv[])
 {
 #ifndef CLAZY
-    QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
+    std::unique_ptr<QGuiApplication> app(SailfishApp::application(argc, argv));
 #else
-    QScopedPointer<QGuiApplication> app(new QGuiApplication(argc, argv));
+    auto app = std::make_unique<QGuiApplication>(argc, argv);
 #endif
 
     app->setOrganizationName(QStringLiteral("harbour-framrekkari"));
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
     qDebug("Starting %s %s.", qUtf8Printable(app->applicationDisplayName()), VERSION_STRING);
 
-    Configuration *configuration = new Configuration(app.data());
+    Configuration *configuration = new Configuration(app.get());
 
     {
         const QString localeString = configuration->language();
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
 #else
         const QString l10nDir;
 #endif
-        auto translator = new QTranslator(app.data());
+        auto translator = new QTranslator(app.get());
         if (Q_UNLIKELY(!translator->load(QLocale(), QStringLiteral("framrekkari"), QStringLiteral("_"), l10nDir, QStringLiteral(".qm")))) {
             qWarning("Failed to load app translations for locale %s.", qUtf8Printable(localeString));
         } else {
@@ -98,23 +98,23 @@ int main(int argc, char *argv[])
     qmlRegisterType<LicensesModel>("harbour.framrekkari", 1, 0, "LicensesModel");
 
 #ifndef CLAZY
-    QScopedPointer<QQuickView> view(SailfishApp::createView());
+    std::unique_ptr<QQuickView> view(SailfishApp::createView());
 #else
-    QScopedPointer<QQuickView> view(new QQuickView());
+    auto view = std::make_unique<QQuickView>();
 #endif
 
     auto hbnscIconProvider = Hbnsc::HbnscIconProvider::createProvider(view->engine());
     auto framIconProvider = Hbnsc::BaseIconProvider::createProvider({1.0, 1.25, 1.5, 1.75, 2.0}, QString(), false, QStringLiteral("fram"), view->engine());
 
-    auto *accountsModel = new AccountsModel(app.data());
-    auto *projectsModel = new ProjectsModel(app.data());
-    auto *favoredProjectsModel = new FavoredProjectsModel(app.data());
-    auto *projectsAPI = new ProjectsAPI(app.data());
-    auto *projectLangstatsModel = new ProjectLangstatsModel(app.data());
-    auto *projectResourceModel = new ProjectResourcesModel(app.data());
-    auto *projectTranslationsModel = new ProjectTranslationsModel(app.data());
-    auto *md5Generator = new MD5generator(app.data());
-    auto *langHelper = new LanguageNameHelper(app.data());
+    auto *accountsModel = new AccountsModel(app.get());
+    auto *projectsModel = new ProjectsModel(app.get());
+    auto *favoredProjectsModel = new FavoredProjectsModel(app.get());
+    auto *projectsAPI = new ProjectsAPI(app.get());
+    auto *projectLangstatsModel = new ProjectLangstatsModel(app.get());
+    auto *projectResourceModel = new ProjectResourcesModel(app.get());
+    auto *projectTranslationsModel = new ProjectTranslationsModel(app.get());
+    auto *md5Generator = new MD5generator(app.get());
+    auto *langHelper = new LanguageNameHelper(app.get());
 
     {
         const QVersionNumber version = QVersionNumber::fromString(QLatin1String(VERSION_STRING));

@@ -11,6 +11,7 @@ VERSION = $${VER_MAJ}.$${VER_MIN}.$${VER_PAT}
     CONFIG += sailfishapp
 }
 CONFIG += c++11
+CONFIG += c++14
 
 QT += core
 QT += network
