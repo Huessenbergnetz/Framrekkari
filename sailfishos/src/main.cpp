@@ -130,6 +130,7 @@ int main(int argc, char *argv[])
     view->rootContext()->setContextProperty(QStringLiteral("projectTranslationsModel"), projectTranslationsModel);
     view->rootContext()->setContextProperty(QStringLiteral("md5Generator"), md5Generator);
     view->rootContext()->setContextProperty(QStringLiteral("langHelper"), langHelper);
+    view->rootContext()->setContextProperty(QStringLiteral("appLauncherIcon"), Hbnsc::getLauncherIcon({86, 108, 128, 150, 172}));
 
 #ifndef CLAZY
     view->setSource(SailfishApp::pathToMainQml());

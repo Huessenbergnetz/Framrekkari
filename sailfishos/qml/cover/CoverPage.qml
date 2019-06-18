@@ -31,11 +31,12 @@ CoverBackground {
         x: 0; y: 0; z: -1
         opacity: 0.1
         width: parent.width
+        height: parent.height
     }
 
     CoverPlaceholder {
         text: "Framrekkari"
-        icon.source: "/usr/share/icons/hicolor/" + Theme.iconSizeLauncher + "x" + Theme.iconSizeLauncher + "/apps/harbour-framrekkari.png"
+        icon.source: appLauncherIcon
         visible: coverConnector.mode === "overview"
     }
 
