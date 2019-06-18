@@ -1,0 +1,3 @@
+[submodule "HBN_SFOS_Components"]
+	path = HBN_SFOS_Components
+	url = git@github.com:Huessenbergnetz/HBN_SFOS_Components.git
